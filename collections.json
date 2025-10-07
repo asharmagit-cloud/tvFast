@@ -1,0 +1,482 @@
+{
+    $jsonSchema: {
+      bsonType: 'object',
+      required: [
+        'name',
+        'location'
+      ],
+      properties: {
+        _id: {
+          bsonType: 'objectId',
+          description: 'Auto-generated state ID'
+        },
+        name: {
+          bsonType: 'string',
+          description: 'State name'
+        },
+        location: {
+          bsonType: 'array',
+          description: 'Country and Region reference',
+          items: {
+            bsonType: 'object',
+            required: [
+              'country',
+              'region'
+            ],
+            properties: {
+              country: {
+                bsonType: 'object',
+                required: [
+                  'id'
+                ],
+                properties: {
+                  id: {
+                    bsonType: 'objectId',
+                    description: 'Reference to country _id'
+                  }
+                }
+              },
+              region: {
+                bsonType: 'object',
+                required: [
+                  'id'
+                ],
+                properties: {
+                  id: {
+                    bsonType: 'objectId',
+                    description: 'Reference to region _id'
+                  }
+                }
+              }
+            }
+          }
+        },
+        greetingText: {
+          bsonType: 'string'
+        },
+        tagLine: {
+          bsonType: 'string'
+        },
+        description: {
+          bsonType: 'object',
+          properties: {
+            title: {
+              bsonType: 'string'
+            },
+            'short': {
+              bsonType: 'string'
+            },
+            overview: {
+              bsonType: 'string'
+            },
+            'long': {
+              bsonType: 'string'
+            },
+            history: {
+              bsonType: 'string'
+            }
+          }
+        },
+        languages: {
+          bsonType: 'array',
+          items: {
+            bsonType: 'string'
+          }
+        },
+        images: {
+          bsonType: 'object',
+          properties: {
+            banner: {
+              bsonType: 'string'
+            },
+            card: {
+              bsonType: 'string'
+            },
+            others: {
+              bsonType: 'array',
+              items: {
+                bsonType: 'string'
+              }
+            }
+          }
+        },
+        labels: {
+          bsonType: 'array',
+          items: {
+            bsonType: 'object',
+            properties: {
+              id: {
+                bsonType: 'objectId',
+                description: 'Reference to label _id'
+              }
+            }
+          }
+        },
+        emergencyContacts: {
+          bsonType: 'object',
+          properties: {
+            Police: {
+              bsonType: 'string'
+            },
+            Ambulance: {
+              bsonType: 'string'
+            },
+            Fire: {
+              bsonType: 'string'
+            },
+            'Tourist Helpline': {
+              bsonType: 'string'
+            },
+            'State Tourism': {
+              bsonType: 'string'
+            }
+          }
+        },
+        safetyInformation: {
+          bsonType: 'array',
+          items: {
+            bsonType: 'string'
+          }
+        },
+        travelTips: {
+          bsonType: 'array',
+          items: {
+            bsonType: 'string'
+          }
+        },
+        experiences: {
+          bsonType: 'object',
+          properties: {
+            Food: {
+              bsonType: 'array',
+              items: {
+                bsonType: 'objectId'
+              }
+            },
+            Activities: {
+              bsonType: 'array',
+              items: {
+                bsonType: 'objectId'
+              }
+            },
+            LocalMarkets: {
+              bsonType: 'array',
+              items: {
+                bsonType: 'objectId'
+              }
+            },
+            Spiritual: {
+              bsonType: 'array',
+              items: {
+                bsonType: 'objectId'
+              }
+            },
+            Historical: {
+              bsonType: 'array',
+              items: {
+                bsonType: 'objectId'
+              }
+            },
+            Nature: {
+              bsonType: 'array',
+              items: {
+                bsonType: 'objectId'
+              }
+            },
+            Cultural: {
+              bsonType: 'array',
+              items: {
+                bsonType: 'objectId'
+              }
+            },
+            Adventure: {
+              bsonType: 'array',
+              items: {
+                bsonType: 'objectId'
+              }
+            },
+            Others: {
+              bsonType: 'array',
+              items: {
+                bsonType: 'objectId'
+              }
+            }
+          }
+        },
+        trending: {
+          bsonType: 'object',
+          properties: {
+            places: {
+              bsonType: 'array',
+              items: {
+                bsonType: 'objectId'
+              }
+            },
+            cities: {
+              bsonType: 'array',
+              items: {
+                bsonType: 'objectId'
+              }
+            }
+          }
+        },
+        createdAt: {
+          bsonType: 'date'
+        },
+        updatedAt: {
+          bsonType: 'date'
+        }
+      },
+      additionalProperties: false
+    }
+  }
+
+  {
+    {
+        $jsonSchema: {
+          bsonType: 'object',
+          required: [
+            'name',
+            'phoneCode',
+            'slug'
+          ],
+          properties: {
+            _id: {
+              bsonType: 'objectId',
+              description: 'Auto-generated unique identifier'
+            },
+            slug: {
+              bsonType: 'string',
+              description: 'Unique slug identifier for the country, e.g. \'india\', \'united-states\''
+            },
+            name: {
+              bsonType: 'string',
+              description: 'Full country name'
+            },
+            phoneCode: {
+              bsonType: 'string',
+              description: 'International dialing code, e.g. \'+91\''
+            },
+            iso2: {
+              bsonType: 'string',
+              description: '2-letter ISO country code (optional)'
+            },
+            region: {
+              bsonType: 'string',
+              description: 'Geographical region (optional)'
+            },
+            subregion: {
+              bsonType: 'string',
+              description: 'Subregion (optional)'
+            },
+            createdAt: {
+              bsonType: 'date',
+              description: 'Document creation timestamp'
+            },
+            updatedAt: {
+              bsonType: 'date',
+              description: 'Document last update timestamp'
+            }
+          },
+          additionalProperties: false
+        }
+      }
+
+  }
+
+  {
+    $jsonSchema: {
+      bsonType: 'object',
+      required: [
+        'name',
+        'slug',
+        'location'
+      ],
+      properties: {
+        _id: {
+          bsonType: 'objectId',
+          description: 'Auto-generated place ID'
+        },
+        name: {
+          bsonType: 'string',
+          description: 'Place name'
+        },
+        slug: {
+          bsonType: 'string',
+          description: 'Unique slug for the place'
+        },
+        location: {
+          bsonType: 'array',
+          description: 'References to country, state, city, and region',
+          items: {
+            bsonType: 'object',
+            required: [
+              'country',
+              'state',
+              'city',
+              'region'
+            ],
+            properties: {
+              country: {
+                bsonType: 'object',
+                required: [
+                  'id'
+                ],
+                properties: {
+                  id: {
+                    bsonType: 'objectId'
+                  }
+                }
+              },
+              state: {
+                bsonType: 'object',
+                required: [
+                  'id'
+                ],
+                properties: {
+                  id: {
+                    bsonType: 'objectId'
+                  }
+                }
+              },
+              city: {
+                bsonType: 'object',
+                required: [
+                  'id'
+                ],
+                properties: {
+                  id: {
+                    bsonType: 'objectId'
+                  }
+                }
+              },
+              region: {
+                bsonType: 'object',
+                required: [
+                  'id'
+                ],
+                properties: {
+                  id: {
+                    bsonType: 'objectId'
+                  }
+                }
+              }
+            }
+          }
+        },
+        labels: {
+          bsonType: 'array',
+          items: {
+            bsonType: 'object',
+            required: [
+              'id'
+            ],
+            properties: {
+              id: {
+                bsonType: 'objectId'
+              }
+            }
+          }
+        },
+        tips: {
+          bsonType: 'array',
+          items: {
+            bsonType: 'string'
+          }
+        },
+        bestTimeToVisit: {
+          bsonType: 'string'
+        },
+        localLegend: {
+          bsonType: 'string'
+        },
+        difficultyLevel: {
+          bsonType: 'string'
+        },
+        entryInfo: {
+          bsonType: 'object',
+          properties: {
+            type: {
+              bsonType: 'string',
+              description: 'free or paid'
+            },
+            fee: {
+              bsonType: 'string'
+            },
+            duration: {
+              bsonType: 'string'
+            }
+          }
+        },
+        images: {
+          bsonType: 'object',
+          properties: {
+            banner: {
+              bsonType: 'string'
+            },
+            card: {
+              bsonType: 'string'
+            },
+            others: {
+              bsonType: 'array',
+              items: {
+                bsonType: 'string'
+              }
+            }
+          }
+        },
+        description: {
+          bsonType: 'object',
+          properties: {
+            overview: {
+              bsonType: 'string'
+            },
+            'short': {
+              bsonType: 'string'
+            },
+            'long': {
+              bsonType: 'string'
+            },
+            history: {
+              bsonType: 'string'
+            }
+          }
+        },
+        geo: {
+          bsonType: 'object',
+          properties: {
+            type: {
+              bsonType: 'string',
+              'enum': [
+                'Point'
+              ]
+            },
+            coordinates: {
+              bsonType: 'array',
+              items: {
+                bsonType: 'double'
+              }
+            }
+          }
+        },
+        ratings: {
+          bsonType: 'object',
+          properties: {
+            average: {
+              bsonType: 'double'
+            },
+            count: {
+              bsonType: 'int'
+            }
+          }
+        },
+        createdAt: {
+          bsonType: 'date'
+        },
+        updatedAt: {
+          bsonType: 'date'
+        }
+      },
+      additionalProperties: false
+    }
+  }
