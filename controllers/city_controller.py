@@ -6,6 +6,17 @@ from models.city import CityModel
 from schemas.city import CityCreate, CityUpdate, CityResponse, CityListResponse
 
 
+def convert_objectids(obj):
+    if isinstance(obj, dict):
+        return {k: convert_objectids(v) for k, v in obj.items()}
+    elif isinstance(obj, list):
+        return [convert_objectids(i) for i in obj]
+    elif isinstance(obj, ObjectId):
+        return str(obj)
+    else:
+        return obj
+
+
 class CityController:
     def __init__(self):
         self.collection_name = "cities"
@@ -83,17 +94,14 @@ class CityController:
         state_id: Optional[str] = None,
         is_active: Optional[bool] = None
     ) -> CityListResponse:
-        """Get list of cities with pagination and filtering"""
+        """Get list of cities with pagination and filtering (minimal fields)"""
         db = await get_database()
         collection = db[self.collection_name]
-        
+
         # Build filter query
         filter_query = {}
         if search:
-            filter_query["$or"] = [
-                {"name": {"$regex": search, "$options": "i"}},
-                {"state_name": {"$regex": search, "$options": "i"}}
-            ]
+            filter_query["name"] = {"$regex": search, "$options": "i"}
         if state_id:
             if not ObjectId.is_valid(state_id):
                 raise HTTPException(
@@ -111,9 +119,68 @@ class CityController:
         cursor = collection.find(filter_query).skip(skip).limit(limit)
         cities = await cursor.to_list(length=limit)
         
-        # Convert to response models
-        city_responses = [CityResponse(**city) for city in cities]
-        
+        city_responses = []
+        states_collection = db["states"]
+        countries_collection = db["countries"] if "countries" in await db.list_collection_names() else None
+        regions_collection = db["regions"] if "regions" in await db.list_collection_names() else None
+        for city in cities:
+            city = convert_objectids(city)
+            # Enrich location names
+            if city.get("location") and isinstance(city["location"], list):
+                for loc in city["location"]:
+                    # Country
+                    if loc.get("country") and loc["country"].get("id") and (loc["country"].get("name") is None) and countries_collection is not None:
+                        country_doc = await countries_collection.find_one({"_id": ObjectId(loc["country"]["id"])} )
+                        if country_doc:
+                            loc["country"]["name"] = country_doc.get("name")
+                    # Region
+                    if loc.get("region") and loc["region"].get("id") and (loc["region"].get("name") is None) and regions_collection is not None:
+                        region_doc = await regions_collection.find_one({"_id": ObjectId(loc["region"]["id"])} )
+                        if region_doc:
+                            loc["region"]["name"] = region_doc.get("name")
+                    # State
+                    if loc.get("state") and loc["state"].get("id") and (loc["state"].get("name") is None):
+                        state_doc = await states_collection.find_one({"_id": ObjectId(loc["state"]["id"])} )
+                        if state_doc:
+                            loc["state"]["name"] = state_doc.get("name")
+            # ...existing code for state_id, state_name, city_response_dict, etc...
+            city_id = str(city.get("_id")) if city.get("_id") else None
+            state_id_val = city.get("state_id")
+            if not state_id_val and city.get("location"):
+                try:
+                    state_id_val = city["location"][0]["state"]["id"]
+                except (KeyError, IndexError, TypeError):
+                    state_id_val = None
+            state_id_str = str(state_id_val) if state_id_val else None
+            name = city.get("name")
+            state_name = None
+            if state_id_str:
+                state_doc = await states_collection.find_one({"_id": ObjectId(state_id_str)})
+                if state_doc:
+                    state_name = state_doc.get("name")
+            city_response_dict = {
+                "id": city_id,
+                "name": name,
+                "state_id": state_id_str,
+                "is_active": city.get("is_active", True),
+                "location": city.get("location"),
+                "greetingText": city.get("greetingText"),
+                "tagLine": city.get("tagLine"),
+                "languages": city.get("languages"),
+                "description": city.get("description"),
+                "images": city.get("images"),
+                "emergencyContacts": city.get("emergencyContacts"),
+                "safetyInformation": city.get("safetyInformation"),
+                "travelTips": city.get("travelTips"),
+                "experiences": city.get("experiences"),
+                "trending": city.get("trending")
+            }
+            if state_name:
+                city_response_dict["state_name"] = state_name
+            if not all([city_id, state_id_str, name]):
+                continue
+            city_responses.append(CityResponse(**city_response_dict))
+
         # Calculate pagination info
         page = (skip // limit) + 1
         has_next = (skip + limit) < total
