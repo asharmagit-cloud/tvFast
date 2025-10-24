@@ -1,7 +1,7 @@
 from fastapi import APIRouter, Depends, HTTPException, Query, status
 from typing import Optional, List
 from controllers.state_controller import StateController
-from schemas.state import StateCreate, StateUpdate, StateResponse, StateListResponse, StateQuery, StateAllQuery
+from schemas.state import StateCreate, StateUpdate, StateResponse, StateListResponse, StateQuery, StateAllQuery, StateQueryRequest, StateQueryRequestLegacy, StateQueryResponse
 
 router = APIRouter(prefix="/states", tags=["States"])
 
@@ -118,3 +118,68 @@ async def delete_state(state_id: str):
     Note: State cannot be deleted if it has cities associated with it.
     """
     return await state_controller.delete_state(state_id)
+
+
+@router.post("/query", response_model=StateQueryResponse)
+async def query_states(query: StateQueryRequest):
+    """
+    Flexible state query endpoint with new filter-based format:
+    
+    **Request Body Format:**
+    ```json
+    {
+      "filter": {
+        "view": "minimal",  // "minimal" | "full"
+        "id": ["t_all"]     // ["t_all"] for all states OR ["<id1>", "<id2>", ...] for specific states
+      },
+      "offset": 0,          // Starting index (default: 0)
+      "size": 10,           // Number of items to return (default: 10)
+      "fetch_all": false    // Get all data without pagination (default: false)
+    }
+    ```
+    
+    **View Options:**
+    - **minimal**: Returns id, name, tagLine, labels (with id & name), images
+    - **full**: Complete state data (for detail view)
+    
+    **ID Filtering:**
+    - **["t_all"]**: Get all states
+    - **["<id1>", "<id2>", ...]**: Get specific states by their IDs
+    
+    **Pagination:**
+    - **offset**: Starting index (default: 0)
+    - **size**: Items per page (default: 10)
+    - **fetch_all**: Get all data without pagination (default: false)
+    """
+    return await state_controller.query_states_new(query)
+
+
+@router.post("/query/legacy", response_model=StateQueryResponse)
+async def query_states_legacy(query: StateQueryRequestLegacy):
+    """
+    Legacy flexible state query endpoint (for backward compatibility):
+    - Multiple templates (minimal, page, full)
+    - Pagination with metadata
+    - Label filtering (OR/AND logic)
+    - Single state retrieval by ID
+    - Fetch all minimal data option
+    
+    **Template Options:**
+    - **minimal**: Returns id, name, tagLine, labels (with id & name), images
+    - **page**: Full state data (for page display)
+    - **full**: Complete state data (for detail view)
+    
+    **Filtering:**
+    - **labels**: Array of label IDs to filter by
+    - **label_filter_type**: "any" (OR logic) or "all" (AND logic)
+    - **search**: Search in name or tagLine
+    
+    **Pagination:**
+    - **page**: Page number (default: 1)
+    - **limit**: Items per page (default: 10)
+    - **fetch_all**: Get all minimal data without pagination
+    
+    **Single State:**
+    - **id**: Get specific state by ID (returns array with one item)
+    """
+    return await state_controller.query_states(query)

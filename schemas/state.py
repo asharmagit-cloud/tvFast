@@ -175,3 +175,53 @@ class StateQuery(BaseModel):
 class StateAllQuery(BaseModel):
     skip: int = 0
     limit: int = 10
+
+
+class StateQueryFilter(BaseModel):
+    """Filter object for state query"""
+    view: str = "minimal"  # "minimal" | "full"
+    id: List[str] = ["t_all"]  # Array of state IDs or ["t_all"] for all states
+
+
+class StateQueryRequest(BaseModel):
+    """Flexible query request for states"""
+    filter: StateQueryFilter
+    offset: int = Field(default=0)  # Starting index (renamed from 'from')
+    size: int = Field(default=10)  # Number of items to return
+    fetch_all: bool = Field(default=False)  # Get all data without pagination
+
+
+class StateQueryRequestLegacy(BaseModel):
+    """Legacy flexible query request for states (keeping for backward compatibility)"""
+    template: str = "minimal"  # minimal, page, full
+    id: Optional[str] = None  # If provided, returns single state in array
+    page: Optional[int] = 1
+    limit: Optional[int] = 10
+    labels: Optional[List[str]] = None  # Label IDs to filter
+    label_filter_type: Optional[str] = "any"  # "any" (OR) or "all" (AND)
+    search: Optional[str] = None  # Search in name
+    fetch_all: Optional[bool] = False  # Fetch all minimal data without pagination
+
+
+class StateMinimalResponse(BaseModel):
+    """Minimal template response"""
+    id: str
+    name: str
+    tagLine: Optional[str] = None
+    labels: Optional[List[dict]] = None  # [{id, name}]
+    images: Optional[dict] = None
+
+    class Config:
+        json_encoders = {ObjectId: str}
+
+
+class StateQueryResponse(BaseModel):
+    """Response with pagination metadata"""
+    states: List[Any]  # StateMinimalResponse or StateResponse based on template
+    total: int
+    page: int
+    limit: int
+    total_pages: int
+    has_next: bool
+    has_prev: bool
+    next_count: Optional[int] = None  # Items in next page

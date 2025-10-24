@@ -86,6 +86,7 @@ Once the application is running, you can access:
 - **ReDoc**: http://localhost:8000/redoc
 - **API Root**: http://localhost:8000/
 - **Health Check**: http://localhost:8000/health
+- **State Query API**: See `STATE_QUERY_API_README.md` for detailed documentation and examples
 
 ## API Endpoints
 
@@ -98,6 +99,7 @@ Once the application is running, you can access:
 - `GET /api/v1/states/code/{code}` - Get state by code
 - `GET /api/v1/states/all` - Get all states (array, no metadata)
 - `POST /api/v1/states/all` - Get paginated array of states using POST body: `{ "skip": 0, "limit": 10 }`
+- `POST /api/v1/states/query` - **NEW**: Flexible state query with templates, filtering, and pagination
 
 ### Cities
 - `GET /api/v1/cities` - List all cities with pagination and filtering
@@ -185,6 +187,58 @@ All list endpoints support pagination with `skip` and `limit` parameters.
   - `POST /api/v1/states/all`
   - Body: `{ "skip": 0, "limit": 10 }`
   - Returns: `StateResponse[]`
+
+### State Query API (NEW)
+A powerful flexible query endpoint for states with multiple templates and filtering options:
+
+- **Endpoint**: `POST /api/v1/states/query`
+- **Templates**: 
+  - `minimal`: Essential fields (id, name, tagLine, labels, images)
+  - `page`: Coming soon
+  - `full`: Coming soon
+- **Features**:
+  - Pagination with metadata
+  - Search in name and tagLine
+  - Label filtering (OR/AND logic)
+  - Single state retrieval by ID
+  - Fetch all data without pagination
+- **Documentation**: See `STATE_QUERY_API_README.md` for complete examples
+
+**Quick Example**:
+```json
+{
+  "template": "minimal",
+  "page": 1,
+  "limit": 10,
+  "search": "Maharashtra",
+  "labels": ["label_id_1", "label_id_2"],
+  "label_filter_type": "any"
+}
+
+// Basic minimal data with pagination
+// POST /api/v1/states/query
+{
+  "template": "minimal",
+  "page": 1,
+  "limit": 10
+}
+
+// Get all minimal data at once
+// POST /api/v1/states/query
+{
+  "template": "minimal",
+  "fetch_all": true
+}
+
+// Search for specific states
+// POST /api/v1/states/query
+{
+  "template": "minimal",
+  "search": "Maharashtra",
+  "page": 1,
+  "limit": 5
+}
+```
 
 ### Geospatial Search
 The places endpoint includes geospatial search functionality to find places within a specified radius of given coordinates.

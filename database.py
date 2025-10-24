@@ -1,4 +1,17 @@
-from motor.motor_asyncio import AsyncIOMotorClient
+try:
+    from motor.motor_asyncio import AsyncIOMotorClient
+except Exception as e:
+    # Provide a clear, actionable error to help the developer fix version mismatches
+    raise ImportError(
+        "Failed to import Motor AsyncIOMotorClient. This often indicates an incompatible combination of `motor` and `pymongo` in the virtual environment.\n"
+        "Detected error: {0!s}\n\n"
+        "Suggested fix (run in your project venv):\n"
+        "  pip uninstall -y bson pymongo motor\n"
+        "  pip install 'pymongo==4.6.0' 'motor==3.3.2'\n\n"
+        "After installing, restart your application. If you intentionally need a newer pymongo, upgrade `motor` to a compatible release instead.\n"
+        "See https://motor.readthedocs.io/ and PyMongo release notes for compatibility details.".format(e)
+    ) from e
+
 from pymongo.errors import ConnectionFailure
 from config import settings
 from typing import Optional

@@ -3,7 +3,7 @@ from bson import ObjectId
 from fastapi import HTTPException, status
 from database import get_database
 from models.state import StateModel
-from schemas.state import StateCreate, StateUpdate, StateResponse, StateListResponse
+from schemas.state import StateCreate, StateUpdate, StateResponse, StateListResponse, StateQueryRequest, StateQueryRequestLegacy, StateMinimalResponse, StateQueryResponse
 
 
 class StateController:
@@ -27,46 +27,87 @@ class StateController:
         region_ids = set()
         for s in states:
             for loc in s.get("location", []) or []:
-                country = (loc or {}).get("country") or {}
-                region = (loc or {}).get("region") or {}
-                if isinstance(country, dict) and country.get("id"):
-                    try:
-                        country_ids.add(ObjectId(str(country["id"])))
-                    except Exception:
-                        pass
-                if isinstance(region, dict) and region.get("id"):
-                    try:
-                        region_ids.add(ObjectId(str(region["id"])))
-                    except Exception:
-                        pass
+                country = (loc or {}).get("country")
+                region = (loc or {}).get("region")
+
+                # Country id may be stored as: {"id": ...}, or directly as a string/ObjectId
+                if country:
+                    cid_val = None
+                    if isinstance(country, dict):
+                        cid_val = country.get("id")
+                    else:
+                        cid_val = country
+                    if cid_val:
+                        try:
+                            country_ids.add(ObjectId(str(cid_val)))
+                        except Exception:
+                            # invalid id format, log for debugging
+                            print(f"⚠️ Invalid country id format for state '{s.get('name')}', value: {cid_val}")
+
+                # Region id may be stored similarly
+                if region:
+                    rid_val = None
+                    if isinstance(region, dict):
+                        rid_val = region.get("id")
+                    else:
+                        rid_val = region
+                    if rid_val:
+                        try:
+                            region_ids.add(ObjectId(str(rid_val)))
+                        except Exception:
+                            print(f"⚠️ Invalid region id format for state '{s.get('name')}', value: {rid_val}")
 
         # Fetch lookup maps
         countries_map = {}
         regions_map = {}
         if country_ids:
-            cursor = db["countries"].find({"_id": {"$in": list(country_ids)}})
-            for doc in await cursor.to_list(length=None):
+            # only request the name field to reduce payload
+            cursor = db["countries"].find({"_id": {"$in": list(country_ids)}}, {"name": 1})
+            docs = await cursor.to_list(length=None)
+            for doc in docs:
                 countries_map[str(doc.get("_id"))] = doc.get("name")
+            missing_countries = {str(cid) for cid in country_ids} - set(countries_map.keys())
+            if missing_countries:
+                print(f"⚠️ Missing country documents for IDs: {sorted(missing_countries)}")
         if region_ids:
-            cursor = db["regions"].find({"_id": {"$in": list(region_ids)}})
-            for doc in await cursor.to_list(length=None):
+            cursor = db["regions"].find({"_id": {"$in": list(region_ids)}}, {"name": 1})
+            docs = await cursor.to_list(length=None)
+            for doc in docs:
                 regions_map[str(doc.get("_id"))] = doc.get("name")
+            missing_regions = {str(rid) for rid in region_ids} - set(regions_map.keys())
+            if missing_regions:
+                print(f"⚠️ Missing region documents for IDs: {sorted(missing_regions)}")
 
         # Inject names
         for s in states:
             for loc in s.get("location", []) or []:
                 country = (loc or {}).get("country")
-                if isinstance(country, dict) and country.get("id"):
-                    cid = str(country["id"]) if not isinstance(country["id"], ObjectId) else str(country["id"])
-                    cname = countries_map.get(cid)
-                    if cname:
-                        country["name"] = cname
+                if country:
+                    # normalize id value
+                    if isinstance(country, dict):
+                        cid_val = country.get("id")
+                    else:
+                        cid_val = country
+                    if cid_val:
+                        cid = str(cid_val) if not isinstance(cid_val, ObjectId) else str(cid_val)
+                        cname = countries_map.get(cid)
+                        # explicitly set name (could be None)
+                        country_obj = country if isinstance(country, dict) else {"id": cid_val}
+                        country_obj["name"] = cname if cname is not None else None
+                        # ensure loc.country references the object with name
+                        loc["country"] = country_obj
                 region = (loc or {}).get("region")
-                if isinstance(region, dict) and region.get("id"):
-                    rid = str(region["id"]) if not isinstance(region["id"], ObjectId) else str(region["id"])
-                    rname = regions_map.get(rid)
-                    if rname:
-                        region["name"] = rname
+                if region:
+                    if isinstance(region, dict):
+                        rid_val = region.get("id")
+                    else:
+                        rid_val = region
+                    if rid_val:
+                        rid = str(rid_val) if not isinstance(rid_val, ObjectId) else str(rid_val)
+                        rname = regions_map.get(rid)
+                        region_obj = region if isinstance(region, dict) else {"id": rid_val}
+                        region_obj["name"] = rname if rname is not None else None
+                        loc["region"] = region_obj
         return states
 
     async def _enrich_labels_with_names(self, db, states: List[dict]) -> List[dict]:
@@ -142,6 +183,15 @@ class StateController:
                 status_code=status.HTTP_404_NOT_FOUND,
                 detail="State not found"
             )
+        # Enrich referenced names for location and labels before converting ids
+        try:
+            enriched = await self._enrich_locations_with_names(db, [state])
+            enriched = await self._enrich_labels_with_names(db, enriched)
+            state = enriched[0] if enriched else state
+        except Exception:
+            # If enrichment fails for any reason, continue with original document
+            pass
+
         state = self._convert_object_ids(state)
         if state and state.get("_id") and not state.get("id"):
             state["id"] = state["_id"]
@@ -174,7 +224,7 @@ class StateController:
         # Get states with pagination
         cursor = collection.find(filter_query).skip(skip).limit(limit)
         states = await cursor.to_list(length=limit)
-        # Enrich names from referenced collections
+        # Enrich names from referenced collections (locations first)
         states = await self._enrich_locations_with_names(db, states)
         states = await self._enrich_labels_with_names(db, states)
         states = [self._convert_object_ids(s) for s in states]
@@ -292,6 +342,14 @@ class StateController:
                 status_code=status.HTTP_404_NOT_FOUND,
                 detail="State not found"
             )
+        # Enrich location and labels
+        try:
+            enriched = await self._enrich_locations_with_names(db, [state])
+            enriched = await self._enrich_labels_with_names(db, enriched)
+            state = enriched[0] if enriched else state
+        except Exception:
+            pass
+
         state = self._convert_object_ids(state)
         if state and state.get("_id") and not state.get("id"):
             state["id"] = state["_id"]
@@ -326,3 +384,284 @@ class StateController:
             if s.get("_id") and not s.get("id"):
                 s["id"] = s["_id"]
         return [StateResponse(**state) for state in states]
+
+    async def query_states(self, query: StateQueryRequest) -> StateQueryResponse:
+        """Flexible state query with templates, filtering, and pagination"""
+        db = await get_database()
+        collection = db[self.collection_name]
+        
+        # Build filter query
+        filter_query = {}
+        
+        # Handle single state by ID
+        if query.id:
+            if not ObjectId.is_valid(query.id):
+                raise HTTPException(
+                    status_code=status.HTTP_400_BAD_REQUEST,
+                    detail="Invalid state ID format"
+                )
+            filter_query["_id"] = ObjectId(query.id)
+        
+        # Handle search
+        if query.search:
+            filter_query["$or"] = [
+                {"name": {"$regex": query.search, "$options": "i"}},
+                {"tagLine": {"$regex": query.search, "$options": "i"}}
+            ]
+        
+        # Handle label filtering
+        if query.labels:
+            label_object_ids = []
+            for label_id in query.labels:
+                if ObjectId.is_valid(label_id):
+                    label_object_ids.append(ObjectId(label_id))
+            
+            if label_object_ids:
+                if query.label_filter_type == "all":
+                    filter_query["labels.id"] = {"$all": label_object_ids}
+                else:  # "any" (OR logic)
+                    filter_query["labels.id"] = {"$in": label_object_ids}
+        
+        # Get total count
+        total = await collection.count_documents(filter_query)
+        
+        # Handle fetch_all for minimal data
+        if query.fetch_all and query.template == "minimal":
+            cursor = collection.find(filter_query)
+            states = await cursor.to_list(length=None)
+            # Enrich locations and labels
+            states = await self._enrich_locations_with_names(db, states)
+            states = await self._enrich_labels_with_names(db, states)
+            
+            # Convert to minimal response format
+            minimal_states = []
+            for state in states:
+                state_id = str(state.get("_id"))
+                # Convert ObjectIds in labels to strings
+                labels = []
+                for label in state.get("labels", []):
+                    if isinstance(label, dict):
+                        label_copy = label.copy()
+                        if "id" in label_copy and isinstance(label_copy["id"], ObjectId):
+                            label_copy["id"] = str(label_copy["id"])
+                        labels.append(label_copy)
+                
+                minimal_state = {
+                    "id": state_id,
+                    "name": state.get("name", ""),
+                    "tagLine": state.get("tagLine"),
+                    "labels": labels,
+                    "images": state.get("images")
+                }
+                minimal_states.append(StateMinimalResponse(**minimal_state))
+            
+            return StateQueryResponse(
+                states=minimal_states,
+                total=total,
+                page=1,
+                limit=total,
+                total_pages=1,
+                has_next=False,
+                has_prev=False,
+                next_count=0
+            )
+        
+        # Handle pagination
+        skip = (query.page - 1) * query.limit
+        
+        # Projection based on template
+        projection = {}
+        if query.template == "minimal":
+            projection = {
+                "_id": 1,
+                "name": 1,
+                "tagLine": 1,
+                "labels": 1,
+                "images": 1
+            }
+        
+        # Get states with projection
+        cursor = collection.find(filter_query, projection).skip(skip).limit(query.limit)
+        states = await cursor.to_list(length=query.limit)
+        # Enrich locations and labels
+        states = await self._enrich_locations_with_names(db, states)
+        states = await self._enrich_labels_with_names(db, states)
+        
+        # Convert to response format based on template
+        response_data = []
+        if query.template == "minimal":
+            for state in states:
+                state_id = str(state.get("_id"))
+                # Convert ObjectIds in labels to strings
+                labels = []
+                for label in state.get("labels", []):
+                    if isinstance(label, dict):
+                        label_copy = label.copy()
+                        if "id" in label_copy and isinstance(label_copy["id"], ObjectId):
+                            label_copy["id"] = str(label_copy["id"])
+                        labels.append(label_copy)
+                
+                minimal_state = {
+                    "id": state_id,
+                    "name": state.get("name", ""),
+                    "tagLine": state.get("tagLine"),
+                    "labels": labels,
+                    "images": state.get("images")
+                }
+                response_data.append(StateMinimalResponse(**minimal_state))
+        else:
+            # For other templates, use full StateResponse (will be implemented later)
+            states = [self._convert_object_ids(s) for s in states]
+            for s in states:
+                if s.get("_id") and not s.get("id"):
+                    s["id"] = s["_id"]
+            response_data = [StateResponse(**state) for state in states]
+        
+        # Calculate pagination metadata
+        total_pages = (total + query.limit - 1) // query.limit
+        has_next = query.page < total_pages
+        has_prev = query.page > 1
+        next_count = min(query.limit, total - (query.page * query.limit)) if has_next else 0
+        
+        return StateQueryResponse(
+            states=response_data,
+            total=total,
+            page=query.page,
+            limit=query.limit,
+            total_pages=total_pages,
+            has_next=has_next,
+            has_prev=has_prev,
+            next_count=next_count
+        )
+
+    async def query_states_new(self, query: StateQueryRequest) -> StateQueryResponse:
+        """New flexible state query with filter object and from/size pagination"""
+        try:
+            db = await get_database()
+            collection = db[self.collection_name]
+            
+            # Build filter query
+            filter_query = {}
+            
+            # Handle state IDs filtering
+            if query.filter.id:
+                # Check if it's the special "t_all" case
+                if "t_all" in query.filter.id:
+                    # Get all states - no additional filter needed
+                    pass
+                else:
+                    # Filter by specific state IDs
+                    state_object_ids = []
+                    for state_id in query.filter.id:
+                        if ObjectId.is_valid(state_id):
+                            state_object_ids.append(ObjectId(state_id))
+                    
+                    if state_object_ids:
+                        filter_query["_id"] = {"$in": state_object_ids}
+                    else:
+                        # No valid IDs provided, return empty result
+                        return StateQueryResponse(
+                            states=[],
+                            total=0,
+                            page=1,
+                            limit=query.size,
+                            total_pages=0,
+                            has_next=False,
+                            has_prev=False,
+                            next_count=0
+                        )
+            
+            # Get total count
+            total = await collection.count_documents(filter_query)
+            
+            # Handle fetch_all parameter
+            if query.fetch_all:
+                # Get all data without pagination
+                skip = 0
+                limit = total  # Set limit to total count to get all records
+            else:
+                # Handle pagination with offset/size
+                skip = query.offset
+                limit = query.size
+            
+            # Projection based on view type
+            projection = {}
+            if query.filter.view == "minimal":
+                projection = {
+                    "_id": 1,
+                    "name": 1,
+                    "tagLine": 1,
+                    "labels": 1,
+                    "images": 1
+                }
+            
+            # Get states with projection
+            cursor = collection.find(filter_query, projection).skip(skip).limit(limit)
+            states = await cursor.to_list(length=limit)
+            # Enrich locations and labels
+            states = await self._enrich_locations_with_names(db, states)
+            states = await self._enrich_labels_with_names(db, states)
+            
+            # Convert to response format based on view type
+            response_data = []
+            if query.filter.view == "minimal":
+                for state in states:
+                    state_id = str(state.get("_id"))
+                    # Convert ObjectIds in labels to strings
+                    labels = []
+                    for label in state.get("labels", []):
+                        if isinstance(label, dict):
+                            label_copy = label.copy()
+                            if "id" in label_copy and isinstance(label_copy["id"], ObjectId):
+                                label_copy["id"] = str(label_copy["id"])
+                            labels.append(label_copy)
+                    
+                    minimal_state = {
+                        "id": state_id,
+                        "name": state.get("name", ""),
+                        "tagLine": state.get("tagLine"),
+                        "labels": labels,
+                        "images": state.get("images")
+                    }
+                    response_data.append(StateMinimalResponse(**minimal_state))
+            else:
+                # For full view, use complete StateResponse
+                states = [self._convert_object_ids(s) for s in states]
+                for s in states:
+                    if s.get("_id") and not s.get("id"):
+                        s["id"] = s["_id"]
+                response_data = [StateResponse(**state) for state in states]
+            
+            # Calculate pagination metadata
+            if query.fetch_all:
+                # For fetch_all, return all data in single page
+                page = 1
+                total_pages = 1
+                has_next = False
+                has_prev = False
+                next_count = 0
+            else:
+                # Normal pagination
+                page = (skip // limit) + 1
+                total_pages = (total + limit - 1) // limit
+                has_next = (skip + limit) < total
+                has_prev = skip > 0
+                next_count = min(limit, total - (skip + limit)) if has_next else 0
+            
+            return StateQueryResponse(
+                states=response_data,
+                total=total,
+                page=page,
+                limit=limit,
+                total_pages=total_pages,
+                has_next=has_next,
+                has_prev=has_prev,
+                next_count=next_count
+            )
+        except Exception as e:
+            import traceback
+            error_detail = f"Internal server error: {str(e)}\nTraceback: {traceback.format_exc()}"
+            raise HTTPException(
+                status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+                detail=error_detail
+            )
