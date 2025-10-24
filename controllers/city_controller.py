@@ -1,9 +1,13 @@
 from typing import List, Optional
+import logging
 from bson import ObjectId
 from fastapi import HTTPException, status
 from database import get_database
 from models.city import CityModel
 from schemas.city import CityCreate, CityUpdate, CityResponse, CityListResponse
+from schemas.state import StateQueryRequest
+
+logger = logging.getLogger(__name__)
 
 
 def convert_objectids(obj):
@@ -310,3 +314,295 @@ class CityController:
         cities = await cursor.to_list(length=None)
         
         return [CityResponse(**city) for city in cities]
+
+    async def query_cities_new(self, query: StateQueryRequest) -> CityListResponse:
+        """
+        Flexible city query with comprehensive filter support.
+        Supports filtering by id, state_id, search, labels with tolerance for dict/string formats.
+        """
+        def _fget(obj, name, default=None):
+            """Helper to read attribute from Pydantic model or dict"""
+            if obj is None:
+                return default
+            if hasattr(obj, name):
+                return getattr(obj, name)
+            if isinstance(obj, dict):
+                return obj.get(name, default)
+            return default
+
+        try:
+            db = await get_database()
+            if db is None:
+                raise HTTPException(
+                    status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+                    detail="Failed to obtain database connection"
+                )
+            collection = db[self.collection_name]
+            states_collection = db["states"]
+            countries_collection = db["countries"] if "countries" in await db.list_collection_names() else None
+            regions_collection = db["regions"] if "regions" in await db.list_collection_names() else None
+            
+            # Build filter query
+            filter_query = {}
+            filter_obj = _fget(query, "filter", None)
+            
+            # Handle IDs filtering (filter.id may be present)
+            ids_val = _fget(filter_obj, "id", None)
+            if ids_val:
+                try:
+                    ids = list(ids_val)
+                except Exception:
+                    ids = None
+                if ids:
+                    if "t_all" in ids:
+                        # no-op: return all
+                        pass
+                    else:
+                        city_object_ids = []
+                        for cid in ids:
+                            # support dict items like {"id": "..."}
+                            cid_val = None
+                            if isinstance(cid, dict):
+                                cid_val = cid.get("id") or cid.get("_id")
+                            else:
+                                cid_val = cid
+                            if cid_val and ObjectId.is_valid(str(cid_val)):
+                                city_object_ids.append(ObjectId(str(cid_val)))
+                        if city_object_ids:
+                            filter_query["_id"] = {"$in": city_object_ids}
+                        else:
+                            # no valid ids -> empty result
+                            logger.info("No valid IDs provided in filter.id, returning empty result")
+                            return CityListResponse(
+                                cities=[], 
+                                total=0, 
+                                page=1, 
+                                size=_fget(query, "size", 10), 
+                                has_next=False, 
+                                has_prev=False
+                            )
+            
+            # Handle search (regex on name and tagLine)
+            search_val = _fget(filter_obj, "search", None)
+            if search_val:
+                filter_query["$or"] = [
+                    {"name": {"$regex": str(search_val), "$options": "i"}},
+                    {"tagLine": {"$regex": str(search_val), "$options": "i"}}
+                ]
+            
+            # Handle state_id filtering
+            state_id_val = _fget(filter_obj, "state_id", None)
+            if state_id_val:
+                try:
+                    state_ids = list(state_id_val)
+                except Exception:
+                    state_ids = [state_id_val]
+                state_object_ids = []
+                state_id_strs = []
+                for sid in state_ids:
+                    # support dict entries
+                    sid_val = sid.get("id") if isinstance(sid, dict) else sid
+                    if sid_val is None:
+                        continue
+                    if ObjectId.is_valid(str(sid_val)):
+                        state_object_ids.append(ObjectId(str(sid_val)))
+                        state_id_strs.append(str(sid_val))
+                    else:
+                        state_id_strs.append(str(sid_val))
+                if state_object_ids or state_id_strs:
+                    or_clauses = []
+                    if state_object_ids:
+                        or_clauses.append({"state_id": {"$in": state_object_ids}})
+                    if state_id_strs:
+                        or_clauses.append({"state_id": {"$in": state_id_strs}})
+                    if len(or_clauses) == 1:
+                        filter_query.update(or_clauses[0])
+                    else:
+                        filter_query["$or"] = filter_query.get("$or", []) + or_clauses
+            
+            # Handle labels filtering
+            labels_val = _fget(filter_obj, "labels", None)
+            if labels_val:
+                try:
+                    label_list = list(labels_val)
+                except Exception:
+                    label_list = [labels_val]
+                label_obj_ids = []
+                label_strs = []
+                for lid in label_list:
+                    lid_val = lid.get("id") if isinstance(lid, dict) else lid
+                    if lid_val is None:
+                        continue
+                    if ObjectId.is_valid(str(lid_val)):
+                        label_obj_ids.append(ObjectId(str(lid_val)))
+                        label_strs.append(str(lid_val))
+                    else:
+                        label_strs.append(str(lid_val))
+                if label_obj_ids or label_strs:
+                    label_filter_type = _fget(filter_obj, "label_filter_type", "any")
+                    if label_filter_type == "all":
+                        # All labels must match
+                        if label_obj_ids and label_strs:
+                            filter_query["$and"] = filter_query.get("$and", []) + [
+                                {"labels.id": {"$all": label_obj_ids}},
+                                {"labels.id": {"$all": label_strs}}
+                            ]
+                        elif label_obj_ids:
+                            filter_query["labels.id"] = {"$all": label_obj_ids}
+                        else:
+                            filter_query["labels.id"] = {"$all": label_strs}
+                    else:
+                        # Any label matches
+                        in_list = []
+                        if label_obj_ids:
+                            in_list.extend(label_obj_ids)
+                        if label_strs:
+                            in_list.extend(label_strs)
+                        filter_query["labels.id"] = {"$in": in_list}
+            
+            # Log the built filter
+            logger.info(f"City query filter: {filter_query}")
+            
+            # Diagnostic: total documents in collection (unfiltered)
+            total_all = await collection.count_documents({})
+            logger.info(f"Total documents in '{self.collection_name}' collection (unfiltered): {total_all}")
+            
+            # Get total count for current filter
+            total = await collection.count_documents(filter_query)
+            logger.info(f"City query total matched documents: {total}")
+            
+            # Handle pagination
+            if getattr(query, "fetch_all", False):
+                skip = 0
+                limit = total if total > 0 else 1
+            else:
+                skip = getattr(query, "offset", 0)
+                limit = getattr(query, "size", 10)
+            
+            if not limit or limit <= 0:
+                if getattr(query, "fetch_all", False):
+                    limit = total if total > 0 else 1
+                else:
+                    limit = 10
+            
+            # Projection based on view
+            projection = {}
+            view = _fget(filter_obj, "view", "full")
+            if view == "minimal":
+                projection = {"_id": 1, "name": 1, "state_id": 1, "tagLine": 1, "images": 1}
+            
+            logger.info(f"Using projection={projection}, skip={skip}, limit={limit}, view={view}")
+            
+            # Fetch documents
+            cursor = collection.find(filter_query, projection).skip(skip).limit(limit)
+            if getattr(query, "fetch_all", False):
+                cities = await cursor.to_list(length=None)
+            else:
+                cities = await cursor.to_list(length=limit)
+            
+            logger.info(f"Fetched {len(cities)} cities from DB (skip={skip}, limit={limit})")
+            
+            # Process and enrich documents
+            city_responses = []
+            for city in cities:
+                city = convert_objectids(city)
+                
+                # Enrich location names
+                if city.get("location") and isinstance(city["location"], list):
+                    for loc in city["location"]:
+                        # Country
+                        if loc.get("country") and loc["country"].get("id") and (loc["country"].get("name") is None) and countries_collection is not None:
+                            try:
+                                country_doc = await countries_collection.find_one({"_id": ObjectId(loc["country"]["id"])})
+                                if country_doc:
+                                    loc["country"]["name"] = country_doc.get("name")
+                            except Exception:
+                                pass
+                        # Region
+                        if loc.get("region") and loc["region"].get("id") and (loc["region"].get("name") is None) and regions_collection is not None:
+                            try:
+                                region_doc = await regions_collection.find_one({"_id": ObjectId(loc["region"]["id"])})
+                                if region_doc:
+                                    loc["region"]["name"] = region_doc.get("name")
+                            except Exception:
+                                pass
+                        # State
+                        if loc.get("state") and loc["state"].get("id") and (loc["state"].get("name") is None):
+                            try:
+                                state_doc = await states_collection.find_one({"_id": ObjectId(loc["state"]["id"])})
+                                if state_doc:
+                                    loc["state"]["name"] = state_doc.get("name")
+                            except Exception:
+                                pass
+                
+                # Extract required fields
+                city_id = str(city.get("_id")) if city.get("_id") else None
+                state_id_val = city.get("state_id")
+                if not state_id_val and city.get("location"):
+                    try:
+                        state_id_val = city["location"][0]["state"]["id"]
+                    except (KeyError, IndexError, TypeError):
+                        state_id_val = None
+                state_id_str = str(state_id_val) if state_id_val else None
+                name = city.get("name")
+                
+                # Fetch state name if needed
+                state_name = None
+                if state_id_str:
+                    try:
+                        state_doc = await states_collection.find_one({"_id": ObjectId(state_id_str)})
+                        if state_doc:
+                            state_name = state_doc.get("name")
+                    except Exception:
+                        pass
+                
+                # Build city response dict
+                city_response_dict = {
+                    "id": city_id,
+                    "name": name,
+                    "state_id": state_id_str,
+                    "is_active": city.get("is_active", True),
+                    "location": city.get("location"),
+                    "greetingText": city.get("greetingText"),
+                    "tagLine": city.get("tagLine"),
+                    "languages": city.get("languages"),
+                    "description": city.get("description"),
+                    "images": city.get("images"),
+                    "emergencyContacts": city.get("emergencyContacts"),
+                    "safetyInformation": city.get("safetyInformation"),
+                    "travelTips": city.get("travelTips"),
+                    "experiences": city.get("experiences"),
+                    "trending": city.get("trending")
+                }
+                
+                # Only require id and name (state_id is optional)
+                if not all([city_id, name]):
+                    continue
+                
+                city_responses.append(CityResponse(**city_response_dict))
+            
+            # Calculate pagination metadata
+            if limit > 0:
+                page = (skip // limit) + 1
+            else:
+                page = 1
+            has_next = (skip + limit) < total
+            has_prev = skip > 0
+            
+            return CityListResponse(
+                cities=city_responses,
+                total=total,
+                page=page,
+                size=limit,
+                has_next=has_next,
+                has_prev=has_prev
+            )
+        
+        except Exception as e:
+            import traceback
+            error_detail = f"Internal server error: {str(e)}\nTraceback: {traceback.format_exc()}"
+            logger.error(error_detail)
+            raise HTTPException(
+                status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+                detail=error_detail
+            )
