@@ -2,6 +2,7 @@ from fastapi import APIRouter, Depends, HTTPException, Query, status
 from typing import Optional, List
 from controllers.city_controller import CityController
 from schemas.city import CityCreate, CityUpdate, CityResponse, CityListResponse
+from schemas.state import StateQueryRequest
 
 router = APIRouter(prefix="/cities", tags=["Cities"])
 
@@ -84,3 +85,34 @@ async def get_cities_by_state(state_id: str):
     - **state_id**: State ID (required)
     """
     return await city_controller.get_cities_by_state(state_id)
+
+
+@router.post("/query", response_model=CityListResponse)
+async def query_cities(query: StateQueryRequest):
+    """
+    Flexible city query endpoint with comprehensive filter support.
+    
+    **Request Body Format:**
+    ```json
+    {
+      "filter": {
+        "view": "minimal",         // "minimal" | "full"
+        "id": ["t_all"],           // ["t_all"] for all cities OR ["<id1>", "<id2>", ...] for specific cities
+        "state_id": ["<state_id>"], // Optional: filter by state IDs
+        "search": "Mumbai",        // Optional: regex search on name and tagLine
+        "labels": ["<label_id>"],  // Optional: filter by labels
+        "label_filter_type": "any" // "any" | "all" - how to match labels
+      },
+      "offset": 0,                 // Starting index for pagination
+      "size": 10,                  // Number of items to return
+      "fetch_all": false           // Set to true to get all matching records
+    }
+    ```
+    
+    **Examples:**
+    - Get all cities (minimal view): `{"filter": {"view": "minimal", "id": ["t_all"]}, "fetch_all": true}`
+    - Paginated results: `{"filter": {"id": ["t_all"]}, "offset": 0, "size": 20}`
+    - Filter by state: `{"filter": {"state_id": ["<state_id>"]}, "offset": 0, "size": 10}`
+    - Search by name: `{"filter": {"search": "Mumbai"}, "offset": 0, "size": 10}`
+    """
+    return await city_controller.query_cities_new(query)

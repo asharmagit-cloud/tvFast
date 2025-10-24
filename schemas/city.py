@@ -67,7 +67,7 @@ class CityUpdate(BaseModel):
 class CityResponse(BaseModel):
     id: str = Field(..., alias="_id")
     name: str
-    state_id: str
+    state_id: Optional[str] = None
     is_active: bool = True
     location: Optional[List[LocationItem]] = None
     greetingText: Optional[str] = None
