@@ -3,7 +3,8 @@ from bson import ObjectId
 from fastapi import HTTPException, status
 from database import get_database
 from models.state import StateModel
-from schemas.state import StateCreate, StateUpdate, StateResponse, StateListResponse, StateQueryRequest, StateQueryRequestLegacy, StateMinimalResponse, StateQueryResponse
+from datetime import datetime
+from schemas.state import StateCreate, StateUpdate, StateResponse, StateListResponse, StateQueryRequest, StateMinimalResponse, StateQueryResponse
 
 
 class StateController:
@@ -142,6 +143,8 @@ class StateController:
     async def create_state(self, state_data: StateCreate) -> StateResponse:
         """Create a new state"""
         db = await get_database()
+        if db is None:
+            raise HTTPException(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail="Failed to obtain database connection")
         collection = db[self.collection_name]
         
         # Check if state with same code already exists
@@ -153,9 +156,9 @@ class StateController:
             )
         
         # Create state model
-        state_model = StateModel(**state_data.dict())
-        state_dict = state_model.dict(by_alias=True, exclude={"id"})
-        
+        state_model = StateModel(**state_data.model_dump())
+        state_dict = state_model.model_dump(by_alias=True, exclude={"id"})
+
         # Insert into database
         result = await collection.insert_one(state_dict)
         
@@ -169,6 +172,8 @@ class StateController:
     async def get_state_by_id(self, state_id: str) -> StateResponse:
         """Get state by ID"""
         db = await get_database()
+        if db is None:
+            raise HTTPException(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail="Failed to obtain database connection")
         collection = db[self.collection_name]
         
         if not ObjectId.is_valid(state_id):
@@ -206,6 +211,8 @@ class StateController:
     ) -> StateListResponse:
         """Get list of states with pagination and filtering"""
         db = await get_database()
+        if db is None:
+            raise HTTPException(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail="Failed to obtain database connection")
         collection = db[self.collection_name]
         
         # Build filter query
@@ -252,6 +259,8 @@ class StateController:
     async def update_state(self, state_id: str, state_data: StateUpdate) -> StateResponse:
         """Update state by ID"""
         db = await get_database()
+        if db is None:
+            raise HTTPException(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail="Failed to obtain database connection")
         collection = db[self.collection_name]
         
         if not ObjectId.is_valid(state_id):
@@ -281,10 +290,11 @@ class StateController:
                 )
         
         # Prepare update data
-        update_data = {k: v for k, v in state_data.dict().items() if v is not None}
+        update_data = {k: v for k, v in state_data.model_dump().items() if v is not None}
         if update_data:
-            update_data["updated_at"] = StateModel().updated_at
-        
+            # set updatedAt explicitly instead of instantiating StateModel without required fields
+            update_data["updatedAt"] = datetime.utcnow()
+
         # Update state
         await collection.update_one(
             {"_id": ObjectId(state_id)},
@@ -301,6 +311,8 @@ class StateController:
     async def delete_state(self, state_id: str) -> dict:
         """Delete state by ID"""
         db = await get_database()
+        if db is None:
+            raise HTTPException(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail="Failed to obtain database connection")
         collection = db[self.collection_name]
         
         if not ObjectId.is_valid(state_id):
@@ -334,6 +346,8 @@ class StateController:
     async def get_state_by_code(self, code: str) -> StateResponse:
         """Get state by code"""
         db = await get_database()
+        if db is None:
+            raise HTTPException(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail="Failed to obtain database connection")
         collection = db[self.collection_name]
         
         state = await collection.find_one({"code": code.upper()})
@@ -358,6 +372,8 @@ class StateController:
     async def get_all_states(self) -> List[StateResponse]:
         """Get all states from the collection without pagination"""
         db = await get_database()
+        if db is None:
+            raise HTTPException(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail="Failed to obtain database connection")
         collection = db[self.collection_name]
         
         cursor = collection.find({})
@@ -374,6 +390,8 @@ class StateController:
     async def get_states_page(self, skip: int, limit: int) -> List[StateResponse]:
         """Return a page (array) of states without metadata, for POST /all use case"""
         db = await get_database()
+        if db is None:
+            raise HTTPException(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail="Failed to obtain database connection")
         collection = db[self.collection_name]
         cursor = collection.find({}).skip(skip).limit(limit)
         states = await cursor.to_list(length=limit)
@@ -388,6 +406,8 @@ class StateController:
     async def query_states(self, query: StateQueryRequest) -> StateQueryResponse:
         """Flexible state query with templates, filtering, and pagination"""
         db = await get_database()
+        if db is None:
+            raise HTTPException(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail="Failed to obtain database connection")
         collection = db[self.collection_name]
         
         # Build filter query
@@ -411,17 +431,18 @@ class StateController:
         
         # Handle label filtering
         if query.labels:
-            label_object_ids = []
+            label_object_ids: List[ObjectId] = []
             for label_id in query.labels:
                 if ObjectId.is_valid(label_id):
                     label_object_ids.append(ObjectId(label_id))
-            
+
+
             if label_object_ids:
                 if query.label_filter_type == "all":
-                    filter_query["labels.id"] = {"$all": label_object_ids}
+                    filter_query["labels.id"] = {"$all": list(label_object_ids)}
                 else:  # "any" (OR logic)
-                    filter_query["labels.id"] = {"$in": label_object_ids}
-        
+                    filter_query["labels.id"] = {"$in": list(label_object_ids)}
+
         # Get total count
         total = await collection.count_documents(filter_query)
         
@@ -538,6 +559,8 @@ class StateController:
         """New flexible state query with filter object and from/size pagination"""
         try:
             db = await get_database()
+            if db is None:
+                raise HTTPException(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail="Failed to obtain database connection")
             collection = db[self.collection_name]
             
             # Build filter query
