@@ -1,0 +1,81 @@
+{
+  "_id": {
+    "$oid": "68e5e20021c4af9b4a754984"
+  },
+  "name": "Jorhat",
+  "location": [
+    {
+      "country": {
+        "id": {
+          "$oid": "68d7f24214fbfc2474738355"
+        }
+      },
+      "state": {
+        "id": {
+          "$oid": "68e285445b54d5e1bf69b1e1"
+        }
+      },
+      "region": {
+        "id": {
+          "$oid": "68d7f77c14fbfc2474738358"
+        }
+      }
+    }
+  ],
+  "greetingText": "Welcome to Jorhat!",
+  "tagLine": "Cultural Capital of Assam",
+  "description": {
+    "title": "Jorhat – The Cultural Heart of Assam",
+    "short": "Known as the cultural capital of Assam, famous for tea gardens, heritage sites, and vibrant festivals.",
+    "long": "Jorhat, often called the cultural capital of Assam, is known for its tea gardens, heritage sites, and vibrant festivals. Surrounded by lush plantations, it offers visitors a glimpse into Assam's tea culture. With historic satras nearby and Majuli within reach, Jorhat combines tradition, nature, and hospitality in equal measure.",
+    "history": "Jorhat was the last capital of the Ahom Kingdom and is known for its rich cultural heritage. It's a major center for tea production and Assamese culture.",
+    "overview": "A charming city where tea culture meets traditional heritage, offering authentic experiences of Assam's cultural richness."
+  },
+  "languages": [
+    "Assamese",
+    "Hindi",
+    "English"
+  ],
+  "images": {
+    "banner": "",
+    "card": "",
+    "others": []
+  },
+  "emergencyContacts": {
+    "Police": "100",
+    "Ambulance": "102",
+    "Fire": "101",
+    "Tourist Helpline": "1363",
+    "District Tourism": "0376-2320000"
+  },
+  "safetyInformation": [
+    "Be respectful when visiting tea gardens and satras.",
+    "Follow local customs during festivals.",
+    "Stay on designated paths in heritage areas."
+  ],
+  "travelTips": [
+    "Visit during Bihu festival for cultural experiences.",
+    "Take a tea garden tour to learn about tea production.",
+    "Explore nearby satras for spiritual insights."
+  ],
+  "experiences": {
+    "Food": [],
+    "Activities": [],
+    "LocalMarkets": [],
+    "Spiritual": [],
+    "Historical": [],
+    "Nature": [],
+    "Cultural": [],
+    "Adventure": [],
+    "Others": []
+  },
+  "trending": {
+    "places": []
+  },
+  "createdAt": {
+    "$date": "2025-01-10T04:01:04.008Z"
+  },
+  "updatedAt": {
+    "$date": "2025-01-10T04:01:04.008Z"
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "_id": {
+    "$oid": "68e5e20021c4af9b4a754989"
+  },
+  "name": "Haflong",
+  "location": [
+    {
+      "country": {
+        "id": {
+          "$oid": "68d7f24214fbfc2474738355"
+        }
+      },
+      "state": {
+        "id": {
+          "$oid": "68e285445b54d5e1bf69b1e1"
+        }
+      },
+      "region": {
+        "id": {
+          "$oid": "68d7f77c14fbfc2474738358"
+        }
+      }
+    }
+  ],
+  "greetingText": "Welcome to Haflong!",
+  "tagLine": "Assam's Only Hill Station",
+  "description": {
+    "title": "Haflong – The Hill Station of Assam",
+    "short": "Assam's only hill station, known for cool climate, blue hills, and peaceful lakes.",
+    "long": "Haflong, Assam's only hill station, is known for its cool climate, blue hills, and peaceful lakes. Surrounded by greenery and tribal culture, it offers trekking, birdwatching, and scenic drives. Its calm setting and unique charm make Haflong a refreshing break from the plains and a haven for nature lovers.",
+    "history": "Haflong is the headquarters of Dima Hasao district and is known for its unique hill station charm in the otherwise plains-dominated Assam.",
+    "overview": "A serene hill station offering cool climate and natural beauty, perfect for relaxation and nature exploration."
+  },
+  "languages": [
+    "Assamese",
+    "Dimasa",
+    "Hindi",
+    "English"
+  ],
+  "images": {
+    "banner": "",
+    "card": "",
+    "others": []
+  },
+  "emergencyContacts": {
+    "Police": "100",
+    "Ambulance": "102",
+    "Fire": "101",
+    "Tourist Helpline": "1363",
+    "District Tourism": "03673-222000"
+  },
+  "safetyInformation": [
+    "Be cautious on winding hill roads.",
+    "Respect tribal customs and traditions.",
+    "Follow guidelines during trekking and outdoor activities."
+  ],
+  "travelTips": [
+    "Carry warm clothing as temperatures can drop.",
+    "Visit during clear weather for best views.",
+    "Explore nearby tribal villages for cultural experiences."
+  ],
+  "experiences": {
+    "Food": [],
+    "Activities": [],
+    "LocalMarkets": [],
+    "Spiritual": [],
+    "Historical": [],
+    "Nature": [],
+    "Cultural": [],
+    "Adventure": [],
+    "Others": []
+  },
+  "trending": {
+    "places": []
+  },
+  "createdAt": {
+    "$date": "2025-01-10T04:01:04.008Z"
+  },
+  "updatedAt": {
+    "$date": "2025-01-10T04:01:04.008Z"
+  }
+}

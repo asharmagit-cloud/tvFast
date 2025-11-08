@@ -1,0 +1,46 @@
+[
+  {
+    "_id": { "$oid": "68e5e20021c4af9b4a7549ed" },
+    "name": "Puducherry",
+    "location": [
+      {
+        "country": { "id": { "$oid": "68d7f24214fbfc2474738355" } },
+        "state": { "id": { "$oid": "68e285a45b54d5e1bf69b1e4" } },
+        "region": { "id": { "$oid": "68d7f77c14fbfc2474738358" } }
+      }
+    ],
+    "greetingText": "Welcome to Puducherry!",
+    "tagLine": "French Riviera of the East",
+    "description": {
+      "title": "Puducherry – French Colonial Paradise",
+      "short": "Often called the 'French Riviera of the East' with colonial architecture and serene beaches.",
+      "long": "Puducherry, often called the 'French Riviera of the East,' is known for its colonial architecture, colorful streets, and serene beaches. With spiritual spaces like Auroville and Sri Aurobindo Ashram, it blends heritage with peace. Cafés, seaside promenades, and cultural charm make Puducherry a unique coastal getaway.",
+      "history": "Puducherry was a French colony for nearly 300 years until 1954, which explains its distinct French architecture, street names, and cultural influences. The city still retains its French colonial charm.",
+      "overview": "A unique blend of French colonial heritage, spiritual centers, and coastal beauty."
+    },
+    "languages": [ "Tamil", "French", "English", "Hindi" ],
+    "images": { "banner": "", "card": "", "others": [] },
+    "emergencyContacts": {
+      "Police": "100", "Ambulance": "102", "Fire": "101",
+      "Tourist Helpline": "1363", "State Tourism": "0413-2339497"
+    },
+    "safetyInformation": [
+      "Be cautious while walking on beaches, especially during high tide.",
+      "Respect the spiritual nature of Auroville and ashrams.",
+      "Follow local guidelines for heritage building visits."
+    ],
+    "travelTips": [
+      "Explore the French Quarter and colonial architecture.",
+      "Visit Auroville and Sri Aurobindo Ashram for spiritual experiences.",
+      "Enjoy café culture and seaside promenades.",
+      "Try French-influenced cuisine and local delicacies."
+    ],
+    "experiences": {
+      "Food": [], "Activities": [], "LocalMarkets": [], "Spiritual": [],
+      "Historical": [], "Nature": [], "Cultural": [], "Adventure": [], "Others": []
+    },
+    "trending": { "places": [] },
+    "createdAt": { "$date": "2025-10-08T04:01:04.008Z" },
+    "updatedAt": { "$date": "2025-10-08T04:01:04.008Z" }
+  }
+]

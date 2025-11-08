@@ -1,0 +1,266 @@
+[
+  {
+    "_id": { "$oid": "68e5e20021c4af9b4a7549ff" },
+    "name": "Agartala",
+    "location": [
+      {
+        "country": { "id": { "$oid": "68d7f24214fbfc2474738355" } },
+        "state": { "id": { "$oid": "68e286e15b54d5e1bf69b1f9" } },
+        "region": { "id": { "$oid": "68d7f77c14fbfc2474738358" } }
+      }
+    ],
+    "greetingText": "Welcome to Agartala!",
+    "tagLine": "Capital of Tripura",
+    "description": {
+      "title": "Agartala – Royal Capital of Tripura",
+      "short": "Capital of Tripura, known for the majestic Ujjayanta Palace, temples, and lively markets.",
+      "long": "Agartala, the capital of Tripura, is known for the majestic Ujjayanta Palace, temples, and lively markets. With lakes, gardens, and cultural depth, it blends royal heritage with modern life. Close to Bangladesh, Agartala offers travelers a unique mix of history, tradition, and cross-border charm.",
+      "history": "Agartala was the capital of the Manikya dynasty and is home to the magnificent Ujjayanta Palace, built by Maharaja Radha Kishore Manikya in 1901. The city has a rich royal heritage.",
+      "overview": "A royal capital with magnificent palaces, temples, and cultural heritage."
+    },
+    "languages": [ "Bengali", "Kokborok", "Hindi", "English" ],
+    "images": { "banner": "", "card": "", "others": [] },
+    "emergencyContacts": {
+      "Police": "100", "Ambulance": "102", "Fire": "101",
+      "Tourist Helpline": "1363", "State Tourism": "0381-2325931"
+    },
+    "safetyInformation": [
+      "Be respectful when visiting royal palaces and temples.",
+      "Follow guidelines for heritage building visits.",
+      "Respect local customs and traditions."
+    ],
+    "travelTips": [
+      "Visit the magnificent Ujjayanta Palace and museums.",
+      "Explore local temples and cultural sites.",
+      "Shop for traditional handicrafts and textiles.",
+      "Learn about Tripura's royal history and culture."
+    ],
+    "experiences": {
+      "Food": [], "Activities": [], "LocalMarkets": [], "Spiritual": [],
+      "Historical": [], "Nature": [], "Cultural": [], "Adventure": [], "Others": []
+    },
+    "trending": { "places": [] },
+    "createdAt": { "$date": "2025-10-08T04:01:04.008Z" },
+    "updatedAt": { "$date": "2025-10-08T04:01:04.008Z" }
+  },
+  {
+    "_id": { "$oid": "68e5e20021c4af9b4a754a00" },
+    "name": "Udaipur",
+    "location": [
+      {
+        "country": { "id": { "$oid": "68d7f24214fbfc2474738355" } },
+        "state": { "id": { "$oid": "68e286e15b54d5e1bf69b1f9" } },
+        "region": { "id": { "$oid": "68d7f77c14fbfc2474738358" } }
+      }
+    ],
+    "greetingText": "Welcome to Udaipur!",
+    "tagLine": "Lake City of Tripura",
+    "description": {
+      "title": "Udaipur – Sacred Lake City",
+      "short": "Often called the 'Lake City of Tripura,' famous for Tripura Sundari Temple.",
+      "long": "Udaipur, often called the 'Lake City of Tripura,' is famous for Tripura Sundari Temple, one of the state's most sacred shrines. Surrounded by lakes and greenery, it offers both spiritual calm and scenic charm. Udaipur is a peaceful cultural and natural stop for travelers.",
+      "history": "Udaipur is home to the Tripura Sundari Temple, one of the 51 Shakti Peethas in India. The temple is dedicated to Goddess Tripura Sundari and is a major pilgrimage site.",
+      "overview": "A sacred city with beautiful lakes, temples, and spiritual significance."
+    },
+    "languages": [ "Bengali", "Kokborok", "Hindi", "English" ],
+    "images": { "banner": "", "card": "", "others": [] },
+    "emergencyContacts": {
+      "Police": "100", "Ambulance": "102", "Fire": "101",
+      "Tourist Helpline": "1363", "State Tourism": "0381-2325931"
+    },
+    "safetyInformation": [
+      "Be respectful when visiting temples and sacred sites.",
+      "Follow guidelines for religious ceremonies.",
+      "Be careful around lakes and water bodies."
+    ],
+    "travelTips": [
+      "Visit the Tripura Sundari Temple and other sacred sites.",
+      "Enjoy the peaceful lakes and natural surroundings.",
+      "Learn about local religious traditions and culture.",
+      "Experience the spiritual atmosphere and community life."
+    ],
+    "experiences": {
+      "Food": [], "Activities": [], "LocalMarkets": [], "Spiritual": [],
+      "Historical": [], "Nature": [], "Cultural": [], "Adventure": [], "Others": []
+    },
+    "trending": { "places": [] },
+    "createdAt": { "$date": "2025-10-08T04:01:04.008Z" },
+    "updatedAt": { "$date": "2025-10-08T04:01:04.008Z" }
+  },
+  {
+    "_id": { "$oid": "68e5e20021c4af9b4a754a01" },
+    "name": "Ambassa",
+    "location": [
+      {
+        "country": { "id": { "$oid": "68d7f24214fbfc2474738355" } },
+        "state": { "id": { "$oid": "68e286e15b54d5e1bf69b1f9" } },
+        "region": { "id": { "$oid": "68d7f77c14fbfc2474738358" } }
+      }
+    ],
+    "greetingText": "Welcome to Ambassa!",
+    "tagLine": "Tribal Heart of Tripura",
+    "description": {
+      "title": "Ambassa – Tribal Cultural Center",
+      "short": "In the Dhalai district, surrounded by hills, forests, and tribal villages.",
+      "long": "Ambassa, in the Dhalai district, is surrounded by hills, forests, and tribal villages. Known for its cultural traditions and scenic charm, it reflects Tripura's rural beauty. With festivals, crafts, and nature nearby, Ambassa provides travelers with an authentic and offbeat experience.",
+      "history": "Ambassa is known for its rich tribal culture and traditions. The area is home to various indigenous communities who have preserved their unique customs and way of life.",
+      "overview": "A rural district known for tribal culture, traditional crafts, and natural beauty."
+    },
+    "languages": [ "Kokborok", "Bengali", "Hindi", "English" ],
+    "images": { "banner": "", "card": "", "others": [] },
+    "emergencyContacts": {
+      "Police": "100", "Ambulance": "102", "Fire": "101",
+      "Tourist Helpline": "1363", "State Tourism": "0381-2325931"
+    },
+    "safetyInformation": [
+      "Respect tribal customs and traditions.",
+      "Follow guidelines when visiting tribal villages.",
+      "Be mindful of the fragile ecosystem."
+    ],
+    "travelTips": [
+      "Learn about tribal culture and traditions.",
+      "Visit local villages and meet artisans.",
+      "Experience traditional festivals and crafts.",
+      "Explore the natural beauty and forests."
+    ],
+    "experiences": {
+      "Food": [], "Activities": [], "LocalMarkets": [], "Spiritual": [],
+      "Historical": [], "Nature": [], "Cultural": [], "Adventure": [], "Others": []
+    },
+    "trending": { "places": [] },
+    "createdAt": { "$date": "2025-10-08T04:01:04.008Z" },
+    "updatedAt": { "$date": "2025-10-08T04:01:04.008Z" }
+  },
+  {
+    "_id": { "$oid": "68e5e20021c4af9b4a754a02" },
+    "name": "Kailashahar",
+    "location": [
+      {
+        "country": { "id": { "$oid": "68d7f24214fbfc2474738355" } },
+        "state": { "id": { "$oid": "68e286e15b54d5e1bf69b1f9" } },
+        "region": { "id": { "$oid": "68d7f77c14fbfc2474738358" } }
+      }
+    ],
+    "greetingText": "Welcome to Kailashahar!",
+    "tagLine": "Tea Garden Paradise",
+    "description": {
+      "title": "Kailashahar – Royal Tea City",
+      "short": "Once the capital of the Manikya kings, known for tea gardens, temples, and history.",
+      "long": "Kailashahar, once the capital of the Manikya kings, is known for its tea gardens, temples, and history. Surrounded by hills and rivers, it blends heritage with natural beauty. Quiet and green, Kailashahar is a rewarding destination for culture and relaxation.",
+      "history": "Kailashahar was the capital of the Manikya dynasty before Agartala. The city is known for its tea gardens and has a rich royal heritage.",
+      "overview": "A historic city with tea gardens, temples, and royal heritage."
+    },
+    "languages": [ "Bengali", "Kokborok", "Hindi", "English" ],
+    "images": { "banner": "", "card": "", "others": [] },
+    "emergencyContacts": {
+      "Police": "100", "Ambulance": "102", "Fire": "101",
+      "Tourist Helpline": "1363", "State Tourism": "0381-2325931"
+    },
+    "safetyInformation": [
+      "Be careful while exploring tea gardens.",
+      "Follow guidelines for heritage site visits.",
+      "Respect local customs and traditions."
+    ],
+    "travelTips": [
+      "Visit tea gardens and learn about tea cultivation.",
+      "Explore local temples and historic sites.",
+      "Enjoy the peaceful and green environment.",
+      "Learn about the royal history and culture."
+    ],
+    "experiences": {
+      "Food": [], "Activities": [], "LocalMarkets": [], "Spiritual": [],
+      "Historical": [], "Nature": [], "Cultural": [], "Adventure": [], "Others": []
+    },
+    "trending": { "places": [] },
+    "createdAt": { "$date": "2025-10-08T04:01:04.008Z" },
+    "updatedAt": { "$date": "2025-10-08T04:01:04.008Z" }
+  },
+  {
+    "_id": { "$oid": "68e5e20021c4af9b4a754a03" },
+    "name": "Dharmanagar",
+    "location": [
+      {
+        "country": { "id": { "$oid": "68d7f24214fbfc2474738355" } },
+        "state": { "id": { "$oid": "68e286e15b54d5e1bf69b1f9" } },
+        "region": { "id": { "$oid": "68d7f77c14fbfc2474738358" } }
+      }
+    ],
+    "greetingText": "Welcome to Dharmanagar!",
+    "tagLine": "Cultural Gateway to Tripura",
+    "description": {
+      "title": "Dharmanagar – Cultural Heritage City",
+      "short": "A lively town with historic sites, temples, and natural escapes.",
+      "long": "Dharmanagar is a lively town with historic sites, temples, and natural escapes. Close to Unakoti's famous rock carvings, it serves as a cultural gateway. With scenic surroundings and a vibrant local spirit, Dharmanagar offers travelers both heritage and adventure.",
+      "history": "Dharmanagar is known for its proximity to Unakoti, a famous archaeological site with rock carvings dating back to the 7th-9th centuries. The town has a rich cultural heritage.",
+      "overview": "A cultural hub with historic sites, temples, and access to archaeological wonders."
+    },
+    "languages": [ "Bengali", "Kokborok", "Hindi", "English" ],
+    "images": { "banner": "", "card": "", "others": [] },
+    "emergencyContacts": {
+      "Police": "100", "Ambulance": "102", "Fire": "101",
+      "Tourist Helpline": "1363", "State Tourism": "0381-2325931"
+    },
+    "safetyInformation": [
+      "Be careful while exploring archaeological sites.",
+      "Follow guidelines for heritage site visits.",
+      "Respect local customs and traditions."
+    ],
+    "travelTips": [
+      "Visit Unakoti and its famous rock carvings.",
+      "Explore local temples and historic sites.",
+      "Enjoy the scenic surroundings and natural beauty.",
+      "Learn about the archaeological significance of the area."
+    ],
+    "experiences": {
+      "Food": [], "Activities": [], "LocalMarkets": [], "Spiritual": [],
+      "Historical": [], "Nature": [], "Cultural": [], "Adventure": [], "Others": []
+    },
+    "trending": { "places": [] },
+    "createdAt": { "$date": "2025-10-08T04:01:04.008Z" },
+    "updatedAt": { "$date": "2025-10-08T04:01:04.008Z" }
+  },
+  {
+    "_id": { "$oid": "68e5e20021c4af9b4a754a04" },
+    "name": "Belonia",
+    "location": [
+      {
+        "country": { "id": { "$oid": "68d7f24214fbfc2474738355" } },
+        "state": { "id": { "$oid": "68e286e15b54d5e1bf69b1f9" } },
+        "region": { "id": { "$oid": "68d7f77c14fbfc2474738358" } }
+      }
+    ],
+    "greetingText": "Welcome to Belonia!",
+    "tagLine": "Peaceful Border Town",
+    "description": {
+      "title": "Belonia – Tranquil Border Town",
+      "short": "In southern Tripura, known for peaceful landscapes and cultural charm.",
+      "long": "Belonia, in southern Tripura, is known for its peaceful landscapes and cultural charm. Close to the India-Bangladesh border, it reflects cross-cultural connections. With lakes, temples, and a quiet pace, Belonia offers travelers a simple and authentic experience.",
+      "history": "Belonia is located close to the India-Bangladesh border and has a unique cultural blend due to its proximity to both countries. The town is known for its peaceful atmosphere.",
+      "overview": "A peaceful border town with cultural diversity and natural beauty."
+    },
+    "languages": [ "Bengali", "Kokborok", "Hindi", "English" ],
+    "images": { "banner": "", "card": "", "others": [] },
+    "emergencyContacts": {
+      "Police": "100", "Ambulance": "102", "Fire": "101",
+      "Tourist Helpline": "1363", "State Tourism": "0381-2325931"
+    },
+    "safetyInformation": [
+      "Be mindful of border regulations and guidelines.",
+      "Respect local customs and traditions.",
+      "Follow safety guidelines for border areas."
+    ],
+    "travelTips": [
+      "Experience the peaceful and quiet atmosphere.",
+      "Visit local temples and cultural sites.",
+      "Learn about cross-cultural connections and history.",
+      "Enjoy the simple and authentic local life."
+    ],
+    "experiences": {
+      "Food": [], "Activities": [], "LocalMarkets": [], "Spiritual": [],
+      "Historical": [], "Nature": [], "Cultural": [], "Adventure": [], "Others": []
+    },
+    "trending": { "places": [] },
+    "createdAt": { "$date": "2025-10-08T04:01:04.008Z" },
+    "updatedAt": { "$date": "2025-10-08T04:01:04.008Z" }
+  }
+]

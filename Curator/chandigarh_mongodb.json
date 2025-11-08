@@ -1,0 +1,83 @@
+[
+  {
+    "_id": {
+      "$oid": "68e5e20021c4af9b4a754998"
+    },
+    "name": "Chandigarh",
+    "location": [
+      {
+        "country": {
+          "id": {
+            "$oid": "68d7f24214fbfc2474738355"
+          }
+        },
+        "state": {
+          "id": {
+            "$oid": "68e285515b54d5e1bf69b1e3"
+          }
+        },
+        "region": {
+          "id": {
+            "$oid": "68d7f77c14fbfc2474738358"
+          }
+        }
+      }
+    ],
+    "greetingText": "Welcome to Chandigarh!",
+    "tagLine": "India's First Planned City",
+    "description": {
+      "title": "Chandigarh – The City Beautiful",
+      "short": "India's first planned city, admired for its modern architecture, wide avenues, and green spaces designed by Le Corbusier.",
+      "long": "Chandigarh, India's first planned city, is admired for its modern architecture, wide avenues, and green spaces. Designed by Le Corbusier, it blends urban style with natural charm. From the Rock Garden and Sukhna Lake to lively shopping hubs, Chandigarh offers travelers a clean, organized, and refreshing city experience.",
+      "history": "Chandigarh was designed by Swiss-French architect Le Corbusier in the 1950s as the capital of Punjab and Haryana. It's known for its modernist architecture and urban planning.",
+      "overview": "A modern city where architectural brilliance meets natural beauty, offering a unique urban experience in India."
+    },
+    "languages": [
+      "Hindi",
+      "English",
+      "Punjabi"
+    ],
+    "images": {
+      "banner": "",
+      "card": "",
+      "others": []
+    },
+    "emergencyContacts": {
+      "Police": "100",
+      "Ambulance": "102",
+      "Fire": "101",
+      "Tourist Helpline": "1363",
+      "UT Tourism": "0172-2700000"
+    },
+    "safetyInformation": [
+      "Follow traffic rules as the city has well-planned road systems.",
+      "Respect the clean and organized nature of the city.",
+      "Be mindful of designated areas for different activities."
+    ],
+    "travelTips": [
+      "Visit the Rock Garden for unique art installations.",
+      "Enjoy boating at Sukhna Lake.",
+      "Explore the Capitol Complex designed by Le Corbusier."
+    ],
+    "experiences": {
+      "Food": [],
+      "Activities": [],
+      "LocalMarkets": [],
+      "Spiritual": [],
+      "Historical": [],
+      "Nature": [],
+      "Cultural": [],
+      "Adventure": [],
+      "Others": []
+    },
+    "trending": {
+      "places": []
+    },
+    "createdAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    },
+    "updatedAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    }
+  }
+]

@@ -1,0 +1,82 @@
+{
+  "_id": {
+    "$oid": "68e5e20021c4af9b4a754982"
+  },
+  "name": "Guwahati",
+  "location": [
+    {
+      "country": {
+        "id": {
+          "$oid": "68d7f24214fbfc2474738355"
+        }
+      },
+      "state": {
+        "id": {
+          "$oid": "68e285445b54d5e1bf69b1e1"
+        }
+      },
+      "region": {
+        "id": {
+          "$oid": "68d7f77c14fbfc2474738358"
+        }
+      }
+    }
+  ],
+  "greetingText": "Welcome to Guwahati!",
+  "tagLine": "Gateway to Northeast India",
+  "description": {
+    "title": "Guwahati – The Cultural Capital of Assam",
+    "short": "Assam's largest city, a vibrant mix of tradition and modern life by the Brahmaputra River.",
+    "long": "Guwahati, Assam's largest city, is a vibrant mix of tradition and modern life. Set by the Brahmaputra River, it's known for the Kamakhya Temple, river cruises, and lively markets. With nearby wildlife sanctuaries and cultural spots, Guwahati is both a spiritual hub and a lively gateway to the Northeast.",
+    "history": "Guwahati has been a significant city since ancient times, serving as the capital of various kingdoms. It's home to the sacred Kamakhya Temple, one of the most important Shakti Peethas in India.",
+    "overview": "A bustling city where ancient temples meet modern development, offering spiritual experiences and urban conveniences."
+  },
+  "languages": [
+    "Assamese",
+    "Hindi",
+    "English",
+    "Bengali"
+  ],
+  "images": {
+    "banner": "",
+    "card": "",
+    "others": []
+  },
+  "emergencyContacts": {
+    "Police": "100",
+    "Ambulance": "102",
+    "Fire": "101",
+    "Tourist Helpline": "1363",
+    "State Tourism": "0361-2547102"
+  },
+  "safetyInformation": [
+    "Be cautious near the Brahmaputra River during monsoon.",
+    "Respect temple customs and dress codes.",
+    "Avoid isolated areas after dark."
+  ],
+  "travelTips": [
+    "Visit Kamakhya Temple early morning to avoid crowds.",
+    "Take a Brahmaputra river cruise for scenic views.",
+    "Explore the local markets for traditional handicrafts."
+  ],
+  "experiences": {
+    "Food": [],
+    "Activities": [],
+    "LocalMarkets": [],
+    "Spiritual": [],
+    "Historical": [],
+    "Nature": [],
+    "Cultural": [],
+    "Adventure": [],
+    "Others": []
+  },
+  "trending": {
+    "places": []
+  },
+  "createdAt": {
+    "$date": "2025-01-10T04:01:04.008Z"
+  },
+  "updatedAt": {
+    "$date": "2025-01-10T04:01:04.008Z"
+  }
+}

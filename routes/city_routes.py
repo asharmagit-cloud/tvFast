@@ -1,7 +1,8 @@
-from fastapi import APIRouter, Depends, HTTPException, Query, status
+from fastapi import APIRouter, Query, status
 from typing import Optional, List
 from controllers.city_controller import CityController
 from schemas.city import CityCreate, CityUpdate, CityResponse, CityListResponse
+from schemas.state import StateQueryRequest
 
 router = APIRouter(prefix="/cities", tags=["Cities"])
 
@@ -84,3 +85,13 @@ async def get_cities_by_state(state_id: str):
     - **state_id**: State ID (required)
     """
     return await city_controller.get_cities_by_state(state_id)
+
+
+@router.post("/query", response_model=CityListResponse)
+async def query_cities(query: StateQueryRequest):
+    """
+    Flexible city query endpoint (filter-based) reusing the same request shape as states.
+
+    Accepts a JSON body with `filter`, `offset`, `size`, and `fetch_all` fields (see docs/state-query.md).
+    """
+    return await city_controller.query_cities_new(query)

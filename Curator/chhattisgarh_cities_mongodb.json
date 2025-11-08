@@ -1,0 +1,570 @@
+[
+  {
+    "_id": {
+      "$oid": "68e5e20021c4af9b4a754999"
+    },
+    "name": "Raipur",
+    "location": [
+      {
+        "country": {
+          "id": {
+            "$oid": "68d7f24214fbfc2474738355"
+          }
+        },
+        "state": {
+          "id": {
+            "$oid": "68e285f85b54d5e1bf69b1e7"
+          }
+        },
+        "region": {
+          "id": {
+            "$oid": "68d7f77c14fbfc2474738358"
+          }
+        }
+      }
+    ],
+    "greetingText": "Welcome to Raipur!",
+    "tagLine": "Capital of Chhattisgarh",
+    "description": {
+      "title": "Raipur – The Growing Capital City",
+      "short": "The capital of Chhattisgarh, a growing city known for its lakes, temples, and bustling markets.",
+      "long": "Raipur, the capital of Chhattisgarh, is a growing city known for its lakes, temples, and bustling markets. The Mahant Ghasidas Museum highlights regional heritage, while Nandan Van Zoo and nearby natural spots add charm. Blending tradition with modern development, Raipur serves as both a cultural hub and a convenient base.",
+      "history": "Raipur has been an important city in central India for centuries and became the capital of Chhattisgarh when the state was formed in 2000.",
+      "overview": "A dynamic city where traditional heritage meets modern development, offering a perfect blend of culture and convenience."
+    },
+    "languages": [
+      "Hindi",
+      "English",
+      "Chhattisgarhi"
+    ],
+    "images": {
+      "banner": "",
+      "card": "",
+      "others": []
+    },
+    "emergencyContacts": {
+      "Police": "100",
+      "Ambulance": "102",
+      "Fire": "101",
+      "Tourist Helpline": "1363",
+      "State Tourism": "0771-2220000"
+    },
+    "safetyInformation": [
+      "Be cautious near water bodies and lakes.",
+      "Respect local customs and traditions.",
+      "Follow guidelines when visiting temples and markets."
+    ],
+    "travelTips": [
+      "Visit the Mahant Ghasidas Museum for regional heritage.",
+      "Explore Nandan Van Zoo for wildlife experiences.",
+      "Shop at local markets for traditional handicrafts."
+    ],
+    "experiences": {
+      "Food": [],
+      "Activities": [],
+      "LocalMarkets": [],
+      "Spiritual": [],
+      "Historical": [],
+      "Nature": [],
+      "Cultural": [],
+      "Adventure": [],
+      "Others": []
+    },
+    "trending": {
+      "places": []
+    },
+    "createdAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    },
+    "updatedAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "68e5e20021c4af9b4a75499a"
+    },
+    "name": "Jagdalpur",
+    "location": [
+      {
+        "country": {
+          "id": {
+            "$oid": "68d7f24214fbfc2474738355"
+          }
+        },
+        "state": {
+          "id": {
+            "$oid": "68e285f85b54d5e1bf69b1e7"
+          }
+        },
+        "region": {
+          "id": {
+            "$oid": "68d7f77c14fbfc2474738358"
+          }
+        }
+      }
+    ],
+    "greetingText": "Welcome to Jagdalpur!",
+    "tagLine": "Gateway to Tribal Culture and Natural Wonders",
+    "description": {
+      "title": "Jagdalpur – The Tribal Gateway",
+      "short": "A gateway to Chhattisgarh's tribal culture and natural wonders, famous for Chitrakote Falls, the 'Niagara of India.'",
+      "long": "Jagdalpur is a gateway to Chhattisgarh's tribal culture and natural wonders. Surrounded by forests, it is famous for Chitrakote Falls, often called the 'Niagara of India.' Local crafts, palaces, and lively festivals showcase the region's traditions. For travelers seeking raw beauty and cultural depth, Jagdalpur is an unforgettable destination.",
+      "history": "Jagdalpur has been an important center for tribal culture and was once the capital of the Bastar kingdom. It's known for its rich tribal heritage and natural beauty.",
+      "overview": "A cultural hub where tribal traditions meet natural splendor, offering authentic experiences of Chhattisgarh's heritage."
+    },
+    "languages": [
+      "Hindi",
+      "English",
+      "Gondi",
+      "Halbi"
+    ],
+    "images": {
+      "banner": "",
+      "card": "",
+      "others": []
+    },
+    "emergencyContacts": {
+      "Police": "100",
+      "Ambulance": "102",
+      "Fire": "101",
+      "Tourist Helpline": "1363",
+      "District Tourism": "07782-222000"
+    },
+    "safetyInformation": [
+      "Be cautious near waterfalls and forest areas.",
+      "Respect tribal customs and traditions.",
+      "Follow guidelines when visiting tribal villages."
+    ],
+    "travelTips": [
+      "Visit Chitrakote Falls during monsoon for the best view.",
+      "Explore local tribal crafts and handicrafts.",
+      "Attend tribal festivals for cultural experiences."
+    ],
+    "experiences": {
+      "Food": [],
+      "Activities": [],
+      "LocalMarkets": [],
+      "Spiritual": [],
+      "Historical": [],
+      "Nature": [],
+      "Cultural": [],
+      "Adventure": [],
+      "Others": []
+    },
+    "trending": {
+      "places": []
+    },
+    "createdAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    },
+    "updatedAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "68e5e20021c4af9b4a75499b"
+    },
+    "name": "Bilaspur",
+    "location": [
+      {
+        "country": {
+          "id": {
+            "$oid": "68d7f24214fbfc2474738355"
+          }
+        },
+        "state": {
+          "id": {
+            "$oid": "68e285f85b54d5e1bf69b1e7"
+          }
+        },
+        "region": {
+          "id": {
+            "$oid": "68d7f77c14fbfc2474738358"
+          }
+        }
+      }
+    ],
+    "greetingText": "Welcome to Bilaspur!",
+    "tagLine": "Judicial Capital of Chhattisgarh",
+    "description": {
+      "title": "Bilaspur – The Judicial Capital",
+      "short": "Known as the 'Judicial Capital of Chhattisgarh,' famous for aromatic Doobraj rice and kosha silk.",
+      "long": "Bilaspur, known as the 'Judicial Capital of Chhattisgarh,' is also famous for its aromatic Doobraj rice and kosha silk. With ancient temples, wildlife sanctuaries, and a growing urban vibe, it offers a balanced experience. Travelers find Bilaspur both a cultural center and a gateway to the state's natural attractions.",
+      "history": "Bilaspur has been an important administrative and cultural center in central India, known for its rice cultivation and silk production.",
+      "overview": "A balanced city where cultural heritage meets natural beauty, offering authentic experiences of Chhattisgarh's traditions."
+    },
+    "languages": [
+      "Hindi",
+      "English",
+      "Chhattisgarhi"
+    ],
+    "images": {
+      "banner": "",
+      "card": "",
+      "others": []
+    },
+    "emergencyContacts": {
+      "Police": "100",
+      "Ambulance": "102",
+      "Fire": "101",
+      "Tourist Helpline": "1363",
+      "District Tourism": "07752-222000"
+    },
+    "safetyInformation": [
+      "Be cautious near wildlife sanctuaries.",
+      "Respect local agricultural practices.",
+      "Follow guidelines when visiting temples."
+    ],
+    "travelTips": [
+      "Try the famous Doobraj rice varieties.",
+      "Shop for authentic kosha silk products.",
+      "Visit nearby wildlife sanctuaries for nature experiences."
+    ],
+    "experiences": {
+      "Food": [],
+      "Activities": [],
+      "LocalMarkets": [],
+      "Spiritual": [],
+      "Historical": [],
+      "Nature": [],
+      "Cultural": [],
+      "Adventure": [],
+      "Others": []
+    },
+    "trending": {
+      "places": []
+    },
+    "createdAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    },
+    "updatedAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "68e5e20021c4af9b4a75499c"
+    },
+    "name": "Korba",
+    "location": [
+      {
+        "country": {
+          "id": {
+            "$oid": "68d7f24214fbfc2474738355"
+          }
+        },
+        "state": {
+          "id": {
+            "$oid": "68e285f85b54d5e1bf69b1e7"
+          }
+        },
+        "region": {
+          "id": {
+            "$oid": "68d7f77c14fbfc2474738358"
+          }
+        }
+      }
+    ],
+    "greetingText": "Welcome to Korba!",
+    "tagLine": "Industrial Town with Natural Beauty",
+    "description": {
+      "title": "Korba – Industry Meets Nature",
+      "short": "An industrial town surrounded by scenic hills, rivers, and forests, known for power plants and natural escapes.",
+      "long": "Korba is an industrial town surrounded by scenic hills, rivers, and forests. Known for power plants, it also offers natural escapes like Hasdeo River, Kanki Waterfall, and nearby wildlife reserves. With its mix of industry and greenery, Korba gives visitors a glimpse of Chhattisgarh's progress alongside its raw landscapes.",
+      "history": "Korba has developed as an important industrial center, particularly known for its power generation facilities, while maintaining its natural beauty.",
+      "overview": "A unique city where industrial development coexists with natural beauty, offering diverse experiences for visitors."
+    },
+    "languages": [
+      "Hindi",
+      "English",
+      "Chhattisgarhi"
+    ],
+    "images": {
+      "banner": "",
+      "card": "",
+      "others": []
+    },
+    "emergencyContacts": {
+      "Police": "100",
+      "Ambulance": "102",
+      "Fire": "101",
+      "Tourist Helpline": "1363",
+      "District Tourism": "07759-222000"
+    },
+    "safetyInformation": [
+      "Be cautious near industrial areas and power plants.",
+      "Follow safety guidelines at waterfalls and rivers.",
+      "Respect local environmental regulations."
+    ],
+    "travelTips": [
+      "Visit Kanki Waterfall for scenic beauty.",
+      "Explore the Hasdeo River for nature experiences.",
+      "Check out nearby wildlife reserves."
+    ],
+    "experiences": {
+      "Food": [],
+      "Activities": [],
+      "LocalMarkets": [],
+      "Spiritual": [],
+      "Historical": [],
+      "Nature": [],
+      "Cultural": [],
+      "Adventure": [],
+      "Others": []
+    },
+    "trending": {
+      "places": []
+    },
+    "createdAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    },
+    "updatedAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "68e5e20021c4af9b4a75499d"
+    },
+    "name": "Durg",
+    "location": [
+      {
+        "country": {
+          "id": {
+            "$oid": "68d7f24214fbfc2474738355"
+          }
+        },
+        "state": {
+          "id": {
+            "$oid": "68e285f85b54d5e1bf69b1e7"
+          }
+        },
+        "region": {
+          "id": {
+            "$oid": "68d7f77c14fbfc2474738358"
+          }
+        }
+      }
+    ],
+    "greetingText": "Welcome to Durg!",
+    "tagLine": "Twin City with Industrial Heritage",
+    "description": {
+      "title": "Durg – The Twin City",
+      "short": "Part of the twin city with Bhilai, combines history with modern life, known for temples, forts, and friendly charm.",
+      "long": "Durg, part of the twin city with Bhilai, combines history with modern life. The city is known for temples, forts, and its friendly charm. Close to Bhilai Steel Plant, it reflects industrial growth, while nearby green escapes and cultural sites make Durg an interesting stop in central Chhattisgarh.",
+      "history": "Durg has been an important historical city and is now part of the Durg-Bhilai urban agglomeration, known for its industrial development.",
+      "overview": "A historic city where ancient heritage meets industrial progress, offering a unique blend of culture and development."
+    },
+    "languages": [
+      "Hindi",
+      "English",
+      "Chhattisgarhi"
+    ],
+    "images": {
+      "banner": "",
+      "card": "",
+      "others": []
+    },
+    "emergencyContacts": {
+      "Police": "100",
+      "Ambulance": "102",
+      "Fire": "101",
+      "Tourist Helpline": "1363",
+      "District Tourism": "0788-2220000"
+    },
+    "safetyInformation": [
+      "Be cautious near industrial areas.",
+      "Respect local customs and traditions.",
+      "Follow guidelines when visiting historical sites."
+    ],
+    "travelTips": [
+      "Explore the ancient temples and forts.",
+      "Visit nearby green escapes for nature experiences.",
+      "Learn about the industrial heritage of the region."
+    ],
+    "experiences": {
+      "Food": [],
+      "Activities": [],
+      "LocalMarkets": [],
+      "Spiritual": [],
+      "Historical": [],
+      "Nature": [],
+      "Cultural": [],
+      "Adventure": [],
+      "Others": []
+    },
+    "trending": {
+      "places": []
+    },
+    "createdAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    },
+    "updatedAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "68e5e20021c4af9b4a75499e"
+    },
+    "name": "Ambikapur",
+    "location": [
+      {
+        "country": {
+          "id": {
+            "$oid": "68d7f24214fbfc2474738355"
+          }
+        },
+        "state": {
+          "id": {
+            "$oid": "68e285f85b54d5e1bf69b1e7"
+          }
+        },
+        "region": {
+          "id": {
+            "$oid": "68d7f77c14fbfc2474738358"
+          }
+        }
+      }
+    ],
+    "greetingText": "Welcome to Ambikapur!",
+    "tagLine": "Clean City with Tribal Heritage",
+    "description": {
+      "title": "Ambikapur – The Clean Heritage City",
+      "short": "One of Chhattisgarh's oldest towns, surrounded by hills, waterfalls, and caves, known for cleanliness and tribal heritage.",
+      "long": "Ambikapur, one of Chhattisgarh's oldest towns, is surrounded by hills, waterfalls, and caves. Known for its cleanliness and tribal heritage, it offers natural beauty at places like Tiger Falls and Jogimara Caves. The town's calm setting and cultural richness make it a rewarding stop for travelers seeking offbeat experiences.",
+      "history": "Ambikapur is one of the oldest towns in Chhattisgarh, known for its tribal heritage and natural beauty. It's famous for its cleanliness initiatives.",
+      "overview": "A peaceful town where natural beauty meets cultural heritage, offering authentic offbeat experiences."
+    },
+    "languages": [
+      "Hindi",
+      "English",
+      "Chhattisgarhi"
+    ],
+    "images": {
+      "banner": "",
+      "card": "",
+      "others": []
+    },
+    "emergencyContacts": {
+      "Police": "100",
+      "Ambulance": "102",
+      "Fire": "101",
+      "Tourist Helpline": "1363",
+      "District Tourism": "07774-222000"
+    },
+    "safetyInformation": [
+      "Be cautious near waterfalls and caves.",
+      "Respect tribal customs and traditions.",
+      "Follow guidelines when exploring natural areas."
+    ],
+    "travelTips": [
+      "Visit Tiger Falls for scenic beauty.",
+      "Explore Jogimara Caves for adventure.",
+      "Experience the local tribal culture and traditions."
+    ],
+    "experiences": {
+      "Food": [],
+      "Activities": [],
+      "LocalMarkets": [],
+      "Spiritual": [],
+      "Historical": [],
+      "Nature": [],
+      "Cultural": [],
+      "Adventure": [],
+      "Others": []
+    },
+    "trending": {
+      "places": []
+    },
+    "createdAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    },
+    "updatedAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "68e5e20021c4af9b4a75499f"
+    },
+    "name": "Kawardha",
+    "location": [
+      {
+        "country": {
+          "id": {
+            "$oid": "68d7f24214fbfc2474738355"
+          }
+        },
+        "state": {
+          "id": {
+            "$oid": "68e285f85b54d5e1bf69b1e7"
+          }
+        },
+        "region": {
+          "id": {
+            "$oid": "68d7f77c14fbfc2474738358"
+          }
+        }
+      }
+    ],
+    "greetingText": "Welcome to Kawardha!",
+    "tagLine": "Royal Heritage at Maikal Hills",
+    "description": {
+      "title": "Kawardha – The Royal Town",
+      "short": "A quiet town nestled at the edge of the Maikal Hills, known for its royal palace, ancient temples, and proximity to Kanha National Park.",
+      "long": "Kawardha is a quiet town nestled at the edge of the Maikal Hills. Known for its royal palace, ancient temples, and proximity to Kanha National Park, it offers a mix of history and nature. Kawardha is ideal for travelers looking for heritage, wildlife, and serene countryside experiences.",
+      "history": "Kawardha has a rich royal heritage and is known for its palace and ancient temples. It's strategically located near Kanha National Park.",
+      "overview": "A serene town where royal heritage meets natural beauty, offering peaceful experiences in the countryside."
+    },
+    "languages": [
+      "Hindi",
+      "English",
+      "Chhattisgarhi"
+    ],
+    "images": {
+      "banner": "",
+      "card": "",
+      "others": []
+    },
+    "emergencyContacts": {
+      "Police": "100",
+      "Ambulance": "102",
+      "Fire": "101",
+      "Tourist Helpline": "1363",
+      "District Tourism": "07773-222000"
+    },
+    "safetyInformation": [
+      "Be cautious near wildlife areas and Kanha National Park.",
+      "Respect local customs and traditions.",
+      "Follow guidelines when visiting royal heritage sites."
+    ],
+    "travelTips": [
+      "Visit the royal palace for heritage experiences.",
+      "Explore ancient temples for spiritual insights.",
+      "Plan a visit to nearby Kanha National Park."
+    ],
+    "experiences": {
+      "Food": [],
+      "Activities": [],
+      "LocalMarkets": [],
+      "Spiritual": [],
+      "Historical": [],
+      "Nature": [],
+      "Cultural": [],
+      "Adventure": [],
+      "Others": []
+    },
+    "trending": {
+      "places": []
+    },
+    "createdAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    },
+    "updatedAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    }
+  }
+]

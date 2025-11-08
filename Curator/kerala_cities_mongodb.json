@@ -1,0 +1,389 @@
+[
+  {
+    "_id": { "$oid": "68e5e20021c4af9b4a7549d6" },
+    "name": "Kochi",
+    "location": [
+      {
+        "country": { "id": { "$oid": "68d7f24214fbfc2474738355" } },
+        "state": { "id": { "$oid": "68e284b55b54d5e1bf69b1de" } },
+        "region": { "id": { "$oid": "68d7f77c14fbfc2474738358" } }
+      }
+    ],
+    "greetingText": "Welcome to Kochi!",
+    "tagLine": "Queen of the Arabian Sea",
+    "description": {
+      "title": "Kochi – Port City of Heritage",
+      "short": "Vibrant port city blending history and modern life with Chinese fishing nets and spice markets.",
+      "long": "Kochi, the 'Queen of the Arabian Sea,' is a vibrant port city that beautifully blends history and modern life. From Chinese fishing nets and spice markets to art galleries and backwaters, it offers diverse experiences. With colonial architecture and cultural festivals, Kochi welcomes travelers with a mix of tradition and cosmopolitan charm.",
+      "history": "Kochi has been a major trading port for centuries, with influences from Portuguese, Dutch, and British colonial periods. The Chinese fishing nets are a unique legacy of ancient trade connections.",
+      "overview": "A historic port city with colonial architecture, vibrant markets, and cultural diversity."
+    },
+    "languages": [ "Malayalam", "Hindi", "English", "Tamil" ],
+    "images": { "banner": "", "card": "", "others": [] },
+    "emergencyContacts": {
+      "Police": "100", "Ambulance": "102", "Fire": "101",
+      "Tourist Helpline": "1363", "State Tourism": "0484-2382050"
+    },
+    "safetyInformation": [
+      "Be cautious near water bodies and fishing nets.",
+      "Respect local customs and traditions.",
+      "Follow monsoon season guidelines for backwater tours."
+    ],
+    "travelTips": [
+      "Visit Fort Kochi for colonial architecture.",
+      "Try local seafood and traditional Kerala cuisine.",
+      "Take a backwater cruise for scenic views."
+    ],
+    "experiences": {
+      "Food": [], "Activities": [], "LocalMarkets": [], "Spiritual": [],
+      "Historical": [], "Nature": [], "Cultural": [], "Adventure": [], "Others": []
+    },
+    "trending": { "places": [] },
+    "createdAt": { "$date": "2025-10-08T04:01:04.008Z" },
+    "updatedAt": { "$date": "2025-10-08T04:01:04.008Z" }
+  },
+  {
+    "_id": { "$oid": "68e5e20021c4af9b4a7549d7" },
+    "name": "Thiruvananthapuram",
+    "location": [
+      {
+        "country": { "id": { "$oid": "68d7f24214fbfc2474738355" } },
+        "state": { "id": { "$oid": "68e284b55b54d5e1bf69b1de" } },
+        "region": { "id": { "$oid": "68d7f77c14fbfc2474738358" } }
+      }
+    ],
+    "greetingText": "Welcome to Thiruvananthapuram!",
+    "tagLine": "Capital of God's Own Country",
+    "description": {
+      "title": "Thiruvananthapuram – Royal Capital",
+      "short": "Kerala's capital known for Padmanabhaswamy Temple, palaces, and nearby beaches.",
+      "long": "Thiruvananthapuram, Kerala's capital, is known for the Padmanabhaswamy Temple, palaces, and museums. Close to serene beaches like Kovalam, it balances heritage with coastal beauty. With cultural festivals, lively markets, and calm surroundings, the city offers travelers both spiritual depth and a relaxed urban experience in God's Own Country.",
+      "history": "The city was the capital of the Travancore Kingdom and is home to the famous Padmanabhaswamy Temple, one of the richest temples in the world.",
+      "overview": "A royal capital with magnificent temples, palaces, and cultural heritage."
+    },
+    "languages": [ "Malayalam", "Hindi", "English", "Tamil" ],
+    "images": { "banner": "", "card": "", "others": [] },
+    "emergencyContacts": {
+      "Police": "100", "Ambulance": "102", "Fire": "101",
+      "Tourist Helpline": "1363", "State Tourism": "0471-2321132"
+    },
+    "safetyInformation": [
+      "Dress modestly when visiting temples.",
+      "Follow temple photography guidelines.",
+      "Be respectful during religious ceremonies."
+    ],
+    "travelTips": [
+      "Visit the Padmanabhaswamy Temple early morning.",
+      "Explore the Napier Museum and Art Gallery.",
+      "Take a day trip to Kovalam Beach."
+    ],
+    "experiences": {
+      "Food": [], "Activities": [], "LocalMarkets": [], "Spiritual": [],
+      "Historical": [], "Nature": [], "Cultural": [], "Adventure": [], "Others": []
+    },
+    "trending": { "places": [] },
+    "createdAt": { "$date": "2025-10-08T04:01:04.008Z" },
+    "updatedAt": { "$date": "2025-10-08T04:01:04.008Z" }
+  },
+  {
+    "_id": { "$oid": "68e5e20021c4af9b4a7549d8" },
+    "name": "Munnar",
+    "location": [
+      {
+        "country": { "id": { "$oid": "68d7f24214fbfc2474738355" } },
+        "state": { "id": { "$oid": "68e284b55b54d5e1bf69b1de" } },
+        "region": { "id": { "$oid": "68d7f77c14fbfc2474738358" } }
+      }
+    ],
+    "greetingText": "Welcome to Munnar!",
+    "tagLine": "Tea Plantation Paradise",
+    "description": {
+      "title": "Munnar – Misty Hill Station",
+      "short": "Hill station famous for tea plantations, rolling hills, and cool weather in the Western Ghats.",
+      "long": "Munnar, a hill station in the Western Ghats, is famous for tea plantations, rolling hills, and cool weather. With waterfalls, wildlife sanctuaries, and trekking trails, it's a haven for nature lovers. Misty valleys and peaceful landscapes make Munnar one of Kerala's most loved mountain escapes.",
+      "history": "Munnar was developed as a hill station by the British for tea cultivation. The region's cool climate and fertile soil made it perfect for growing high-quality tea.",
+      "overview": "A misty hill station surrounded by tea gardens and natural beauty."
+    },
+    "languages": [ "Malayalam", "Hindi", "English", "Tamil" ],
+    "images": { "banner": "", "card": "", "others": [] },
+    "emergencyContacts": {
+      "Police": "100", "Ambulance": "102", "Fire": "101",
+      "Tourist Helpline": "1363", "State Tourism": "04865-231516"
+    },
+    "safetyInformation": [
+      "Be careful on steep and winding roads.",
+      "Carry warm clothing as temperatures can drop.",
+      "Follow guidelines during monsoon season."
+    ],
+    "travelTips": [
+      "Visit tea plantations and learn about tea processing.",
+      "Go for nature walks and trekking trails.",
+      "Enjoy the cool climate and scenic views."
+    ],
+    "experiences": {
+      "Food": [], "Activities": [], "LocalMarkets": [], "Spiritual": [],
+      "Historical": [], "Nature": [], "Cultural": [], "Adventure": [], "Others": []
+    },
+    "trending": { "places": [] },
+    "createdAt": { "$date": "2025-10-08T04:01:04.008Z" },
+    "updatedAt": { "$date": "2025-10-08T04:01:04.008Z" }
+  },
+  {
+    "_id": { "$oid": "68e5e20021c4af9b4a7549d9" },
+    "name": "Alappuzha (Alleppey)",
+    "location": [
+      {
+        "country": { "id": { "$oid": "68d7f24214fbfc2474738355" } },
+        "state": { "id": { "$oid": "68e284b55b54d5e1bf69b1de" } },
+        "region": { "id": { "$oid": "68d7f77c14fbfc2474738358" } }
+      }
+    ],
+    "greetingText": "Welcome to Alappuzha!",
+    "tagLine": "Venice of the East",
+    "description": {
+      "title": "Alappuzha – Backwater Paradise",
+      "short": "Renowned for backwaters, houseboats, and lagoons - the Venice of the East.",
+      "long": "Alappuzha, often called the 'Venice of the East,' is renowned for its backwaters, houseboats, and lagoons. Coconut groves and paddy fields add charm to its waterways. With boat races and calm villages, Alappuzha offers travelers a unique and soothing experience of Kerala's traditional river life.",
+      "history": "Alappuzha was a major trading port during the colonial era and is famous for its annual Nehru Trophy Boat Race, a major cultural event.",
+      "overview": "A network of canals, lagoons, and backwaters perfect for houseboat cruises."
+    },
+    "languages": [ "Malayalam", "Hindi", "English", "Tamil" ],
+    "images": { "banner": "", "card": "", "others": [] },
+    "emergencyContacts": {
+      "Police": "100", "Ambulance": "102", "Fire": "101",
+      "Tourist Helpline": "1363", "State Tourism": "0477-2253308"
+    },
+    "safetyInformation": [
+      "Follow safety instructions on houseboats.",
+      "Be cautious near water bodies.",
+      "Respect local fishing communities and their livelihoods."
+    ],
+    "travelTips": [
+      "Book houseboat cruises in advance.",
+      "Try traditional Kerala meals on houseboats.",
+      "Visit during the boat race season for cultural experiences."
+    ],
+    "experiences": {
+      "Food": [], "Activities": [], "LocalMarkets": [], "Spiritual": [],
+      "Historical": [], "Nature": [], "Cultural": [], "Adventure": [], "Others": []
+    },
+    "trending": { "places": [] },
+    "createdAt": { "$date": "2025-10-08T04:01:04.008Z" },
+    "updatedAt": { "$date": "2025-10-08T04:01:04.008Z" }
+  },
+  {
+    "_id": { "$oid": "68e5e20021c4af9b4a7549da" },
+    "name": "Wayanad",
+    "location": [
+      {
+        "country": { "id": { "$oid": "68d7f24214fbfc2474738355" } },
+        "state": { "id": { "$oid": "68e284b55b54d5e1bf69b1de" } },
+        "region": { "id": { "$oid": "68d7f77c14fbfc2474738358" } }
+      }
+    ],
+    "greetingText": "Welcome to Wayanad!",
+    "tagLine": "Green Paradise in Western Ghats",
+    "description": {
+      "title": "Wayanad – Nature's Abode",
+      "short": "Rich in forests, waterfalls, and wildlife - a peaceful retreat in the Western Ghats.",
+      "long": "Wayanad, nestled in the Western Ghats, is rich in forests, waterfalls, and wildlife. With trekking, caves, and plantations, it blends adventure and natural beauty. Quiet villages and fresh air make Wayanad a peaceful retreat, perfect for travelers seeking both exploration and relaxation in green surroundings.",
+      "history": "Wayanad is home to ancient tribal communities and has several prehistoric cave paintings. The region is known for its spice plantations and coffee cultivation.",
+      "overview": "A green paradise with dense forests, waterfalls, and tribal culture."
+    },
+    "languages": [ "Malayalam", "Hindi", "English", "Tamil" ],
+    "images": { "banner": "", "card": "", "others": [] },
+    "emergencyContacts": {
+      "Police": "100", "Ambulance": "102", "Fire": "101",
+      "Tourist Helpline": "1363", "State Tourism": "04936-202134"
+    },
+    "safetyInformation": [
+      "Be cautious while trekking in forest areas.",
+      "Follow guidelines for wildlife encounters.",
+      "Respect tribal communities and their customs."
+    ],
+    "travelTips": [
+      "Go for guided treks and nature walks.",
+      "Visit spice plantations and learn about cultivation.",
+      "Explore ancient caves and tribal villages."
+    ],
+    "experiences": {
+      "Food": [], "Activities": [], "LocalMarkets": [], "Spiritual": [],
+      "Historical": [], "Nature": [], "Cultural": [], "Adventure": [], "Others": []
+    },
+    "trending": { "places": [] },
+    "createdAt": { "$date": "2025-10-08T04:01:04.008Z" },
+    "updatedAt": { "$date": "2025-10-08T04:01:04.008Z" }
+  },
+  {
+    "_id": { "$oid": "68e5e20021c4af9b4a7549db" },
+    "name": "Kovalam",
+    "location": [
+      {
+        "country": { "id": { "$oid": "68d7f24214fbfc2474738355" } },
+        "state": { "id": { "$oid": "68e284b55b54d5e1bf69b1de" } },
+        "region": { "id": { "$oid": "68d7f77c14fbfc2474738358" } }
+      }
+    ],
+    "greetingText": "Welcome to Kovalam!",
+    "tagLine": "Crescent Beach Paradise",
+    "description": {
+      "title": "Kovalam – Beach Paradise",
+      "short": "Seaside town known for crescent-shaped beaches and lively atmosphere.",
+      "long": "Kovalam, a seaside town, is known for its crescent-shaped beaches and lively atmosphere. With calm waters, lighthouses, and Ayurvedic wellness centers, it's a favorite for sunseekers. Offering relaxation, seafood flavors, and scenic sunsets, Kovalam is one of Kerala's most iconic coastal getaways.",
+      "history": "Kovalam gained international fame in the 1970s as a hippie destination and has since evolved into a major beach resort destination.",
+      "overview": "A beautiful beach destination with crescent-shaped shores and wellness centers."
+    },
+    "languages": [ "Malayalam", "Hindi", "English", "Tamil" ],
+    "images": { "banner": "", "card": "", "others": [] },
+    "emergencyContacts": {
+      "Police": "100", "Ambulance": "102", "Fire": "101",
+      "Tourist Helpline": "1363", "State Tourism": "0471-2480085"
+    },
+    "safetyInformation": [
+      "Be cautious while swimming in the sea.",
+      "Follow beach safety guidelines.",
+      "Respect local customs and dress codes."
+    ],
+    "travelTips": [
+      "Enjoy beach activities and water sports.",
+      "Try Ayurvedic treatments and massages.",
+      "Watch beautiful sunsets from the lighthouse."
+    ],
+    "experiences": {
+      "Food": [], "Activities": [], "LocalMarkets": [], "Spiritual": [],
+      "Historical": [], "Nature": [], "Cultural": [], "Adventure": [], "Others": []
+    },
+    "trending": { "places": [] },
+    "createdAt": { "$date": "2025-10-08T04:01:04.008Z" },
+    "updatedAt": { "$date": "2025-10-08T04:01:04.008Z" }
+  },
+  {
+    "_id": { "$oid": "68e5e20021c4af9b4a7549dc" },
+    "name": "Thekkady",
+    "location": [
+      {
+        "country": { "id": { "$oid": "68d7f24214fbfc2474738355" } },
+        "state": { "id": { "$oid": "68e284b55b54d5e1bf69b1de" } },
+        "region": { "id": { "$oid": "68d7f77c14fbfc2474738358" } }
+      }
+    ],
+    "greetingText": "Welcome to Thekkady!",
+    "tagLine": "Wildlife Paradise",
+    "description": {
+      "title": "Thekkady – Wildlife Sanctuary",
+      "short": "Home to Periyar Wildlife Sanctuary, a paradise for nature and wildlife lovers.",
+      "long": "Thekkady, home to the Periyar Wildlife Sanctuary, is a paradise for nature and wildlife lovers. Boat rides on Periyar Lake offer views of elephants, deer, and birds. With spice plantations and forest treks, Thekkady combines adventure with natural charm, making it a must-visit in Kerala's highlands.",
+      "history": "The Periyar Wildlife Sanctuary was established in 1950 and is one of India's most successful tiger reserves, known for its elephant population and diverse wildlife.",
+      "overview": "A wildlife sanctuary with boat safaris, spice plantations, and forest treks."
+    },
+    "languages": [ "Malayalam", "Hindi", "English", "Tamil" ],
+    "images": { "banner": "", "card": "", "others": [] },
+    "emergencyContacts": {
+      "Police": "100", "Ambulance": "102", "Fire": "101",
+      "Tourist Helpline": "1363", "State Tourism": "04869-222027"
+    },
+    "safetyInformation": [
+      "Follow wildlife viewing guidelines strictly.",
+      "Stay with guided groups during forest activities.",
+      "Respect wildlife and maintain safe distances."
+    ],
+    "travelTips": [
+      "Book boat safaris in advance.",
+      "Visit spice plantations and learn about cultivation.",
+      "Go for guided nature walks and treks."
+    ],
+    "experiences": {
+      "Food": [], "Activities": [], "LocalMarkets": [], "Spiritual": [],
+      "Historical": [], "Nature": [], "Cultural": [], "Adventure": [], "Others": []
+    },
+    "trending": { "places": [] },
+    "createdAt": { "$date": "2025-10-08T04:01:04.008Z" },
+    "updatedAt": { "$date": "2025-10-08T04:01:04.008Z" }
+  },
+  {
+    "_id": { "$oid": "68e5e20021c4af9b4a7549dd" },
+    "name": "Kumarakom",
+    "location": [
+      {
+        "country": { "id": { "$oid": "68d7f24214fbfc2474738355" } },
+        "state": { "id": { "$oid": "68e284b55b54d5e1bf69b1de" } },
+        "region": { "id": { "$oid": "68d7f77c14fbfc2474738358" } }
+      }
+    ],
+    "greetingText": "Welcome to Kumarakom!",
+    "tagLine": "Backwater Bird Sanctuary",
+    "description": {
+      "title": "Kumarakom – Bird Watcher's Paradise",
+      "short": "Famous for backwaters, bird sanctuaries, and houseboat stays on Vembanad Lake.",
+      "long": "Kumarakom, set on the banks of Vembanad Lake, is famous for backwaters, bird sanctuaries, and houseboat stays. Surrounded by coconut palms and paddy fields, it offers serenity and natural beauty. With rich birdlife and peaceful waters, Kumarakom is an ideal escape for travelers seeking calm and scenic charm.",
+      "history": "Kumarakom is home to the Kumarakom Bird Sanctuary, established in 1978, which attracts migratory birds from across the world.",
+      "overview": "A serene backwater destination with bird sanctuaries and houseboat experiences."
+    },
+    "languages": [ "Malayalam", "Hindi", "English", "Tamil" ],
+    "images": { "banner": "", "card": "", "others": [] },
+    "emergencyContacts": {
+      "Police": "100", "Ambulance": "102", "Fire": "101",
+      "Tourist Helpline": "1363", "State Tourism": "0481-2525864"
+    },
+    "safetyInformation": [
+      "Be respectful of bird habitats and nesting areas.",
+      "Follow guidelines for houseboat activities.",
+      "Maintain silence during bird watching sessions."
+    ],
+    "travelTips": [
+      "Visit the bird sanctuary early morning for best sightings.",
+      "Enjoy houseboat cruises on Vembanad Lake.",
+      "Try traditional Kerala cuisine on houseboats."
+    ],
+    "experiences": {
+      "Food": [], "Activities": [], "LocalMarkets": [], "Spiritual": [],
+      "Historical": [], "Nature": [], "Cultural": [], "Adventure": [], "Others": []
+    },
+    "trending": { "places": [] },
+    "createdAt": { "$date": "2025-10-08T04:01:04.008Z" },
+    "updatedAt": { "$date": "2025-10-08T04:01:04.008Z" }
+  },
+  {
+    "_id": { "$oid": "68e5e20021c4af9b4a7549de" },
+    "name": "Varkala",
+    "location": [
+      {
+        "country": { "id": { "$oid": "68d7f24214fbfc2474738355" } },
+        "state": { "id": { "$oid": "68e284b55b54d5e1bf69b1de" } },
+        "region": { "id": { "$oid": "68d7f77c14fbfc2474738358" } }
+      }
+    ],
+    "greetingText": "Welcome to Varkala!",
+    "tagLine": "Cliffside Beach Paradise",
+    "description": {
+      "title": "Varkala – Cliffside Beach Town",
+      "short": "Cliffside beach town known for striking sea views, golden sands, and relaxed vibe.",
+      "long": "Varkala, a cliffside beach town, is known for its striking sea views, golden sands, and relaxed vibe. Famous for Papanasam Beach and yoga retreats, it blends spirituality with leisure. With lively cafes, Ayurvedic centers, and sunsets over the Arabian Sea, Varkala is a refreshing and unique coastal destination.",
+      "history": "Varkala is known for the Janardhana Swamy Temple and is considered a sacred place for Hindus. The beach is believed to have healing properties.",
+      "overview": "A unique cliffside beach destination with spiritual significance and wellness centers."
+    },
+    "languages": [ "Malayalam", "Hindi", "English", "Tamil" ],
+    "images": { "banner": "", "card": "", "others": [] },
+    "emergencyContacts": {
+      "Police": "100", "Ambulance": "102", "Fire": "101",
+      "Tourist Helpline": "1363", "State Tourism": "0470-2604300"
+    },
+    "safetyInformation": [
+      "Be cautious on cliff edges and rocky areas.",
+      "Follow beach safety guidelines.",
+      "Respect the spiritual significance of the area."
+    ],
+    "travelTips": [
+      "Visit the Janardhana Swamy Temple.",
+      "Try yoga and Ayurvedic treatments.",
+      "Enjoy cliffside dining with sea views."
+    ],
+    "experiences": {
+      "Food": [], "Activities": [], "LocalMarkets": [], "Spiritual": [],
+      "Historical": [], "Nature": [], "Cultural": [], "Adventure": [], "Others": []
+    },
+    "trending": { "places": [] },
+    "createdAt": { "$date": "2025-10-08T04:01:04.008Z" },
+    "updatedAt": { "$date": "2025-10-08T04:01:04.008Z" }
+  }
+]

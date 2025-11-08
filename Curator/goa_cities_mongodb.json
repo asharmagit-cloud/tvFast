@@ -1,0 +1,822 @@
+[
+  {
+    "_id": {
+      "$oid": "68e5e20021c4af9b4a7549a5"
+    },
+    "name": "Panaji",
+    "location": [
+      {
+        "country": {
+          "id": {
+            "$oid": "68d7f24214fbfc2474738355"
+          }
+        },
+        "state": {
+          "id": {
+            "$oid": "68e286105b54d5e1bf69b1ea"
+          }
+        },
+        "region": {
+          "id": {
+            "$oid": "68d7f77c14fbfc2474738358"
+          }
+        }
+      }
+    ],
+    "greetingText": "Welcome to Panaji!",
+    "tagLine": "Capital of Goa",
+    "description": {
+      "title": "Panaji – The Capital of Goa",
+      "short": "Goa's capital, sits along the Mandovi River with a mix of colonial charm and modern energy.",
+      "long": "Panaji, Goa's capital, sits along the Mandovi River with a mix of colonial charm and modern energy. Colorful Portuguese houses, riverside promenades, and lively cafes define its vibe. With nearby beaches and churches, Panaji blends heritage with leisure, offering travelers a relaxed yet culturally rich experience.",
+      "history": "Panaji was the capital of Portuguese India and showcases beautiful Portuguese colonial architecture. It became the capital of Goa after liberation in 1961.",
+      "overview": "A charming capital where Portuguese heritage meets modern Goan life, offering a perfect blend of culture and relaxation."
+    },
+    "languages": [
+      "Konkani",
+      "Hindi",
+      "English",
+      "Portuguese"
+    ],
+    "images": {
+      "banner": "",
+      "card": "",
+      "others": []
+    },
+    "emergencyContacts": {
+      "Police": "100",
+      "Ambulance": "102",
+      "Fire": "101",
+      "Tourist Helpline": "1363",
+      "Goa Tourism": "0832-2220000"
+    },
+    "safetyInformation": [
+      "Be cautious near the Mandovi River during monsoon.",
+      "Respect the colonial heritage and churches.",
+      "Follow beach safety guidelines when visiting nearby beaches."
+    ],
+    "travelTips": [
+      "Walk along the riverside promenades for scenic views.",
+      "Visit the colorful Portuguese houses and churches.",
+      "Enjoy the lively cafes and local cuisine."
+    ],
+    "experiences": {
+      "Food": [],
+      "Activities": [],
+      "LocalMarkets": [],
+      "Spiritual": [],
+      "Historical": [],
+      "Nature": [],
+      "Cultural": [],
+      "Adventure": [],
+      "Others": []
+    },
+    "trending": {
+      "places": []
+    },
+    "createdAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    },
+    "updatedAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "68e5e20021c4af9b4a7549a6"
+    },
+    "name": "Margao",
+    "location": [
+      {
+        "country": {
+          "id": {
+            "$oid": "68d7f24214fbfc2474738355"
+          }
+        },
+        "state": {
+          "id": {
+            "$oid": "68e286105b54d5e1bf69b1ea"
+          }
+        },
+        "region": {
+          "id": {
+            "$oid": "68d7f77c14fbfc2474738358"
+          }
+        }
+      }
+    ],
+    "greetingText": "Welcome to Margao!",
+    "tagLine": "Commercial Hub and Cultural Heart",
+    "description": {
+      "title": "Margao – The Cultural Heart of Goa",
+      "short": "Goa's commercial hub and cultural heart, known for its old Portuguese quarters, bustling markets, and nearby beaches.",
+      "long": "Margao is Goa's commercial hub and cultural heart, known for its old Portuguese quarters, bustling markets, and nearby beaches. Traditional mansions and churches showcase its colonial past, while its lively atmosphere reflects Goan spirit. Margao balances heritage with local life, making it a warm and vibrant stop for visitors.",
+      "history": "Margao was an important commercial center during Portuguese rule and is known for its traditional Goan architecture and cultural heritage.",
+      "overview": "A vibrant commercial center where Portuguese heritage meets Goan culture, offering authentic local experiences."
+    },
+    "languages": [
+      "Konkani",
+      "Hindi",
+      "English",
+      "Portuguese"
+    ],
+    "images": {
+      "banner": "",
+      "card": "",
+      "others": []
+    },
+    "emergencyContacts": {
+      "Police": "100",
+      "Ambulance": "102",
+      "Fire": "101",
+      "Tourist Helpline": "1363",
+      "Goa Tourism": "0832-2220000"
+    },
+    "safetyInformation": [
+      "Be cautious in bustling markets and crowded areas.",
+      "Respect the colonial heritage and traditional mansions.",
+      "Follow guidelines when visiting churches and religious sites."
+    ],
+    "travelTips": [
+      "Explore the old Portuguese quarters for colonial architecture.",
+      "Visit bustling markets for local shopping experiences.",
+      "Check out nearby beaches for relaxation."
+    ],
+    "experiences": {
+      "Food": [],
+      "Activities": [],
+      "LocalMarkets": [],
+      "Spiritual": [],
+      "Historical": [],
+      "Nature": [],
+      "Cultural": [],
+      "Adventure": [],
+      "Others": []
+    },
+    "trending": {
+      "places": []
+    },
+    "createdAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    },
+    "updatedAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "68e5e20021c4af9b4a7549a7"
+    },
+    "name": "Vasco da Gama",
+    "location": [
+      {
+        "country": {
+          "id": {
+            "$oid": "68d7f24214fbfc2474738355"
+          }
+        },
+        "state": {
+          "id": {
+            "$oid": "68e286105b54d5e1bf69b1ea"
+          }
+        },
+        "region": {
+          "id": {
+            "$oid": "68d7f77c14fbfc2474738358"
+          }
+        }
+      }
+    ],
+    "greetingText": "Welcome to Vasco da Gama!",
+    "tagLine": "Gateway to Goan Beaches",
+    "description": {
+      "title": "Vasco da Gama – The Port Town",
+      "short": "One of Goa's busiest towns, set near Mormugao Port, offering easy access to beaches and scenic islands.",
+      "long": "Vasco da Gama, one of Goa's busiest towns, is set near Mormugao Port. It offers easy access to beaches like Bogmalo and scenic islands nearby. With temples, churches, and a lively local feel, Vasco is less touristy but full of everyday Goan charm for travelers seeking authentic experiences.",
+      "history": "Vasco da Gama is named after the famous Portuguese explorer and is known for its port and industrial importance in Goa.",
+      "overview": "A bustling port town where industrial activity meets coastal beauty, offering authentic Goan experiences."
+    },
+    "languages": [
+      "Konkani",
+      "Hindi",
+      "English",
+      "Portuguese"
+    ],
+    "images": {
+      "banner": "",
+      "card": "",
+      "others": []
+    },
+    "emergencyContacts": {
+      "Police": "100",
+      "Ambulance": "102",
+      "Fire": "101",
+      "Tourist Helpline": "1363",
+      "Goa Tourism": "0832-2220000"
+    },
+    "safetyInformation": [
+      "Be cautious near the port and industrial areas.",
+      "Follow safety guidelines when visiting beaches and islands.",
+      "Respect local customs and traditions."
+    ],
+    "travelTips": [
+      "Visit Bogmalo Beach for scenic beauty.",
+      "Explore nearby islands for day trips.",
+      "Experience the local Goan lifestyle and culture."
+    ],
+    "experiences": {
+      "Food": [],
+      "Activities": [],
+      "LocalMarkets": [],
+      "Spiritual": [],
+      "Historical": [],
+      "Nature": [],
+      "Cultural": [],
+      "Adventure": [],
+      "Others": []
+    },
+    "trending": {
+      "places": []
+    },
+    "createdAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    },
+    "updatedAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "68e5e20021c4af9b4a7549a8"
+    },
+    "name": "Mapusa",
+    "location": [
+      {
+        "country": {
+          "id": {
+            "$oid": "68d7f24214fbfc2474738355"
+          }
+        },
+        "state": {
+          "id": {
+            "$oid": "68e286105b54d5e1bf69b1ea"
+          }
+        },
+        "region": {
+          "id": {
+            "$oid": "68d7f77c14fbfc2474738358"
+          }
+        }
+      }
+    ],
+    "greetingText": "Welcome to Mapusa!",
+    "tagLine": "Famous for Friday Market",
+    "description": {
+      "title": "Mapusa – The Market Town",
+      "short": "Best known for its lively Friday Market, where spices, textiles, and local crafts fill the streets.",
+      "long": "Mapusa is best known for its lively Friday Market, where spices, textiles, and local crafts fill the streets. Surrounded by villages and close to northern beaches, it's a convenient stop for travelers. With its mix of local life and easygoing atmosphere, Mapusa adds a cultural touch to a Goan trip.",
+      "history": "Mapusa has been an important market town in North Goa, known for its traditional markets and cultural significance.",
+      "overview": "A traditional market town where local culture meets coastal convenience, offering authentic Goan shopping experiences."
+    },
+    "languages": [
+      "Konkani",
+      "Hindi",
+      "English",
+      "Portuguese"
+    ],
+    "images": {
+      "banner": "",
+      "card": "",
+      "others": []
+    },
+    "emergencyContacts": {
+      "Police": "100",
+      "Ambulance": "102",
+      "Fire": "101",
+      "Tourist Helpline": "1363",
+      "Goa Tourism": "0832-2220000"
+    },
+    "safetyInformation": [
+      "Be cautious in crowded market areas.",
+      "Respect local vendors and their goods.",
+      "Follow guidelines when visiting nearby villages."
+    ],
+    "travelTips": [
+      "Visit the Friday Market for spices and local crafts.",
+      "Explore nearby villages for authentic experiences.",
+      "Use as a base to visit northern beaches."
+    ],
+    "experiences": {
+      "Food": [],
+      "Activities": [],
+      "LocalMarkets": [],
+      "Spiritual": [],
+      "Historical": [],
+      "Nature": [],
+      "Cultural": [],
+      "Adventure": [],
+      "Others": []
+    },
+    "trending": {
+      "places": []
+    },
+    "createdAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    },
+    "updatedAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "68e5e20021c4af9b4a7549a9"
+    },
+    "name": "Calangute",
+    "location": [
+      {
+        "country": {
+          "id": {
+            "$oid": "68d7f24214fbfc2474738355"
+          }
+        },
+        "state": {
+          "id": {
+            "$oid": "68e286105b54d5e1bf69b1ea"
+          }
+        },
+        "region": {
+          "id": {
+            "$oid": "68d7f77c14fbfc2474738358"
+          }
+        }
+      }
+    ],
+    "greetingText": "Welcome to Calangute!",
+    "tagLine": "Queen of Beaches",
+    "description": {
+      "title": "Calangute – The Queen of Beaches",
+      "short": "Often called the 'Queen of Beaches,' one of Goa's most popular coastal spots with golden sands and water sports.",
+      "long": "Calangute, often called the 'Queen of Beaches,' is one of Goa's most popular coastal spots. Its golden sands, water sports, and lively shacks create a festive atmosphere. Always buzzing with energy, Calangute is perfect for those who enjoy sun, surf, and the vibrant side of Goan beach life.",
+      "history": "Calangute was one of the first beaches in Goa to be developed for tourism and remains one of the most popular beach destinations.",
+      "overview": "A vibrant beach destination where golden sands meet lively entertainment, offering the quintessential Goan beach experience."
+    },
+    "languages": [
+      "Konkani",
+      "Hindi",
+      "English",
+      "Portuguese"
+    ],
+    "images": {
+      "banner": "",
+      "card": "",
+      "others": []
+    },
+    "emergencyContacts": {
+      "Police": "100",
+      "Ambulance": "102",
+      "Fire": "101",
+      "Tourist Helpline": "1363",
+      "Goa Tourism": "0832-2220000"
+    },
+    "safetyInformation": [
+      "Be cautious during water sports activities.",
+      "Follow beach safety guidelines and lifeguard instructions.",
+      "Respect the beach environment and local regulations."
+    ],
+    "travelTips": [
+      "Enjoy water sports and beach activities.",
+      "Visit the lively beach shacks for food and drinks.",
+      "Experience the vibrant nightlife and entertainment."
+    ],
+    "experiences": {
+      "Food": [],
+      "Activities": [],
+      "LocalMarkets": [],
+      "Spiritual": [],
+      "Historical": [],
+      "Nature": [],
+      "Cultural": [],
+      "Adventure": [],
+      "Others": []
+    },
+    "trending": {
+      "places": []
+    },
+    "createdAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    },
+    "updatedAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "68e5e20021c4af9b4a7549aa"
+    },
+    "name": "Anjuna",
+    "location": [
+      {
+        "country": {
+          "id": {
+            "$oid": "68d7f24214fbfc2474738355"
+          }
+        },
+        "state": {
+          "id": {
+            "$oid": "68e286105b54d5e1bf69b1ea"
+          }
+        },
+        "region": {
+          "id": {
+            "$oid": "68d7f77c14fbfc2474738358"
+          }
+        }
+      }
+    ],
+    "greetingText": "Welcome to Anjuna!",
+    "tagLine": "Bohemian Beach Paradise",
+    "description": {
+      "title": "Anjuna – The Bohemian Beach",
+      "short": "Famous for its flea market, bohemian vibe, and dramatic rocky shoreline, once a hub of the hippie movement.",
+      "long": "Anjuna is famous for its flea market, bohemian vibe, and dramatic rocky shoreline. Once a hub of the hippie movement, it still draws free-spirited travelers. With music, nightlife, and sunsets by the sea, Anjuna blends culture and coastal beauty, making it a lively yet laid-back beach destination.",
+      "history": "Anjuna was a major center of the hippie movement in the 1960s and 70s, and still retains its bohemian character and alternative culture.",
+      "overview": "A bohemian beach destination where alternative culture meets coastal beauty, offering a unique and vibrant experience."
+    },
+    "languages": [
+      "Konkani",
+      "Hindi",
+      "English",
+      "Portuguese"
+    ],
+    "images": {
+      "banner": "",
+      "card": "",
+      "others": []
+    },
+    "emergencyContacts": {
+      "Police": "100",
+      "Ambulance": "102",
+      "Fire": "101",
+      "Tourist Helpline": "1363",
+      "Goa Tourism": "0832-2220000"
+    },
+    "safetyInformation": [
+      "Be cautious on rocky shorelines and cliffs.",
+      "Respect the bohemian culture and local customs.",
+      "Follow guidelines during flea market visits."
+    ],
+    "travelTips": [
+      "Visit the famous Wednesday flea market.",
+      "Enjoy the bohemian nightlife and music scene.",
+      "Watch spectacular sunsets by the sea."
+    ],
+    "experiences": {
+      "Food": [],
+      "Activities": [],
+      "LocalMarkets": [],
+      "Spiritual": [],
+      "Historical": [],
+      "Nature": [],
+      "Cultural": [],
+      "Adventure": [],
+      "Others": []
+    },
+    "trending": {
+      "places": []
+    },
+    "createdAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    },
+    "updatedAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "68e5e20021c4af9b4a7549ab"
+    },
+    "name": "Baga",
+    "location": [
+      {
+        "country": {
+          "id": {
+            "$oid": "68d7f24214fbfc2474738355"
+          }
+        },
+        "state": {
+          "id": {
+            "$oid": "68e286105b54d5e1bf69b1ea"
+          }
+        },
+        "region": {
+          "id": {
+            "$oid": "68d7f77c14fbfc2474738358"
+          }
+        }
+      }
+    ],
+    "greetingText": "Welcome to Baga!",
+    "tagLine": "Party Capital of Goa",
+    "description": {
+      "title": "Baga – The Party Beach",
+      "short": "Known for its nightlife, beach shacks, and water sports, always buzzing with activity and entertainment.",
+      "long": "Baga Beach is known for its nightlife, beach shacks, and water sports. From clubs and live music to parasailing and dolphin cruises, it's always buzzing with activity. Loved by partygoers and adventure seekers, Baga is one of Goa's most energetic and entertaining coastal experiences.",
+      "history": "Baga Beach developed as a major tourist destination known for its vibrant nightlife and water sports activities.",
+      "overview": "A high-energy beach destination where nightlife meets adventure sports, offering the most vibrant Goan beach experience."
+    },
+    "languages": [
+      "Konkani",
+      "Hindi",
+      "English",
+      "Portuguese"
+    ],
+    "images": {
+      "banner": "",
+      "card": "",
+      "others": []
+    },
+    "emergencyContacts": {
+      "Police": "100",
+      "Ambulance": "102",
+      "Fire": "101",
+      "Tourist Helpline": "1363",
+      "Goa Tourism": "0832-2220000"
+    },
+    "safetyInformation": [
+      "Be cautious during water sports and adventure activities.",
+      "Follow safety guidelines at clubs and nightlife venues.",
+      "Respect local regulations and beach rules."
+    ],
+    "travelTips": [
+      "Experience the vibrant nightlife and clubs.",
+      "Try water sports like parasailing and dolphin cruises.",
+      "Enjoy live music and beach parties."
+    ],
+    "experiences": {
+      "Food": [],
+      "Activities": [],
+      "LocalMarkets": [],
+      "Spiritual": [],
+      "Historical": [],
+      "Nature": [],
+      "Cultural": [],
+      "Adventure": [],
+      "Others": []
+    },
+    "trending": {
+      "places": []
+    },
+    "createdAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    },
+    "updatedAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "68e5e20021c4af9b4a7549ac"
+    },
+    "name": "Candolim",
+    "location": [
+      {
+        "country": {
+          "id": {
+            "$oid": "68d7f24214fbfc2474738355"
+          }
+        },
+        "state": {
+          "id": {
+            "$oid": "68e286105b54d5e1bf69b1ea"
+          }
+        },
+        "region": {
+          "id": {
+            "$oid": "68d7f77c14fbfc2474738358"
+          }
+        }
+      }
+    ],
+    "greetingText": "Welcome to Candolim!",
+    "tagLine": "Peaceful Beach Escape",
+    "description": {
+      "title": "Candolim – The Peaceful Beach",
+      "short": "Offers a calmer alternative to Goa's busier beaches, with long sandy stretch and nearby Aguada Fort.",
+      "long": "Candolim offers a calmer alternative to Goa's busier beaches. With a long sandy stretch, water sports, and nearby Aguada Fort, it blends relaxation with exploration. Its easygoing vibe, fewer crowds, and scenic beauty make Candolim ideal for travelers seeking a peaceful beach escape without missing coastal charm.",
+      "history": "Candolim is known for its proximity to the historic Aguada Fort and offers a more peaceful beach experience compared to other Goan beaches.",
+      "overview": "A tranquil beach destination where relaxation meets exploration, offering a peaceful coastal experience."
+    },
+    "languages": [
+      "Konkani",
+      "Hindi",
+      "English",
+      "Portuguese"
+    ],
+    "images": {
+      "banner": "",
+      "card": "",
+      "others": []
+    },
+    "emergencyContacts": {
+      "Police": "100",
+      "Ambulance": "102",
+      "Fire": "101",
+      "Tourist Helpline": "1363",
+      "Goa Tourism": "0832-2220000"
+    },
+    "safetyInformation": [
+      "Be cautious during water sports activities.",
+      "Follow beach safety guidelines.",
+      "Respect the peaceful environment and local regulations."
+    ],
+    "travelTips": [
+      "Visit the nearby Aguada Fort for historical exploration.",
+      "Enjoy the long sandy beach for relaxation.",
+      "Try water sports in a less crowded environment."
+    ],
+    "experiences": {
+      "Food": [],
+      "Activities": [],
+      "LocalMarkets": [],
+      "Spiritual": [],
+      "Historical": [],
+      "Nature": [],
+      "Cultural": [],
+      "Adventure": [],
+      "Others": []
+    },
+    "trending": {
+      "places": []
+    },
+    "createdAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    },
+    "updatedAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "68e5e20021c4af9b4a7549ad"
+    },
+    "name": "Ponda",
+    "location": [
+      {
+        "country": {
+          "id": {
+            "$oid": "68d7f24214fbfc2474738355"
+          }
+        },
+        "state": {
+          "id": {
+            "$oid": "68e286105b54d5e1bf69b1ea"
+          }
+        },
+        "region": {
+          "id": {
+            "$oid": "68d7f77c14fbfc2474738358"
+          }
+        }
+      }
+    ],
+    "greetingText": "Welcome to Ponda!",
+    "tagLine": "Cultural and Spiritual Heart of Goa",
+    "description": {
+      "title": "Ponda – The Cultural Heart",
+      "short": "Goa's cultural and spiritual heart, known for its Hindu temples and spice plantations.",
+      "long": "Ponda is Goa's cultural and spiritual heart, known for its Hindu temples and spice plantations. Nestled in greenery, it offers travelers a different side of Goa beyond beaches. With traditional music, festivals, and heritage sites, Ponda is perfect for those wanting to explore the state's roots and natural beauty.",
+      "history": "Ponda is known for its Hindu temples and was an important center during the Maratha rule. It's famous for its spice plantations and cultural heritage.",
+      "overview": "A cultural center where Hindu heritage meets natural beauty, offering a different perspective of Goa beyond beaches."
+    },
+    "languages": [
+      "Konkani",
+      "Hindi",
+      "English",
+      "Marathi"
+    ],
+    "images": {
+      "banner": "",
+      "card": "",
+      "others": []
+    },
+    "emergencyContacts": {
+      "Police": "100",
+      "Ambulance": "102",
+      "Fire": "101",
+      "Tourist Helpline": "1363",
+      "Goa Tourism": "0832-2220000"
+    },
+    "safetyInformation": [
+      "Be cautious near spice plantations and forest areas.",
+      "Respect temple customs and traditions.",
+      "Follow guidelines when visiting heritage sites."
+    ],
+    "travelTips": [
+      "Visit Hindu temples for spiritual experiences.",
+      "Explore spice plantations for agricultural insights.",
+      "Attend traditional festivals and cultural events."
+    ],
+    "experiences": {
+      "Food": [],
+      "Activities": [],
+      "LocalMarkets": [],
+      "Spiritual": [],
+      "Historical": [],
+      "Nature": [],
+      "Cultural": [],
+      "Adventure": [],
+      "Others": []
+    },
+    "trending": {
+      "places": []
+    },
+    "createdAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    },
+    "updatedAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "68e5e20021c4af9b4a7549ae"
+    },
+    "name": "Colva",
+    "location": [
+      {
+        "country": {
+          "id": {
+            "$oid": "68d7f24214fbfc2474738355"
+          }
+        },
+        "state": {
+          "id": {
+            "$oid": "68e286105b54d5e1bf69b1ea"
+          }
+        },
+        "region": {
+          "id": {
+            "$oid": "68d7f77c14fbfc2474738358"
+          }
+        }
+      }
+    ],
+    "greetingText": "Welcome to Colva!",
+    "tagLine": "South Goa's Serene Beach",
+    "description": {
+      "title": "Colva – The Serene Beach",
+      "short": "One of South Goa's oldest beaches, known for its wide stretch of white sand and palm-lined shores.",
+      "long": "Colva, one of South Goa's oldest beaches, is known for its wide stretch of white sand and palm-lined shores. Quieter than the north, it offers a mix of relaxation, fishing village charm, and sunset views. Colva is ideal for travelers looking for a slower pace and coastal serenity.",
+      "history": "Colva is one of the oldest beach destinations in South Goa, known for its traditional fishing village charm and serene atmosphere.",
+      "overview": "A serene beach destination where traditional fishing village charm meets coastal beauty, offering a peaceful escape."
+    },
+    "languages": [
+      "Konkani",
+      "Hindi",
+      "English",
+      "Portuguese"
+    ],
+    "images": {
+      "banner": "",
+      "card": "",
+      "others": []
+    },
+    "emergencyContacts": {
+      "Police": "100",
+      "Ambulance": "102",
+      "Fire": "101",
+      "Tourist Helpline": "1363",
+      "Goa Tourism": "0832-2220000"
+    },
+    "safetyInformation": [
+      "Be cautious near fishing areas and boats.",
+      "Follow beach safety guidelines.",
+      "Respect the peaceful fishing village environment."
+    ],
+    "travelTips": [
+      "Enjoy the wide stretch of white sand beach.",
+      "Experience the traditional fishing village charm.",
+      "Watch beautiful sunsets by the sea."
+    ],
+    "experiences": {
+      "Food": [],
+      "Activities": [],
+      "LocalMarkets": [],
+      "Spiritual": [],
+      "Historical": [],
+      "Nature": [],
+      "Cultural": [],
+      "Adventure": [],
+      "Others": []
+    },
+    "trending": {
+      "places": []
+    },
+    "createdAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    },
+    "updatedAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    }
+  }
+]

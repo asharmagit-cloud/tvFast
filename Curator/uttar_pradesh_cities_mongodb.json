@@ -1,0 +1,442 @@
+[
+  {
+    "_id": { "$oid": "68e5e20021c4af9b4a754a05" },
+    "name": "Lucknow",
+    "location": [
+      {
+        "country": { "id": { "$oid": "68d7f24214fbfc2474738355" } },
+        "state": { "id": { "$oid": "68e287065b54d5e1bf69b1fa" } },
+        "region": { "id": { "$oid": "68d7f77c14fbfc2474738358" } }
+      }
+    ],
+    "greetingText": "Welcome to Lucknow!",
+    "tagLine": "City of Nawabs",
+    "description": {
+      "title": "Lucknow – City of Nawabs",
+      "short": "The 'City of Nawabs,' known for elegant architecture, kebabs, and cultural grace.",
+      "long": "Lucknow, the 'City of Nawabs,' is known for its elegant architecture, kebabs, and cultural grace. Famous for Bara Imambara, chikankari embroidery, and gardens, it reflects history and tradition. With warm hospitality and rich flavors, Lucknow offers travelers a regal and cultural experience.",
+      "history": "Lucknow was the capital of the Awadh region and is known for its rich cultural heritage, especially during the reign of the Nawabs. The city is famous for its architecture, cuisine, and traditional arts.",
+      "overview": "A royal city with magnificent architecture, rich cuisine, and cultural heritage."
+    },
+    "languages": [ "Hindi", "Urdu", "English", "Awadhi" ],
+    "images": { "banner": "", "card": "", "others": [] },
+    "emergencyContacts": {
+      "Police": "100", "Ambulance": "102", "Fire": "101",
+      "Tourist Helpline": "1363", "State Tourism": "0522-2308916"
+    },
+    "safetyInformation": [
+      "Be respectful when visiting historical monuments.",
+      "Follow guidelines for heritage building visits.",
+      "Respect local customs and traditions."
+    ],
+    "travelTips": [
+      "Visit Bara Imambara and Chota Imambara.",
+      "Try authentic Awadhi cuisine and kebabs.",
+      "Shop for chikankari embroidery and handicrafts.",
+      "Explore the beautiful gardens and parks."
+    ],
+    "experiences": {
+      "Food": [], "Activities": [], "LocalMarkets": [], "Spiritual": [],
+      "Historical": [], "Nature": [], "Cultural": [], "Adventure": [], "Others": []
+    },
+    "trending": { "places": [] },
+    "createdAt": { "$date": "2025-10-08T04:01:04.008Z" },
+    "updatedAt": { "$date": "2025-10-08T04:01:04.008Z" }
+  },
+  {
+    "_id": { "$oid": "68e5e20021c4af9b4a754a06" },
+    "name": "Agra",
+    "location": [
+      {
+        "country": { "id": { "$oid": "68d7f24214fbfc2474738355" } },
+        "state": { "id": { "$oid": "68e287065b54d5e1bf69b1fa" } },
+        "region": { "id": { "$oid": "68d7f77c14fbfc2474738358" } }
+      }
+    ],
+    "greetingText": "Welcome to Agra!",
+    "tagLine": "City of the Taj Mahal",
+    "description": {
+      "title": "Agra – City of the Taj Mahal",
+      "short": "Home to the iconic Taj Mahal, a UNESCO World Heritage Site and symbol of love.",
+      "long": "Agra is home to the iconic Taj Mahal, a UNESCO World Heritage Site and symbol of love. With Agra Fort, Fatehpur Sikri, and Mughal gardens, it showcases rich heritage. Agra combines history, architecture, and vibrant markets, making it one of India's most visited cities.",
+      "history": "Agra was the capital of the Mughal Empire and is home to the Taj Mahal, built by Emperor Shah Jahan in memory of his wife Mumtaz Mahal. The city has three UNESCO World Heritage Sites.",
+      "overview": "A historic city with the magnificent Taj Mahal and other Mughal architectural wonders."
+    },
+    "languages": [ "Hindi", "English", "Urdu", "Braj" ],
+    "images": { "banner": "", "card": "", "others": [] },
+    "emergencyContacts": {
+      "Police": "100", "Ambulance": "102", "Fire": "101",
+      "Tourist Helpline": "1363", "State Tourism": "0562-2226431"
+    },
+    "safetyInformation": [
+      "Be respectful when visiting the Taj Mahal and other monuments.",
+      "Follow security guidelines at heritage sites.",
+      "Respect local customs and traditions."
+    ],
+    "travelTips": [
+      "Visit the Taj Mahal at sunrise or sunset for the best views.",
+      "Explore Agra Fort and Fatehpur Sikri.",
+      "Shop for marble handicrafts and leather goods.",
+      "Try local Mughlai cuisine and sweets."
+    ],
+    "experiences": {
+      "Food": [], "Activities": [], "LocalMarkets": [], "Spiritual": [],
+      "Historical": [], "Nature": [], "Cultural": [], "Adventure": [], "Others": []
+    },
+    "trending": { "places": [] },
+    "createdAt": { "$date": "2025-10-08T04:01:04.008Z" },
+    "updatedAt": { "$date": "2025-10-08T04:01:04.008Z" }
+  },
+  {
+    "_id": { "$oid": "68e5e20021c4af9b4a754a07" },
+    "name": "Varanasi",
+    "location": [
+      {
+        "country": { "id": { "$oid": "68d7f24214fbfc2474738355" } },
+        "state": { "id": { "$oid": "68e287065b54d5e1bf69b1fa" } },
+        "region": { "id": { "$oid": "68d7f77c14fbfc2474738358" } }
+      }
+    ],
+    "greetingText": "Welcome to Varanasi!",
+    "tagLine": "Spiritual Capital of India",
+    "description": {
+      "title": "Varanasi – Spiritual Capital of India",
+      "short": "One of the world's oldest cities, a spiritual hub along the Ganges.",
+      "long": "Varanasi, one of the world's oldest cities, is a spiritual hub along the Ganges. Known for its ghats, temples, and evening aarti, it reflects devotion and timeless culture. With narrow lanes, music, and rituals, Varanasi offers travelers a deep, soulful experience.",
+      "history": "Varanasi is one of the oldest continuously inhabited cities in the world, with a history spanning over 3,000 years. It's considered the spiritual capital of India and is sacred to Hindus.",
+      "overview": "An ancient spiritual city with ghats, temples, and timeless religious significance."
+    },
+    "languages": [ "Hindi", "Bhojpuri", "English", "Sanskrit" ],
+    "images": { "banner": "", "card": "", "others": [] },
+    "emergencyContacts": {
+      "Police": "100", "Ambulance": "102", "Fire": "101",
+      "Tourist Helpline": "1363", "State Tourism": "0542-2506670"
+    },
+    "safetyInformation": [
+      "Be respectful during religious ceremonies and rituals.",
+      "Follow guidelines for ghat visits and boat rides.",
+      "Respect the spiritual significance of the area."
+    ],
+    "travelTips": [
+      "Attend the evening Ganga aarti at Dashashwamedh Ghat.",
+      "Take a boat ride on the Ganges at sunrise.",
+      "Explore the narrow lanes and ancient temples.",
+      "Learn about Hindu philosophy and spirituality."
+    ],
+    "experiences": {
+      "Food": [], "Activities": [], "LocalMarkets": [], "Spiritual": [],
+      "Historical": [], "Nature": [], "Cultural": [], "Adventure": [], "Others": []
+    },
+    "trending": { "places": [] },
+    "createdAt": { "$date": "2025-10-08T04:01:04.008Z" },
+    "updatedAt": { "$date": "2025-10-08T04:01:04.008Z" }
+  },
+  {
+    "_id": { "$oid": "68e5e20021c4af9b4a754a08" },
+    "name": "Mathura",
+    "location": [
+      {
+        "country": { "id": { "$oid": "68d7f24214fbfc2474738355" } },
+        "state": { "id": { "$oid": "68e287065b54d5e1bf69b1fa" } },
+        "region": { "id": { "$oid": "68d7f77c14fbfc2474738358" } }
+      }
+    ],
+    "greetingText": "Welcome to Mathura!",
+    "tagLine": "Birthplace of Lord Krishna",
+    "description": {
+      "title": "Mathura – Sacred Birthplace of Krishna",
+      "short": "The birthplace of Lord Krishna, a sacred town filled with temples and ghats.",
+      "long": "Mathura, the birthplace of Lord Krishna, is a sacred town filled with temples and ghats. Festivals like Janmashtami and Holi add vibrant energy. With devotion, history, and colorful traditions, Mathura attracts pilgrims and travelers seeking cultural richness.",
+      "history": "Mathura is one of the seven sacred cities of Hinduism and is believed to be the birthplace of Lord Krishna. The city has been a major pilgrimage center for centuries.",
+      "overview": "A sacred city with temples, ghats, and vibrant religious festivals."
+    },
+    "languages": [ "Hindi", "Braj", "English", "Sanskrit" ],
+    "images": { "banner": "", "card": "", "others": [] },
+    "emergencyContacts": {
+      "Police": "100", "Ambulance": "102", "Fire": "101",
+      "Tourist Helpline": "1363", "State Tourism": "0565-2506670"
+    },
+    "safetyInformation": [
+      "Be respectful during religious ceremonies and festivals.",
+      "Follow guidelines for temple visits.",
+      "Respect the spiritual significance of the area."
+    ],
+    "travelTips": [
+      "Visit the Krishna Janmabhoomi Temple and other sacred sites.",
+      "Attend Janmashtami and Holi festivals.",
+      "Explore the ghats and learn about Krishna's legends.",
+      "Try local sweets and traditional cuisine."
+    ],
+    "experiences": {
+      "Food": [], "Activities": [], "LocalMarkets": [], "Spiritual": [],
+      "Historical": [], "Nature": [], "Cultural": [], "Adventure": [], "Others": []
+    },
+    "trending": { "places": [] },
+    "createdAt": { "$date": "2025-10-08T04:01:04.008Z" },
+    "updatedAt": { "$date": "2025-10-08T04:01:04.008Z" }
+  },
+  {
+    "_id": { "$oid": "68e5e20021c4af9b4a754a09" },
+    "name": "Prayagraj",
+    "location": [
+      {
+        "country": { "id": { "$oid": "68d7f24214fbfc2474738355" } },
+        "state": { "id": { "$oid": "68e287065b54d5e1bf69b1fa" } },
+        "region": { "id": { "$oid": "68d7f77c14fbfc2474738358" } }
+      }
+    ],
+    "greetingText": "Welcome to Prayagraj!",
+    "tagLine": "City of Confluence",
+    "description": {
+      "title": "Prayagraj – City of Confluence",
+      "short": "At the confluence of the Ganga, Yamuna, and Saraswati, famed for the Kumbh Mela.",
+      "long": "Prayagraj, at the confluence of the Ganga, Yamuna, and Saraswati, is famed for the Kumbh Mela. With forts, museums, and sacred ghats, it blends history with spirituality. Prayagraj offers travelers a unique mix of culture, devotion, and heritage.",
+      "history": "Prayagraj (formerly Allahabad) is one of the four sites of the Kumbh Mela, the largest religious gathering in the world. The city has been a major cultural and political center for centuries.",
+      "overview": "A sacred city at the confluence of three rivers, known for the Kumbh Mela and rich heritage."
+    },
+    "languages": [ "Hindi", "English", "Urdu", "Awadhi" ],
+    "images": { "banner": "", "card": "", "others": [] },
+    "emergencyContacts": {
+      "Police": "100", "Ambulance": "102", "Fire": "101",
+      "Tourist Helpline": "1363", "State Tourism": "0532-2506670"
+    },
+    "safetyInformation": [
+      "Be respectful during religious ceremonies and festivals.",
+      "Follow guidelines for ghat visits and river activities.",
+      "Respect the spiritual significance of the confluence."
+    ],
+    "travelTips": [
+      "Visit the Triveni Sangam and take a boat ride.",
+      "Explore the Allahabad Fort and museums.",
+      "Attend the Kumbh Mela if visiting during the festival.",
+      "Learn about the city's political and cultural history."
+    ],
+    "experiences": {
+      "Food": [], "Activities": [], "LocalMarkets": [], "Spiritual": [],
+      "Historical": [], "Nature": [], "Cultural": [], "Adventure": [], "Others": []
+    },
+    "trending": { "places": [] },
+    "createdAt": { "$date": "2025-10-08T04:01:04.008Z" },
+    "updatedAt": { "$date": "2025-10-08T04:01:04.008Z" }
+  },
+  {
+    "_id": { "$oid": "68e5e20021c4af9b4a754a0a" },
+    "name": "Kanpur",
+    "location": [
+      {
+        "country": { "id": { "$oid": "68d7f24214fbfc2474738355" } },
+        "state": { "id": { "$oid": "68e287065b54d5e1bf69b1fa" } },
+        "region": { "id": { "$oid": "68d7f77c14fbfc2474738358" } }
+      }
+    ],
+    "greetingText": "Welcome to Kanpur!",
+    "tagLine": "Leather City of India",
+    "description": {
+      "title": "Kanpur – Industrial Hub with Heritage",
+      "short": "An industrial hub known for its leather industry, colonial heritage, and temples.",
+      "long": "Kanpur, an industrial hub, is known for its leather industry, colonial heritage, and temples. With gardens, markets, and the Ganga riverfront, it balances commerce with history. Kanpur offers travelers a taste of Uttar Pradesh's urban energy and cultural depth.",
+      "history": "Kanpur was an important industrial center during the British Raj and is known for its leather industry. The city has a rich colonial heritage and played a significant role in India's independence movement.",
+      "overview": "An industrial city with colonial heritage, temples, and cultural significance."
+    },
+    "languages": [ "Hindi", "English", "Urdu", "Awadhi" ],
+    "images": { "banner": "", "card": "", "others": [] },
+    "emergencyContacts": {
+      "Police": "100", "Ambulance": "102", "Fire": "101",
+      "Tourist Helpline": "1363", "State Tourism": "0512-2506670"
+    },
+    "safetyInformation": [
+      "Be cautious in industrial areas.",
+      "Follow guidelines for heritage site visits.",
+      "Respect local customs and traditions."
+    ],
+    "travelTips": [
+      "Visit the Kanpur Memorial Church and other colonial buildings.",
+      "Explore the leather markets and handicrafts.",
+      "Enjoy the Ganga riverfront and gardens.",
+      "Learn about the city's industrial and political history."
+    ],
+    "experiences": {
+      "Food": [], "Activities": [], "LocalMarkets": [], "Spiritual": [],
+      "Historical": [], "Nature": [], "Cultural": [], "Adventure": [], "Others": []
+    },
+    "trending": { "places": [] },
+    "createdAt": { "$date": "2025-10-08T04:01:04.008Z" },
+    "updatedAt": { "$date": "2025-10-08T04:01:04.008Z" }
+  },
+  {
+    "_id": { "$oid": "68e5e20021c4af9b4a754a0b" },
+    "name": "Gorakhpur",
+    "location": [
+      {
+        "country": { "id": { "$oid": "68d7f24214fbfc2474738355" } },
+        "state": { "id": { "$oid": "68e287065b54d5e1bf69b1fa" } },
+        "region": { "id": { "$oid": "68d7f77c14fbfc2474738358" } }
+      }
+    ],
+    "greetingText": "Welcome to Gorakhpur!",
+    "tagLine": "City of Saint Gorakhnath",
+    "description": {
+      "title": "Gorakhpur – Spiritual Gateway City",
+      "short": "Named after the saint Gorakhnath, a city of temples and monasteries.",
+      "long": "Gorakhpur, named after the saint Gorakhnath, is a city of temples and monasteries. Known for Gorakhnath Math and vibrant culture, it also serves as a gateway to Nepal. With spiritual significance and regional charm, Gorakpur is both religious and practical for travelers.",
+      "history": "Gorakhpur is named after the saint Gorakhnath and is home to the famous Gorakhnath Math. The city has been a major spiritual and cultural center for centuries.",
+      "overview": "A spiritual city with temples, monasteries, and cultural significance."
+    },
+    "languages": [ "Hindi", "Bhojpuri", "English", "Nepali" ],
+    "images": { "banner": "", "card": "", "others": [] },
+    "emergencyContacts": {
+      "Police": "100", "Ambulance": "102", "Fire": "101",
+      "Tourist Helpline": "1363", "State Tourism": "0551-2506670"
+    },
+    "safetyInformation": [
+      "Be respectful when visiting temples and monasteries.",
+      "Follow guidelines for religious site visits.",
+      "Respect local customs and traditions."
+    ],
+    "travelTips": [
+      "Visit the Gorakhnath Math and other temples.",
+      "Explore the local culture and traditions.",
+      "Use Gorakhpur as a gateway to Nepal.",
+      "Learn about the city's spiritual and cultural heritage."
+    ],
+    "experiences": {
+      "Food": [], "Activities": [], "LocalMarkets": [], "Spiritual": [],
+      "Historical": [], "Nature": [], "Cultural": [], "Adventure": [], "Others": []
+    },
+    "trending": { "places": [] },
+    "createdAt": { "$date": "2025-10-08T04:01:04.008Z" },
+    "updatedAt": { "$date": "2025-10-08T04:01:04.008Z" }
+  },
+  {
+    "_id": { "$oid": "68e5e20021c4af9b4a754a0c" },
+    "name": "Jhansi",
+    "location": [
+      {
+        "country": { "id": { "$oid": "68d7f24214fbfc2474738355" } },
+        "state": { "id": { "$oid": "68e287065b54d5e1bf69b1fa" } },
+        "region": { "id": { "$oid": "68d7f77c14fbfc2474738358" } }
+      }
+    ],
+    "greetingText": "Welcome to Jhansi!",
+    "tagLine": "City of Rani Lakshmibai",
+    "description": {
+      "title": "Jhansi – City of Valor",
+      "short": "Famous for its fort and the legacy of Rani Lakshmibai, a symbol of bravery.",
+      "long": "Jhansi is famous for its fort and the legacy of Rani Lakshmibai, a symbol of bravery. With palaces, temples, and historic charm, it reflects tales of valor. Surrounded by Bundelkhand's landscapes, Jhansi offers travelers both history and inspiration.",
+      "history": "Jhansi is famous for Rani Lakshmibai, who fought against the British during the 1857 uprising. The Jhansi Fort is a symbol of her bravery and resistance.",
+      "overview": "A historic city with a magnificent fort and tales of bravery and resistance."
+    },
+    "languages": [ "Hindi", "Bundeli", "English", "Urdu" ],
+    "images": { "banner": "", "card": "", "others": [] },
+    "emergencyContacts": {
+      "Police": "100", "Ambulance": "102", "Fire": "101",
+      "Tourist Helpline": "1363", "State Tourism": "0510-2506670"
+    },
+    "safetyInformation": [
+      "Be respectful when visiting historical monuments.",
+      "Follow guidelines for fort visits.",
+      "Respect local customs and traditions."
+    ],
+    "travelTips": [
+      "Visit the Jhansi Fort and learn about Rani Lakshmibai.",
+      "Explore the palaces and temples.",
+      "Learn about the 1857 uprising and Indian history.",
+      "Enjoy the Bundelkhand landscapes and culture."
+    ],
+    "experiences": {
+      "Food": [], "Activities": [], "LocalMarkets": [], "Spiritual": [],
+      "Historical": [], "Nature": [], "Cultural": [], "Adventure": [], "Others": []
+    },
+    "trending": { "places": [] },
+    "createdAt": { "$date": "2025-10-08T04:01:04.008Z" },
+    "updatedAt": { "$date": "2025-10-08T04:01:04.008Z" }
+  },
+  {
+    "_id": { "$oid": "68e5e20021c4af9b4a754a0d" },
+    "name": "Kushinagar",
+    "location": [
+      {
+        "country": { "id": { "$oid": "68d7f24214fbfc2474738355" } },
+        "state": { "id": { "$oid": "68e287065b54d5e1bf69b1fa" } },
+        "region": { "id": { "$oid": "68d7f77c14fbfc2474738358" } }
+      }
+    ],
+    "greetingText": "Welcome to Kushinagar!",
+    "tagLine": "Sacred Buddhist Site",
+    "description": {
+      "title": "Kushinagar – Sacred Buddhist Destination",
+      "short": "A sacred Buddhist site where Lord Buddha attained Mahaparinirvana.",
+      "long": "Kushinagar is a sacred Buddhist site where Lord Buddha attained Mahaparinirvana. Known for stupas, temples, and international monasteries, it draws pilgrims from around the world. With spiritual calm and cultural depth, Kushinagar is a peaceful and inspiring destination.",
+      "history": "Kushinagar is one of the four most important Buddhist pilgrimage sites in India. It's where Lord Buddha attained Mahaparinirvana (final nirvana) and is sacred to Buddhists worldwide.",
+      "overview": "A sacred Buddhist city with stupas, temples, and international monasteries."
+    },
+    "languages": [ "Hindi", "English", "Pali", "Sanskrit" ],
+    "images": { "banner": "", "card": "", "others": [] },
+    "emergencyContacts": {
+      "Police": "100", "Ambulance": "102", "Fire": "101",
+      "Tourist Helpline": "1363", "State Tourism": "0551-2506670"
+    },
+    "safetyInformation": [
+      "Be respectful when visiting Buddhist sites and monasteries.",
+      "Follow guidelines for religious site visits.",
+      "Respect the spiritual significance of the area."
+    ],
+    "travelTips": [
+      "Visit the Mahaparinirvana Temple and stupa.",
+      "Explore international monasteries and learn about Buddhism.",
+      "Attend meditation sessions and spiritual programs.",
+      "Learn about Buddhist philosophy and history."
+    ],
+    "experiences": {
+      "Food": [], "Activities": [], "LocalMarkets": [], "Spiritual": [],
+      "Historical": [], "Nature": [], "Cultural": [], "Adventure": [], "Others": []
+    },
+    "trending": { "places": [] },
+    "createdAt": { "$date": "2025-10-08T04:01:04.008Z" },
+    "updatedAt": { "$date": "2025-10-08T04:01:04.008Z" }
+  },
+  {
+    "_id": { "$oid": "68e5e20021c4af9b4a754a0e" },
+    "name": "Ayodhya",
+    "location": [
+      {
+        "country": { "id": { "$oid": "68d7f24214fbfc2474738355" } },
+        "state": { "id": { "$oid": "68e287065b54d5e1bf69b1fa" } },
+        "region": { "id": { "$oid": "68d7f77c14fbfc2474738358" } }
+      }
+    ],
+    "greetingText": "Welcome to Ayodhya!",
+    "tagLine": "Birthplace of Lord Rama",
+    "description": {
+      "title": "Ayodhya – Sacred Birthplace of Rama",
+      "short": "The birthplace of Lord Rama, one of India's most important pilgrimage sites.",
+      "long": "Ayodhya, the birthplace of Lord Rama, is one of India's most important pilgrimage sites. Temples, ghats, and spiritual energy define the city. With its sacred aura and timeless legends, Ayodhya offers travelers devotion and cultural richness.",
+      "history": "Ayodhya is believed to be the birthplace of Lord Rama and is one of the seven sacred cities of Hinduism. The city has been a major pilgrimage center for centuries.",
+      "overview": "A sacred city with temples, ghats, and spiritual significance."
+    },
+    "languages": [ "Hindi", "Awadhi", "English", "Sanskrit" ],
+    "images": { "banner": "", "card": "", "others": [] },
+    "emergencyContacts": {
+      "Police": "100", "Ambulance": "102", "Fire": "101",
+      "Tourist Helpline": "1363", "State Tourism": "05278-2506670"
+    },
+    "safetyInformation": [
+      "Be respectful during religious ceremonies and festivals.",
+      "Follow guidelines for temple visits.",
+      "Respect the spiritual significance of the area."
+    ],
+    "travelTips": [
+      "Visit the Ram Janmabhoomi Temple and other sacred sites.",
+      "Explore the ghats and learn about Rama's legends.",
+      "Attend religious festivals and ceremonies.",
+      "Learn about Hindu mythology and culture."
+    ],
+    "experiences": {
+      "Food": [], "Activities": [], "LocalMarkets": [], "Spiritual": [],
+      "Historical": [], "Nature": [], "Cultural": [], "Adventure": [], "Others": []
+    },
+    "trending": { "places": [] },
+    "createdAt": { "$date": "2025-10-08T04:01:04.008Z" },
+    "updatedAt": { "$date": "2025-10-08T04:01:04.008Z" }
+  }
+]

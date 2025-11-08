@@ -1,0 +1,303 @@
+[
+  {
+    "_id": { "$oid": "68e5e20021c4af9b4a7549df" },
+    "name": "Shillong",
+    "location": [
+      {
+        "country": { "id": { "$oid": "68d7f24214fbfc2474738355" } },
+        "state": { "id": { "$oid": "68e286785b54d5e1bf69b1f4" } },
+        "region": { "id": { "$oid": "68d7f77c14fbfc2474738358" } }
+      }
+    ],
+    "greetingText": "Welcome to Shillong!",
+    "tagLine": "Scotland of the East",
+    "description": {
+      "title": "Shillong – Hill Station Paradise",
+      "short": "Hill station with waterfalls, pine forests, and colonial charm - the Scotland of the East.",
+      "long": "Shillong, the 'Scotland of the East,' is a hill station with waterfalls, pine forests, and colonial charm. Known for Ward's Lake, music culture, and vibrant markets, it blends nature with liveliness. With scenic viewpoints and cool weather, Shillong is the cultural and scenic heart of Meghalaya.",
+      "history": "Shillong was the capital of Assam before Meghalaya was formed in 1972. It served as the summer capital of British India and retains much of its colonial architecture.",
+      "overview": "A charming hill station with colonial architecture, music culture, and natural beauty."
+    },
+    "languages": [ "Khasi", "Hindi", "English", "Garo" ],
+    "images": { "banner": "", "card": "", "others": [] },
+    "emergencyContacts": {
+      "Police": "100", "Ambulance": "102", "Fire": "101",
+      "Tourist Helpline": "1363", "State Tourism": "0364-2226050"
+    },
+    "safetyInformation": [
+      "Be careful on steep and winding roads.",
+      "Carry warm clothing as temperatures can drop.",
+      "Follow guidelines during monsoon season."
+    ],
+    "travelTips": [
+      "Visit Ward's Lake and Shillong Peak for scenic views.",
+      "Explore the local music scene and cultural festivals.",
+      "Try local Khasi cuisine and traditional dishes."
+    ],
+    "experiences": {
+      "Food": [], "Activities": [], "LocalMarkets": [], "Spiritual": [],
+      "Historical": [], "Nature": [], "Cultural": [], "Adventure": [], "Others": []
+    },
+    "trending": { "places": [] },
+    "createdAt": { "$date": "2025-10-08T04:01:04.008Z" },
+    "updatedAt": { "$date": "2025-10-08T04:01:04.008Z" }
+  },
+  {
+    "_id": { "$oid": "68e5e20021c4af9b4a7549e0" },
+    "name": "Cherrapunji (Sohra)",
+    "location": [
+      {
+        "country": { "id": { "$oid": "68d7f24214fbfc2474738355" } },
+        "state": { "id": { "$oid": "68e286785b54d5e1bf69b1f4" } },
+        "region": { "id": { "$oid": "68d7f77c14fbfc2474738358" } }
+      }
+    ],
+    "greetingText": "Welcome to Cherrapunji!",
+    "tagLine": "Wettest Place on Earth",
+    "description": {
+      "title": "Cherrapunji – Land of Living Bridges",
+      "short": "Famous as one of the wettest places on Earth with living root bridges and waterfalls.",
+      "long": "Cherrapunji, or Sohra, is famous as one of the wettest places on Earth. Known for its living root bridges, waterfalls, and caves, it offers breathtaking landscapes. With misty valleys and unique natural wonders, Cherrapunji is a must-visit for travelers seeking Meghalaya's raw beauty and adventure.",
+      "history": "Cherrapunji holds the record for the highest annual rainfall in the world. The living root bridges are a unique engineering marvel created by the Khasi people over centuries.",
+      "overview": "A misty paradise with living root bridges, waterfalls, and record-breaking rainfall."
+    },
+    "languages": [ "Khasi", "Hindi", "English", "Garo" ],
+    "images": { "banner": "", "card": "", "others": [] },
+    "emergencyContacts": {
+      "Police": "100", "Ambulance": "102", "Fire": "101",
+      "Tourist Helpline": "1363", "State Tourism": "03637-2226050"
+    },
+    "safetyInformation": [
+      "Be prepared for heavy rainfall and slippery conditions.",
+      "Follow safety guidelines for cave exploration.",
+      "Respect the living root bridges and local traditions."
+    ],
+    "travelTips": [
+      "Visit the living root bridges - a UNESCO World Heritage site.",
+      "Explore caves and waterfalls in the area.",
+      "Carry rain gear and waterproof equipment."
+    ],
+    "experiences": {
+      "Food": [], "Activities": [], "LocalMarkets": [], "Spiritual": [],
+      "Historical": [], "Nature": [], "Cultural": [], "Adventure": [], "Others": []
+    },
+    "trending": { "places": [] },
+    "createdAt": { "$date": "2025-10-08T04:01:04.008Z" },
+    "updatedAt": { "$date": "2025-10-08T04:01:04.008Z" }
+  },
+  {
+    "_id": { "$oid": "68e5e20021c4af9b4a7549e1" },
+    "name": "Mawlynnong",
+    "location": [
+      {
+        "country": { "id": { "$oid": "68d7f24214fbfc2474738355" } },
+        "state": { "id": { "$oid": "68e286785b54d5e1bf69b1f4" } },
+        "region": { "id": { "$oid": "68d7f77c14fbfc2474738358" } }
+      }
+    ],
+    "greetingText": "Welcome to Mawlynnong!",
+    "tagLine": "Cleanest Village in Asia",
+    "description": {
+      "title": "Mawlynnong – Model Village",
+      "short": "Often called the 'Cleanest Village in Asia' with spotless lanes and bamboo houses.",
+      "long": "Mawlynnong, often called the 'Cleanest Village in Asia,' is known for its spotless lanes, bamboo houses, and community spirit. Surrounded by forests and root bridges, it reflects harmony with nature. Quiet and eco-friendly, Mawlynnong offers travelers an inspiring glimpse into sustainable village life.",
+      "history": "Mawlynnong has been recognized as the cleanest village in Asia by various organizations. The community practices sustainable living and environmental conservation.",
+      "overview": "A model village showcasing sustainable living and environmental harmony."
+    },
+    "languages": [ "Khasi", "Hindi", "English", "Garo" ],
+    "images": { "banner": "", "card": "", "others": [] },
+    "emergencyContacts": {
+      "Police": "100", "Ambulance": "102", "Fire": "101",
+      "Tourist Helpline": "1363", "State Tourism": "03637-2226050"
+    },
+    "safetyInformation": [
+      "Respect the village's cleanliness and environmental practices.",
+      "Follow community guidelines and local customs.",
+      "Be mindful of the fragile ecosystem."
+    ],
+    "travelTips": [
+      "Learn about sustainable living practices.",
+      "Visit the living root bridge in the village.",
+      "Support local eco-friendly initiatives."
+    ],
+    "experiences": {
+      "Food": [], "Activities": [], "LocalMarkets": [], "Spiritual": [],
+      "Historical": [], "Nature": [], "Cultural": [], "Adventure": [], "Others": []
+    },
+    "trending": { "places": [] },
+    "createdAt": { "$date": "2025-10-08T04:01:04.008Z" },
+    "updatedAt": { "$date": "2025-10-08T04:01:04.008Z" }
+  },
+  {
+    "_id": { "$oid": "68e5e20021c4af9b4a7549e2" },
+    "name": "Tura",
+    "location": [
+      {
+        "country": { "id": { "$oid": "68d7f24214fbfc2474738355" } },
+        "state": { "id": { "$oid": "68e286785b54d5e1bf69b1f4" } },
+        "region": { "id": { "$oid": "68d7f77c14fbfc2474738358" } }
+      }
+    ],
+    "greetingText": "Welcome to Tura!",
+    "tagLine": "Gateway to Garo Hills",
+    "description": {
+      "title": "Tura – Garo Hills Gateway",
+      "short": "In western Meghalaya at the foothills of the Garo Hills, rich in biodiversity.",
+      "long": "Tura, in western Meghalaya, lies at the foothills of the Garo Hills. Known for Nokrek National Park, caves, and waterfalls, it's rich in biodiversity. With tribal culture and scenic charm, Tura is a peaceful base for exploring the natural wonders of the Garo region.",
+      "history": "Tura is the headquarters of the West Garo Hills district and is known for its rich tribal heritage and biodiversity. The area is home to the Garo tribe.",
+      "overview": "A peaceful town surrounded by hills, forests, and rich tribal culture."
+    },
+    "languages": [ "Garo", "Hindi", "English", "Khasi" ],
+    "images": { "banner": "", "card": "", "others": [] },
+    "emergencyContacts": {
+      "Police": "100", "Ambulance": "102", "Fire": "101",
+      "Tourist Helpline": "1363", "State Tourism": "03651-2226050"
+    },
+    "safetyInformation": [
+      "Be cautious while exploring caves and forest areas.",
+      "Follow guidelines for wildlife encounters.",
+      "Respect tribal communities and their customs."
+    ],
+    "travelTips": [
+      "Visit Nokrek National Park for wildlife viewing.",
+      "Explore local caves and waterfalls.",
+      "Learn about Garo tribal culture and traditions."
+    ],
+    "experiences": {
+      "Food": [], "Activities": [], "LocalMarkets": [], "Spiritual": [],
+      "Historical": [], "Nature": [], "Cultural": [], "Adventure": [], "Others": []
+    },
+    "trending": { "places": [] },
+    "createdAt": { "$date": "2025-10-08T04:01:04.008Z" },
+    "updatedAt": { "$date": "2025-10-08T04:01:04.008Z" }
+  },
+  {
+    "_id": { "$oid": "68e5e20021c4af9b4a7549e3" },
+    "name": "Nongstoin",
+    "location": [
+      {
+        "country": { "id": { "$oid": "68d7f24214fbfc2474738355" } },
+        "state": { "id": { "$oid": "68e286785b54d5e1bf69b1f4" } },
+        "region": { "id": { "$oid": "68d7f77c14fbfc2474738358" } }
+      }
+    ],
+    "greetingText": "Welcome to Nongstoin!",
+    "tagLine": "Serene Hill Town",
+    "description": {
+      "title": "Nongstoin – Offbeat Hill Town",
+      "short": "Quiet town surrounded by hills, rivers, and forests with trekking routes and waterfalls.",
+      "long": "Nongstoin is a quiet town surrounded by hills, rivers, and forests. Known for trekking routes and waterfalls like Langshiang, it offers serene landscapes. With less tourist crowds, Nongstoin gives travelers a calm, offbeat experience of Meghalaya's natural beauty.",
+      "history": "Nongstoin is the headquarters of the West Khasi Hills district and is known for its pristine natural beauty and peaceful atmosphere.",
+      "overview": "A tranquil hill town perfect for nature lovers and offbeat travelers."
+    },
+    "languages": [ "Khasi", "Hindi", "English", "Garo" ],
+    "images": { "banner": "", "card": "", "others": [] },
+    "emergencyContacts": {
+      "Police": "100", "Ambulance": "102", "Fire": "101",
+      "Tourist Helpline": "1363", "State Tourism": "03637-2226050"
+    },
+    "safetyInformation": [
+      "Be careful while trekking in forest areas.",
+      "Follow safety guidelines for waterfall visits.",
+      "Inform locals about your trekking plans."
+    ],
+    "travelTips": [
+      "Go for trekking and nature walks.",
+      "Visit Langshiang Falls and other waterfalls.",
+      "Enjoy the peaceful and less crowded atmosphere."
+    ],
+    "experiences": {
+      "Food": [], "Activities": [], "LocalMarkets": [], "Spiritual": [],
+      "Historical": [], "Nature": [], "Cultural": [], "Adventure": [], "Others": []
+    },
+    "trending": { "places": [] },
+    "createdAt": { "$date": "2025-10-08T04:01:04.008Z" },
+    "updatedAt": { "$date": "2025-10-08T04:01:04.008Z" }
+  },
+  {
+    "_id": { "$oid": "68e5e20021c4af9b4a7549e4" },
+    "name": "Jowai",
+    "location": [
+      {
+        "country": { "id": { "$oid": "68d7f24214fbfc2474738355" } },
+        "state": { "id": { "$oid": "68e286785b54d5e1bf69b1f4" } },
+        "region": { "id": { "$oid": "68d7f77c14fbfc2474738358" } }
+      }
+    ],
+    "greetingText": "Welcome to Jowai!",
+    "tagLine": "Jaintia Hills Gem",
+    "description": {
+      "title": "Jowai – Cultural Heart of Jaintia Hills",
+      "short": "In the Jaintia Hills, surrounded by lakes, waterfalls, and rolling valleys.",
+      "long": "Jowai, in the Jaintia Hills, is surrounded by lakes, waterfalls, and rolling valleys. Known for Thadlaskein Lake and Krang Suri Falls, it offers scenic escapes. With rich tribal traditions and festivals, Jowai blends natural charm with cultural vibrancy, making it a rewarding stop.",
+      "history": "Jowai is the headquarters of the West Jaintia Hills district and is known for its rich Jaintia tribal culture and traditions.",
+      "overview": "A cultural hub with beautiful lakes, waterfalls, and vibrant tribal traditions."
+    },
+    "languages": [ "Jaintia", "Khasi", "Hindi", "English" ],
+    "images": { "banner": "", "card": "", "others": [] },
+    "emergencyContacts": {
+      "Police": "100", "Ambulance": "102", "Fire": "101",
+      "Tourist Helpline": "1363", "State Tourism": "03637-2226050"
+    },
+    "safetyInformation": [
+      "Be cautious near water bodies and waterfalls.",
+      "Respect local tribal customs and traditions.",
+      "Follow guidelines for cultural site visits."
+    ],
+    "travelTips": [
+      "Visit Thadlaskein Lake and Krang Suri Falls.",
+      "Experience local tribal festivals and traditions.",
+      "Explore the scenic valleys and rolling hills."
+    ],
+    "experiences": {
+      "Food": [], "Activities": [], "LocalMarkets": [], "Spiritual": [],
+      "Historical": [], "Nature": [], "Cultural": [], "Adventure": [], "Others": []
+    },
+    "trending": { "places": [] },
+    "createdAt": { "$date": "2025-10-08T04:01:04.008Z" },
+    "updatedAt": { "$date": "2025-10-08T04:01:04.008Z" }
+  },
+  {
+    "_id": { "$oid": "68e5e20021c4af9b4a7549e5" },
+    "name": "Williamnagar",
+    "location": [
+      {
+        "country": { "id": { "$oid": "68d7f24214fbfc2474738355" } },
+        "state": { "id": { "$oid": "68e286785b54d5e1bf69b1f4" } },
+        "region": { "id": { "$oid": "68d7f77c14fbfc2474738358" } }
+      }
+    ],
+    "greetingText": "Welcome to Williamnagar!",
+    "tagLine": "Untouched Natural Beauty",
+    "description": {
+      "title": "Williamnagar – Hidden Gem of Meghalaya",
+      "short": "Set along the Simsang River, known for forests, wildlife, and caves.",
+      "long": "Williamnagar, set along the Simsang River, is known for its forests, wildlife, and caves. Rich in tribal heritage, it offers both cultural depth and outdoor adventures. With untouched landscapes and a peaceful atmosphere, Williamnagar is ideal for travelers exploring the lesser-known side of Meghalaya.",
+      "history": "Williamnagar is the headquarters of the East Garo Hills district and is known for its pristine natural beauty and rich tribal heritage.",
+      "overview": "A peaceful town with untouched landscapes, rich wildlife, and tribal culture."
+    },
+    "languages": [ "Garo", "Hindi", "English", "Khasi" ],
+    "images": { "banner": "", "card": "", "others": [] },
+    "emergencyContacts": {
+      "Police": "100", "Ambulance": "102", "Fire": "101",
+      "Tourist Helpline": "1363", "State Tourism": "03651-2226050"
+    },
+    "safetyInformation": [
+      "Be cautious while exploring caves and forest areas.",
+      "Follow guidelines for wildlife encounters.",
+      "Respect tribal communities and their customs."
+    ],
+    "travelTips": [
+      "Explore the forests and wildlife areas.",
+      "Visit local caves and natural formations.",
+      "Learn about Garo tribal culture and traditions."
+    ],
+    "experiences": {
+      "Food": [], "Activities": [], "LocalMarkets": [], "Spiritual": [],
+      "Historical": [], "Nature": [], "Cultural": [], "Adventure": [], "Others": []
+    },
+    "trending": { "places": [] },
+    "createdAt": { "$date": "2025-10-08T04:01:04.008Z" },
+    "updatedAt": { "$date": "2025-10-08T04:01:04.008Z" }
+  }
+]

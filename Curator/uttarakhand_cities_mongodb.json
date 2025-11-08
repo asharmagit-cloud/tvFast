@@ -1,0 +1,794 @@
+[
+  {
+    "_id": { "$oid": "68e5e20021c4af9b4a754a0f" },
+    "name": "Dehradun",
+    "location": [
+      {
+        "country": { "id": { "$oid": "68d7f24214fbfc2474738355" } },
+        "state": { "id": { "$oid": "68e1e9195b54d5e1bf69b1d8" } },
+        "region": { "id": { "$oid": "68d7f77c14fbfc2474738358" } }
+      }
+    ],
+    "greetingText": "Welcome to Dehradun!",
+    "tagLine": "Capital of Uttarakhand",
+    "description": {
+      "title": "Dehradun – Valley Capital",
+      "short": "Capital of Uttarakhand, a pleasant valley city surrounded by hills.",
+      "long": "Dehradun, the capital of Uttarakhand, is a pleasant valley city surrounded by hills. Known for its schools, markets, and natural beauty, it's a gateway to hill stations and pilgrim spots. With gardens, caves, and local charm, Dehradun is both lively and scenic.",
+      "history": "Dehradun was founded by Guru Ram Rai in the 17th century and has been an important educational and cultural center. The city is known for its prestigious schools and institutions.",
+      "overview": "A pleasant valley city with educational institutions, natural beauty, and cultural heritage."
+    },
+    "languages": [ "Hindi", "Garhwali", "English", "Punjabi" ],
+    "images": { "banner": "", "card": "", "others": [] },
+    "emergencyContacts": {
+      "Police": "100", "Ambulance": "102", "Fire": "101",
+      "Tourist Helpline": "1363", "State Tourism": "0135-2622019"
+    },
+    "safetyInformation": [
+      "Be careful on steep and winding roads.",
+      "Follow guidelines for cave exploration.",
+      "Respect local customs and traditions."
+    ],
+    "travelTips": [
+      "Visit the Robber's Cave and other natural attractions.",
+      "Explore the local markets and educational institutions.",
+      "Use Dehradun as a base to visit hill stations.",
+      "Enjoy the pleasant climate and scenic beauty."
+    ],
+    "experiences": {
+      "Food": [], "Activities": [], "LocalMarkets": [], "Spiritual": [],
+      "Historical": [], "Nature": [], "Cultural": [], "Adventure": [], "Others": []
+    },
+    "trending": { "places": [] },
+    "createdAt": { "$date": "2025-10-08T04:01:04.008Z" },
+    "updatedAt": { "$date": "2025-10-08T04:01:04.008Z" }
+  },
+  {
+    "_id": { "$oid": "68e5e20021c4af9b4a754a10" },
+    "name": "Haridwar",
+    "location": [
+      {
+        "country": { "id": { "$oid": "68d7f24214fbfc2474738355" } },
+        "state": { "id": { "$oid": "68e1e9195b54d5e1bf69b1d8" } },
+        "region": { "id": { "$oid": "68d7f77c14fbfc2474738358" } }
+      }
+    ],
+    "greetingText": "Welcome to Haridwar!",
+    "tagLine": "Gateway to the Gods",
+    "description": {
+      "title": "Haridwar – Sacred Gateway City",
+      "short": "On the banks of the Ganga, one of Hinduism's holiest cities.",
+      "long": "Haridwar, on the banks of the Ganga, is one of Hinduism's holiest cities. Known for evening aarti at Har Ki Pauri, it draws pilgrims and travelers alike. With temples, ghats, and spiritual vibrancy, Haridwar is a major cultural and religious hub.",
+      "history": "Haridwar is one of the seven holiest places in Hinduism and is where the Ganga enters the plains. The city has been a major pilgrimage center for centuries.",
+      "overview": "A sacred city with temples, ghats, and spiritual significance."
+    },
+    "languages": [ "Hindi", "Garhwali", "English", "Sanskrit" ],
+    "images": { "banner": "", "card": "", "others": [] },
+    "emergencyContacts": {
+      "Police": "100", "Ambulance": "102", "Fire": "101",
+      "Tourist Helpline": "1363", "State Tourism": "01334-220808"
+    },
+    "safetyInformation": [
+      "Be respectful during religious ceremonies and aarti.",
+      "Follow guidelines for ghat visits and river activities.",
+      "Respect the spiritual significance of the area."
+    ],
+    "travelTips": [
+      "Attend the evening Ganga aarti at Har Ki Pauri.",
+      "Visit the temples and take a dip in the Ganga.",
+      "Explore the ghats and learn about Hindu traditions.",
+      "Experience the spiritual atmosphere and community life."
+    ],
+    "experiences": {
+      "Food": [], "Activities": [], "LocalMarkets": [], "Spiritual": [],
+      "Historical": [], "Nature": [], "Cultural": [], "Adventure": [], "Others": []
+    },
+    "trending": { "places": [] },
+    "createdAt": { "$date": "2025-10-08T04:01:04.008Z" },
+    "updatedAt": { "$date": "2025-10-08T04:01:04.008Z" }
+  },
+  {
+    "_id": { "$oid": "68e5e20021c4af9b4a754a11" },
+    "name": "Rishikesh",
+    "location": [
+      {
+        "country": { "id": { "$oid": "68d7f24214fbfc2474738355" } },
+        "state": { "id": { "$oid": "68e1e9195b54d5e1bf69b1d8" } },
+        "region": { "id": { "$oid": "68d7f77c14fbfc2474738358" } }
+      }
+    ],
+    "greetingText": "Welcome to Rishikesh!",
+    "tagLine": "Yoga Capital of the World",
+    "description": {
+      "title": "Rishikesh – Yoga Capital of the World",
+      "short": "The 'Yoga Capital of the World,' known for ashrams, river rafting, and scenic beauty.",
+      "long": "Rishikesh, the 'Yoga Capital of the World,' is known for its ashrams, river rafting, and scenic beauty. With suspension bridges, the Ganga, and Himalayan views, it blends spirituality with adventure. Rishikesh offers travelers peace, energy, and natural charm.",
+      "history": "Rishikesh is known as the 'Yoga Capital of the World' and is home to many ashrams and yoga centers. The city is also famous for adventure sports like river rafting.",
+      "overview": "A spiritual city with ashrams, adventure sports, and natural beauty."
+    },
+    "languages": [ "Hindi", "Garhwali", "English", "Sanskrit" ],
+    "images": { "banner": "", "card": "", "others": [] },
+    "emergencyContacts": {
+      "Police": "100", "Ambulance": "102", "Fire": "101",
+      "Tourist Helpline": "1363", "State Tourism": "0135-2430209"
+    },
+    "safetyInformation": [
+      "Be careful during river rafting and adventure activities.",
+      "Follow safety guidelines for water sports.",
+      "Respect the spiritual nature of ashrams and temples."
+    ],
+    "travelTips": [
+      "Join yoga and meditation sessions at ashrams.",
+      "Try river rafting and other adventure sports.",
+      "Visit the suspension bridges and temples.",
+      "Enjoy the peaceful atmosphere and natural beauty."
+    ],
+    "experiences": {
+      "Food": [], "Activities": [], "LocalMarkets": [], "Spiritual": [],
+      "Historical": [], "Nature": [], "Cultural": [], "Adventure": [], "Others": []
+    },
+    "trending": { "places": [] },
+    "createdAt": { "$date": "2025-10-08T04:01:04.008Z" },
+    "updatedAt": { "$date": "2025-10-08T04:01:04.008Z" }
+  },
+  {
+    "_id": { "$oid": "68e5e20021c4af9b4a754a12" },
+    "name": "Nainital",
+    "location": [
+      {
+        "country": { "id": { "$oid": "68d7f24214fbfc2474738355" } },
+        "state": { "id": { "$oid": "68e1e9195b54d5e1bf69b1d8" } },
+        "region": { "id": { "$oid": "68d7f77c14fbfc2474738358" } }
+      }
+    ],
+    "greetingText": "Welcome to Nainital!",
+    "tagLine": "Lake District of India",
+    "description": {
+      "title": "Nainital – Lake District of India",
+      "short": "The 'Lake District of India,' a charming hill town centered around Naini Lake.",
+      "long": "Nainital, the 'Lake District of India,' is a charming hill town centered around Naini Lake. Surrounded by hills, it offers boating, viewpoints, and colonial charm. With cool weather and lively bazaars, Nainital is one of Uttarakhand's most popular retreats.",
+      "history": "Nainital was developed as a hill station by the British in the 19th century. The town is centered around the beautiful Naini Lake and has colonial architecture.",
+      "overview": "A charming hill station with a beautiful lake, colonial architecture, and scenic beauty."
+    },
+    "languages": [ "Hindi", "Kumaoni", "English", "Punjabi" ],
+    "images": { "banner": "", "card": "", "others": [] },
+    "emergencyContacts": {
+      "Police": "100", "Ambulance": "102", "Fire": "101",
+      "Tourist Helpline": "1363", "State Tourism": "05942-235892"
+    },
+    "safetyInformation": [
+      "Be careful while boating on the lake.",
+      "Follow safety guidelines for adventure activities.",
+      "Carry warm clothing as temperatures can drop."
+    ],
+    "travelTips": [
+      "Go boating on Naini Lake and enjoy the scenic views.",
+      "Visit viewpoints like Naina Peak and Tiffin Top.",
+      "Explore the colonial architecture and bazaars.",
+      "Enjoy the cool climate and peaceful atmosphere."
+    ],
+    "experiences": {
+      "Food": [], "Activities": [], "LocalMarkets": [], "Spiritual": [],
+      "Historical": [], "Nature": [], "Cultural": [], "Adventure": [], "Others": []
+    },
+    "trending": { "places": [] },
+    "createdAt": { "$date": "2025-10-08T04:01:04.008Z" },
+    "updatedAt": { "$date": "2025-10-08T04:01:04.008Z" }
+  },
+  {
+    "_id": { "$oid": "68e5e20021c4af9b4a754a13" },
+    "name": "Haldwani",
+    "location": [
+      {
+        "country": { "id": { "$oid": "68d7f24214fbfc2474738355" } },
+        "state": { "id": { "$oid": "68e1e9195b54d5e1bf69b1d8" } },
+        "region": { "id": { "$oid": "68d7f77c14fbfc2474738358" } }
+      }
+    ],
+    "greetingText": "Welcome to Haldwani!",
+    "tagLine": "Gateway to Kumaon",
+    "description": {
+      "title": "Haldwani – Gateway to Kumaon",
+      "short": "Often called the 'Gateway to Kumaon,' a bustling town surrounded by hills.",
+      "long": "Haldwani, often called the 'Gateway to Kumaon,' is a bustling town surrounded by hills. With markets, temples, and nearby forests, it serves as both a cultural and practical stop. Haldwani offers travelers a mix of local flavor and convenience.",
+      "history": "Haldwani is known as the gateway to the Kumaon region and has been an important trading center for centuries. The town is surrounded by hills and forests.",
+      "overview": "A bustling town with markets, temples, and access to the Kumaon region."
+    },
+    "languages": [ "Hindi", "Kumaoni", "English", "Punjabi" ],
+    "images": { "banner": "", "card": "", "others": [] },
+    "emergencyContacts": {
+      "Police": "100", "Ambulance": "102", "Fire": "101",
+      "Tourist Helpline": "1363", "State Tourism": "05946-235892"
+    },
+    "safetyInformation": [
+      "Be cautious in crowded market areas.",
+      "Follow guidelines for forest visits.",
+      "Respect local customs and traditions."
+    ],
+    "travelTips": [
+      "Explore the local markets and temples.",
+      "Use Haldwani as a base to visit Kumaon region.",
+      "Enjoy the local cuisine and culture.",
+      "Visit nearby forests and natural attractions."
+    ],
+    "experiences": {
+      "Food": [], "Activities": [], "LocalMarkets": [], "Spiritual": [],
+      "Historical": [], "Nature": [], "Cultural": [], "Adventure": [], "Others": []
+    },
+    "trending": { "places": [] },
+    "createdAt": { "$date": "2025-10-08T04:01:04.008Z" },
+    "updatedAt": { "$date": "2025-10-08T04:01:04.008Z" }
+  },
+  {
+    "_id": { "$oid": "68e5e20021c4af9b4a754a14" },
+    "name": "Almora",
+    "location": [
+      {
+        "country": { "id": { "$oid": "68d7f24214fbfc2474738355" } },
+        "state": { "id": { "$oid": "68e1e9195b54d5e1bf69b1d8" } },
+        "region": { "id": { "$oid": "68d7f77c14fbfc2474738358" } }
+      }
+    ],
+    "greetingText": "Welcome to Almora!",
+    "tagLine": "Cultural Heart of Kumaon",
+    "description": {
+      "title": "Almora – Cultural Heart of Kumaon",
+      "short": "A hill town known for panoramic views, temples, and cultural traditions.",
+      "long": "Almora is a hill town known for its panoramic views, temples, and cultural traditions. With handicrafts, festivals, and peaceful surroundings, it reflects Kumaoni heritage. Almora offers travelers both charm and calm in the Himalayas.",
+      "history": "Almora is known for its rich cultural heritage and traditional handicrafts. The town has been a major cultural center of the Kumaon region for centuries.",
+      "overview": "A cultural hill town with panoramic views, temples, and traditional handicrafts."
+    },
+    "languages": [ "Hindi", "Kumaoni", "English", "Sanskrit" ],
+    "images": { "banner": "", "card": "", "others": [] },
+    "emergencyContacts": {
+      "Police": "100", "Ambulance": "102", "Fire": "101",
+      "Tourist Helpline": "1363", "State Tourism": "05962-235892"
+    },
+    "safetyInformation": [
+      "Be careful on steep and winding roads.",
+      "Follow guidelines for temple visits.",
+      "Respect local customs and traditions."
+    ],
+    "travelTips": [
+      "Enjoy the panoramic views of the Himalayas.",
+      "Visit temples and learn about Kumaoni culture.",
+      "Shop for traditional handicrafts and textiles.",
+      "Experience local festivals and traditions."
+    ],
+    "experiences": {
+      "Food": [], "Activities": [], "LocalMarkets": [], "Spiritual": [],
+      "Historical": [], "Nature": [], "Cultural": [], "Adventure": [], "Others": []
+    },
+    "trending": { "places": [] },
+    "createdAt": { "$date": "2025-10-08T04:01:04.008Z" },
+    "updatedAt": { "$date": "2025-10-08T04:01:04.008Z" }
+  },
+  {
+    "_id": { "$oid": "68e5e20021c4af9b4a754a15" },
+    "name": "Pithoragarh",
+    "location": [
+      {
+        "country": { "id": { "$oid": "68d7f24214fbfc2474738355" } },
+        "state": { "id": { "$oid": "68e1e9195b54d5e1bf69b1d8" } },
+        "region": { "id": { "$oid": "68d7f77c14fbfc2474738358" } }
+      }
+    ],
+    "greetingText": "Welcome to Pithoragarh!",
+    "tagLine": "Little Kashmir",
+    "description": {
+      "title": "Pithoragarh – Little Kashmir",
+      "short": "In the eastern Himalayas, known as 'Little Kashmir' with snow peaks and valleys.",
+      "long": "Pithoragarh, in the eastern Himalayas, is known as 'Little Kashmir.' Surrounded by snow peaks, valleys, and rivers, it offers adventure and scenic beauty. With forts and cultural richness, Pithoragarh is ideal for both explorers and nature lovers.",
+      "history": "Pithoragarh is known as 'Little Kashmir' due to its scenic beauty and is surrounded by snow-capped peaks. The town has a rich cultural heritage and is a base for adventure activities.",
+      "overview": "A scenic town in the eastern Himalayas with snow peaks, valleys, and adventure opportunities."
+    },
+    "languages": [ "Hindi", "Kumaoni", "English", "Sanskrit" ],
+    "images": { "banner": "", "card": "", "others": [] },
+    "emergencyContacts": {
+      "Police": "100", "Ambulance": "102", "Fire": "101",
+      "Tourist Helpline": "1363", "State Tourism": "05964-235892"
+    },
+    "safetyInformation": [
+      "Be careful during adventure activities and trekking.",
+      "Follow safety guidelines for mountain activities.",
+      "Respect local customs and traditions."
+    ],
+    "travelTips": [
+      "Enjoy the scenic beauty and snow-capped peaks.",
+      "Go for trekking and adventure activities.",
+      "Visit forts and learn about local culture.",
+      "Experience the peaceful mountain atmosphere."
+    ],
+    "experiences": {
+      "Food": [], "Activities": [], "LocalMarkets": [], "Spiritual": [],
+      "Historical": [], "Nature": [], "Cultural": [], "Adventure": [], "Others": []
+    },
+    "trending": { "places": [] },
+    "createdAt": { "$date": "2025-10-08T04:01:04.008Z" },
+    "updatedAt": { "$date": "2025-10-08T04:01:04.008Z" }
+  },
+  {
+    "_id": { "$oid": "68e5e20021c4af9b4a754a16" },
+    "name": "Rudrapur",
+    "location": [
+      {
+        "country": { "id": { "$oid": "68d7f24214fbfc2474738355" } },
+        "state": { "id": { "$oid": "68e1e9195b54d5e1bf69b1d8" } },
+        "region": { "id": { "$oid": "68d7f77c14fbfc2474738358" } }
+      }
+    ],
+    "greetingText": "Welcome to Rudrapur!",
+    "tagLine": "Growing Industrial Town",
+    "description": {
+      "title": "Rudrapur – Modern Gateway City",
+      "short": "A growing industrial town with a mix of modern energy and local traditions.",
+      "long": "Rudrapur is a growing industrial town with a mix of modern energy and local traditions. Surrounded by fields and hills, it serves as a gateway to Kumaon. With temples and a relaxed pace, Rudrapur offers travelers a simple and welcoming experience.",
+      "history": "Rudrapur is a growing industrial town that serves as a gateway to the Kumaon region. The town has a mix of modern development and traditional culture.",
+      "overview": "A growing town with industrial development, temples, and access to Kumaon region."
+    },
+    "languages": [ "Hindi", "Kumaoni", "English", "Punjabi" ],
+    "images": { "banner": "", "card": "", "others": [] },
+    "emergencyContacts": {
+      "Police": "100", "Ambulance": "102", "Fire": "101",
+      "Tourist Helpline": "1363", "State Tourism": "05944-235892"
+    },
+    "safetyInformation": [
+      "Be cautious in industrial areas.",
+      "Follow guidelines for temple visits.",
+      "Respect local customs and traditions."
+    ],
+    "travelTips": [
+      "Visit local temples and cultural sites.",
+      "Use Rudrapur as a gateway to Kumaon region.",
+      "Enjoy the simple and welcoming atmosphere.",
+      "Learn about local traditions and culture."
+    ],
+    "experiences": {
+      "Food": [], "Activities": [], "LocalMarkets": [], "Spiritual": [],
+      "Historical": [], "Nature": [], "Cultural": [], "Adventure": [], "Others": []
+    },
+    "trending": { "places": [] },
+    "createdAt": { "$date": "2025-10-08T04:01:04.008Z" },
+    "updatedAt": { "$date": "2025-10-08T04:01:04.008Z" }
+  },
+  {
+    "_id": { "$oid": "68e5e20021c4af9b4a754a17" },
+    "name": "Kashipur",
+    "location": [
+      {
+        "country": { "id": { "$oid": "68d7f24214fbfc2474738355" } },
+        "state": { "id": { "$oid": "68e1e9195b54d5e1bf69b1d8" } },
+        "region": { "id": { "$oid": "68d7f77c14fbfc2474738358" } }
+      }
+    ],
+    "greetingText": "Welcome to Kashipur!",
+    "tagLine": "Historic Cultural Town",
+    "description": {
+      "title": "Kashipur – Historic Cultural Town",
+      "short": "A historic town known for temples, forts, and cultural depth.",
+      "long": "Kashipur is a historic town known for temples, forts, and cultural depth. With links to mythology and pleasant surroundings, it balances heritage with modern growth. Kashipur provides travelers with a glimpse of Uttarakhand's history and tradition.",
+      "history": "Kashipur is a historic town with links to Hindu mythology and has several ancient temples and forts. The town has a rich cultural heritage.",
+      "overview": "A historic town with temples, forts, and cultural significance."
+    },
+    "languages": [ "Hindi", "Kumaoni", "English", "Sanskrit" ],
+    "images": { "banner": "", "card": "", "others": [] },
+    "emergencyContacts": {
+      "Police": "100", "Ambulance": "102", "Fire": "101",
+      "Tourist Helpline": "1363", "State Tourism": "05947-235892"
+    },
+    "safetyInformation": [
+      "Be respectful when visiting temples and forts.",
+      "Follow guidelines for heritage site visits.",
+      "Respect local customs and traditions."
+    ],
+    "travelTips": [
+      "Visit ancient temples and forts.",
+      "Learn about local mythology and history.",
+      "Explore the cultural heritage and traditions.",
+      "Enjoy the pleasant surroundings and atmosphere."
+    ],
+    "experiences": {
+      "Food": [], "Activities": [], "LocalMarkets": [], "Spiritual": [],
+      "Historical": [], "Nature": [], "Cultural": [], "Adventure": [], "Others": []
+    },
+    "trending": { "places": [] },
+    "createdAt": { "$date": "2025-10-08T04:01:04.008Z" },
+    "updatedAt": { "$date": "2025-10-08T04:01:04.008Z" }
+  },
+  {
+    "_id": { "$oid": "68e5e20021c4af9b4a754a18" },
+    "name": "Roorkee",
+    "location": [
+      {
+        "country": { "id": { "$oid": "68d7f24214fbfc2474738355" } },
+        "state": { "id": { "$oid": "68e1e9195b54d5e1bf69b1d8" } },
+        "region": { "id": { "$oid": "68d7f77c14fbfc2474738358" } }
+      }
+    ],
+    "greetingText": "Welcome to Roorkee!",
+    "tagLine": "Engineering Heritage City",
+    "description": {
+      "title": "Roorkee – Engineering Heritage City",
+      "short": "Famous for IIT Roorkee and its engineering heritage.",
+      "long": "Roorkee is famous for IIT Roorkee and its engineering heritage. Known for the Ganga Canal and historic institutions, it reflects both tradition and progress. With a mix of learning and culture, Roorkee offers travelers a unique stop in Uttarakhand.",
+      "history": "Roorkee is home to IIT Roorkee, one of India's premier engineering institutions. The city is also known for the Ganga Canal, built in the 19th century.",
+      "overview": "A city known for engineering excellence, educational institutions, and cultural heritage."
+    },
+    "languages": [ "Hindi", "Garhwali", "English", "Punjabi" ],
+    "images": { "banner": "", "card": "", "others": [] },
+    "emergencyContacts": {
+      "Police": "100", "Ambulance": "102", "Fire": "101",
+      "Tourist Helpline": "1363", "State Tourism": "01332-235892"
+    },
+    "safetyInformation": [
+      "Be respectful when visiting educational institutions.",
+      "Follow guidelines for heritage site visits.",
+      "Respect local customs and traditions."
+    ],
+    "travelTips": [
+      "Visit IIT Roorkee and learn about engineering heritage.",
+      "Explore the Ganga Canal and historic sites.",
+      "Learn about the city's educational and cultural significance.",
+      "Enjoy the academic atmosphere and local culture."
+    ],
+    "experiences": {
+      "Food": [], "Activities": [], "LocalMarkets": [], "Spiritual": [],
+      "Historical": [], "Nature": [], "Cultural": [], "Adventure": [], "Others": []
+    },
+    "trending": { "places": [] },
+    "createdAt": { "$date": "2025-10-08T04:01:04.008Z" },
+    "updatedAt": { "$date": "2025-10-08T04:01:04.008Z" }
+  },
+  {
+    "_id": { "$oid": "68e5e20021c4af9b4a754a19" },
+    "name": "Tehri",
+    "location": [
+      {
+        "country": { "id": { "$oid": "68d7f24214fbfc2474738355" } },
+        "state": { "id": { "$oid": "68e1e9195b54d5e1bf69b1d8" } },
+        "region": { "id": { "$oid": "68d7f77c14fbfc2474738358" } }
+      }
+    ],
+    "greetingText": "Welcome to Tehri!",
+    "tagLine": "Dam City with Scenic Lake",
+    "description": {
+      "title": "Tehri – Dam City with Scenic Lake",
+      "short": "Known for the massive Tehri Dam and the scenic Tehri Lake.",
+      "long": "Tehri is known for the massive Tehri Dam and the scenic Tehri Lake. With water sports, mountains, and fresh air, it blends adventure with natural charm. Tehri offers travelers peace, thrill, and stunning Himalayan views.",
+      "history": "Tehri is known for the Tehri Dam, one of the highest dams in India. The dam created the Tehri Lake, which is now a popular destination for water sports and tourism.",
+      "overview": "A city known for its massive dam, scenic lake, and adventure opportunities."
+    },
+    "languages": [ "Hindi", "Garhwali", "English", "Sanskrit" ],
+    "images": { "banner": "", "card": "", "others": [] },
+    "emergencyContacts": {
+      "Police": "100", "Ambulance": "102", "Fire": "101",
+      "Tourist Helpline": "1363", "State Tourism": "01376-235892"
+    },
+    "safetyInformation": [
+      "Be careful during water sports and adventure activities.",
+      "Follow safety guidelines for dam and lake visits.",
+      "Respect local customs and traditions."
+    ],
+    "travelTips": [
+      "Visit the Tehri Dam and learn about its engineering.",
+      "Enjoy water sports and activities on Tehri Lake.",
+      "Take in the stunning Himalayan views.",
+      "Experience the peaceful mountain atmosphere."
+    ],
+    "experiences": {
+      "Food": [], "Activities": [], "LocalMarkets": [], "Spiritual": [],
+      "Historical": [], "Nature": [], "Cultural": [], "Adventure": [], "Others": []
+    },
+    "trending": { "places": [] },
+    "createdAt": { "$date": "2025-10-08T04:01:04.008Z" },
+    "updatedAt": { "$date": "2025-10-08T04:01:04.008Z" }
+  },
+  {
+    "_id": { "$oid": "68e5e20021c4af9b4a754a1a" },
+    "name": "Joshimath",
+    "location": [
+      {
+        "country": { "id": { "$oid": "68d7f24214fbfc2474738355" } },
+        "state": { "id": { "$oid": "68e1e9195b54d5e1bf69b1d8" } },
+        "region": { "id": { "$oid": "68d7f77c14fbfc2474738358" } }
+      }
+    ],
+    "greetingText": "Welcome to Joshimath!",
+    "tagLine": "Gateway to the Himalayas",
+    "description": {
+      "title": "Joshimath – Gateway to the Himalayas",
+      "short": "A sacred town and base for treks to the Himalayas.",
+      "long": "Joshimath is a sacred town and base for treks to the Himalayas. Known for its temples, monasteries, and views of Nanda Devi, it's both spiritual and adventurous. With nearby Auli, Joshimath is a gateway for skiing and mountain exploration.",
+      "history": "Joshimath is a sacred town and base for treks to the Himalayas. The town is known for its temples and monasteries and is a gateway to Auli, a popular skiing destination.",
+      "overview": "A sacred town with temples, monasteries, and access to Himalayan treks and skiing."
+    },
+    "languages": [ "Hindi", "Garhwali", "English", "Sanskrit" ],
+    "images": { "banner": "", "card": "", "others": [] },
+    "emergencyContacts": {
+      "Police": "100", "Ambulance": "102", "Fire": "101",
+      "Tourist Helpline": "1363", "State Tourism": "01389-235892"
+    },
+    "safetyInformation": [
+      "Be careful during trekking and mountain activities.",
+      "Follow safety guidelines for high-altitude areas.",
+      "Respect the spiritual significance of temples and monasteries."
+    ],
+    "travelTips": [
+      "Visit temples and monasteries for spiritual experiences.",
+      "Go for trekking and mountain exploration.",
+      "Visit Auli for skiing and winter sports.",
+      "Enjoy the views of Nanda Devi and other peaks."
+    ],
+    "experiences": {
+      "Food": [], "Activities": [], "LocalMarkets": [], "Spiritual": [],
+      "Historical": [], "Nature": [], "Cultural": [], "Adventure": [], "Others": []
+    },
+    "trending": { "places": [] },
+    "createdAt": { "$date": "2025-10-08T04:01:04.008Z" },
+    "updatedAt": { "$date": "2025-10-08T04:01:04.008Z" }
+  },
+  {
+    "_id": { "$oid": "68e5e20021c4af9b4a754a1b" },
+    "name": "Bageshwar",
+    "location": [
+      {
+        "country": { "id": { "$oid": "68d7f24214fbfc2474738355" } },
+        "state": { "id": { "$oid": "68e1e9195b54d5e1bf69b1d8" } },
+        "region": { "id": { "$oid": "68d7f77c14fbfc2474738358" } }
+      }
+    ],
+    "greetingText": "Welcome to Bageshwar!",
+    "tagLine": "Sacred Confluence Town",
+    "description": {
+      "title": "Bageshwar – Sacred Confluence Town",
+      "short": "Set at the confluence of rivers, a small town with temples and scenic charm.",
+      "long": "Bageshwar, set at the confluence of rivers, is a small town with temples and scenic charm. Surrounded by mountains and valleys, it reflects Kumaoni traditions. With calm beauty and spiritual depth, Bageshwar is a peaceful retreat.",
+      "history": "Bageshwar is set at the confluence of the Saryu and Gomti rivers and is known for its temples and scenic beauty. The town has a rich cultural heritage.",
+      "overview": "A peaceful town at the confluence of rivers, known for temples and scenic beauty."
+    },
+    "languages": [ "Hindi", "Kumaoni", "English", "Sanskrit" ],
+    "images": { "banner": "", "card": "", "others": [] },
+    "emergencyContacts": {
+      "Police": "100", "Ambulance": "102", "Fire": "101",
+      "Tourist Helpline": "1363", "State Tourism": "05963-235892"
+    },
+    "safetyInformation": [
+      "Be careful near water bodies and rivers.",
+      "Follow guidelines for temple visits.",
+      "Respect local customs and traditions."
+    ],
+    "travelTips": [
+      "Visit temples and learn about local traditions.",
+      "Enjoy the scenic beauty and peaceful atmosphere.",
+      "Explore the confluence of rivers and natural beauty.",
+      "Experience the spiritual and cultural depth of the area."
+    ],
+    "experiences": {
+      "Food": [], "Activities": [], "LocalMarkets": [], "Spiritual": [],
+      "Historical": [], "Nature": [], "Cultural": [], "Adventure": [], "Others": []
+    },
+    "trending": { "places": [] },
+    "createdAt": { "$date": "2025-10-08T04:01:04.008Z" },
+    "updatedAt": { "$date": "2025-10-08T04:01:04.008Z" }
+  },
+  {
+    "_id": { "$oid": "68e5e20021c4af9b4a754a1c" },
+    "name": "Dwarahat",
+    "location": [
+      {
+        "country": { "id": { "$oid": "68d7f24214fbfc2474738355" } },
+        "state": { "id": { "$oid": "68e1e9195b54d5e1bf69b1d8" } },
+        "region": { "id": { "$oid": "68d7f77c14fbfc2474738358" } }
+      }
+    ],
+    "greetingText": "Welcome to Dwarahat!",
+    "tagLine": "Ancient Temple Town",
+    "description": {
+      "title": "Dwarahat – Ancient Temple Town",
+      "short": "A quiet hill town known for its ancient temples and serene surroundings.",
+      "long": "Dwarahat is a quiet hill town known for its ancient temples and serene surroundings. With Himalayan views and cultural heritage, it reflects Uttarakhand's timeless charm. Dwarahat offers travelers peace and spirituality away from the crowds.",
+      "history": "Dwarahat is known for its ancient temples and cultural heritage. The town has a rich history and is known for its peaceful atmosphere.",
+      "overview": "A peaceful hill town with ancient temples, cultural heritage, and serene surroundings."
+    },
+    "languages": [ "Hindi", "Kumaoni", "English", "Sanskrit" ],
+    "images": { "banner": "", "card": "", "others": [] },
+    "emergencyContacts": {
+      "Police": "100", "Ambulance": "102", "Fire": "101",
+      "Tourist Helpline": "1363", "State Tourism": "05962-235892"
+    },
+    "safetyInformation": [
+      "Be respectful when visiting ancient temples.",
+      "Follow guidelines for heritage site visits.",
+      "Respect local customs and traditions."
+    ],
+    "travelTips": [
+      "Visit ancient temples and learn about local history.",
+      "Enjoy the peaceful atmosphere and scenic beauty.",
+      "Explore the cultural heritage and traditions.",
+      "Experience the spiritual and serene environment."
+    ],
+    "experiences": {
+      "Food": [], "Activities": [], "LocalMarkets": [], "Spiritual": [],
+      "Historical": [], "Nature": [], "Cultural": [], "Adventure": [], "Others": []
+    },
+    "trending": { "places": [] },
+    "createdAt": { "$date": "2025-10-08T04:01:04.008Z" },
+    "updatedAt": { "$date": "2025-10-08T04:01:04.008Z" }
+  },
+  {
+    "_id": { "$oid": "68e5e20021c4af9b4a754a1d" },
+    "name": "Mussoorie",
+    "location": [
+      {
+        "country": { "id": { "$oid": "68d7f24214fbfc2474738355" } },
+        "state": { "id": { "$oid": "68e1e9195b54d5e1bf69b1d8" } },
+        "region": { "id": { "$oid": "68d7f77c14fbfc2474738358" } }
+      }
+    ],
+    "greetingText": "Welcome to Mussoorie!",
+    "tagLine": "Queen of Hill Stations",
+    "description": {
+      "title": "Mussoorie – Queen of Hill Stations",
+      "short": "The 'Queen of Hill Stations,' famous for colonial charm, waterfalls, and views.",
+      "long": "Mussoorie, the 'Queen of Hill Stations,' is famous for its colonial charm, waterfalls, and views of the Doon Valley. With lively bazaars and scenic walks, it blends romance with liveliness. Mussoorie is one of Uttarakhand's most beloved getaways.",
+      "history": "Mussoorie was developed as a hill station by the British in the 19th century and is known for its colonial architecture and scenic beauty. The town is famous for its views of the Doon Valley.",
+      "overview": "A charming hill station with colonial architecture, waterfalls, and scenic beauty."
+    },
+    "languages": [ "Hindi", "Garhwali", "English", "Punjabi" ],
+    "images": { "banner": "", "card": "", "others": [] },
+    "emergencyContacts": {
+      "Police": "100", "Ambulance": "102", "Fire": "101",
+      "Tourist Helpline": "1363", "State Tourism": "0135-2632863"
+    },
+    "safetyInformation": [
+      "Be careful on steep and winding roads.",
+      "Follow safety guidelines for waterfall visits.",
+      "Carry warm clothing as temperatures can drop."
+    ],
+    "travelTips": [
+      "Enjoy the views of the Doon Valley and Himalayas.",
+      "Visit waterfalls and colonial buildings.",
+      "Explore the lively bazaars and local culture.",
+      "Take scenic walks and enjoy the romantic atmosphere."
+    ],
+    "experiences": {
+      "Food": [], "Activities": [], "LocalMarkets": [], "Spiritual": [],
+      "Historical": [], "Nature": [], "Cultural": [], "Adventure": [], "Others": []
+    },
+    "trending": { "places": [] },
+    "createdAt": { "$date": "2025-10-08T04:01:04.008Z" },
+    "updatedAt": { "$date": "2025-10-08T04:01:04.008Z" }
+  },
+  {
+    "_id": { "$oid": "68e5e20021c4af9b4a754a1e" },
+    "name": "Champawat",
+    "location": [
+      {
+        "country": { "id": { "$oid": "68d7f24214fbfc2474738355" } },
+        "state": { "id": { "$oid": "68e1e9195b54d5e1bf69b1d8" } },
+        "region": { "id": { "$oid": "68d7f77c14fbfc2474738358" } }
+      }
+    ],
+    "greetingText": "Welcome to Champawat!",
+    "tagLine": "Historic Cultural Town",
+    "description": {
+      "title": "Champawat – Historic Cultural Town",
+      "short": "A historic town with temples, forts, and legends.",
+      "long": "Champawat is a historic town with temples, forts, and legends. Surrounded by hills and forests, it blends heritage with natural charm. Quiet and less crowded, Champawat offers travelers a peaceful cultural experience.",
+      "history": "Champawat is a historic town with temples, forts, and legends. The town has a rich cultural heritage and is known for its peaceful atmosphere.",
+      "overview": "A historic town with temples, forts, and cultural significance."
+    },
+    "languages": [ "Hindi", "Kumaoni", "English", "Sanskrit" ],
+    "images": { "banner": "", "card": "", "others": [] },
+    "emergencyContacts": {
+      "Police": "100", "Ambulance": "102", "Fire": "101",
+      "Tourist Helpline": "1363", "State Tourism": "05965-235892"
+    },
+    "safetyInformation": [
+      "Be respectful when visiting temples and forts.",
+      "Follow guidelines for heritage site visits.",
+      "Respect local customs and traditions."
+    ],
+    "travelTips": [
+      "Visit temples and forts to learn about local history.",
+      "Explore the cultural heritage and legends.",
+      "Enjoy the peaceful atmosphere and natural beauty.",
+      "Learn about local traditions and customs."
+    ],
+    "experiences": {
+      "Food": [], "Activities": [], "LocalMarkets": [], "Spiritual": [],
+      "Historical": [], "Nature": [], "Cultural": [], "Adventure": [], "Others": []
+    },
+    "trending": { "places": [] },
+    "createdAt": { "$date": "2025-10-08T04:01:04.008Z" },
+    "updatedAt": { "$date": "2025-10-08T04:01:04.008Z" }
+  },
+  {
+    "_id": { "$oid": "68e5e20021c4af9b4a754a1f" },
+    "name": "Munsiyari",
+    "location": [
+      {
+        "country": { "id": { "$oid": "68d7f24214fbfc2474738355" } },
+        "state": { "id": { "$oid": "68e1e9195b54d5e1bf69b1d8" } },
+        "region": { "id": { "$oid": "68d7f77c14fbfc2474738358" } }
+      }
+    ],
+    "greetingText": "Welcome to Munsiyari!",
+    "tagLine": "Gateway to Panchachuli Peaks",
+    "description": {
+      "title": "Munsiyari – Gateway to Panchachuli Peaks",
+      "short": "A picturesque town in the Johar Valley, known for views of the Panchachuli peaks.",
+      "long": "Munsiyari, a picturesque town in the Johar Valley, is known for its views of the Panchachuli peaks. With trekking trails, glaciers, and rich culture, it's ideal for adventurers. Munsiyari offers travelers raw Himalayan beauty and exploration.",
+      "history": "Munsiyari is known for its views of the Panchachuli peaks and is a popular destination for trekking and adventure activities. The town has a rich cultural heritage.",
+      "overview": "A picturesque town with views of Panchachuli peaks, trekking trails, and adventure opportunities."
+    },
+    "languages": [ "Hindi", "Kumaoni", "English", "Sanskrit" ],
+    "images": { "banner": "", "card": "", "others": [] },
+    "emergencyContacts": {
+      "Police": "100", "Ambulance": "102", "Fire": "101",
+      "Tourist Helpline": "1363", "State Tourism": "05965-235892"
+    },
+    "safetyInformation": [
+      "Be careful during trekking and adventure activities.",
+      "Follow safety guidelines for high-altitude areas.",
+      "Respect local customs and traditions."
+    ],
+    "travelTips": [
+      "Enjoy the views of the Panchachuli peaks.",
+      "Go for trekking and adventure activities.",
+      "Explore glaciers and natural beauty.",
+      "Learn about local culture and traditions."
+    ],
+    "experiences": {
+      "Food": [], "Activities": [], "LocalMarkets": [], "Spiritual": [],
+      "Historical": [], "Nature": [], "Cultural": [], "Adventure": [], "Others": []
+    },
+    "trending": { "places": [] },
+    "createdAt": { "$date": "2025-10-08T04:01:04.008Z" },
+    "updatedAt": { "$date": "2025-10-08T04:01:04.008Z" }
+  },
+  {
+    "_id": { "$oid": "68e5e20021c4af9b4a754a20" },
+    "name": "Lansdowne",
+    "location": [
+      {
+        "country": { "id": { "$oid": "68d7f24214fbfc2474738355" } },
+        "state": { "id": { "$oid": "68e1e9195b54d5e1bf69b1d8" } },
+        "region": { "id": { "$oid": "68d7f77c14fbfc2474738358" } }
+      }
+    ],
+    "greetingText": "Welcome to Lansdowne!",
+    "tagLine": "Peaceful Hill Station",
+    "description": {
+      "title": "Lansdowne – Peaceful Hill Station",
+      "short": "A quiet hill station known for its colonial past, pine forests, and calm charm.",
+      "long": "Lansdowne, a quiet hill station, is known for its colonial past, pine forests, and calm charm. With clean streets, churches, and scenic walks, it's perfect for relaxation. Lansdowne offers travelers peace and simplicity in the hills.",
+      "history": "Lansdowne was developed as a hill station by the British and is known for its colonial architecture and peaceful atmosphere. The town is famous for its pine forests and clean environment.",
+      "overview": "A peaceful hill station with colonial architecture, pine forests, and serene atmosphere."
+    },
+    "languages": [ "Hindi", "Garhwali", "English", "Punjabi" ],
+    "images": { "banner": "", "card": "", "others": [] },
+    "emergencyContacts": {
+      "Police": "100", "Ambulance": "102", "Fire": "101",
+      "Tourist Helpline": "1363", "State Tourism": "01386-235892"
+    },
+    "safetyInformation": [
+      "Be careful on steep and winding roads.",
+      "Follow guidelines for forest walks.",
+      "Respect local customs and traditions."
+    ],
+    "travelTips": [
+      "Enjoy the peaceful atmosphere and scenic beauty.",
+      "Take scenic walks through pine forests.",
+      "Visit colonial buildings and churches.",
+      "Experience the clean and simple lifestyle."
+    ],
+    "experiences": {
+      "Food": [], "Activities": [], "LocalMarkets": [], "Spiritual": [],
+      "Historical": [], "Nature": [], "Cultural": [], "Adventure": [], "Others": []
+    },
+    "trending": { "places": [] },
+    "createdAt": { "$date": "2025-10-08T04:01:04.008Z" },
+    "updatedAt": { "$date": "2025-10-08T04:01:04.008Z" }
+  }
+]

@@ -1,0 +1,303 @@
+[
+  {
+    "_id": { "$oid": "68e5e20021c4af9b4a7549e6" },
+    "name": "Kohima",
+    "location": [
+      {
+        "country": { "id": { "$oid": "68d7f24214fbfc2474738355" } },
+        "state": { "id": { "$oid": "68e286d35b54d5e1bf69b1f6" } },
+        "region": { "id": { "$oid": "68d7f77c14fbfc2474738358" } }
+      }
+    ],
+    "greetingText": "Welcome to Kohima!",
+    "tagLine": "Capital of Nagaland",
+    "description": {
+      "title": "Kohima – Cultural Capital of Nagaland",
+      "short": "Capital of Nagaland known for World War II cemetery, Naga heritage, and Hornbill Festival.",
+      "long": "Kohima, the capital of Nagaland, is known for its World War II cemetery, Naga heritage, and the famous Hornbill Festival. Surrounded by green hills, it reflects both history and culture. With vibrant traditions, local cuisine, and scenic landscapes, Kohima offers travelers a memorable blend of past and present.",
+      "history": "Kohima was the site of a crucial World War II battle in 1944. The Kohima War Cemetery commemorates the soldiers who fought in the Battle of Kohima, often called the 'Stalingrad of the East'.",
+      "overview": "A historic capital city with rich Naga culture, war memorials, and vibrant festivals."
+    },
+    "languages": [ "Nagamese", "English", "Hindi", "Ao" ],
+    "images": { "banner": "", "card": "", "others": [] },
+    "emergencyContacts": {
+      "Police": "100", "Ambulance": "102", "Fire": "101",
+      "Tourist Helpline": "1363", "State Tourism": "0370-2290020"
+    },
+    "safetyInformation": [
+      "Respect local customs and traditions.",
+      "Follow guidelines during festivals and cultural events.",
+      "Be mindful of the region's sensitive history."
+    ],
+    "travelTips": [
+      "Visit the Kohima War Cemetery and State Museum.",
+      "Attend the Hornbill Festival in December.",
+      "Try traditional Naga cuisine and local handicrafts."
+    ],
+    "experiences": {
+      "Food": [], "Activities": [], "LocalMarkets": [], "Spiritual": [],
+      "Historical": [], "Nature": [], "Cultural": [], "Adventure": [], "Others": []
+    },
+    "trending": { "places": [] },
+    "createdAt": { "$date": "2025-10-08T04:01:04.008Z" },
+    "updatedAt": { "$date": "2025-10-08T04:01:04.008Z" }
+  },
+  {
+    "_id": { "$oid": "68e5e20021c4af9b4a7549e7" },
+    "name": "Dimapur",
+    "location": [
+      {
+        "country": { "id": { "$oid": "68d7f24214fbfc2474738355" } },
+        "state": { "id": { "$oid": "68e286d35b54d5e1bf69b1f6" } },
+        "region": { "id": { "$oid": "68d7f77c14fbfc2474738358" } }
+      }
+    ],
+    "greetingText": "Welcome to Dimapur!",
+    "tagLine": "Gateway to Nagaland",
+    "description": {
+      "title": "Dimapur – Main Gateway to Nagaland",
+      "short": "Main gateway to Nagaland with ancient ruins, markets, and transport links.",
+      "long": "Dimapur, the main gateway to Nagaland, is a bustling town with ancient ruins, markets, and transport links. Known for the 13th-century Kachari ruins and lively bazaars, it mixes history with modern life. With easy access to other districts, Dimapur serves as a practical and cultural starting point.",
+      "history": "Dimapur was the ancient capital of the Kachari Kingdom and is home to the famous Kachari ruins dating back to the 13th century.",
+      "overview": "A bustling commercial hub with ancient ruins and modern amenities."
+    },
+    "languages": [ "Nagamese", "English", "Hindi", "Assamese" ],
+    "images": { "banner": "", "card": "", "others": [] },
+    "emergencyContacts": {
+      "Police": "100", "Ambulance": "102", "Fire": "101",
+      "Tourist Helpline": "1363", "State Tourism": "03862-224400"
+    },
+    "safetyInformation": [
+      "Be cautious in crowded market areas.",
+      "Follow safety guidelines when exploring ancient ruins.",
+      "Keep important documents and valuables secure."
+    ],
+    "travelTips": [
+      "Visit the ancient Kachari ruins and monuments.",
+      "Explore the local markets for traditional crafts.",
+      "Use Dimapur as a base to explore other parts of Nagaland."
+    ],
+    "experiences": {
+      "Food": [], "Activities": [], "LocalMarkets": [], "Spiritual": [],
+      "Historical": [], "Nature": [], "Cultural": [], "Adventure": [], "Others": []
+    },
+    "trending": { "places": [] },
+    "createdAt": { "$date": "2025-10-08T04:01:04.008Z" },
+    "updatedAt": { "$date": "2025-10-08T04:01:04.008Z" }
+  },
+  {
+    "_id": { "$oid": "68e5e20021c4af9b4a7549e8" },
+    "name": "Mokokchung",
+    "location": [
+      {
+        "country": { "id": { "$oid": "68d7f24214fbfc2474738355" } },
+        "state": { "id": { "$oid": "68e286d35b54d5e1bf69b1f6" } },
+        "region": { "id": { "$oid": "68d7f77c14fbfc2474738358" } }
+      }
+    ],
+    "greetingText": "Welcome to Mokokchung!",
+    "tagLine": "Cultural Heart of Ao Naga",
+    "description": {
+      "title": "Mokokchung – Ao Naga Cultural Center",
+      "short": "Cultural heart of the Ao Naga tribe with festivals, traditions, and hospitality.",
+      "long": "Mokokchung, the cultural heart of the Ao Naga tribe, is known for its festivals, traditions, and hospitality. With hilltop views and lively towns, it reflects the essence of Naga life. Travelers can enjoy cultural experiences, scenic drives, and warm community spirit here.",
+      "history": "Mokokchung is the headquarters of the Mokokchung district and is known for its rich Ao Naga culture and traditions.",
+      "overview": "A cultural hub showcasing the vibrant traditions of the Ao Naga tribe."
+    },
+    "languages": [ "Ao", "Nagamese", "English", "Hindi" ],
+    "images": { "banner": "", "card": "", "others": [] },
+    "emergencyContacts": {
+      "Police": "100", "Ambulance": "102", "Fire": "101",
+      "Tourist Helpline": "1363", "State Tourism": "0369-2226050"
+    },
+    "safetyInformation": [
+      "Respect local customs and tribal traditions.",
+      "Follow guidelines during cultural festivals.",
+      "Be respectful when visiting tribal villages."
+    ],
+    "travelTips": [
+      "Experience traditional Ao Naga festivals and ceremonies.",
+      "Visit local villages to learn about tribal culture.",
+      "Enjoy the scenic hilltop views and natural beauty."
+    ],
+    "experiences": {
+      "Food": [], "Activities": [], "LocalMarkets": [], "Spiritual": [],
+      "Historical": [], "Nature": [], "Cultural": [], "Adventure": [], "Others": []
+    },
+    "trending": { "places": [] },
+    "createdAt": { "$date": "2025-10-08T04:01:04.008Z" },
+    "updatedAt": { "$date": "2025-10-08T04:01:04.008Z" }
+  },
+  {
+    "_id": { "$oid": "68e5e20021c4af9b4a7549e9" },
+    "name": "Tuensang",
+    "location": [
+      {
+        "country": { "id": { "$oid": "68d7f24214fbfc2474738355" } },
+        "state": { "id": { "$oid": "68e286d35b54d5e1bf69b1f6" } },
+        "region": { "id": { "$oid": "68d7f77c14fbfc2474738358" } }
+      }
+    ],
+    "greetingText": "Welcome to Tuensang!",
+    "tagLine": "Tribal Diversity Hub",
+    "description": {
+      "title": "Tuensang – Land of Tribal Crafts",
+      "short": "One of Nagaland's largest districts, rich in tribal diversity and traditional crafts.",
+      "long": "Tuensang is one of Nagaland's largest districts, rich in tribal diversity and crafts. Known for traditional weaving, woodwork, and festivals, it offers insight into local culture. With scenic hills and vibrant traditions, Tuensang provides a unique and authentic experience for travelers exploring Nagaland's heritage.",
+      "history": "Tuensang is known for its diverse tribal communities and traditional handicrafts, particularly weaving and woodwork.",
+      "overview": "A district rich in tribal diversity, traditional crafts, and cultural heritage."
+    },
+    "languages": [ "Chang", "Nagamese", "English", "Hindi" ],
+    "images": { "banner": "", "card": "", "others": [] },
+    "emergencyContacts": {
+      "Police": "100", "Ambulance": "102", "Fire": "101",
+      "Tourist Helpline": "1363", "State Tourism": "03861-2226050"
+    },
+    "safetyInformation": [
+      "Respect tribal customs and traditions.",
+      "Be mindful of local cultural sensitivities.",
+      "Follow guidelines when visiting tribal villages."
+    ],
+    "travelTips": [
+      "Learn about traditional weaving and woodwork techniques.",
+      "Experience diverse tribal festivals and cultures.",
+      "Explore the scenic hills and natural beauty."
+    ],
+    "experiences": {
+      "Food": [], "Activities": [], "LocalMarkets": [], "Spiritual": [],
+      "Historical": [], "Nature": [], "Cultural": [], "Adventure": [], "Others": []
+    },
+    "trending": { "places": [] },
+    "createdAt": { "$date": "2025-10-08T04:01:04.008Z" },
+    "updatedAt": { "$date": "2025-10-08T04:01:04.008Z" }
+  },
+  {
+    "_id": { "$oid": "68e5e20021c4af9b4a7549ea" },
+    "name": "Wokha",
+    "location": [
+      {
+        "country": { "id": { "$oid": "68d7f24214fbfc2474738355" } },
+        "state": { "id": { "$oid": "68e286d35b54d5e1bf69b1f6" } },
+        "region": { "id": { "$oid": "68d7f77c14fbfc2474738358" } }
+      }
+    ],
+    "greetingText": "Welcome to Wokha!",
+    "tagLine": "Land of Oranges and Lakes",
+    "description": {
+      "title": "Wokha – Lotha Tribe Homeland",
+      "short": "Home of the Lotha tribe, famous for orange orchards, lakes, and rolling hills.",
+      "long": "Wokha, home of the Lotha tribe, is famous for its orange orchards, lakes, and rolling hills. Known for Mount Tiyi and colorful festivals, it blends natural charm with cultural stories. With friendly villages and green landscapes, Wokha is a scenic and cultural delight.",
+      "history": "Wokha is the headquarters of the Wokha district and is known for its orange cultivation and Lotha tribal culture.",
+      "overview": "A scenic district known for orange orchards, lakes, and Lotha tribal culture."
+    },
+    "languages": [ "Lotha", "Nagamese", "English", "Hindi" ],
+    "images": { "banner": "", "card": "", "others": [] },
+    "emergencyContacts": {
+      "Police": "100", "Ambulance": "102", "Fire": "101",
+      "Tourist Helpline": "1363", "State Tourism": "03861-2226050"
+    },
+    "safetyInformation": [
+      "Be careful around water bodies and lakes.",
+      "Respect local customs and tribal traditions.",
+      "Follow guidelines when visiting orange orchards."
+    ],
+    "travelTips": [
+      "Visit Mount Tiyi for scenic views.",
+      "Explore orange orchards and learn about cultivation.",
+      "Experience Lotha tribal festivals and traditions."
+    ],
+    "experiences": {
+      "Food": [], "Activities": [], "LocalMarkets": [], "Spiritual": [],
+      "Historical": [], "Nature": [], "Cultural": [], "Adventure": [], "Others": []
+    },
+    "trending": { "places": [] },
+    "createdAt": { "$date": "2025-10-08T04:01:04.008Z" },
+    "updatedAt": { "$date": "2025-10-08T04:01:04.008Z" }
+  },
+  {
+    "_id": { "$oid": "68e5e20021c4af9b4a7549eb" },
+    "name": "Mon",
+    "location": [
+      {
+        "country": { "id": { "$oid": "68d7f24214fbfc2474738355" } },
+        "state": { "id": { "$oid": "68e286d35b54d5e1bf69b1f6" } },
+        "region": { "id": { "$oid": "68d7f77c14fbfc2474738358" } }
+      }
+    ],
+    "greetingText": "Welcome to Mon!",
+    "tagLine": "Land of Konyak Warriors",
+    "description": {
+      "title": "Mon – Konyak Tribe Territory",
+      "short": "Close to Myanmar border, famous for the Konyak tribe and their warrior heritage.",
+      "long": "Mon, close to the Myanmar border, is famous for the Konyak tribe, known for their warrior heritage and tattoos. Surrounded by hills and villages, it offers a glimpse into traditional lifestyles. With vibrant festivals and cultural depth, Mon is a fascinating destination in Nagaland.",
+      "history": "Mon is known for the Konyak tribe, who were traditionally headhunters and are famous for their facial tattoos and warrior culture.",
+      "overview": "A unique destination showcasing the traditional culture of the Konyak tribe."
+    },
+    "languages": [ "Konyak", "Nagamese", "English", "Hindi" ],
+    "images": { "banner": "", "card": "", "others": [] },
+    "emergencyContacts": {
+      "Police": "100", "Ambulance": "102", "Fire": "101",
+      "Tourist Helpline": "1363", "State Tourism": "03861-2226050"
+    },
+    "safetyInformation": [
+      "Respect tribal customs and traditions.",
+      "Be mindful of the sensitive cultural heritage.",
+      "Follow guidelines when visiting tribal villages."
+    ],
+    "travelTips": [
+      "Learn about Konyak tribal culture and traditions.",
+      "Visit traditional villages and meet local artisans.",
+      "Experience unique festivals and cultural ceremonies."
+    ],
+    "experiences": {
+      "Food": [], "Activities": [], "LocalMarkets": [], "Spiritual": [],
+      "Historical": [], "Nature": [], "Cultural": [], "Adventure": [], "Others": []
+    },
+    "trending": { "places": [] },
+    "createdAt": { "$date": "2025-10-08T04:01:04.008Z" },
+    "updatedAt": { "$date": "2025-10-08T04:01:04.008Z" }
+  },
+  {
+    "_id": { "$oid": "68e5e20021c4af9b4a7549ec" },
+    "name": "Phek",
+    "location": [
+      {
+        "country": { "id": { "$oid": "68d7f24214fbfc2474738355" } },
+        "state": { "id": { "$oid": "68e286d35b54d5e1bf69b1f6" } },
+        "region": { "id": { "$oid": "68d7f77c14fbfc2474738358" } }
+      }
+    ],
+    "greetingText": "Welcome to Phek!",
+    "tagLine": "Peaceful Lakeside District",
+    "description": {
+      "title": "Phek – Chakhesang Tribe Homeland",
+      "short": "Quiet district with lakes, forests, and rich traditions of the Chakhesang tribe.",
+      "long": "Phek is a quiet district with lakes, forests, and rich traditions of the Chakhesang tribe. Known for Shilloi Lake and trekking routes, it offers natural beauty and cultural richness. With less tourist traffic, Phek is ideal for travelers seeking peace and authentic experiences.",
+      "history": "Phek is the headquarters of the Phek district and is known for its pristine natural beauty and Chakhesang tribal culture.",
+      "overview": "A peaceful district perfect for nature lovers and cultural enthusiasts."
+    },
+    "languages": [ "Chakhesang", "Nagamese", "English", "Hindi" ],
+    "images": { "banner": "", "card": "", "others": [] },
+    "emergencyContacts": {
+      "Police": "100", "Ambulance": "102", "Fire": "101",
+      "Tourist Helpline": "1363", "State Tourism": "03861-2226050"
+    },
+    "safetyInformation": [
+      "Be careful around lakes and water bodies.",
+      "Follow safety guidelines for trekking.",
+      "Respect local customs and tribal traditions."
+    ],
+    "travelTips": [
+      "Visit Shilloi Lake for scenic beauty.",
+      "Go for trekking and nature walks.",
+      "Experience Chakhesang tribal culture and traditions."
+    ],
+    "experiences": {
+      "Food": [], "Activities": [], "LocalMarkets": [], "Spiritual": [],
+      "Historical": [], "Nature": [], "Cultural": [], "Adventure": [], "Others": []
+    },
+    "trending": { "places": [] },
+    "createdAt": { "$date": "2025-10-08T04:01:04.008Z" },
+    "updatedAt": { "$date": "2025-10-08T04:01:04.008Z" }
+  }
+]

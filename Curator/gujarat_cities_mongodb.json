@@ -1,0 +1,814 @@
+[
+  {
+    "_id": {
+      "$oid": "68e5e20021c4af9b4a7549af"
+    },
+    "name": "Ahmedabad",
+    "location": [
+      {
+        "country": {
+          "id": {
+            "$oid": "68d7f24214fbfc2474738355"
+          }
+        },
+        "state": {
+          "id": {
+            "$oid": "68e286155b54d5e1bf69b1eb"
+          }
+        },
+        "region": {
+          "id": {
+            "$oid": "68d7f77c14fbfc2474738358"
+          }
+        }
+      }
+    ],
+    "greetingText": "Welcome to Ahmedabad!",
+    "tagLine": "UNESCO World Heritage City",
+    "description": {
+      "title": "Ahmedabad – The Heritage City",
+      "short": "A UNESCO World Heritage City that blends history with modern vibrance, featuring old quarters, stepwells, and grand mosques.",
+      "long": "Ahmedabad, a UNESCO World Heritage City, blends history with modern vibrance. Its old quarters, stepwells, and grand mosques reflect rich heritage, while the Sabarmati Riverfront and bustling markets show its lively present. With Gandhi Ashram and colorful festivals, Ahmedabad offers travelers a deep cultural experience and a taste of Gujarat's spirit.",
+      "history": "Ahmedabad was founded by Sultan Ahmed Shah in 1411 and served as the capital of Gujarat Sultanate. It's known for its rich architectural heritage and cultural significance.",
+      "overview": "A historic city where ancient heritage meets modern development, offering a rich cultural and architectural experience."
+    },
+    "languages": [
+      "Gujarati",
+      "Hindi",
+      "English"
+    ],
+    "images": {
+      "banner": "",
+      "card": "",
+      "others": []
+    },
+    "emergencyContacts": {
+      "Police": "100",
+      "Ambulance": "102",
+      "Fire": "101",
+      "Tourist Helpline": "1363",
+      "Gujarat Tourism": "079-23200000"
+    },
+    "safetyInformation": [
+      "Be cautious in crowded markets and old quarters.",
+      "Respect the heritage sites and monuments.",
+      "Follow guidelines when visiting religious places."
+    ],
+    "travelTips": [
+      "Visit the Sabarmati Ashram for Gandhi's legacy.",
+      "Explore the old quarters for architectural heritage.",
+      "Experience the vibrant festivals and local culture."
+    ],
+    "experiences": {
+      "Food": [],
+      "Activities": [],
+      "LocalMarkets": [],
+      "Spiritual": [],
+      "Historical": [],
+      "Nature": [],
+      "Cultural": [],
+      "Adventure": [],
+      "Others": []
+    },
+    "trending": {
+      "places": []
+    },
+    "createdAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    },
+    "updatedAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "68e5e20021c4af9b4a7549b0"
+    },
+    "name": "Surat",
+    "location": [
+      {
+        "country": {
+          "id": {
+            "$oid": "68d7f24214fbfc2474738355"
+          }
+        },
+        "state": {
+          "id": {
+            "$oid": "68e286155b54d5e1bf69b1eb"
+          }
+        },
+        "region": {
+          "id": {
+            "$oid": "68d7f77c14fbfc2474738358"
+          }
+        }
+      }
+    ],
+    "greetingText": "Welcome to Surat!",
+    "tagLine": "Diamond City of India",
+    "description": {
+      "title": "Surat – The Diamond City",
+      "short": "Known as the 'Diamond City,' a bustling hub of trade and textiles with famous street food and riverside charm.",
+      "long": "Surat, known as the 'Diamond City,' is a bustling hub of trade and textiles. Famous for its street food, shopping, and riverside charm, it also has historic forts and gardens. Balancing industry with leisure, Surat welcomes visitors with flavors, energy, and glimpses of its cultural and commercial importance.",
+      "history": "Surat has been an important port city and trading center for centuries, known for its diamond industry and textile manufacturing.",
+      "overview": "A commercial hub where industry meets culture, offering vibrant experiences of trade, food, and heritage."
+    },
+    "languages": [
+      "Gujarati",
+      "Hindi",
+      "English"
+    ],
+    "images": {
+      "banner": "",
+      "card": "",
+      "others": []
+    },
+    "emergencyContacts": {
+      "Police": "100",
+      "Ambulance": "102",
+      "Fire": "101",
+      "Tourist Helpline": "1363",
+      "Gujarat Tourism": "0261-2220000"
+    },
+    "safetyInformation": [
+      "Be cautious in busy commercial areas and markets.",
+      "Respect local business practices and customs.",
+      "Follow guidelines when visiting historic sites."
+    ],
+    "travelTips": [
+      "Try the famous street food and local delicacies.",
+      "Shop for textiles and diamond jewelry.",
+      "Visit historic forts and riverside gardens."
+    ],
+    "experiences": {
+      "Food": [],
+      "Activities": [],
+      "LocalMarkets": [],
+      "Spiritual": [],
+      "Historical": [],
+      "Nature": [],
+      "Cultural": [],
+      "Adventure": [],
+      "Others": []
+    },
+    "trending": {
+      "places": []
+    },
+    "createdAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    },
+    "updatedAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "68e5e20021c4af9b4a7549b1"
+    },
+    "name": "Vadodara",
+    "location": [
+      {
+        "country": {
+          "id": {
+            "$oid": "68d7f24214fbfc2474738355"
+          }
+        },
+        "state": {
+          "id": {
+            "$oid": "68e286155b54d5e1bf69b1eb"
+          }
+        },
+        "region": {
+          "id": {
+            "$oid": "68d7f77c14fbfc2474738358"
+          }
+        }
+      }
+    ],
+    "greetingText": "Welcome to Vadodara!",
+    "tagLine": "Cultural Capital of Gujarat",
+    "description": {
+      "title": "Vadodara – The Cultural Capital",
+      "short": "Often called Gujarat's cultural capital, featuring the grand Laxmi Vilas Palace, museums, and vibrant festivals.",
+      "long": "Vadodara, or Baroda, is often called Gujarat's cultural capital. The grand Laxmi Vilas Palace, museums, and vibrant festivals highlight its royal past and artistic spirit. With nearby UNESCO sites like Champaner-Pavagadh, the city combines history, art, and tradition, offering travelers a refined and colorful cultural journey.",
+      "history": "Vadodara was the capital of the Gaekwad dynasty and is known for its royal heritage, palaces, and cultural institutions.",
+      "overview": "A royal city where cultural heritage meets artistic excellence, offering refined experiences of Gujarat's traditions."
+    },
+    "languages": [
+      "Gujarati",
+      "Hindi",
+      "English"
+    ],
+    "images": {
+      "banner": "",
+      "card": "",
+      "others": []
+    },
+    "emergencyContacts": {
+      "Police": "100",
+      "Ambulance": "102",
+      "Fire": "101",
+      "Tourist Helpline": "1363",
+      "Gujarat Tourism": "0265-2220000"
+    },
+    "safetyInformation": [
+      "Be respectful when visiting palaces and museums.",
+      "Follow guidelines at cultural institutions.",
+      "Respect local customs and traditions."
+    ],
+    "travelTips": [
+      "Visit the grand Laxmi Vilas Palace.",
+      "Explore museums and cultural institutions.",
+      "Experience vibrant festivals and local traditions."
+    ],
+    "experiences": {
+      "Food": [],
+      "Activities": [],
+      "LocalMarkets": [],
+      "Spiritual": [],
+      "Historical": [],
+      "Nature": [],
+      "Cultural": [],
+      "Adventure": [],
+      "Others": []
+    },
+    "trending": {
+      "places": []
+    },
+    "createdAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    },
+    "updatedAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "68e5e20021c4af9b4a7549b2"
+    },
+    "name": "Rajkot",
+    "location": [
+      {
+        "country": {
+          "id": {
+            "$oid": "68d7f24214fbfc2474738355"
+          }
+        },
+        "state": {
+          "id": {
+            "$oid": "68e286155b54d5e1bf69b1eb"
+          }
+        },
+        "region": {
+          "id": {
+            "$oid": "68d7f77c14fbfc2474738358"
+          }
+        }
+      }
+    ],
+    "greetingText": "Welcome to Rajkot!",
+    "tagLine": "Gandhi's Childhood City",
+    "description": {
+      "title": "Rajkot – The Heritage City",
+      "short": "Known for its association with Mahatma Gandhi, blending heritage with craftsmanship and famous handicrafts.",
+      "long": "Rajkot, known for its association with Mahatma Gandhi, blends heritage with craftsmanship. Famous for its handicrafts, sweets, and lively markets, the city reflects Saurashtra's charm. Museums, temples, and nearby cultural sites make Rajkot both historic and lively, inviting travelers to experience Gujarat's traditions in a friendly urban setting.",
+      "history": "Rajkot was the childhood home of Mahatma Gandhi and is known for its handicrafts, cultural heritage, and association with the freedom movement.",
+      "overview": "A heritage city where Gandhi's legacy meets traditional craftsmanship, offering authentic experiences of Gujarat's culture."
+    },
+    "languages": [
+      "Gujarati",
+      "Hindi",
+      "English"
+    ],
+    "images": {
+      "banner": "",
+      "card": "",
+      "others": []
+    },
+    "emergencyContacts": {
+      "Police": "100",
+      "Ambulance": "102",
+      "Fire": "101",
+      "Tourist Helpline": "1363",
+      "Gujarat Tourism": "0281-2220000"
+    },
+    "safetyInformation": [
+      "Be cautious in busy markets and crowded areas.",
+      "Respect local artisans and their work.",
+      "Follow guidelines when visiting museums and temples."
+    ],
+    "travelTips": [
+      "Visit Gandhi's childhood home and museums.",
+      "Shop for traditional handicrafts and sweets.",
+      "Explore temples and cultural sites."
+    ],
+    "experiences": {
+      "Food": [],
+      "Activities": [],
+      "LocalMarkets": [],
+      "Spiritual": [],
+      "Historical": [],
+      "Nature": [],
+      "Cultural": [],
+      "Adventure": [],
+      "Others": []
+    },
+    "trending": {
+      "places": []
+    },
+    "createdAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    },
+    "updatedAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "68e5e20021c4af9b4a7549b3"
+    },
+    "name": "Bhavnagar",
+    "location": [
+      {
+        "country": {
+          "id": {
+            "$oid": "68d7f24214fbfc2474738355"
+          }
+        },
+        "state": {
+          "id": {
+            "$oid": "68e286155b54d5e1bf69b1eb"
+          }
+        },
+        "region": {
+          "id": {
+            "$oid": "68d7f77c14fbfc2474738358"
+          }
+        }
+      }
+    ],
+    "greetingText": "Welcome to Bhavnagar!",
+    "tagLine": "Coastal Heritage City",
+    "description": {
+      "title": "Bhavnagar – The Coastal Heritage City",
+      "short": "A coastal city known for its historic palaces, temples, and bustling bazaars, close to wildlife sanctuaries.",
+      "long": "Bhavnagar, a coastal city, is known for its historic palaces, temples, and bustling bazaars. Close to Velavadar Blackbuck National Park and Alang Shipyard, it offers both heritage and unique experiences. With its seaside charm and cultural warmth, Bhavnagar is a rewarding stop for travelers exploring Gujarat's diverse landscapes.",
+      "history": "Bhavnagar was founded by Bhavsinhji Gohil in 1723 and is known for its royal heritage, palaces, and coastal location.",
+      "overview": "A coastal city where royal heritage meets natural beauty, offering diverse experiences of Gujarat's landscapes."
+    },
+    "languages": [
+      "Gujarati",
+      "Hindi",
+      "English"
+    ],
+    "images": {
+      "banner": "",
+      "card": "",
+      "others": []
+    },
+    "emergencyContacts": {
+      "Police": "100",
+      "Ambulance": "102",
+      "Fire": "101",
+      "Tourist Helpline": "1363",
+      "Gujarat Tourism": "0278-2220000"
+    },
+    "safetyInformation": [
+      "Be cautious near coastal areas and shipyards.",
+      "Respect wildlife when visiting national parks.",
+      "Follow guidelines when exploring historic sites."
+    ],
+    "travelTips": [
+      "Visit historic palaces and temples.",
+      "Explore Velavadar Blackbuck National Park.",
+      "Experience the bustling bazaars and local culture."
+    ],
+    "experiences": {
+      "Food": [],
+      "Activities": [],
+      "LocalMarkets": [],
+      "Spiritual": [],
+      "Historical": [],
+      "Nature": [],
+      "Cultural": [],
+      "Adventure": [],
+      "Others": []
+    },
+    "trending": {
+      "places": []
+    },
+    "createdAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    },
+    "updatedAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "68e5e20021c4af9b4a7549b4"
+    },
+    "name": "Junagadh",
+    "location": [
+      {
+        "country": {
+          "id": {
+            "$oid": "68d7f24214fbfc2474738355"
+          }
+        },
+        "state": {
+          "id": {
+            "$oid": "68e286155b54d5e1bf69b1eb"
+          }
+        },
+        "region": {
+          "id": {
+            "$oid": "68d7f77c14fbfc2474738358"
+          }
+        }
+      }
+    ],
+    "greetingText": "Welcome to Junagadh!",
+    "tagLine": "Sacred City at Girnar Hills",
+    "description": {
+      "title": "Junagadh – The Sacred City",
+      "short": "Sits at the base of the sacred Girnar Hills, steeped in history with forts, stepwells, and Ashokan edicts.",
+      "long": "Junagadh sits at the base of the sacred Girnar Hills and is steeped in history. Forts, stepwells, and Ashokan edicts showcase its rich past. Pilgrims climb Girnar, while travelers enjoy nearby wildlife and heritage. Junagadh's blend of spirituality, history, and natural beauty makes it an engaging destination in Saurashtra.",
+      "history": "Junagadh has a rich history dating back to ancient times, with Ashokan edicts and historic monuments. It's known for its spiritual significance and heritage.",
+      "overview": "A sacred city where ancient history meets spiritual significance, offering profound experiences of Gujarat's heritage."
+    },
+    "languages": [
+      "Gujarati",
+      "Hindi",
+      "English"
+    ],
+    "images": {
+      "banner": "",
+      "card": "",
+      "others": []
+    },
+    "emergencyContacts": {
+      "Police": "100",
+      "Ambulance": "102",
+      "Fire": "101",
+      "Tourist Helpline": "1363",
+      "Gujarat Tourism": "0285-2220000"
+    },
+    "safetyInformation": [
+      "Be cautious when climbing Girnar Hills.",
+      "Respect the sacred nature of religious sites.",
+      "Follow guidelines when visiting historic monuments."
+    ],
+    "travelTips": [
+      "Climb the sacred Girnar Hills for spiritual experience.",
+      "Visit historic forts and Ashokan edicts.",
+      "Explore nearby wildlife sanctuaries."
+    ],
+    "experiences": {
+      "Food": [],
+      "Activities": [],
+      "LocalMarkets": [],
+      "Spiritual": [],
+      "Historical": [],
+      "Nature": [],
+      "Cultural": [],
+      "Adventure": [],
+      "Others": []
+    },
+    "trending": {
+      "places": []
+    },
+    "createdAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    },
+    "updatedAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "68e5e20021c4af9b4a7549b5"
+    },
+    "name": "Gandhinagar",
+    "location": [
+      {
+        "country": {
+          "id": {
+            "$oid": "68d7f24214fbfc2474738355"
+          }
+        },
+        "state": {
+          "id": {
+            "$oid": "68e286155b54d5e1bf69b1eb"
+          }
+        },
+        "region": {
+          "id": {
+            "$oid": "68d7f77c14fbfc2474738358"
+          }
+        }
+      }
+    ],
+    "greetingText": "Welcome to Gandhinagar!",
+    "tagLine": "Capital of Gujarat",
+    "description": {
+      "title": "Gandhinagar – The Planned Capital",
+      "short": "Gujarat's capital, a well-planned city known for its greenery, calm vibe, and grand Akshardham Temple.",
+      "long": "Gandhinagar, Gujarat's capital, is a well-planned city known for its greenery and calm vibe. The grand Akshardham Temple is its highlight, drawing visitors for both devotion and architecture. Wide roads, gardens, and peaceful surroundings make Gandhinagar a refreshing stop, contrasting with the busy pace of other major cities.",
+      "history": "Gandhinagar was planned and built as the new capital of Gujarat in the 1960s, designed with wide roads and green spaces.",
+      "overview": "A planned capital where modern urban design meets spiritual significance, offering a peaceful urban experience."
+    },
+    "languages": [
+      "Gujarati",
+      "Hindi",
+      "English"
+    ],
+    "images": {
+      "banner": "",
+      "card": "",
+      "others": []
+    },
+    "emergencyContacts": {
+      "Police": "100",
+      "Ambulance": "102",
+      "Fire": "101",
+      "Tourist Helpline": "1363",
+      "Gujarat Tourism": "079-23200000"
+    },
+    "safetyInformation": [
+      "Follow traffic rules on wide roads.",
+      "Respect the peaceful environment and gardens.",
+      "Be mindful when visiting the Akshardham Temple."
+    ],
+    "travelTips": [
+      "Visit the grand Akshardham Temple.",
+      "Enjoy the peaceful gardens and wide roads.",
+      "Experience the calm and planned urban environment."
+    ],
+    "experiences": {
+      "Food": [],
+      "Activities": [],
+      "LocalMarkets": [],
+      "Spiritual": [],
+      "Historical": [],
+      "Nature": [],
+      "Cultural": [],
+      "Adventure": [],
+      "Others": []
+    },
+    "trending": {
+      "places": []
+    },
+    "createdAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    },
+    "updatedAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "68e5e20021c4af9b4a7549b6"
+    },
+    "name": "Dwarka",
+    "location": [
+      {
+        "country": {
+          "id": {
+            "$oid": "68d7f24214fbfc2474738355"
+          }
+        },
+        "state": {
+          "id": {
+            "$oid": "68e286155b54d5e1bf69b1eb"
+          }
+        },
+        "region": {
+          "id": {
+            "$oid": "68d7f77c14fbfc2474738358"
+          }
+        }
+      }
+    ],
+    "greetingText": "Welcome to Dwarka!",
+    "tagLine": "Sacred City of Lord Krishna",
+    "description": {
+      "title": "Dwarka – The Sacred City",
+      "short": "One of India's Char Dham pilgrimage sites, a sacred coastal city linked to Lord Krishna.",
+      "long": "Dwarka, one of India's Char Dham pilgrimage sites, is a sacred coastal city linked to Lord Krishna. Its grand Dwarkadhish Temple and calm seaside ghats draw devotees and travelers alike. With a blend of devotion, history, and coastal charm, Dwarka is a spiritual highlight of Gujarat's travel map.",
+      "history": "Dwarka is one of the seven most ancient cities of India and is associated with Lord Krishna. It's one of the four Char Dham pilgrimage sites.",
+      "overview": "A sacred pilgrimage city where devotion meets coastal beauty, offering profound spiritual experiences."
+    },
+    "languages": [
+      "Gujarati",
+      "Hindi",
+      "English",
+      "Sanskrit"
+    ],
+    "images": {
+      "banner": "",
+      "card": "",
+      "others": []
+    },
+    "emergencyContacts": {
+      "Police": "100",
+      "Ambulance": "102",
+      "Fire": "101",
+      "Tourist Helpline": "1363",
+      "Temple Emergency": "02892-222000"
+    },
+    "safetyInformation": [
+      "Respect the sacred nature of the temple and ghats.",
+      "Be cautious near the sea and coastal areas.",
+      "Follow guidelines during religious ceremonies."
+    ],
+    "travelTips": [
+      "Visit the grand Dwarkadhish Temple.",
+      "Experience the calm seaside ghats.",
+      "Participate in religious ceremonies and rituals."
+    ],
+    "experiences": {
+      "Food": [],
+      "Activities": [],
+      "LocalMarkets": [],
+      "Spiritual": [],
+      "Historical": [],
+      "Nature": [],
+      "Cultural": [],
+      "Adventure": [],
+      "Others": []
+    },
+    "trending": {
+      "places": []
+    },
+    "createdAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    },
+    "updatedAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "68e5e20021c4af9b4a7549b7"
+    },
+    "name": "Somnath",
+    "location": [
+      {
+        "country": {
+          "id": {
+            "$oid": "68d7f24214fbfc2474738355"
+          }
+        },
+        "state": {
+          "id": {
+            "$oid": "68e286155b54d5e1bf69b1eb"
+          }
+        },
+        "region": {
+          "id": {
+            "$oid": "68d7f77c14fbfc2474738358"
+          }
+        }
+      }
+    ],
+    "greetingText": "Welcome to Somnath!",
+    "tagLine": "Home of the Legendary Somnath Temple",
+    "description": {
+      "title": "Somnath – The Sacred Temple City",
+      "short": "Home to the legendary Somnath Temple, one of the twelve Jyotirlingas of Lord Shiva, standing proudly by the Arabian Sea.",
+      "long": "Somnath is home to the legendary Somnath Temple, one of the twelve Jyotirlingas of Lord Shiva. Rebuilt many times, the temple stands proudly by the Arabian Sea, symbolizing faith and resilience. Pilgrims and tourists alike visit for its sacred aura, seaside beauty, and timeless cultural significance.",
+      "history": "The Somnath Temple has been destroyed and rebuilt several times throughout history. It's one of the most sacred Shiva temples in India.",
+      "overview": "A sacred temple city where devotion meets coastal beauty, offering profound spiritual experiences by the sea."
+    },
+    "languages": [
+      "Gujarati",
+      "Hindi",
+      "English",
+      "Sanskrit"
+    ],
+    "images": {
+      "banner": "",
+      "card": "",
+      "others": []
+    },
+    "emergencyContacts": {
+      "Police": "100",
+      "Ambulance": "102",
+      "Fire": "101",
+      "Tourist Helpline": "1363",
+      "Temple Emergency": "02876-222000"
+    },
+    "safetyInformation": [
+      "Respect the sacred nature of the temple.",
+      "Be cautious near the Arabian Sea.",
+      "Follow guidelines during religious ceremonies."
+    ],
+    "travelTips": [
+      "Visit the legendary Somnath Temple.",
+      "Experience the sacred aura and seaside beauty.",
+      "Participate in temple rituals and ceremonies."
+    ],
+    "experiences": {
+      "Food": [],
+      "Activities": [],
+      "LocalMarkets": [],
+      "Spiritual": [],
+      "Historical": [],
+      "Nature": [],
+      "Cultural": [],
+      "Adventure": [],
+      "Others": []
+    },
+    "trending": {
+      "places": []
+    },
+    "createdAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    },
+    "updatedAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "68e5e20021c4af9b4a7549b8"
+    },
+    "name": "Gir National Park",
+    "location": [
+      {
+        "country": {
+          "id": {
+            "$oid": "68d7f24214fbfc2474738355"
+          }
+        },
+        "state": {
+          "id": {
+            "$oid": "68e286155b54d5e1bf69b1eb"
+          }
+        },
+        "region": {
+          "id": {
+            "$oid": "68d7f77c14fbfc2474738358"
+          }
+        }
+      }
+    ],
+    "greetingText": "Welcome to Gir National Park!",
+    "tagLine": "Home of the Asiatic Lion",
+    "description": {
+      "title": "Gir National Park – The Lion's Kingdom",
+      "short": "The only natural home of the Asiatic lion, featuring dry forests, rivers, and grasslands with rich wildlife.",
+      "long": "Gir National Park is the only natural home of the Asiatic lion. Its dry forests, rivers, and grasslands shelter leopards, antelopes, and rich birdlife. Jeep safaris offer thrilling encounters with wildlife, making Gir one of India's most celebrated reserves and a must-visit for nature and adventure lovers.",
+      "history": "Gir National Park was established in 1965 and is the only place in the world where Asiatic lions can be found in the wild.",
+      "overview": "A wildlife sanctuary where the king of the jungle roams free, offering thrilling wildlife encounters and natural beauty."
+    },
+    "languages": [
+      "Gujarati",
+      "Hindi",
+      "English"
+    ],
+    "images": {
+      "banner": "",
+      "card": "",
+      "others": []
+    },
+    "emergencyContacts": {
+      "Police": "100",
+      "Ambulance": "102",
+      "Fire": "101",
+      "Tourist Helpline": "1363",
+      "Park Emergency": "02877-222000"
+    },
+    "safetyInformation": [
+      "Follow park rules and stay in designated areas.",
+      "Maintain safe distance from wild animals.",
+      "Do not feed or disturb wildlife."
+    ],
+    "travelTips": [
+      "Book jeep safaris in advance for wildlife viewing.",
+      "Carry binoculars and camera for wildlife photography.",
+      "Best time to visit is December to March."
+    ],
+    "experiences": {
+      "Food": [],
+      "Activities": [],
+      "LocalMarkets": [],
+      "Spiritual": [],
+      "Historical": [],
+      "Nature": [],
+      "Cultural": [],
+      "Adventure": [],
+      "Others": []
+    },
+    "trending": {
+      "places": []
+    },
+    "createdAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    },
+    "updatedAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    }
+  }
+]

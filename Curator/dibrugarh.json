@@ -1,0 +1,81 @@
+{
+  "_id": {
+    "$oid": "68e5e20021c4af9b4a754985"
+  },
+  "name": "Dibrugarh",
+  "location": [
+    {
+      "country": {
+        "id": {
+          "$oid": "68d7f24214fbfc2474738355"
+        }
+      },
+      "state": {
+        "id": {
+          "$oid": "68e285445b54d5e1bf69b1e1"
+        }
+      },
+      "region": {
+        "id": {
+          "$oid": "68d7f77c14fbfc2474738358"
+        }
+      }
+    }
+  ],
+  "greetingText": "Welcome to Dibrugarh!",
+  "tagLine": "Tea City of India",
+  "description": {
+    "title": "Dibrugarh – The Tea City of India",
+    "short": "Known as the 'Tea City of India,' dotted with sprawling tea estates and river views along the Brahmaputra.",
+    "long": "Dibrugarh, the 'Tea City of India,' is dotted with sprawling tea estates and river views along the Brahmaputra. Known for its friendly charm, it's also a base for exploring wildlife sanctuaries and nearby tribal villages. Blending greenery with quiet urban life, Dibrugarh is perfect for travelers seeking calm and culture.",
+    "history": "Dibrugarh is the commercial hub of Upper Assam and is known for its tea industry. It's also a gateway to the eastern parts of Assam and Arunachal Pradesh.",
+    "overview": "A peaceful city where tea plantations stretch to the horizon, offering tranquility and authentic tea experiences."
+  },
+  "languages": [
+    "Assamese",
+    "Hindi",
+    "English"
+  ],
+  "images": {
+    "banner": "",
+    "card": "",
+    "others": []
+  },
+  "emergencyContacts": {
+    "Police": "100",
+    "Ambulance": "102",
+    "Fire": "101",
+    "Tourist Helpline": "1363",
+    "District Tourism": "0373-2300000"
+  },
+  "safetyInformation": [
+    "Be cautious near the Brahmaputra River during monsoon.",
+    "Respect tea garden workers and their privacy.",
+    "Follow guidelines when visiting tribal areas."
+  ],
+  "travelTips": [
+    "Take a tea estate tour to see tea processing.",
+    "Visit during tea harvesting season for best experience.",
+    "Explore nearby wildlife sanctuaries for nature lovers."
+  ],
+  "experiences": {
+    "Food": [],
+    "Activities": [],
+    "LocalMarkets": [],
+    "Spiritual": [],
+    "Historical": [],
+    "Nature": [],
+    "Cultural": [],
+    "Adventure": [],
+    "Others": []
+  },
+  "trending": {
+    "places": []
+  },
+  "createdAt": {
+    "$date": "2025-01-10T04:01:04.008Z"
+  },
+  "updatedAt": {
+    "$date": "2025-01-10T04:01:04.008Z"
+  }
+}

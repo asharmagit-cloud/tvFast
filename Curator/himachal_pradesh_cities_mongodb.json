@@ -1,0 +1,977 @@
+[
+  {
+    "_id": {
+      "$oid": "68e5e20021c4af9b4a7549c1"
+    },
+    "name": "Shimla",
+    "location": [
+      {
+        "country": {
+          "id": {
+            "$oid": "68d7f24214fbfc2474738355"
+          }
+        },
+        "state": {
+          "id": {
+            "$oid": "68e286445b54d5e1bf69b1ed"
+          }
+        },
+        "region": {
+          "id": {
+            "$oid": "68d7f77c14fbfc2474738358"
+          }
+        }
+      }
+    ],
+    "greetingText": "Welcome to Shimla!",
+    "tagLine": "Queen of Hills",
+    "description": {
+      "title": "Shimla – The Queen of Hills",
+      "short": "A charming hill station with colonial buildings, pine forests, and scenic views, known as the 'Queen of Hills.'",
+      "long": "Shimla, the 'Queen of Hills,' is a charming hill station with colonial buildings, pine forests, and scenic views. The Ridge, Mall Road, and toy train rides add to its appeal. Cool weather and lively bazaars make Shimla a favorite for families, honeymooners, and travelers seeking mountain charm.",
+      "history": "Shimla was the summer capital of British India and is known for its colonial architecture and hill station charm.",
+      "overview": "A classic hill station where colonial heritage meets mountain beauty, offering timeless charm and scenic experiences."
+    },
+    "languages": [
+      "Hindi",
+      "English",
+      "Pahari"
+    ],
+    "images": {
+      "banner": "",
+      "card": "",
+      "others": []
+    },
+    "emergencyContacts": {
+      "Police": "100",
+      "Ambulance": "102",
+      "Fire": "101",
+      "Tourist Helpline": "1363",
+      "Himachal Tourism": "0177-2220000"
+    },
+    "safetyInformation": [
+      "Be cautious on steep roads and mountain paths.",
+      "Respect the colonial heritage and buildings.",
+      "Follow guidelines during toy train rides."
+    ],
+    "travelTips": [
+      "Walk along the Ridge and Mall Road for scenic views.",
+      "Take a toy train ride for a unique experience.",
+      "Explore colonial buildings and lively bazaars."
+    ],
+    "experiences": {
+      "Food": [],
+      "Activities": [],
+      "LocalMarkets": [],
+      "Spiritual": [],
+      "Historical": [],
+      "Nature": [],
+      "Cultural": [],
+      "Adventure": [],
+      "Others": []
+    },
+    "trending": {
+      "places": []
+    },
+    "createdAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    },
+    "updatedAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "68e5e20021c4af9b4a7549c2"
+    },
+    "name": "Manali",
+    "location": [
+      {
+        "country": {
+          "id": {
+            "$oid": "68d7f24214fbfc2474738355"
+          }
+        },
+        "state": {
+          "id": {
+            "$oid": "68e286445b54d5e1bf69b1ed"
+          }
+        },
+        "region": {
+          "id": {
+            "$oid": "68d7f77c14fbfc2474738358"
+          }
+        }
+      }
+    ],
+    "greetingText": "Welcome to Manali!",
+    "tagLine": "Adventure Capital of Himachal",
+    "description": {
+      "title": "Manali – The Adventure Paradise",
+      "short": "Nestled in the Kullu Valley, a mix of adventure and beauty with snow-capped peaks and apple orchards.",
+      "long": "Manali, nestled in the Kullu Valley, is a mix of adventure and beauty. Snow-capped peaks, apple orchards, and rivers attract trekkers, skiers, and holidaymakers. With Solang Valley and Rohtang Pass nearby, Manali offers both thrills and relaxation, making it one of Himachal's most popular destinations.",
+      "history": "Manali has been a popular hill station and adventure destination, known for its natural beauty and outdoor activities.",
+      "overview": "An adventure paradise where natural beauty meets thrilling activities, offering experiences for all types of travelers."
+    },
+    "languages": [
+      "Hindi",
+      "English",
+      "Pahari"
+    ],
+    "images": {
+      "banner": "",
+      "card": "",
+      "others": []
+    },
+    "emergencyContacts": {
+      "Police": "100",
+      "Ambulance": "102",
+      "Fire": "101",
+      "Tourist Helpline": "1363",
+      "Himachal Tourism": "01902-222000"
+    },
+    "safetyInformation": [
+      "Be cautious during adventure activities and trekking.",
+      "Follow safety guidelines at high altitudes.",
+      "Respect the natural environment and wildlife."
+    ],
+    "travelTips": [
+      "Visit Solang Valley for adventure sports.",
+      "Explore Rohtang Pass for scenic beauty.",
+      "Try apple picking in the orchards."
+    ],
+    "experiences": {
+      "Food": [],
+      "Activities": [],
+      "LocalMarkets": [],
+      "Spiritual": [],
+      "Historical": [],
+      "Nature": [],
+      "Cultural": [],
+      "Adventure": [],
+      "Others": []
+    },
+    "trending": {
+      "places": []
+    },
+    "createdAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    },
+    "updatedAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "68e5e20021c4af9b4a7549c3"
+    },
+    "name": "Dharamshala",
+    "location": [
+      {
+        "country": {
+          "id": {
+            "$oid": "68d7f24214fbfc2474738355"
+          }
+        },
+        "state": {
+          "id": {
+            "$oid": "68e286445b54d5e1bf69b1ed"
+          }
+        },
+        "region": {
+          "id": {
+            "$oid": "68d7f77c14fbfc2474738358"
+          }
+        }
+      }
+    ],
+    "greetingText": "Welcome to Dharamshala!",
+    "tagLine": "Home of the Dalai Lama",
+    "description": {
+      "title": "Dharamshala – The Spiritual Mountain Town",
+      "short": "Set against the Dhauladhar range, known as the home of the Dalai Lama with Tibetan monasteries and pine forests.",
+      "long": "Dharamshala, set against the Dhauladhar range, is known as the home of the Dalai Lama. Tibetan monasteries, cafes, and pine forests give it a unique charm. Offering spiritual calm and mountain beauty, Dharamshala draws both pilgrims and travelers looking for culture, peace, and scenic landscapes.",
+      "history": "Dharamshala became the home of the Dalai Lama and the Tibetan government-in-exile, making it a center of Tibetan culture and spirituality.",
+      "overview": "A spiritual mountain town where Tibetan culture meets Himalayan beauty, offering profound cultural and spiritual experiences."
+    },
+    "languages": [
+      "Hindi",
+      "English",
+      "Tibetan",
+      "Pahari"
+    ],
+    "images": {
+      "banner": "",
+      "card": "",
+      "others": []
+    },
+    "emergencyContacts": {
+      "Police": "100",
+      "Ambulance": "102",
+      "Fire": "101",
+      "Tourist Helpline": "1363",
+      "Himachal Tourism": "01892-222000"
+    },
+    "safetyInformation": [
+      "Respect the spiritual nature of monasteries and temples.",
+      "Be cautious on mountain roads and paths.",
+      "Follow guidelines when visiting religious sites."
+    ],
+    "travelTips": [
+      "Visit Tibetan monasteries for spiritual experiences.",
+      "Explore the Dhauladhar range for scenic beauty.",
+      "Try Tibetan cuisine and visit local cafes."
+    ],
+    "experiences": {
+      "Food": [],
+      "Activities": [],
+      "LocalMarkets": [],
+      "Spiritual": [],
+      "Historical": [],
+      "Nature": [],
+      "Cultural": [],
+      "Adventure": [],
+      "Others": []
+    },
+    "trending": {
+      "places": []
+    },
+    "createdAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    },
+    "updatedAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "68e5e20021c4af9b4a7549c4"
+    },
+    "name": "Kullu",
+    "location": [
+      {
+        "country": {
+          "id": {
+            "$oid": "68d7f24214fbfc2474738355"
+          }
+        },
+        "state": {
+          "id": {
+            "$oid": "68e286445b54d5e1bf69b1ed"
+          }
+        },
+        "region": {
+          "id": {
+            "$oid": "68d7f77c14fbfc2474738358"
+          }
+        }
+      }
+    ],
+    "greetingText": "Welcome to Kullu!",
+    "tagLine": "Valley of Gods",
+    "description": {
+      "title": "Kullu – The Valley of Gods",
+      "short": "Known as the 'Valley of Gods,' filled with temples, festivals, and stunning landscapes along the Beas River.",
+      "long": "Kullu, known as the 'Valley of Gods,' is filled with temples, festivals, and stunning landscapes. The Beas River and surrounding hills make it a hub for rafting, trekking, and camping. With lively culture and natural beauty, Kullu offers travelers a rich blend of adventure and tradition.",
+      "history": "Kullu has been known as the 'Valley of Gods' for centuries, with numerous temples and a rich cultural heritage.",
+      "overview": "A sacred valley where spirituality meets adventure, offering rich cultural experiences and outdoor activities."
+    },
+    "languages": [
+      "Hindi",
+      "English",
+      "Pahari"
+    ],
+    "images": {
+      "banner": "",
+      "card": "",
+      "others": []
+    },
+    "emergencyContacts": {
+      "Police": "100",
+      "Ambulance": "102",
+      "Fire": "101",
+      "Tourist Helpline": "1363",
+      "Himachal Tourism": "01902-222000"
+    },
+    "safetyInformation": [
+      "Be cautious during water sports and rafting.",
+      "Respect the sacred nature of temples and festivals.",
+      "Follow safety guidelines for trekking and camping."
+    ],
+    "travelTips": [
+      "Try river rafting on the Beas River.",
+      "Visit temples and participate in local festivals.",
+      "Go trekking and camping in the surrounding hills."
+    ],
+    "experiences": {
+      "Food": [],
+      "Activities": [],
+      "LocalMarkets": [],
+      "Spiritual": [],
+      "Historical": [],
+      "Nature": [],
+      "Cultural": [],
+      "Adventure": [],
+      "Others": []
+    },
+    "trending": {
+      "places": []
+    },
+    "createdAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    },
+    "updatedAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "68e5e20021c4af9b4a7549c5"
+    },
+    "name": "Dalhousie",
+    "location": [
+      {
+        "country": {
+          "id": {
+            "$oid": "68d7f24214fbfc2474738355"
+          }
+        },
+        "state": {
+          "id": {
+            "$oid": "68e286445b54d5e1bf69b1ed"
+          }
+        },
+        "region": {
+          "id": {
+            "$oid": "68d7f77c14fbfc2474738358"
+          }
+        }
+      }
+    ],
+    "greetingText": "Welcome to Dalhousie!",
+    "tagLine": "Quiet Hill Station with Colonial Charm",
+    "description": {
+      "title": "Dalhousie – The Peaceful Hill Station",
+      "short": "A quiet hill station with colonial charm, pine forests, and misty hills, close to Khajjiar 'Mini Switzerland.'",
+      "long": "Dalhousie is a quiet hill station with colonial charm, pine forests, and misty hills. Its old churches, scenic valleys, and peaceful vibe attract travelers looking for relaxation. Close to Khajjiar, often called 'Mini Switzerland,' Dalhousie is perfect for those seeking a slower pace amidst natural beauty.",
+      "history": "Dalhousie was established by the British as a hill station and is known for its colonial architecture and peaceful atmosphere.",
+      "overview": "A peaceful hill station where colonial charm meets natural beauty, offering a serene escape from city life."
+    },
+    "languages": [
+      "Hindi",
+      "English",
+      "Pahari"
+    ],
+    "images": {
+      "banner": "",
+      "card": "",
+      "others": []
+    },
+    "emergencyContacts": {
+      "Police": "100",
+      "Ambulance": "102",
+      "Fire": "101",
+      "Tourist Helpline": "1363",
+      "Himachal Tourism": "01899-222000"
+    },
+    "safetyInformation": [
+      "Be cautious on misty roads and mountain paths.",
+      "Respect the peaceful environment and colonial heritage.",
+      "Follow guidelines when visiting nearby areas like Khajjiar."
+    ],
+    "travelTips": [
+      "Visit old churches for colonial architecture.",
+      "Explore scenic valleys and pine forests.",
+      "Take a day trip to Khajjiar 'Mini Switzerland.'"
+    ],
+    "experiences": {
+      "Food": [],
+      "Activities": [],
+      "LocalMarkets": [],
+      "Spiritual": [],
+      "Historical": [],
+      "Nature": [],
+      "Cultural": [],
+      "Adventure": [],
+      "Others": []
+    },
+    "trending": {
+      "places": []
+    },
+    "createdAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    },
+    "updatedAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "68e5e20021c4af9b4a7549c6"
+    },
+    "name": "Mandi",
+    "location": [
+      {
+        "country": {
+          "id": {
+            "$oid": "68d7f24214fbfc2474738355"
+          }
+        },
+        "state": {
+          "id": {
+            "$oid": "68e286445b54d5e1bf69b1ed"
+          }
+        },
+        "region": {
+          "id": {
+            "$oid": "68d7f77c14fbfc2474738358"
+          }
+        }
+      }
+    ],
+    "greetingText": "Welcome to Mandi!",
+    "tagLine": "Varanasi of the Hills",
+    "description": {
+      "title": "Mandi – The Spiritual Hill Town",
+      "short": "Often called the 'Varanasi of the Hills,' dotted with ancient temples and ghats along the Beas River.",
+      "long": "Mandi, often called the 'Varanasi of the Hills,' is dotted with ancient temples and ghats along the Beas River. Its Shivratri festival reflects rich culture, while surrounding hills and lakes add natural beauty. Mandi is a spiritual and scenic stop for travelers exploring central Himachal.",
+      "history": "Mandi has been an important religious and cultural center, known for its ancient temples and the famous Shivratri festival.",
+      "overview": "A spiritual hill town where ancient temples meet natural beauty, offering profound cultural and religious experiences."
+    },
+    "languages": [
+      "Hindi",
+      "English",
+      "Pahari"
+    ],
+    "images": {
+      "banner": "",
+      "card": "",
+      "others": []
+    },
+    "emergencyContacts": {
+      "Police": "100",
+      "Ambulance": "102",
+      "Fire": "101",
+      "Tourist Helpline": "1363",
+      "Himachal Tourism": "01905-222000"
+    },
+    "safetyInformation": [
+      "Respect the sacred nature of temples and ghats.",
+      "Be cautious near rivers and water bodies.",
+      "Follow guidelines during religious festivals."
+    ],
+    "travelTips": [
+      "Visit ancient temples and ghats along the Beas River.",
+      "Attend the famous Shivratri festival.",
+      "Explore surrounding hills and lakes for natural beauty."
+    ],
+    "experiences": {
+      "Food": [],
+      "Activities": [],
+      "LocalMarkets": [],
+      "Spiritual": [],
+      "Historical": [],
+      "Nature": [],
+      "Cultural": [],
+      "Adventure": [],
+      "Others": []
+    },
+    "trending": {
+      "places": []
+    },
+    "createdAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    },
+    "updatedAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "68e5e20021c4af9b4a7549c7"
+    },
+    "name": "Chamba",
+    "location": [
+      {
+        "country": {
+          "id": {
+            "$oid": "68d7f24214fbfc2474738355"
+          }
+        },
+        "state": {
+          "id": {
+            "$oid": "68e286445b54d5e1bf69b1ed"
+          }
+        },
+        "region": {
+          "id": {
+            "$oid": "68d7f77c14fbfc2474738358"
+          }
+        }
+      }
+    ],
+    "greetingText": "Welcome to Chamba!",
+    "tagLine": "Historic Town on the Ravi River",
+    "description": {
+      "title": "Chamba – The Historic Hill Town",
+      "short": "A historic town on the Ravi River, known for its temples, palaces, and handicrafts.",
+      "long": "Chamba, a historic town on the Ravi River, is known for its temples, palaces, and handicrafts. With green meadows and mountain views, it offers a mix of heritage and natural charm. Chamba's calm atmosphere and cultural depth make it an enriching destination away from the busy hill stations.",
+      "history": "Chamba has a rich historical heritage with ancient temples, palaces, and traditional handicrafts dating back centuries.",
+      "overview": "A historic town where ancient heritage meets natural beauty, offering authentic cultural experiences away from crowds."
+    },
+    "languages": [
+      "Hindi",
+      "English",
+      "Pahari"
+    ],
+    "images": {
+      "banner": "",
+      "card": "",
+      "others": []
+    },
+    "emergencyContacts": {
+      "Police": "100",
+      "Ambulance": "102",
+      "Fire": "101",
+      "Tourist Helpline": "1363",
+      "Himachal Tourism": "01899-222000"
+    },
+    "safetyInformation": [
+      "Be cautious near rivers and mountain areas.",
+      "Respect the historic nature of temples and palaces.",
+      "Follow guidelines when exploring handicraft workshops."
+    ],
+    "travelTips": [
+      "Visit ancient temples and palaces for heritage experience.",
+      "Explore traditional handicrafts and local art.",
+      "Enjoy the green meadows and mountain views."
+    ],
+    "experiences": {
+      "Food": [],
+      "Activities": [],
+      "LocalMarkets": [],
+      "Spiritual": [],
+      "Historical": [],
+      "Nature": [],
+      "Cultural": [],
+      "Adventure": [],
+      "Others": []
+    },
+    "trending": {
+      "places": []
+    },
+    "createdAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    },
+    "updatedAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "68e5e20021c4af9b4a7549c8"
+    },
+    "name": "Kangra",
+    "location": [
+      {
+        "country": {
+          "id": {
+            "$oid": "68d7f24214fbfc2474738355"
+          }
+        },
+        "state": {
+          "id": {
+            "$oid": "68e286445b54d5e1bf69b1ed"
+          }
+        },
+        "region": {
+          "id": {
+            "$oid": "68d7f77c14fbfc2474738358"
+          }
+        }
+      }
+    ],
+    "greetingText": "Welcome to Kangra!",
+    "tagLine": "Historic Valley with Tea Gardens",
+    "description": {
+      "title": "Kangra – The Historic Valley",
+      "short": "Famous for its fort, temples, and scenic valleys, surrounded by the Dhauladhar range.",
+      "long": "Kangra is famous for its fort, temples, and scenic valleys. Surrounded by the Dhauladhar range, it blends history with natural charm. Tea gardens and traditional art add color to the region. For travelers, Kangra offers a mix of spirituality, heritage, and quiet Himalayan beauty.",
+      "history": "Kangra has a rich historical heritage with the famous Kangra Fort and numerous temples, known for its cultural significance.",
+      "overview": "A historic valley where ancient fort meets natural beauty, offering a blend of spirituality and heritage."
+    },
+    "languages": [
+      "Hindi",
+      "English",
+      "Pahari"
+    ],
+    "images": {
+      "banner": "",
+      "card": "",
+      "others": []
+    },
+    "emergencyContacts": {
+      "Police": "100",
+      "Ambulance": "102",
+      "Fire": "101",
+      "Tourist Helpline": "1363",
+      "Himachal Tourism": "01892-222000"
+    },
+    "safetyInformation": [
+      "Be cautious when visiting fort and historic sites.",
+      "Respect the sacred nature of temples.",
+      "Follow guidelines when exploring tea gardens."
+    ],
+    "travelTips": [
+      "Visit the famous Kangra Fort for historical insights.",
+      "Explore temples and traditional art centers.",
+      "Walk through tea gardens for scenic beauty."
+    ],
+    "experiences": {
+      "Food": [],
+      "Activities": [],
+      "LocalMarkets": [],
+      "Spiritual": [],
+      "Historical": [],
+      "Nature": [],
+      "Cultural": [],
+      "Adventure": [],
+      "Others": []
+    },
+    "trending": {
+      "places": []
+    },
+    "createdAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    },
+    "updatedAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "68e5e20021c4af9b4a7549c9"
+    },
+    "name": "Palampur",
+    "location": [
+      {
+        "country": {
+          "id": {
+            "$oid": "68d7f24214fbfc2474738355"
+          }
+        },
+        "state": {
+          "id": {
+            "$oid": "68e286445b54d5e1bf69b1ed"
+          }
+        },
+        "region": {
+          "id": {
+            "$oid": "68d7f77c14fbfc2474738358"
+          }
+        }
+      }
+    ],
+    "greetingText": "Welcome to Palampur!",
+    "tagLine": "Tea Capital of North India",
+    "description": {
+      "title": "Palampur – The Tea Valley",
+      "short": "A green valley town surrounded by tea gardens, pine forests, and mountain peaks, known as the 'Tea Capital of North India.'",
+      "long": "Palampur is a green valley town surrounded by tea gardens, pine forests, and mountain peaks. Known as the 'Tea Capital of North India,' it offers a peaceful atmosphere. With streams, temples, and scenic views, Palampur is ideal for travelers seeking serenity in the lap of nature.",
+      "history": "Palampur is known for its tea gardens and is often called the 'Tea Capital of North India' due to its extensive tea cultivation.",
+      "overview": "A peaceful valley where tea gardens meet mountain beauty, offering serene experiences in nature's lap."
+    },
+    "languages": [
+      "Hindi",
+      "English",
+      "Pahari"
+    ],
+    "images": {
+      "banner": "",
+      "card": "",
+      "others": []
+    },
+    "emergencyContacts": {
+      "Police": "100",
+      "Ambulance": "102",
+      "Fire": "101",
+      "Tourist Helpline": "1363",
+      "Himachal Tourism": "01894-222000"
+    },
+    "safetyInformation": [
+      "Be cautious near streams and water bodies.",
+      "Respect the peaceful environment and tea gardens.",
+      "Follow guidelines when exploring natural areas."
+    ],
+    "travelTips": [
+      "Visit tea gardens for scenic beauty and learning.",
+      "Explore pine forests and mountain streams.",
+      "Enjoy the peaceful atmosphere and scenic views."
+    ],
+    "experiences": {
+      "Food": [],
+      "Activities": [],
+      "LocalMarkets": [],
+      "Spiritual": [],
+      "Historical": [],
+      "Nature": [],
+      "Cultural": [],
+      "Adventure": [],
+      "Others": []
+    },
+    "trending": {
+      "places": []
+    },
+    "createdAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    },
+    "updatedAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "68e5e20021c4af9b4a7549ca"
+    },
+    "name": "Spiti Valley",
+    "location": [
+      {
+        "country": {
+          "id": {
+            "$oid": "68d7f24214fbfc2474738355"
+          }
+        },
+        "state": {
+          "id": {
+            "$oid": "68e286445b54d5e1bf69b1ed"
+          }
+        },
+        "region": {
+          "id": {
+            "$oid": "68d7f77c14fbfc2474738358"
+          }
+        }
+      }
+    ],
+    "greetingText": "Welcome to Spiti Valley!",
+    "tagLine": "High-Altitude Desert Paradise",
+    "description": {
+      "title": "Spiti Valley – The High-Altitude Desert",
+      "short": "A high-altitude desert known for its stark beauty, monasteries, and rugged landscapes.",
+      "long": "Spiti Valley is a high-altitude desert known for its stark beauty, monasteries, and rugged landscapes. Remote villages, crystal-clear skies, and winding roads create an adventurous setting. Trekkers and culture seekers come for its raw charm, making Spiti a dream for those looking beyond the usual tourist trail.",
+      "history": "Spiti Valley has been a remote and isolated region with ancient monasteries and unique cultural heritage.",
+      "overview": "A remote high-altitude desert where ancient monasteries meet stark natural beauty, offering adventurous and spiritual experiences."
+    },
+    "languages": [
+      "Hindi",
+      "English",
+      "Tibetan",
+      "Spiti"
+    ],
+    "images": {
+      "banner": "",
+      "card": "",
+      "others": []
+    },
+    "emergencyContacts": {
+      "Police": "100",
+      "Ambulance": "102",
+      "Fire": "101",
+      "Tourist Helpline": "1363",
+      "Himachal Tourism": "01906-222000"
+    },
+    "safetyInformation": [
+      "Be cautious at high altitudes and remote areas.",
+      "Respect the fragile environment and local culture.",
+      "Follow guidelines for high-altitude trekking and travel."
+    ],
+    "travelTips": [
+      "Visit ancient monasteries for spiritual experiences.",
+      "Go trekking in the rugged landscapes.",
+      "Experience the unique culture of remote villages."
+    ],
+    "experiences": {
+      "Food": [],
+      "Activities": [],
+      "LocalMarkets": [],
+      "Spiritual": [],
+      "Historical": [],
+      "Nature": [],
+      "Cultural": [],
+      "Adventure": [],
+      "Others": []
+    },
+    "trending": {
+      "places": []
+    },
+    "createdAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    },
+    "updatedAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "68e5e20021c4af9b4a7549cb"
+    },
+    "name": "Kasol",
+    "location": [
+      {
+        "country": {
+          "id": {
+            "$oid": "68d7f24214fbfc2474738355"
+          }
+        },
+        "state": {
+          "id": {
+            "$oid": "68e286445b54d5e1bf69b1ed"
+          }
+        },
+        "region": {
+          "id": {
+            "$oid": "68d7f77c14fbfc2474738358"
+          }
+        }
+      }
+    ],
+    "greetingText": "Welcome to Kasol!",
+    "tagLine": "Backpacker's Paradise",
+    "description": {
+      "title": "Kasol – The Backpacker's Paradise",
+      "short": "A riverside village in the Parvati Valley, popular with backpackers for its laid-back vibe and mountain trails.",
+      "long": "Kasol, a riverside village in the Parvati Valley, is popular with backpackers for its laid-back vibe. Surrounded by pine forests and snow peaks, it's a hub for trekking and local culture. With cafes, music, and mountain trails, Kasol is perfect for travelers seeking both relaxation and adventure.",
+      "history": "Kasol has become a popular destination for backpackers and trekkers, known for its relaxed atmosphere and natural beauty.",
+      "overview": "A backpacker's paradise where laid-back vibes meet mountain adventure, offering unique experiences for young travelers."
+    },
+    "languages": [
+      "Hindi",
+      "English",
+      "Pahari"
+    ],
+    "images": {
+      "banner": "",
+      "card": "",
+      "others": []
+    },
+    "emergencyContacts": {
+      "Police": "100",
+      "Ambulance": "102",
+      "Fire": "101",
+      "Tourist Helpline": "1363",
+      "Himachal Tourism": "01902-222000"
+    },
+    "safetyInformation": [
+      "Be cautious during trekking and outdoor activities.",
+      "Respect the local culture and environment.",
+      "Follow guidelines for mountain trails and camping."
+    ],
+    "travelTips": [
+      "Enjoy the laid-back atmosphere and local cafes.",
+      "Go trekking in the surrounding mountains.",
+      "Experience the local music and cultural scene."
+    ],
+    "experiences": {
+      "Food": [],
+      "Activities": [],
+      "LocalMarkets": [],
+      "Spiritual": [],
+      "Historical": [],
+      "Nature": [],
+      "Cultural": [],
+      "Adventure": [],
+      "Others": []
+    },
+    "trending": {
+      "places": []
+    },
+    "createdAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    },
+    "updatedAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "68e5e20021c4af9b4a7549cc"
+    },
+    "name": "McLeodganj",
+    "location": [
+      {
+        "country": {
+          "id": {
+            "$oid": "68d7f24214fbfc2474738355"
+          }
+        },
+        "state": {
+          "id": {
+            "$oid": "68e286445b54d5e1bf69b1ed"
+          }
+        },
+        "region": {
+          "id": {
+            "$oid": "68d7f77c14fbfc2474738358"
+          }
+        }
+      }
+    ],
+    "greetingText": "Welcome to McLeodganj!",
+    "tagLine": "Little Lhasa",
+    "description": {
+      "title": "McLeodganj – Little Lhasa",
+      "short": "A vibrant town with Tibetan culture, monasteries, and cozy cafes, known as 'Little Lhasa.'",
+      "long": "McLeodganj, near Dharamshala, is a vibrant town with Tibetan culture, monasteries, and cozy cafes. Known as 'Little Lhasa,' it offers meditation centers and mountain treks. With scenic views and spiritual charm, McLeodganj is a favorite for travelers blending culture, peace, and outdoor exploration in one destination.",
+      "history": "McLeodganj became a center of Tibetan culture and is often called 'Little Lhasa' due to its large Tibetan population and cultural influence.",
+      "overview": "A vibrant Tibetan town where culture meets spirituality, offering unique experiences of Tibetan heritage and mountain beauty."
+    },
+    "languages": [
+      "Hindi",
+      "English",
+      "Tibetan",
+      "Pahari"
+    ],
+    "images": {
+      "banner": "",
+      "card": "",
+      "others": []
+    },
+    "emergencyContacts": {
+      "Police": "100",
+      "Ambulance": "102",
+      "Fire": "101",
+      "Tourist Helpline": "1363",
+      "Himachal Tourism": "01892-222000"
+    },
+    "safetyInformation": [
+      "Respect Tibetan culture and religious practices.",
+      "Be cautious during mountain treks and meditation retreats.",
+      "Follow guidelines when visiting monasteries and meditation centers."
+    ],
+    "travelTips": [
+      "Visit Tibetan monasteries and meditation centers.",
+      "Try Tibetan cuisine at local cafes.",
+      "Go trekking in the surrounding mountains."
+    ],
+    "experiences": {
+      "Food": [],
+      "Activities": [],
+      "LocalMarkets": [],
+      "Spiritual": [],
+      "Historical": [],
+      "Nature": [],
+      "Cultural": [],
+      "Adventure": [],
+      "Others": []
+    },
+    "trending": {
+      "places": []
+    },
+    "createdAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    },
+    "updatedAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    }
+  }
+]

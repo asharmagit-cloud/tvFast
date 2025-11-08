@@ -1,0 +1,652 @@
+[
+  {
+    "_id": {
+      "$oid": "68e5e20021c4af9b4a754990"
+    },
+    "name": "Patna",
+    "location": [
+      {
+        "country": {
+          "id": {
+            "$oid": "68d7f24214fbfc2474738355"
+          }
+        },
+        "state": {
+          "id": {
+            "$oid": "68e2854b5b54d5e1bf69b1e2"
+          }
+        },
+        "region": {
+          "id": {
+            "$oid": "68d7f77c14fbfc2474738358"
+          }
+        }
+      }
+    ],
+    "greetingText": "Welcome to Patna!",
+    "tagLine": "One of the Oldest Continuously Inhabited Cities",
+    "description": {
+      "title": "Patna – The Ancient Capital of Bihar",
+      "short": "The capital of Bihar, one of the oldest continuously inhabited cities in the world, set along the Ganges.",
+      "long": "Patna, the capital of Bihar, is one of the oldest continuously inhabited cities in the world. Set along the Ganges, it blends history, culture, and spirituality. From ancient sites to bustling markets and museums, Patna serves as a vibrant gateway to Bihar's rich heritage and sacred destinations nearby.",
+      "history": "Patna has a rich history dating back to ancient times, known as Pataliputra in ancient India. It was the capital of the Mauryan Empire and has been a center of learning and culture for centuries.",
+      "overview": "A historic city where ancient heritage meets modern life, offering a glimpse into India's rich past and cultural diversity."
+    },
+    "languages": [
+      "Hindi",
+      "English",
+      "Bhojpuri",
+      "Magahi"
+    ],
+    "images": {
+      "banner": "",
+      "card": "",
+      "others": []
+    },
+    "emergencyContacts": {
+      "Police": "100",
+      "Ambulance": "102",
+      "Fire": "101",
+      "Tourist Helpline": "1363",
+      "State Tourism": "0612-2225411"
+    },
+    "safetyInformation": [
+      "Be cautious near the Ganges River during monsoon.",
+      "Respect local customs and traditions.",
+      "Avoid isolated areas after dark."
+    ],
+    "travelTips": [
+      "Visit the Patna Museum for historical artifacts.",
+      "Explore the ancient sites and temples.",
+      "Try local Bihari cuisine at street markets."
+    ],
+    "experiences": {
+      "Food": [],
+      "Activities": [],
+      "LocalMarkets": [],
+      "Spiritual": [],
+      "Historical": [],
+      "Nature": [],
+      "Cultural": [],
+      "Adventure": [],
+      "Others": []
+    },
+    "trending": {
+      "places": []
+    },
+    "createdAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    },
+    "updatedAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "68e5e20021c4af9b4a754991"
+    },
+    "name": "Bodh Gaya",
+    "location": [
+      {
+        "country": {
+          "id": {
+            "$oid": "68d7f24214fbfc2474738355"
+          }
+        },
+        "state": {
+          "id": {
+            "$oid": "68e2854b5b54d5e1bf69b1e2"
+          }
+        },
+        "region": {
+          "id": {
+            "$oid": "68d7f77c14fbfc2474738358"
+          }
+        }
+      }
+    ],
+    "greetingText": "Welcome to Bodh Gaya!",
+    "tagLine": "Where Buddha Attained Enlightenment",
+    "description": {
+      "title": "Bodh Gaya – The Sacred Land of Enlightenment",
+      "short": "A spiritual landmark where Lord Buddha attained enlightenment under the Bodhi Tree, a UNESCO World Heritage Site.",
+      "long": "Bodh Gaya is a spiritual landmark where Lord Buddha attained enlightenment under the Bodhi Tree. The Mahabodhi Temple complex, a UNESCO World Heritage Site, draws pilgrims from across the globe. Peaceful monasteries, meditation centers, and sacred vibes make Bodh Gaya a serene destination for reflection and inner journeys.",
+      "history": "Bodh Gaya is where Prince Siddhartha became the Buddha after meditating under the Bodhi Tree. The Mahabodhi Temple was built by Emperor Ashoka in the 3rd century BCE.",
+      "overview": "A sacred pilgrimage site where spirituality and peace converge, offering profound experiences for seekers and pilgrims."
+    },
+    "languages": [
+      "Hindi",
+      "English",
+      "Pali",
+      "Sanskrit"
+    ],
+    "images": {
+      "banner": "",
+      "card": "",
+      "others": []
+    },
+    "emergencyContacts": {
+      "Police": "100",
+      "Ambulance": "102",
+      "Fire": "101",
+      "Tourist Helpline": "1363",
+      "Temple Emergency": "0631-2200444"
+    },
+    "safetyInformation": [
+      "Respect the sacred nature of the temple complex.",
+      "Follow dress codes and temple guidelines.",
+      "Be mindful of meditation and prayer times."
+    ],
+    "travelTips": [
+      "Visit during early morning for peaceful meditation.",
+      "Explore the various monasteries representing different countries.",
+      "Attend evening prayers at the Mahabodhi Temple."
+    ],
+    "experiences": {
+      "Food": [],
+      "Activities": [],
+      "LocalMarkets": [],
+      "Spiritual": [],
+      "Historical": [],
+      "Nature": [],
+      "Cultural": [],
+      "Adventure": [],
+      "Others": []
+    },
+    "trending": {
+      "places": []
+    },
+    "createdAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    },
+    "updatedAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "68e5e20021c4af9b4a754992"
+    },
+    "name": "Nalanda",
+    "location": [
+      {
+        "country": {
+          "id": {
+            "$oid": "68d7f24214fbfc2474738355"
+          }
+        },
+        "state": {
+          "id": {
+            "$oid": "68e2854b5b54d5e1bf69b1e2"
+          }
+        },
+        "region": {
+          "id": {
+            "$oid": "68d7f77c14fbfc2474738358"
+          }
+        }
+      }
+    ],
+    "greetingText": "Welcome to Nalanda!",
+    "tagLine": "Ancient Center of Learning",
+    "description": {
+      "title": "Nalanda – The World's Ancient University",
+      "short": "Home to the ruins of the world's ancient university, once a global center of learning and Buddhist scholarship.",
+      "long": "Nalanda is home to the ruins of the world's ancient university, once a global center of learning. Its archaeological remains, monasteries, and museum reflect centuries of Buddhist scholarship. A UNESCO World Heritage Site, Nalanda continues to inspire travelers with its historic significance and echoes of intellectual and cultural brilliance.",
+      "history": "Nalanda University was established in the 5th century CE and was one of the world's first residential universities. It attracted scholars from across Asia and was destroyed in the 12th century.",
+      "overview": "A historic site where ancient wisdom and learning flourished, offering insights into India's rich educational heritage."
+    },
+    "languages": [
+      "Hindi",
+      "English",
+      "Sanskrit"
+    ],
+    "images": {
+      "banner": "",
+      "card": "",
+      "others": []
+    },
+    "emergencyContacts": {
+      "Police": "100",
+      "Ambulance": "102",
+      "Fire": "101",
+      "Tourist Helpline": "1363",
+      "Site Emergency": "06112-222000"
+    },
+    "safetyInformation": [
+      "Follow guidelines when exploring archaeological ruins.",
+      "Respect the historical significance of the site.",
+      "Wear comfortable shoes for walking through ruins."
+    ],
+    "travelTips": [
+      "Visit the Nalanda Archaeological Museum for artifacts.",
+      "Take a guided tour to understand the university's history.",
+      "Explore the nearby Xuanzang Memorial Hall."
+    ],
+    "experiences": {
+      "Food": [],
+      "Activities": [],
+      "LocalMarkets": [],
+      "Spiritual": [],
+      "Historical": [],
+      "Nature": [],
+      "Cultural": [],
+      "Adventure": [],
+      "Others": []
+    },
+    "trending": {
+      "places": []
+    },
+    "createdAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    },
+    "updatedAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "68e5e20021c4af9b4a754993"
+    },
+    "name": "Rajgir",
+    "location": [
+      {
+        "country": {
+          "id": {
+            "$oid": "68d7f24214fbfc2474738355"
+          }
+        },
+        "state": {
+          "id": {
+            "$oid": "68e2854b5b54d5e1bf69b1e2"
+          }
+        },
+        "region": {
+          "id": {
+            "$oid": "68d7f77c14fbfc2474738358"
+          }
+        }
+      }
+    ],
+    "greetingText": "Welcome to Rajgir!",
+    "tagLine": "Sacred Hills and Hot Springs",
+    "description": {
+      "title": "Rajgir – The Sacred Hill City",
+      "short": "Surrounded by hills and hot springs, deeply linked with both Buddhism and Jainism, a favorite retreat of Lord Buddha.",
+      "long": "Rajgir, surrounded by hills and hot springs, is deeply linked with both Buddhism and Jainism. It was a favorite retreat of Lord Buddha and also home to Vishwa Shanti Stupa. With ropeways, caves, and scenic valleys, Rajgir combines spirituality, nature, and history, making it a peaceful yet enriching destination.",
+      "history": "Rajgir was the capital of the Magadha kingdom and was frequented by both Buddha and Mahavira. It's known for its natural hot springs and ancient caves.",
+      "overview": "A spiritual retreat where ancient wisdom meets natural beauty, offering peaceful experiences in sacred surroundings."
+    },
+    "languages": [
+      "Hindi",
+      "English",
+      "Magahi"
+    ],
+    "images": {
+      "banner": "",
+      "card": "",
+      "others": []
+    },
+    "emergencyContacts": {
+      "Police": "100",
+      "Ambulance": "102",
+      "Fire": "101",
+      "Tourist Helpline": "1363",
+      "District Tourism": "06112-222000"
+    },
+    "safetyInformation": [
+      "Be cautious on the ropeway and hill paths.",
+      "Respect the sacred nature of the caves and temples.",
+      "Follow safety guidelines at hot springs."
+    ],
+    "travelTips": [
+      "Take the ropeway to Vishwa Shanti Stupa for panoramic views.",
+      "Visit the ancient caves where Buddha meditated.",
+      "Experience the natural hot springs for relaxation."
+    ],
+    "experiences": {
+      "Food": [],
+      "Activities": [],
+      "LocalMarkets": [],
+      "Spiritual": [],
+      "Historical": [],
+      "Nature": [],
+      "Cultural": [],
+      "Adventure": [],
+      "Others": []
+    },
+    "trending": {
+      "places": []
+    },
+    "createdAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    },
+    "updatedAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "68e5e20021c4af9b4a754994"
+    },
+    "name": "Vaishali",
+    "location": [
+      {
+        "country": {
+          "id": {
+            "$oid": "68d7f24214fbfc2474738355"
+          }
+        },
+        "state": {
+          "id": {
+            "$oid": "68e2854b5b54d5e1bf69b1e2"
+          }
+        },
+        "region": {
+          "id": {
+            "$oid": "68d7f77c14fbfc2474738358"
+          }
+        }
+      }
+    ],
+    "greetingText": "Welcome to Vaishali!",
+    "tagLine": "Sacred Land of Buddhism and Jainism",
+    "description": {
+      "title": "Vaishali – The Sacred Land of Two Religions",
+      "short": "A sacred land associated with both Buddhism and Jainism, where Buddha preached his last sermon and Mahavira was born.",
+      "long": "Vaishali is a sacred land associated with both Buddhism and Jainism. Lord Buddha preached his last sermon here, while it is also the birthplace of Lord Mahavira. Ancient stupas, Ashokan pillars, and archaeological treasures make Vaishali an important stop for travelers seeking to explore Bihar's spiritual and cultural past.",
+      "history": "Vaishali was one of the first republics in the world and is significant for both Buddhists and Jains. It's where Buddha gave his last sermon and where Mahavira was born.",
+      "overview": "A historic city where two great religions converge, offering deep spiritual and cultural experiences."
+    },
+    "languages": [
+      "Hindi",
+      "English",
+      "Bhojpuri"
+    ],
+    "images": {
+      "banner": "",
+      "card": "",
+      "others": []
+    },
+    "emergencyContacts": {
+      "Police": "100",
+      "Ambulance": "102",
+      "Fire": "101",
+      "Tourist Helpline": "1363",
+      "District Tourism": "06224-222000"
+    },
+    "safetyInformation": [
+      "Respect the sacred nature of stupas and pillars.",
+      "Follow guidelines when visiting archaeological sites.",
+      "Be mindful of local customs and traditions."
+    ],
+    "travelTips": [
+      "Visit the Ashokan Pillar and ancient stupas.",
+      "Explore the archaeological museum for historical insights.",
+      "Learn about the significance of both religions here."
+    ],
+    "experiences": {
+      "Food": [],
+      "Activities": [],
+      "LocalMarkets": [],
+      "Spiritual": [],
+      "Historical": [],
+      "Nature": [],
+      "Cultural": [],
+      "Adventure": [],
+      "Others": []
+    },
+    "trending": {
+      "places": []
+    },
+    "createdAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    },
+    "updatedAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "68e5e20021c4af9b4a754995"
+    },
+    "name": "Muzaffarpur",
+    "location": [
+      {
+        "country": {
+          "id": {
+            "$oid": "68d7f24214fbfc2474738355"
+          }
+        },
+        "state": {
+          "id": {
+            "$oid": "68e2854b5b54d5e1bf69b1e2"
+          }
+        },
+        "region": {
+          "id": {
+            "$oid": "68d7f77c14fbfc2474738358"
+          }
+        }
+      }
+    ],
+    "greetingText": "Welcome to Muzaffarpur!",
+    "tagLine": "Land of Shahi Litchis",
+    "description": {
+      "title": "Muzaffarpur – The Sweet City of Bihar",
+      "short": "Often called the 'Land of Shahi Litchis,' famous for its sweet fruit, temples, and vibrant markets.",
+      "long": "Muzaffarpur is often called the 'Land of Shahi Litchis,' famous for its sweet fruit. Beyond its orchards, the city is known for temples, heritage sites, and vibrant markets. With a lively atmosphere and agricultural charm, Muzaffarpur offers visitors a taste of Bihar's everyday life along with its cultural richness.",
+      "history": "Muzaffarpur was established in the 18th century and is known for its agricultural heritage, particularly the famous Shahi Litchi variety.",
+      "overview": "A vibrant city where agriculture meets culture, offering authentic experiences of Bihar's rural and urban life."
+    },
+    "languages": [
+      "Hindi",
+      "English",
+      "Bhojpuri"
+    ],
+    "images": {
+      "banner": "",
+      "card": "",
+      "others": []
+    },
+    "emergencyContacts": {
+      "Police": "100",
+      "Ambulance": "102",
+      "Fire": "101",
+      "Tourist Helpline": "1363",
+      "District Tourism": "0621-2220000"
+    },
+    "safetyInformation": [
+      "Be cautious during litchi season when roads may be busy.",
+      "Respect local agricultural practices and farmers.",
+      "Follow guidelines when visiting temples and markets."
+    ],
+    "travelTips": [
+      "Visit during litchi season (May-June) for the best experience.",
+      "Explore local markets for fresh produce and handicrafts.",
+      "Visit nearby temples and heritage sites."
+    ],
+    "experiences": {
+      "Food": [],
+      "Activities": [],
+      "LocalMarkets": [],
+      "Spiritual": [],
+      "Historical": [],
+      "Nature": [],
+      "Cultural": [],
+      "Adventure": [],
+      "Others": []
+    },
+    "trending": {
+      "places": []
+    },
+    "createdAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    },
+    "updatedAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "68e5e20021c4af9b4a754996"
+    },
+    "name": "Bhagalpur",
+    "location": [
+      {
+        "country": {
+          "id": {
+            "$oid": "68d7f24214fbfc2474738355"
+          }
+        },
+        "state": {
+          "id": {
+            "$oid": "68e2854b5b54d5e1bf69b1e2"
+          }
+        },
+        "region": {
+          "id": {
+            "$oid": "68d7f77c14fbfc2474738358"
+          }
+        }
+      }
+    ],
+    "greetingText": "Welcome to Bhagalpur!",
+    "tagLine": "Silk City of India",
+    "description": {
+      "title": "Bhagalpur – The Silk City of India",
+      "short": "Renowned as the 'Silk City' of India, famous for its centuries-old silk weaving tradition and crafts.",
+      "long": "Bhagalpur, on the banks of the Ganges, is renowned as the 'Silk City' of India. Its centuries-old silk weaving tradition still thrives, attracting those interested in crafts and textiles. With nearby Vikramshila ruins and natural spots, Bhagalpur is a blend of culture, history, and scenic beauty along the river.",
+      "history": "Bhagalpur has been a center of silk production for centuries and is home to the famous Tussar silk. It's also near the ancient Vikramshila University ruins.",
+      "overview": "A city where traditional craftsmanship meets natural beauty, offering authentic experiences of India's textile heritage."
+    },
+    "languages": [
+      "Hindi",
+      "English",
+      "Angika"
+    ],
+    "images": {
+      "banner": "",
+      "card": "",
+      "others": []
+    },
+    "emergencyContacts": {
+      "Police": "100",
+      "Ambulance": "102",
+      "Fire": "101",
+      "Tourist Helpline": "1363",
+      "District Tourism": "0641-2220000"
+    },
+    "safetyInformation": [
+      "Be cautious near the Ganges River during monsoon.",
+      "Respect local artisans and their work.",
+      "Follow guidelines when visiting silk workshops."
+    ],
+    "travelTips": [
+      "Visit silk workshops to see traditional weaving techniques.",
+      "Explore the Vikramshila ruins nearby.",
+      "Shop for authentic Tussar silk products."
+    ],
+    "experiences": {
+      "Food": [],
+      "Activities": [],
+      "LocalMarkets": [],
+      "Spiritual": [],
+      "Historical": [],
+      "Nature": [],
+      "Cultural": [],
+      "Adventure": [],
+      "Others": []
+    },
+    "trending": {
+      "places": []
+    },
+    "createdAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    },
+    "updatedAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "68e5e20021c4af9b4a754997"
+    },
+    "name": "Gaya",
+    "location": [
+      {
+        "country": {
+          "id": {
+            "$oid": "68d7f24214fbfc2474738355"
+          }
+        },
+        "state": {
+          "id": {
+            "$oid": "68e2854b5b54d5e1bf69b1e2"
+          }
+        },
+        "region": {
+          "id": {
+            "$oid": "68d7f77c14fbfc2474738358"
+          }
+        }
+      }
+    ],
+    "greetingText": "Welcome to Gaya!",
+    "tagLine": "City of Spiritual Importance",
+    "description": {
+      "title": "Gaya – The Sacred City of Rituals",
+      "short": "A city of spiritual importance, known for the Vishnupad Temple and rituals performed on the banks of the Falgu River.",
+      "long": "Gaya is a city of spiritual importance, known for the Vishnupad Temple and rituals performed on the banks of the Falgu River. A key stop for Hindu pilgrims, it is also close to Bodh Gaya, making it a crossroads of faiths. Gaya blends sacred traditions with historic charm.",
+      "history": "Gaya is one of the most important pilgrimage sites for Hindus, where rituals for the departed are performed. It's also significant for Buddhists as it's close to Bodh Gaya.",
+      "overview": "A sacred city where ancient rituals and spiritual traditions continue to thrive, offering profound experiences for pilgrims and visitors."
+    },
+    "languages": [
+      "Hindi",
+      "English",
+      "Magahi"
+    ],
+    "images": {
+      "banner": "",
+      "card": "",
+      "others": []
+    },
+    "emergencyContacts": {
+      "Police": "100",
+      "Ambulance": "102",
+      "Fire": "101",
+      "Tourist Helpline": "1363",
+      "Temple Emergency": "0631-2220000"
+    },
+    "safetyInformation": [
+      "Respect the sacred nature of temple rituals.",
+      "Follow guidelines when participating in religious ceremonies.",
+      "Be mindful of local customs and traditions."
+    ],
+    "travelTips": [
+      "Visit the Vishnupad Temple for spiritual experiences.",
+      "Witness the sacred rituals on the Falgu River.",
+      "Explore the connection between Gaya and Bodh Gaya."
+    ],
+    "experiences": {
+      "Food": [],
+      "Activities": [],
+      "LocalMarkets": [],
+      "Spiritual": [],
+      "Historical": [],
+      "Nature": [],
+      "Cultural": [],
+      "Adventure": [],
+      "Others": []
+    },
+    "trending": {
+      "places": []
+    },
+    "createdAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    },
+    "updatedAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    }
+  }
+]

@@ -1,0 +1,81 @@
+{
+  "_id": {
+    "$oid": "68e5e20021c4af9b4a754986"
+  },
+  "name": "Sivasagar",
+  "location": [
+    {
+      "country": {
+        "id": {
+          "$oid": "68d7f24214fbfc2474738355"
+        }
+      },
+      "state": {
+        "id": {
+          "$oid": "68e285445b54d5e1bf69b1e1"
+        }
+      },
+      "region": {
+        "id": {
+          "$oid": "68d7f77c14fbfc2474738358"
+        }
+      }
+    }
+  ],
+  "greetingText": "Welcome to Sivasagar!",
+  "tagLine": "Ancient Capital of Ahom Dynasty",
+  "description": {
+    "title": "Sivasagar – The Royal Heritage of Assam",
+    "short": "Once the capital of the Ahom dynasty, rich in history and heritage with grand temples and palaces.",
+    "long": "Sivasagar, once the capital of the Ahom dynasty, is rich in history and heritage. Its grand temples, palaces, and tanks reflect Assam's glorious past. Shivadol and Rang Ghar remain top attractions. Blending culture, history, and scenic beauty, Sivasagar offers a fascinating journey into the state's royal and architectural legacy.",
+    "history": "Sivasagar was the capital of the Ahom Kingdom for over 600 years. The city is named after the Sivasagar tank and is home to magnificent Ahom architecture.",
+    "overview": "A historic city where ancient Ahom architecture tells the story of Assam's royal past and cultural heritage."
+  },
+  "languages": [
+    "Assamese",
+    "Hindi",
+    "English"
+  ],
+  "images": {
+    "banner": "",
+    "card": "",
+    "others": []
+  },
+  "emergencyContacts": {
+    "Police": "100",
+    "Ambulance": "102",
+    "Fire": "101",
+    "Tourist Helpline": "1363",
+    "District Tourism": "03772-222000"
+  },
+  "safetyInformation": [
+    "Be respectful at historical monuments and temples.",
+    "Follow photography guidelines at heritage sites.",
+    "Wear appropriate clothing when visiting religious sites."
+  },
+  "travelTips": [
+    "Visit Shivadol and Rang Ghar for architectural marvels.",
+    "Explore the Sivasagar tank and surrounding temples.",
+    "Learn about Ahom history at local museums."
+  ],
+  "experiences": {
+    "Food": [],
+    "Activities": [],
+    "LocalMarkets": [],
+    "Spiritual": [],
+    "Historical": [],
+    "Nature": [],
+    "Cultural": [],
+    "Adventure": [],
+    "Others": []
+  },
+  "trending": {
+    "places": []
+  },
+  "createdAt": {
+    "$date": "2025-01-10T04:01:04.008Z"
+  },
+  "updatedAt": {
+    "$date": "2025-01-10T04:01:04.008Z"
+  }
+}

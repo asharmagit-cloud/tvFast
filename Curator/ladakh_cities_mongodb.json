@@ -1,0 +1,310 @@
+[
+  {
+    "_id": { "$oid": "68e5e20021c4af9b4a754a21" },
+    "name": "Leh",
+    "location": [
+      {
+        "country": { "id": { "$oid": "68d7f24214fbfc2474738355" } },
+        "state": { "id": { "$oid": "68ea4bf84517dadba95a0891" } },
+        "region": { "id": { "$oid": "68d7f77c14fbfc2474738358" } }
+      }
+    ],
+    "greetingText": "Welcome to Leh!",
+    "tagLine": "Heart of Ladakh",
+    "description": {
+      "title": "Leh – Heart of Ladakh",
+      "short": "The heart of Ladakh, surrounded by rugged mountains, monasteries, and high passes.",
+      "long": "Leh, the heart of Ladakh, is surrounded by rugged mountains, monasteries, and high passes. Its palaces, markets, and Buddhist culture create a unique charm. With nearby trekking trails, crystal lakes, and adventure activities, Leh offers travelers a rare mix of history, spirituality, and Himalayan beauty.",
+      "history": "Leh was the capital of the ancient kingdom of Ladakh and is home to the Leh Palace, built in the 17th century. The city has been an important trading center on the Silk Route.",
+      "overview": "A historic city with palaces, monasteries, and access to high-altitude adventures."
+    },
+    "languages": [ "Ladakhi", "Hindi", "English", "Tibetan" ],
+    "images": { "banner": "", "card": "", "others": [] },
+    "emergencyContacts": {
+      "Police": "100", "Ambulance": "102", "Fire": "101",
+      "Tourist Helpline": "1363", "State Tourism": "01982-252297"
+    },
+    "safetyInformation": [
+      "Be careful at high altitudes and take time to acclimatize.",
+      "Follow guidelines for mountain activities and trekking.",
+      "Respect local customs and Buddhist traditions."
+    ],
+    "travelTips": [
+      "Visit the Leh Palace and other historic sites.",
+      "Explore monasteries and learn about Buddhist culture.",
+      "Go for trekking and adventure activities.",
+      "Take time to acclimatize to the high altitude."
+    ],
+    "experiences": {
+      "Food": [], "Activities": [], "LocalMarkets": [], "Spiritual": [],
+      "Historical": [], "Nature": [], "Cultural": [], "Adventure": [], "Others": []
+    },
+    "trending": { "places": [] },
+    "createdAt": { "$date": "2025-10-08T04:01:04.008Z" },
+    "updatedAt": { "$date": "2025-10-08T04:01:04.008Z" }
+  },
+  {
+    "_id": { "$oid": "68e5e20021c4af9b4a754a22" },
+    "name": "Kargil",
+    "location": [
+      {
+        "country": { "id": { "$oid": "68d7f24214fbfc2474738355" } },
+        "state": { "id": { "$oid": "68ea4bf84517dadba95a0891" } },
+        "region": { "id": { "$oid": "68d7f77c14fbfc2474738358" } }
+      }
+    ],
+    "greetingText": "Welcome to Kargil!",
+    "tagLine": "Historic Silk Route Town",
+    "description": {
+      "title": "Kargil – Historic Silk Route Town",
+      "short": "Set on the Suru River, known for its war memorial, monasteries, and mountain views.",
+      "long": "Kargil, set on the Suru River, is known for its war memorial, monasteries, and mountain views. Once an important stop on the Silk Route, it now draws both adventurers and history seekers. With trekking routes and scenic valleys, Kargil is a place of remembrance and rugged beauty.",
+      "history": "Kargil was an important stop on the ancient Silk Route and is known for the Kargil War Memorial. The town has a rich history and cultural heritage.",
+      "overview": "A historic town with war memorials, monasteries, and access to trekking routes."
+    },
+    "languages": [ "Ladakhi", "Hindi", "English", "Tibetan" ],
+    "images": { "banner": "", "card": "", "others": [] },
+    "emergencyContacts": {
+      "Police": "100", "Ambulance": "102", "Fire": "101",
+      "Tourist Helpline": "1363", "State Tourism": "01985-232297"
+    },
+    "safetyInformation": [
+      "Be careful at high altitudes and take time to acclimatize.",
+      "Follow guidelines for mountain activities and trekking.",
+      "Respect local customs and traditions."
+    ],
+    "travelTips": [
+      "Visit the Kargil War Memorial and learn about local history.",
+      "Explore monasteries and cultural sites.",
+      "Go for trekking and adventure activities.",
+      "Take time to acclimatize to the high altitude."
+    ],
+    "experiences": {
+      "Food": [], "Activities": [], "LocalMarkets": [], "Spiritual": [],
+      "Historical": [], "Nature": [], "Cultural": [], "Adventure": [], "Others": []
+    },
+    "trending": { "places": [] },
+    "createdAt": { "$date": "2025-10-08T04:01:04.008Z" },
+    "updatedAt": { "$date": "2025-10-08T04:01:04.008Z" }
+  },
+  {
+    "_id": { "$oid": "68e5e20021c4af9b4a754a23" },
+    "name": "Nubra Valley",
+    "location": [
+      {
+        "country": { "id": { "$oid": "68d7f24214fbfc2474738355" } },
+        "state": { "id": { "$oid": "68ea4bf84517dadba95a0891" } },
+        "region": { "id": { "$oid": "68d7f77c14fbfc2474738358" } }
+      }
+    ],
+    "greetingText": "Welcome to Nubra Valley!",
+    "tagLine": "Desert in the Mountains",
+    "description": {
+      "title": "Nubra Valley – Desert in the Mountains",
+      "short": "Famous for its sand dunes, double-humped camels, and monasteries.",
+      "long": "Nubra Valley is famous for its sand dunes, double-humped camels, and monasteries. Surrounded by snow peaks and riverbeds, it offers stunning contrasts of desert and mountains. With warm villages and breathtaking scenery, Nubra Valley is a fascinating stop for travelers exploring Ladakh's remote landscapes.",
+      "history": "Nubra Valley is known for its unique landscape of sand dunes and snow-capped peaks. The valley is home to double-humped camels and ancient monasteries.",
+      "overview": "A unique valley with sand dunes, double-humped camels, and stunning mountain scenery."
+    },
+    "languages": [ "Ladakhi", "Hindi", "English", "Tibetan" ],
+    "images": { "banner": "", "card": "", "others": [] },
+    "emergencyContacts": {
+      "Police": "100", "Ambulance": "102", "Fire": "101",
+      "Tourist Helpline": "1363", "State Tourism": "01982-252297"
+    },
+    "safetyInformation": [
+      "Be careful at high altitudes and take time to acclimatize.",
+      "Follow guidelines for desert and mountain activities.",
+      "Respect local customs and traditions."
+    ],
+    "travelTips": [
+      "Ride double-humped camels on the sand dunes.",
+      "Visit monasteries and learn about local culture.",
+      "Enjoy the unique landscape and scenic beauty.",
+      "Take time to acclimatize to the high altitude."
+    ],
+    "experiences": {
+      "Food": [], "Activities": [], "LocalMarkets": [], "Spiritual": [],
+      "Historical": [], "Nature": [], "Cultural": [], "Adventure": [], "Others": []
+    },
+    "trending": { "places": [] },
+    "createdAt": { "$date": "2025-10-08T04:01:04.008Z" },
+    "updatedAt": { "$date": "2025-10-08T04:01:04.008Z" }
+  },
+  {
+    "_id": { "$oid": "68e5e20021c4af9b4a754a24" },
+    "name": "Pangong Lake",
+    "location": [
+      {
+        "country": { "id": { "$oid": "68d7f24214fbfc2474738355" } },
+        "state": { "id": { "$oid": "68ea4bf84517dadba95a0891" } },
+        "region": { "id": { "$oid": "68d7f77c14fbfc2474738358" } }
+      }
+    ],
+    "greetingText": "Welcome to Pangong Lake!",
+    "tagLine": "Crystal Blue Wonder",
+    "description": {
+      "title": "Pangong Lake – Crystal Blue Wonder",
+      "short": "Stretching across India and Tibet, known for its ever-changing shades of blue.",
+      "long": "Pangong Lake, stretching across India and Tibet, is known for its ever-changing shades of blue. Surrounded by stark mountains, it offers a surreal setting for camping and photography. Remote and peaceful, Pangong is a highlight of Ladakh, attracting travelers with its unmatched natural beauty.",
+      "history": "Pangong Lake is a high-altitude lake that stretches across India and Tibet. The lake is known for its crystal-clear blue waters and stunning mountain backdrop.",
+      "overview": "A high-altitude lake with crystal-clear blue waters and stunning mountain scenery."
+    },
+    "languages": [ "Ladakhi", "Hindi", "English", "Tibetan" ],
+    "images": { "banner": "", "card": "", "others": [] },
+    "emergencyContacts": {
+      "Police": "100", "Ambulance": "102", "Fire": "101",
+      "Tourist Helpline": "1363", "State Tourism": "01982-252297"
+    },
+    "safetyInformation": [
+      "Be careful at high altitudes and take time to acclimatize.",
+      "Follow guidelines for camping and photography.",
+      "Respect the fragile ecosystem and local customs."
+    ],
+    "travelTips": [
+      "Enjoy the stunning views and ever-changing colors of the lake.",
+      "Go camping and photography in the surreal setting.",
+      "Take time to acclimatize to the high altitude.",
+      "Respect the fragile ecosystem and local environment."
+    ],
+    "experiences": {
+      "Food": [], "Activities": [], "LocalMarkets": [], "Spiritual": [],
+      "Historical": [], "Nature": [], "Cultural": [], "Adventure": [], "Others": []
+    },
+    "trending": { "places": [] },
+    "createdAt": { "$date": "2025-10-08T04:01:04.008Z" },
+    "updatedAt": { "$date": "2025-10-08T04:01:04.008Z" }
+  },
+  {
+    "_id": { "$oid": "68e5e20021c4af9b4a754a25" },
+    "name": "Tso Moriri",
+    "location": [
+      {
+        "country": { "id": { "$oid": "68d7f24214fbfc2474738355" } },
+        "state": { "id": { "$oid": "68ea4bf84517dadba95a0891" } },
+        "region": { "id": { "$oid": "68d7f77c14fbfc2474738358" } }
+      }
+    ],
+    "greetingText": "Welcome to Tso Moriri!",
+    "tagLine": "Serene High-Altitude Lake",
+    "description": {
+      "title": "Tso Moriri – Serene High-Altitude Lake",
+      "short": "A high-altitude lake, quieter than Pangong but equally stunning.",
+      "long": "Tso Moriri, a high-altitude lake, is quieter than Pangong but equally stunning. Surrounded by barren mountains and rare wildlife, it feels untouched and serene. With crystal waters reflecting vast skies, Tso Moriri offers a peaceful escape for travelers seeking solitude in Ladakh's wilderness.",
+      "history": "Tso Moriri is a high-altitude lake known for its pristine beauty and rare wildlife. The lake is quieter than Pangong and offers a peaceful escape.",
+      "overview": "A serene high-altitude lake with crystal waters and rare wildlife."
+    },
+    "languages": [ "Ladakhi", "Hindi", "English", "Tibetan" ],
+    "images": { "banner": "", "card": "", "others": [] },
+    "emergencyContacts": {
+      "Police": "100", "Ambulance": "102", "Fire": "101",
+      "Tourist Helpline": "1363", "State Tourism": "01982-252297"
+    },
+    "safetyInformation": [
+      "Be careful at high altitudes and take time to acclimatize.",
+      "Follow guidelines for wildlife viewing and photography.",
+      "Respect the fragile ecosystem and local customs."
+    ],
+    "travelTips": [
+      "Enjoy the peaceful and serene atmosphere.",
+      "Look for rare wildlife and natural beauty.",
+      "Take time to acclimatize to the high altitude.",
+      "Respect the fragile ecosystem and local environment."
+    ],
+    "experiences": {
+      "Food": [], "Activities": [], "LocalMarkets": [], "Spiritual": [],
+      "Historical": [], "Nature": [], "Cultural": [], "Adventure": [], "Others": []
+    },
+    "trending": { "places": [] },
+    "createdAt": { "$date": "2025-10-08T04:01:04.008Z" },
+    "updatedAt": { "$date": "2025-10-08T04:01:04.008Z" }
+  },
+  {
+    "_id": { "$oid": "68e5e20021c4af9b4a754a26" },
+    "name": "Hemis",
+    "location": [
+      {
+        "country": { "id": { "$oid": "68d7f24214fbfc2474738355" } },
+        "state": { "id": { "$oid": "68ea4bf84517dadba95a0891" } },
+        "region": { "id": { "$oid": "68d7f77c14fbfc2474738358" } }
+      }
+    ],
+    "greetingText": "Welcome to Hemis!",
+    "tagLine": "Largest Monastery in Ladakh",
+    "description": {
+      "title": "Hemis – Largest Monastery in Ladakh",
+      "short": "Best known for its monastery, the largest in Ladakh, and its colorful annual festival.",
+      "long": "Hemis is best known for its monastery, the largest in Ladakh, and its colorful annual festival. Surrounded by mountains and rich in spiritual heritage, it offers a glimpse into Buddhist culture. With wildlife sanctuaries nearby, Hemis is both a cultural and natural highlight of the region.",
+      "history": "Hemis is home to the largest monastery in Ladakh and is known for its annual festival. The monastery has a rich spiritual heritage and cultural significance.",
+      "overview": "A spiritual center with the largest monastery in Ladakh and cultural festivals."
+    },
+    "languages": [ "Ladakhi", "Hindi", "English", "Tibetan" ],
+    "images": { "banner": "", "card": "", "others": [] },
+    "emergencyContacts": {
+      "Police": "100", "Ambulance": "102", "Fire": "101",
+      "Tourist Helpline": "1363", "State Tourism": "01982-252297"
+    },
+    "safetyInformation": [
+      "Be careful at high altitudes and take time to acclimatize.",
+      "Follow guidelines for monastery visits and cultural events.",
+      "Respect local customs and Buddhist traditions."
+    ],
+    "travelTips": [
+      "Visit the largest monastery in Ladakh.",
+      "Attend the annual festival and cultural events.",
+      "Explore wildlife sanctuaries and natural beauty.",
+      "Take time to acclimatize to the high altitude."
+    ],
+    "experiences": {
+      "Food": [], "Activities": [], "LocalMarkets": [], "Spiritual": [],
+      "Historical": [], "Nature": [], "Cultural": [], "Adventure": [], "Others": []
+    },
+    "trending": { "places": [] },
+    "createdAt": { "$date": "2025-10-08T04:01:04.008Z" },
+    "updatedAt": { "$date": "2025-10-08T04:01:04.008Z" }
+  },
+  {
+    "_id": { "$oid": "68e5e20021c4af9b4a754a27" },
+    "name": "Alchi",
+    "location": [
+      {
+        "country": { "id": { "$oid": "68d7f24214fbfc2474738355" } },
+        "state": { "id": { "$oid": "68ea4bf84517dadba95a0891" } },
+        "region": { "id": { "$oid": "68d7f77c14fbfc2474738358" } }
+      }
+    ],
+    "greetingText": "Welcome to Alchi!",
+    "tagLine": "Ancient Art Village",
+    "description": {
+      "title": "Alchi – Ancient Art Village",
+      "short": "A quiet village on the Indus River, famous for its ancient monastery with beautiful murals.",
+      "long": "Alchi, a quiet village on the Indus River, is famous for its ancient monastery with beautiful murals and carvings. Unlike other Ladakhi monasteries, it lies on flat ground, making it unique. With its peaceful setting and artistic treasures, Alchi offers travelers a deep cultural and spiritual experience.",
+      "history": "Alchi is known for its ancient monastery with beautiful murals and carvings. Unlike other Ladakhi monasteries, it lies on flat ground, making it unique.",
+      "overview": "A peaceful village with an ancient monastery, beautiful murals, and artistic treasures."
+    },
+    "languages": [ "Ladakhi", "Hindi", "English", "Tibetan" ],
+    "images": { "banner": "", "card": "", "others": [] },
+    "emergencyContacts": {
+      "Police": "100", "Ambulance": "102", "Fire": "101",
+      "Tourist Helpline": "1363", "State Tourism": "01982-252297"
+    },
+    "safetyInformation": [
+      "Be careful at high altitudes and take time to acclimatize.",
+      "Follow guidelines for monastery visits and art viewing.",
+      "Respect local customs and Buddhist traditions."
+    ],
+    "travelTips": [
+      "Visit the ancient monastery and admire the beautiful murals.",
+      "Learn about local art and cultural traditions.",
+      "Enjoy the peaceful setting and artistic treasures.",
+      "Take time to acclimatize to the high altitude."
+    ],
+    "experiences": {
+      "Food": [], "Activities": [], "LocalMarkets": [], "Spiritual": [],
+      "Historical": [], "Nature": [], "Cultural": [], "Adventure": [], "Others": []
+    },
+    "trending": { "places": [] },
+    "createdAt": { "$date": "2025-10-08T04:01:04.008Z" },
+    "updatedAt": { "$date": "2025-10-08T04:01:04.008Z" }
+  }
+]

@@ -1,0 +1,248 @@
+[
+  {
+    "_id": {
+      "$oid": "68e5e20021c4af9b4a7549a0"
+    },
+    "name": "Daman",
+    "location": [
+      {
+        "country": {
+          "id": {
+            "$oid": "68d7f24214fbfc2474738355"
+          }
+        },
+        "state": {
+          "id": {
+            "$oid": "68e285fe5b54d5e1bf69b1e8"
+          }
+        },
+        "region": {
+          "id": {
+            "$oid": "68d7f77c14fbfc2474738358"
+          }
+        }
+      }
+    ],
+    "greetingText": "Welcome to Daman!",
+    "tagLine": "Seaside Charm with Colonial Heritage",
+    "description": {
+      "title": "Daman – The Coastal Heritage Town",
+      "short": "Set along the Arabian Sea, known for its sandy beaches, colonial forts, and relaxed seaside charm.",
+      "long": "Daman, set along the Arabian Sea, is known for its sandy beaches, colonial forts, and relaxed seaside charm. With Portuguese churches, lively markets, and palm-fringed shores, it blends history with leisure. Daman's laid-back vibe and coastal beauty make it a peaceful escape for travelers seeking sun, culture, and calm.",
+      "history": "Daman was a Portuguese colony for over 400 years until 1961, and its colonial architecture and churches reflect this rich heritage.",
+      "overview": "A coastal town where Portuguese heritage meets Arabian Sea beauty, offering a perfect blend of history and relaxation."
+    },
+    "languages": [
+      "Hindi",
+      "English",
+      "Gujarati",
+      "Portuguese"
+    ],
+    "images": {
+      "banner": "",
+      "card": "",
+      "others": []
+    },
+    "emergencyContacts": {
+      "Police": "100",
+      "Ambulance": "102",
+      "Fire": "101",
+      "Tourist Helpline": "1363",
+      "UT Tourism": "0260-2220000"
+    },
+    "safetyInformation": [
+      "Be cautious near the sea during monsoon and high tides.",
+      "Respect the colonial heritage sites and churches.",
+      "Follow beach safety guidelines."
+    ],
+    "travelTips": [
+      "Visit the Portuguese churches for colonial architecture.",
+      "Enjoy the sandy beaches and coastal views.",
+      "Explore the colonial forts and historical sites."
+    ],
+    "experiences": {
+      "Food": [],
+      "Activities": [],
+      "LocalMarkets": [],
+      "Spiritual": [],
+      "Historical": [],
+      "Nature": [],
+      "Cultural": [],
+      "Adventure": [],
+      "Others": []
+    },
+    "trending": {
+      "places": []
+    },
+    "createdAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    },
+    "updatedAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "68e5e20021c4af9b4a7549a1"
+    },
+    "name": "Diu",
+    "location": [
+      {
+        "country": {
+          "id": {
+            "$oid": "68d7f24214fbfc2474738355"
+          }
+        },
+        "state": {
+          "id": {
+            "$oid": "68e285fe5b54d5e1bf69b1e8"
+          }
+        },
+        "region": {
+          "id": {
+            "$oid": "68d7f77c14fbfc2474738358"
+          }
+        }
+      }
+    ],
+    "greetingText": "Welcome to Diu!",
+    "tagLine": "Pristine Island Paradise",
+    "description": {
+      "title": "Diu – The Island Paradise",
+      "short": "A small island town famed for its pristine beaches, Portuguese fort, and whitewashed churches.",
+      "long": "Diu is a small island town famed for its pristine beaches, Portuguese fort, and whitewashed churches. Its coastal charm is matched by water sports, caves, and lighthouse views. Offering serenity away from crowds, Diu is perfect for travelers looking to unwind while exploring history and scenic seaside landscapes.",
+      "history": "Diu was also a Portuguese colony and is known for its well-preserved colonial architecture, including the famous Diu Fort and churches.",
+      "overview": "An island paradise where Portuguese colonial charm meets pristine beaches, offering a serene coastal experience."
+    },
+    "languages": [
+      "Hindi",
+      "English",
+      "Gujarati",
+      "Portuguese"
+    ],
+    "images": {
+      "banner": "",
+      "card": "",
+      "others": []
+    },
+    "emergencyContacts": {
+      "Police": "100",
+      "Ambulance": "102",
+      "Fire": "101",
+      "Tourist Helpline": "1363",
+      "Island Emergency": "02875-222000"
+    },
+    "safetyInformation": [
+      "Be cautious during water sports activities.",
+      "Respect the island's natural environment.",
+      "Follow safety guidelines at beaches and caves."
+    ],
+    "travelTips": [
+      "Visit the Diu Fort for panoramic sea views.",
+      "Explore the whitewashed churches for colonial architecture.",
+      "Try water sports and enjoy the pristine beaches."
+    ],
+    "experiences": {
+      "Food": [],
+      "Activities": [],
+      "LocalMarkets": [],
+      "Spiritual": [],
+      "Historical": [],
+      "Nature": [],
+      "Cultural": [],
+      "Adventure": [],
+      "Others": []
+    },
+    "trending": {
+      "places": []
+    },
+    "createdAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    },
+    "updatedAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "68e5e20021c4af9b4a7549a2"
+    },
+    "name": "Silvassa",
+    "location": [
+      {
+        "country": {
+          "id": {
+            "$oid": "68d7f24214fbfc2474738355"
+          }
+        },
+        "state": {
+          "id": {
+            "$oid": "68e285fe5b54d5e1bf69b1e8"
+          }
+        },
+        "region": {
+          "id": {
+            "$oid": "68d7f77c14fbfc2474738358"
+          }
+        }
+      }
+    ],
+    "greetingText": "Welcome to Silvassa!",
+    "tagLine": "Green Capital with Tribal Culture",
+    "description": {
+      "title": "Silvassa – The Green Capital",
+      "short": "The capital of Dadra and Nagar Haveli, a green retreat surrounded by forests and rivers.",
+      "long": "Silvassa, the capital of Dadra and Nagar Haveli, is a green retreat surrounded by forests and rivers. Known for tribal culture, gardens, and wildlife sanctuaries, it offers both cultural depth and natural beauty. With its calm atmosphere and friendly spirit, Silvassa welcomes travelers seeking a refreshing break from city life.",
+      "history": "Silvassa has been the administrative capital of Dadra and Nagar Haveli and is known for its tribal heritage and natural beauty.",
+      "overview": "A green capital where tribal culture meets natural beauty, offering a refreshing escape from urban life."
+    },
+    "languages": [
+      "Hindi",
+      "English",
+      "Gujarati",
+      "Marathi"
+    ],
+    "images": {
+      "banner": "",
+      "card": "",
+      "others": []
+    },
+    "emergencyContacts": {
+      "Police": "100",
+      "Ambulance": "102",
+      "Fire": "101",
+      "Tourist Helpline": "1363",
+      "UT Tourism": "0260-2220000"
+    },
+    "safetyInformation": [
+      "Be cautious near forests and wildlife areas.",
+      "Respect tribal customs and traditions.",
+      "Follow guidelines when visiting wildlife sanctuaries."
+    ],
+    "travelTips": [
+      "Explore the tribal culture and heritage.",
+      "Visit wildlife sanctuaries for nature experiences.",
+      "Enjoy the peaceful gardens and natural surroundings."
+    ],
+    "experiences": {
+      "Food": [],
+      "Activities": [],
+      "LocalMarkets": [],
+      "Spiritual": [],
+      "Historical": [],
+      "Nature": [],
+      "Cultural": [],
+      "Adventure": [],
+      "Others": []
+    },
+    "trending": {
+      "places": []
+    },
+    "createdAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    },
+    "updatedAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    }
+  }
+]

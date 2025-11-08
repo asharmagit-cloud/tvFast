@@ -1,0 +1,651 @@
+[
+  {
+    "_id": {
+      "$oid": "68e5e20021c4af9b4a7549b9"
+    },
+    "name": "Gurgaon (Gurugram)",
+    "location": [
+      {
+        "country": {
+          "id": {
+            "$oid": "68d7f24214fbfc2474738355"
+          }
+        },
+        "state": {
+          "id": {
+            "$oid": "68e2863f5b54d5e1bf69b1ec"
+          }
+        },
+        "region": {
+          "id": {
+            "$oid": "68d7f77c14fbfc2474738358"
+          }
+        }
+      }
+    ],
+    "greetingText": "Welcome to Gurugram!",
+    "tagLine": "Modern City of Skyscrapers",
+    "description": {
+      "title": "Gurugram – The Modern Metropolis",
+      "short": "A modern city of skyscrapers, shopping malls, and lively nightlife, known as a business hub.",
+      "long": "Gurgaon, now called Gurugram, is a modern city of skyscrapers, shopping malls, and lively nightlife. Known as a business hub, it also offers leisure with entertainment zones, golf courses, and restaurants. Blending corporate energy with urban comfort, Gurugram is a fast-paced yet stylish stop near the national capital.",
+      "history": "Gurugram was a small village that transformed into a major business hub and IT center, becoming one of India's most modern cities.",
+      "overview": "A modern metropolis where business meets leisure, offering a fast-paced urban experience with all modern amenities."
+    },
+    "languages": [
+      "Hindi",
+      "English",
+      "Haryanvi"
+    ],
+    "images": {
+      "banner": "",
+      "card": "",
+      "others": []
+    },
+    "emergencyContacts": {
+      "Police": "100",
+      "Ambulance": "102",
+      "Fire": "101",
+      "Tourist Helpline": "1363",
+      "Haryana Tourism": "0124-2220000"
+    },
+    "safetyInformation": [
+      "Be cautious in busy corporate areas and traffic.",
+      "Follow guidelines at shopping malls and entertainment zones.",
+      "Respect local customs and business etiquette."
+    ],
+    "travelTips": [
+      "Explore modern shopping malls and entertainment zones.",
+      "Visit golf courses and recreational facilities.",
+      "Enjoy the vibrant nightlife and dining scene."
+    ],
+    "experiences": {
+      "Food": [],
+      "Activities": [],
+      "LocalMarkets": [],
+      "Spiritual": [],
+      "Historical": [],
+      "Nature": [],
+      "Cultural": [],
+      "Adventure": [],
+      "Others": []
+    },
+    "trending": {
+      "places": []
+    },
+    "createdAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    },
+    "updatedAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "68e5e20021c4af9b4a7549ba"
+    },
+    "name": "Panipat",
+    "location": [
+      {
+        "country": {
+          "id": {
+            "$oid": "68d7f24214fbfc2474738355"
+          }
+        },
+        "state": {
+          "id": {
+            "$oid": "68e2863f5b54d5e1bf69b1ec"
+          }
+        },
+        "region": {
+          "id": {
+            "$oid": "68d7f77c14fbfc2474738358"
+          }
+        }
+      }
+    ],
+    "greetingText": "Welcome to Panipat!",
+    "tagLine": "City of Weavers",
+    "description": {
+      "title": "Panipat – The Historic Weaving City",
+      "short": "The 'City of Weavers,' famed for its handloom industry and historic battles with monuments and forts.",
+      "long": "Panipat, the 'City of Weavers,' is famed for its handloom industry and historic battles. Monuments, forts, and museums highlight its role in India's past. From carpets and textiles to rich heritage, Panipat offers both shopping and history, making it a unique stop for culture and craft lovers.",
+      "history": "Panipat is famous for three historic battles that shaped Indian history. It's also known for its traditional handloom industry and textile manufacturing.",
+      "overview": "A historic city where ancient battles meet traditional craftsmanship, offering unique cultural and shopping experiences."
+    },
+    "languages": [
+      "Hindi",
+      "English",
+      "Haryanvi"
+    ],
+    "images": {
+      "banner": "",
+      "card": "",
+      "others": []
+    },
+    "emergencyContacts": {
+      "Police": "100",
+      "Ambulance": "102",
+      "Fire": "101",
+      "Tourist Helpline": "1363",
+      "Haryana Tourism": "0180-2220000"
+    },
+    "safetyInformation": [
+      "Be cautious in busy market areas and handloom workshops.",
+      "Respect the historic significance of monuments and forts.",
+      "Follow guidelines when visiting museums and heritage sites."
+    ],
+    "travelTips": [
+      "Visit historic monuments and forts for historical insights.",
+      "Shop for traditional carpets and textiles.",
+      "Explore museums to learn about the historic battles."
+    ],
+    "experiences": {
+      "Food": [],
+      "Activities": [],
+      "LocalMarkets": [],
+      "Spiritual": [],
+      "Historical": [],
+      "Nature": [],
+      "Cultural": [],
+      "Adventure": [],
+      "Others": []
+    },
+    "trending": {
+      "places": []
+    },
+    "createdAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    },
+    "updatedAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "68e5e20021c4af9b4a7549bb"
+    },
+    "name": "Kurukshetra",
+    "location": [
+      {
+        "country": {
+          "id": {
+            "$oid": "68d7f24214fbfc2474738355"
+          }
+        },
+        "state": {
+          "id": {
+            "$oid": "68e2863f5b54d5e1bf69b1ec"
+          }
+        },
+        "region": {
+          "id": {
+            "$oid": "68d7f77c14fbfc2474738358"
+          }
+        }
+      }
+    ],
+    "greetingText": "Welcome to Kurukshetra!",
+    "tagLine": "Sacred Land of Mahabharata",
+    "description": {
+      "title": "Kurukshetra – The Sacred Battlefield",
+      "short": "A sacred land of the Mahabharata, a major pilgrimage destination with Brahma Sarovar and temples.",
+      "long": "Kurukshetra, a sacred land of the Mahabharata, is a major pilgrimage destination. The Brahma Sarovar, temples, and museums narrate its spiritual and historical significance. Visitors come for faith, heritage, and cultural exploration, experiencing a city where mythology, devotion, and history come together in one memorable journey.",
+      "history": "Kurukshetra is the legendary battlefield where the Mahabharata war was fought. It's one of the most sacred places in Hinduism.",
+      "overview": "A sacred city where mythology meets devotion, offering profound spiritual and cultural experiences."
+    },
+    "languages": [
+      "Hindi",
+      "English",
+      "Sanskrit"
+    ],
+    "images": {
+      "banner": "",
+      "card": "",
+      "others": []
+    },
+    "emergencyContacts": {
+      "Police": "100",
+      "Ambulance": "102",
+      "Fire": "101",
+      "Tourist Helpline": "1363",
+      "Temple Emergency": "01744-222000"
+    },
+    "safetyInformation": [
+      "Respect the sacred nature of temples and religious sites.",
+      "Follow guidelines during religious ceremonies and festivals.",
+      "Be mindful of local customs and traditions."
+    ],
+    "travelTips": [
+      "Visit the sacred Brahma Sarovar for spiritual experience.",
+      "Explore temples and museums for cultural insights.",
+      "Participate in religious ceremonies and rituals."
+    ],
+    "experiences": {
+      "Food": [],
+      "Activities": [],
+      "LocalMarkets": [],
+      "Spiritual": [],
+      "Historical": [],
+      "Nature": [],
+      "Cultural": [],
+      "Adventure": [],
+      "Others": []
+    },
+    "trending": {
+      "places": []
+    },
+    "createdAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    },
+    "updatedAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "68e5e20021c4af9b4a7549bc"
+    },
+    "name": "Ambala",
+    "location": [
+      {
+        "country": {
+          "id": {
+            "$oid": "68d7f24214fbfc2474738355"
+          }
+        },
+        "state": {
+          "id": {
+            "$oid": "68e2863f5b54d5e1bf69b1ec"
+          }
+        },
+        "region": {
+          "id": {
+            "$oid": "68d7f77c14fbfc2474738358"
+          }
+        }
+      }
+    ],
+    "greetingText": "Welcome to Ambala!",
+    "tagLine": "Twin City with Military Heritage",
+    "description": {
+      "title": "Ambala – The Twin City",
+      "short": "A lively twin city known for its cloth market, military cantonment, and transport hubs.",
+      "long": "Ambala, a lively twin city, is known for its cloth market, military cantonment, and transport hubs. With gurudwaras, temples, and a friendly vibe, it offers both heritage and modern conveniences. Ambala serves as a practical stop for travelers, balancing history with a bustling marketplace atmosphere.",
+      "history": "Ambala has been an important military and trading center, known for its cantonment and strategic location on major trade routes.",
+      "overview": "A practical city where military heritage meets commercial activity, offering convenient stopover experiences."
+    },
+    "languages": [
+      "Hindi",
+      "English",
+      "Haryanvi",
+      "Punjabi"
+    ],
+    "images": {
+      "banner": "",
+      "card": "",
+      "others": []
+    },
+    "emergencyContacts": {
+      "Police": "100",
+      "Ambulance": "102",
+      "Fire": "101",
+      "Tourist Helpline": "1363",
+      "Haryana Tourism": "0171-2220000"
+    },
+    "safetyInformation": [
+      "Be cautious in busy market areas and transport hubs.",
+      "Respect military areas and cantonment guidelines.",
+      "Follow guidelines when visiting religious sites."
+    ],
+    "travelTips": [
+      "Explore the famous cloth market for shopping.",
+      "Visit gurudwaras and temples for spiritual experiences.",
+      "Use as a convenient stopover for further travel."
+    ],
+    "experiences": {
+      "Food": [],
+      "Activities": [],
+      "LocalMarkets": [],
+      "Spiritual": [],
+      "Historical": [],
+      "Nature": [],
+      "Cultural": [],
+      "Adventure": [],
+      "Others": []
+    },
+    "trending": {
+      "places": []
+    },
+    "createdAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    },
+    "updatedAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "68e5e20021c4af9b4a7549bd"
+    },
+    "name": "Karnal",
+    "location": [
+      {
+        "country": {
+          "id": {
+            "$oid": "68d7f24214fbfc2474738355"
+          }
+        },
+        "state": {
+          "id": {
+            "$oid": "68e2863f5b54d5e1bf69b1ec"
+          }
+        },
+        "region": {
+          "id": {
+            "$oid": "68d7f77c14fbfc2474738358"
+          }
+        }
+      }
+    ],
+    "greetingText": "Welcome to Karnal!",
+    "tagLine": "Rice Bowl of India",
+    "description": {
+      "title": "Karnal – The Agricultural Heart",
+      "short": "Often called the 'Rice Bowl of India,' known for its fertile fields, historic sites, and lakes.",
+      "long": "Karnal, often called the 'Rice Bowl of India,' is known for its fertile fields, historic sites, and lakes. The Karnal Fort and Karna Lake highlight its heritage, while its culinary delights add flavor. Combining agriculture, history, and leisure, Karnal welcomes travelers with both charm and simplicity.",
+      "history": "Karnal is named after Karna from the Mahabharata and is known for its agricultural heritage and historic significance.",
+      "overview": "An agricultural city where farming heritage meets historic charm, offering simple yet authentic experiences."
+    },
+    "languages": [
+      "Hindi",
+      "English",
+      "Haryanvi"
+    ],
+    "images": {
+      "banner": "",
+      "card": "",
+      "others": []
+    },
+    "emergencyContacts": {
+      "Police": "100",
+      "Ambulance": "102",
+      "Fire": "101",
+      "Tourist Helpline": "1363",
+      "Haryana Tourism": "0184-2220000"
+    },
+    "safetyInformation": [
+      "Be cautious near lakes and water bodies.",
+      "Respect agricultural areas and farming practices.",
+      "Follow guidelines when visiting historic sites."
+    ],
+    "travelTips": [
+      "Visit Karnal Fort and Karna Lake for heritage experience.",
+      "Try local culinary delights and agricultural produce.",
+      "Explore the fertile fields and agricultural landscape."
+    ],
+    "experiences": {
+      "Food": [],
+      "Activities": [],
+      "LocalMarkets": [],
+      "Spiritual": [],
+      "Historical": [],
+      "Nature": [],
+      "Cultural": [],
+      "Adventure": [],
+      "Others": []
+    },
+    "trending": {
+      "places": []
+    },
+    "createdAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    },
+    "updatedAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "68e5e20021c4af9b4a7549be"
+    },
+    "name": "Faridabad",
+    "location": [
+      {
+        "country": {
+          "id": {
+            "$oid": "68d7f24214fbfc2474738355"
+          }
+        },
+        "state": {
+          "id": {
+            "$oid": "68e2863f5b54d5e1bf69b1ec"
+          }
+        },
+        "region": {
+          "id": {
+            "$oid": "68d7f77c14fbfc2474738358"
+          }
+        }
+      }
+    ],
+    "greetingText": "Welcome to Faridabad!",
+    "tagLine": "Industrial Hub with Cultural Charm",
+    "description": {
+      "title": "Faridabad – The Industrial Cultural City",
+      "short": "An industrial hub near Delhi, rich in culture and greenery, known for Surajkund Lake and crafts fair.",
+      "long": "Faridabad, an industrial hub near Delhi, is also rich in culture and greenery. Known for Surajkund Lake and its annual crafts fair, it attracts visitors for art, shopping, and local flavors. With parks, temples, and growing modernity, Faridabad offers both cultural charm and urban convenience.",
+      "history": "Faridabad was established as an industrial city and has grown into a major industrial and cultural center near Delhi.",
+      "overview": "An industrial city where manufacturing meets cultural heritage, offering a blend of modern industry and traditional charm."
+    },
+    "languages": [
+      "Hindi",
+      "English",
+      "Haryanvi"
+    ],
+    "images": {
+      "banner": "",
+      "card": "",
+      "others": []
+    },
+    "emergencyContacts": {
+      "Police": "100",
+      "Ambulance": "102",
+      "Fire": "101",
+      "Tourist Helpline": "1363",
+      "Haryana Tourism": "0129-2220000"
+    },
+    "safetyInformation": [
+      "Be cautious in industrial areas and busy roads.",
+      "Respect cultural sites and religious places.",
+      "Follow guidelines during festivals and events."
+    ],
+    "travelTips": [
+      "Visit Surajkund Lake for scenic beauty.",
+      "Attend the annual crafts fair for cultural experiences.",
+      "Explore parks and temples for relaxation."
+    ],
+    "experiences": {
+      "Food": [],
+      "Activities": [],
+      "LocalMarkets": [],
+      "Spiritual": [],
+      "Historical": [],
+      "Nature": [],
+      "Cultural": [],
+      "Adventure": [],
+      "Others": []
+    },
+    "trending": {
+      "places": []
+    },
+    "createdAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    },
+    "updatedAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "68e5e20021c4af9b4a7549bf"
+    },
+    "name": "Hisar",
+    "location": [
+      {
+        "country": {
+          "id": {
+            "$oid": "68d7f24214fbfc2474738355"
+          }
+        },
+        "state": {
+          "id": {
+            "$oid": "68e2863f5b54d5e1bf69b1ec"
+          }
+        },
+        "region": {
+          "id": {
+            "$oid": "68d7f77c14fbfc2474738358"
+          }
+        }
+      }
+    ],
+    "greetingText": "Welcome to Hisar!",
+    "tagLine": "Steel City with Historic Heritage",
+    "description": {
+      "title": "Hisar – The Steel City",
+      "short": "Often called the 'Steel City,' a blend of history and progress with ancient forts and modern industries.",
+      "long": "Hisar, often called the 'Steel City,' is a blend of history and progress. Ancient forts, tombs, and archaeological sites tell stories of its past, while its industries showcase modern growth. With museums, temples, and rural charm nearby, Hisar offers a well-rounded travel experience in Haryana.",
+      "history": "Hisar has a rich historical heritage with ancient forts and archaeological sites, while also being known for its steel industry.",
+      "overview": "A historic city where ancient heritage meets industrial progress, offering a well-rounded cultural experience."
+    },
+    "languages": [
+      "Hindi",
+      "English",
+      "Haryanvi"
+    ],
+    "images": {
+      "banner": "",
+      "card": "",
+      "others": []
+    },
+    "emergencyContacts": {
+      "Police": "100",
+      "Ambulance": "102",
+      "Fire": "101",
+      "Tourist Helpline": "1363",
+      "Haryana Tourism": "01662-222000"
+    },
+    "safetyInformation": [
+      "Be cautious near industrial areas and steel plants.",
+      "Respect the historic significance of forts and tombs.",
+      "Follow guidelines when visiting archaeological sites."
+    ],
+    "travelTips": [
+      "Visit ancient forts and archaeological sites.",
+      "Explore museums for historical insights.",
+      "Experience the blend of rural and urban charm."
+    ],
+    "experiences": {
+      "Food": [],
+      "Activities": [],
+      "LocalMarkets": [],
+      "Spiritual": [],
+      "Historical": [],
+      "Nature": [],
+      "Cultural": [],
+      "Adventure": [],
+      "Others": []
+    },
+    "trending": {
+      "places": []
+    },
+    "createdAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    },
+    "updatedAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "68e5e20021c4af9b4a7549c0"
+    },
+    "name": "Sonipat",
+    "location": [
+      {
+        "country": {
+          "id": {
+            "$oid": "68d7f24214fbfc2474738355"
+          }
+        },
+        "state": {
+          "id": {
+            "$oid": "68e2863f5b54d5e1bf69b1ec"
+          }
+        },
+        "region": {
+          "id": {
+            "$oid": "68d7f77c14fbfc2474738358"
+          }
+        }
+      }
+    ],
+    "greetingText": "Welcome to Sonipat!",
+    "tagLine": "Ancient City on Grand Trunk Road",
+    "description": {
+      "title": "Sonipat – The Ancient Trading City",
+      "short": "Close to Delhi, known for its ancient roots, pottery, and growing urban vibe on the Grand Trunk Road.",
+      "long": "Sonipat, close to Delhi, is known for its ancient roots, pottery, and growing urban vibe. With heritage sites, food streets, and local markets, it reflects both tradition and progress. Travelers often stop here for its cultural flavor and its convenient location on the Grand Trunk Road.",
+      "history": "Sonipat has ancient roots and is located on the historic Grand Trunk Road, known for its pottery and traditional crafts.",
+      "overview": "An ancient city where traditional crafts meet modern development, offering convenient cultural experiences near Delhi."
+    },
+    "languages": [
+      "Hindi",
+      "English",
+      "Haryanvi"
+    ],
+    "images": {
+      "banner": "",
+      "card": "",
+      "others": []
+    },
+    "emergencyContacts": {
+      "Police": "100",
+      "Ambulance": "102",
+      "Fire": "101",
+      "Tourist Helpline": "1363",
+      "Haryana Tourism": "0130-2220000"
+    },
+    "safetyInformation": [
+      "Be cautious on the busy Grand Trunk Road.",
+      "Respect traditional pottery workshops and craftsmen.",
+      "Follow guidelines when visiting heritage sites."
+    ],
+    "travelTips": [
+      "Explore heritage sites and ancient monuments.",
+      "Visit pottery workshops for traditional crafts.",
+      "Try local food at food streets and markets."
+    ],
+    "experiences": {
+      "Food": [],
+      "Activities": [],
+      "LocalMarkets": [],
+      "Spiritual": [],
+      "Historical": [],
+      "Nature": [],
+      "Cultural": [],
+      "Adventure": [],
+      "Others": []
+    },
+    "trending": {
+      "places": []
+    },
+    "createdAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    },
+    "updatedAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    }
+  }
+]

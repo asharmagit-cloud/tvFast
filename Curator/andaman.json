@@ -1,0 +1,81 @@
+{
+    "_id": {
+      "$oid": "68e5e20021c4af9b4a754981"
+    },
+    "name": "Port Blair",
+    "location": [
+      {
+        "country": {
+          "id": {
+            "$oid": "68d7f24214fbfc2474738355"
+          }
+        },
+        "state": {
+          "id": {
+            "$oid": "68e2814b5b54d5e1bf69b1da"
+          }
+        },
+        "region": {
+          "id": {
+            "$oid": "68d7f77c14fbfc2474738358"
+          }
+        }
+      }
+    ],
+    "greetingText": "Welcome to Port Blair!",
+    "tagLine": "Gateway to the Andaman Islands",
+    "description": {
+      "title": "Port Blair – Tropical Gateway",
+      "short": "Capital of Andaman & Nicobar Islands, known for beaches and history.",
+      "long": "Port Blair, the capital of the Andaman and Nicobar Islands, offers a perfect blend of history, culture, and tropical beauty. Known for its pristine beaches, vibrant marine life, and the historic Cellular Jail, it serves as the gateway to exotic island adventures, attracting travelers seeking relaxation, exploration, and unforgettable experiences.",
+      "history": "Port Blair played a pivotal role during India's freedom struggle, with the Cellular Jail serving as a colonial prison for political prisoners. Its strategic location and rich cultural heritage make it a unique destination.",
+      "overview": "A coastal city with lush landscapes, colonial architecture, and vibrant local life."
+    },
+    "languages": [
+      "Hindi",
+      "English",
+      "Tamil"
+    ],
+    "images": {
+      "banner": "",
+      "card": "",
+      "others": []
+    },
+    "emergencyContacts": {
+      "Police": "100",
+      "Ambulance": "102",
+      "Fire": "101",
+      "Tourist Helpline": "1363",
+      "State Tourism": "03192-232694"
+    },
+    "safetyInformation": [
+      "Avoid isolated beaches after dark.",
+      "Respect marine life and coral reefs.",
+      "Follow local guidelines during monsoon season."
+    ],
+    "travelTips": [
+      "Carry sunscreen and insect repellent.",
+      "Book ferry tickets in advance.",
+      "Try local seafood at Aberdeen Bazaar."
+    ],
+    "experiences": {
+      "Food": [],
+      "Activities": [],
+      "LocalMarkets": [],
+      "Spiritual": [],
+      "Historical": [],
+      "Nature": [],
+      "Cultural": [],
+      "Adventure": [],
+      "Others": []
+    },
+    "trending": {
+      "places": []
+    },
+    "createdAt": {
+      "$date": "2025-10-08T04:01:04.008Z"
+    },
+    "updatedAt": {
+      "$date": "2025-10-08T04:01:04.008Z"
+    }
+  }

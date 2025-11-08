@@ -1,0 +1,737 @@
+[
+  {
+    "_id": {
+      "$oid": "68e5e20021c4af9b4a7549cd"
+    },
+    "name": "Srinagar",
+    "location": [
+      {
+        "country": {
+          "id": {
+            "$oid": "68d7f24214fbfc2474738355"
+          }
+        },
+        "state": {
+          "id": {
+            "$oid": "68e286485b54d5e1bf69b1ee"
+          }
+        },
+        "region": {
+          "id": {
+            "$oid": "68d7f77c14fbfc2474738358"
+          }
+        }
+      }
+    ],
+    "greetingText": "Welcome to Srinagar!",
+    "tagLine": "Summer Capital of Jammu & Kashmir",
+    "description": {
+      "title": "Srinagar – The Summer Capital",
+      "short": "The summer capital of Jammu & Kashmir, famed for its Dal Lake houseboats, shikaras, and Mughal gardens.",
+      "long": "Srinagar, the summer capital of Jammu & Kashmir, is famed for its Dal Lake houseboats, shikaras, and Mughal gardens. With snow-capped mountains and colorful tulip gardens, it's a picture of beauty. Blending romance, culture, and nature, Srinagar remains one of India's most enchanting and unforgettable destinations.",
+      "history": "Srinagar has been the summer capital of Jammu & Kashmir and is known for its beautiful lakes, gardens, and houseboats.",
+      "overview": "A romantic city where lakes meet mountains, offering enchanting experiences of natural beauty and cultural heritage."
+    },
+    "languages": [
+      "Kashmiri",
+      "Hindi",
+      "English",
+      "Urdu"
+    ],
+    "images": {
+      "banner": "",
+      "card": "",
+      "others": []
+    },
+    "emergencyContacts": {
+      "Police": "100",
+      "Ambulance": "102",
+      "Fire": "101",
+      "Tourist Helpline": "1363",
+      "J&K Tourism": "0194-2220000"
+    },
+    "safetyInformation": [
+      "Be cautious on houseboats and shikaras.",
+      "Respect the natural beauty and cultural heritage.",
+      "Follow guidelines when visiting gardens and lakes."
+    ],
+    "travelTips": [
+      "Stay in houseboats on Dal Lake for unique experience.",
+      "Take shikara rides for scenic lake views.",
+      "Visit Mughal gardens for beautiful landscapes."
+    ],
+    "experiences": {
+      "Food": [],
+      "Activities": [],
+      "LocalMarkets": [],
+      "Spiritual": [],
+      "Historical": [],
+      "Nature": [],
+      "Cultural": [],
+      "Adventure": [],
+      "Others": []
+    },
+    "trending": {
+      "places": []
+    },
+    "createdAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    },
+    "updatedAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "68e5e20021c4af9b4a7549ce"
+    },
+    "name": "Jammu",
+    "location": [
+      {
+        "country": {
+          "id": {
+            "$oid": "68d7f24214fbfc2474738355"
+          }
+        },
+        "state": {
+          "id": {
+            "$oid": "68e286485b54d5e1bf69b1ee"
+          }
+        },
+        "region": {
+          "id": {
+            "$oid": "68d7f77c14fbfc2474738358"
+          }
+        }
+      }
+    ],
+    "greetingText": "Welcome to Jammu!",
+    "tagLine": "City of Temples",
+    "description": {
+      "title": "Jammu – The City of Temples",
+      "short": "The winter capital, known as the 'City of Temples,' with Vaishno Devi shrine nearby and historic forts.",
+      "long": "Jammu, the winter capital, is known as the 'City of Temples.' The Vaishno Devi shrine nearby makes it a major pilgrimage center, while forts and palaces add historic charm. With a blend of spirituality, heritage, and warm hospitality, Jammu welcomes both devotees and travelers exploring the region's cultural richness.",
+      "history": "Jammu has been an important religious and cultural center, known for its temples and as the winter capital of Jammu & Kashmir.",
+      "overview": "A spiritual city where temples meet historic heritage, offering profound religious and cultural experiences."
+    },
+    "languages": [
+      "Dogri",
+      "Hindi",
+      "English",
+      "Urdu"
+    ],
+    "images": {
+      "banner": "",
+      "card": "",
+      "others": []
+    },
+    "emergencyContacts": {
+      "Police": "100",
+      "Ambulance": "102",
+      "Fire": "101",
+      "Tourist Helpline": "1363",
+      "J&K Tourism": "0191-2220000"
+    },
+    "safetyInformation": [
+      "Respect the sacred nature of temples and religious sites.",
+      "Be cautious when visiting forts and historic monuments.",
+      "Follow guidelines for pilgrimage to Vaishno Devi."
+    ],
+    "travelTips": [
+      "Visit the famous Vaishno Devi shrine.",
+      "Explore historic forts and palaces.",
+      "Experience the warm hospitality and local culture."
+    ],
+    "experiences": {
+      "Food": [],
+      "Activities": [],
+      "LocalMarkets": [],
+      "Spiritual": [],
+      "Historical": [],
+      "Nature": [],
+      "Cultural": [],
+      "Adventure": [],
+      "Others": []
+    },
+    "trending": {
+      "places": []
+    },
+    "createdAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    },
+    "updatedAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "68e5e20021c4af9b4a7549cf"
+    },
+    "name": "Gulmarg",
+    "location": [
+      {
+        "country": {
+          "id": {
+            "$oid": "68d7f24214fbfc2474738355"
+          }
+        },
+        "state": {
+          "id": {
+            "$oid": "68e286485b54d5e1bf69b1ee"
+          }
+        },
+        "region": {
+          "id": {
+            "$oid": "68d7f77c14fbfc2474738358"
+          }
+        }
+      }
+    ],
+    "greetingText": "Welcome to Gulmarg!",
+    "tagLine": "Meadow of Flowers",
+    "description": {
+      "title": "Gulmarg – The Meadow of Flowers",
+      "short": "A premier ski resort and summer retreat, meaning 'Meadow of Flowers,' with rolling meadows and gondola rides.",
+      "long": "Gulmarg, meaning 'Meadow of Flowers,' is a premier ski resort and summer retreat. Its rolling meadows, gondola rides, and snow slopes make it a paradise for adventure lovers. Whether blanketed in flowers or snow, Gulmarg offers breathtaking beauty, making it one of Kashmir's most loved destinations.",
+      "history": "Gulmarg has been a popular hill station and ski resort, known for its natural beauty and adventure activities.",
+      "overview": "A mountain paradise where flowers meet snow, offering year-round beauty and adventure experiences."
+    },
+    "languages": [
+      "Kashmiri",
+      "Hindi",
+      "English"
+    ],
+    "images": {
+      "banner": "",
+      "card": "",
+      "others": []
+    },
+    "emergencyContacts": {
+      "Police": "100",
+      "Ambulance": "102",
+      "Fire": "101",
+      "Tourist Helpline": "1363",
+      "J&K Tourism": "01954-222000"
+    },
+    "safetyInformation": [
+      "Be cautious during skiing and adventure activities.",
+      "Follow safety guidelines for gondola rides.",
+      "Respect the natural environment and wildlife."
+    ],
+    "travelTips": [
+      "Try skiing and snow sports in winter.",
+      "Take gondola rides for panoramic views.",
+      "Enjoy the rolling meadows and flower gardens."
+    ],
+    "experiences": {
+      "Food": [],
+      "Activities": [],
+      "LocalMarkets": [],
+      "Spiritual": [],
+      "Historical": [],
+      "Nature": [],
+      "Cultural": [],
+      "Adventure": [],
+      "Others": []
+    },
+    "trending": {
+      "places": []
+    },
+    "createdAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    },
+    "updatedAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "68e5e20021c4af9b4a7549d0"
+    },
+    "name": "Pahalgam",
+    "location": [
+      {
+        "country": {
+          "id": {
+            "$oid": "68d7f24214fbfc2474738355"
+          }
+        },
+        "state": {
+          "id": {
+            "$oid": "68e286485b54d5e1bf69b1ee"
+          }
+        },
+        "region": {
+          "id": {
+            "$oid": "68d7f77c14fbfc2474738358"
+          }
+        }
+      }
+    ],
+    "greetingText": "Welcome to Pahalgam!",
+    "tagLine": "Valley of Pine Forests",
+    "description": {
+      "title": "Pahalgam – The Valley Paradise",
+      "short": "Set by the Lidder River, a valley of pine forests, meadows, and rushing streams, popular for trekking and Amarnath Yatra.",
+      "long": "Pahalgam, set by the Lidder River, is a valley of pine forests, meadows, and rushing streams. Popular for trekking, golfing, and the Amarnath Yatra, it balances natural charm with adventure. With trout fishing and mountain views, Pahalgam is a serene yet lively stop in Kashmir's travel circuit.",
+      "history": "Pahalgam has been an important base for the Amarnath Yatra pilgrimage and is known for its natural beauty and adventure activities.",
+      "overview": "A valley paradise where nature meets adventure, offering serene beauty and outdoor activities."
+    },
+    "languages": [
+      "Kashmiri",
+      "Hindi",
+      "English"
+    ],
+    "images": {
+      "banner": "",
+      "card": "",
+      "others": []
+    },
+    "emergencyContacts": {
+      "Police": "100",
+      "Ambulance": "102",
+      "Fire": "101",
+      "Tourist Helpline": "1363",
+      "J&K Tourism": "01954-222000"
+    },
+    "safetyInformation": [
+      "Be cautious during trekking and outdoor activities.",
+      "Follow guidelines for Amarnath Yatra pilgrimage.",
+      "Respect the natural environment and wildlife."
+    ],
+    "travelTips": [
+      "Go trekking in the pine forests and meadows.",
+      "Try trout fishing in the Lidder River.",
+      "Visit during Amarnath Yatra for spiritual experience."
+    ],
+    "experiences": {
+      "Food": [],
+      "Activities": [],
+      "LocalMarkets": [],
+      "Spiritual": [],
+      "Historical": [],
+      "Nature": [],
+      "Cultural": [],
+      "Adventure": [],
+      "Others": []
+    },
+    "trending": {
+      "places": []
+    },
+    "createdAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    },
+    "updatedAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "68e5e20021c4af9b4a7549d1"
+    },
+    "name": "Leh",
+    "location": [
+      {
+        "country": {
+          "id": {
+            "$oid": "68d7f24214fbfc2474738355"
+          }
+        },
+        "state": {
+          "id": {
+            "$oid": "68e286485b54d5e1bf69b1ee"
+          }
+        },
+        "region": {
+          "id": {
+            "$oid": "68d7f77c14fbfc2474738358"
+          }
+        }
+      }
+    ],
+    "greetingText": "Welcome to Leh!",
+    "tagLine": "Heart of Ladakh",
+    "description": {
+      "title": "Leh – The Heart of Ladakh",
+      "short": "The heart of Ladakh, surrounded by stark mountains, monasteries, and high-altitude passes.",
+      "long": "Leh, the heart of Ladakh, is surrounded by stark mountains, monasteries, and high-altitude passes. Its Buddhist culture, colorful festivals, and adventure activities draw global travelers. With crystal lakes and vast landscapes, Leh offers an unforgettable mix of spirituality, rugged beauty, and thrill in the Himalayas.",
+      "history": "Leh has been the capital of Ladakh and is known for its Buddhist monasteries, high-altitude culture, and strategic location.",
+      "overview": "A high-altitude city where Buddhist culture meets rugged mountain beauty, offering unique spiritual and adventure experiences."
+    },
+    "languages": [
+      "Ladakhi",
+      "Hindi",
+      "English",
+      "Tibetan"
+    ],
+    "images": {
+      "banner": "",
+      "card": "",
+      "others": []
+    },
+    "emergencyContacts": {
+      "Police": "100",
+      "Ambulance": "102",
+      "Fire": "101",
+      "Tourist Helpline": "1363",
+      "J&K Tourism": "01982-222000"
+    },
+    "safetyInformation": [
+      "Be cautious at high altitudes and during acclimatization.",
+      "Respect Buddhist culture and monastery guidelines.",
+      "Follow safety guidelines for high-altitude activities."
+    ],
+    "travelTips": [
+      "Visit Buddhist monasteries for spiritual experiences.",
+      "Go trekking and adventure activities in the mountains.",
+      "Attend colorful festivals and cultural events."
+    ],
+    "experiences": {
+      "Food": [],
+      "Activities": [],
+      "LocalMarkets": [],
+      "Spiritual": [],
+      "Historical": [],
+      "Nature": [],
+      "Cultural": [],
+      "Adventure": [],
+      "Others": []
+    },
+    "trending": {
+      "places": []
+    },
+    "createdAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    },
+    "updatedAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "68e5e20021c4af9b4a7549d2"
+    },
+    "name": "Kargil",
+    "location": [
+      {
+        "country": {
+          "id": {
+            "$oid": "68d7f24214fbfc2474738355"
+          }
+        },
+        "state": {
+          "id": {
+            "$oid": "68e286485b54d5e1bf69b1ee"
+          }
+        },
+        "region": {
+          "id": {
+            "$oid": "68d7f77c14fbfc2474738358"
+          }
+        }
+      }
+    ],
+    "greetingText": "Welcome to Kargil!",
+    "tagLine": "Historic Town on Silk Route",
+    "description": {
+      "title": "Kargil – The Historic Silk Route Town",
+      "short": "Set on the Suru River, known for its war memorial, rugged mountains, and scenic valleys on the ancient Silk Route.",
+      "long": "Kargil, set on the Suru River, is known for its war memorial, rugged mountains, and scenic valleys. A historic town on the ancient Silk Route, it offers treks, monasteries, and cultural insights. Kargil is both a place of remembrance and a base for exploring Ladakh's raw landscapes.",
+      "history": "Kargil has been an important town on the ancient Silk Route and is known for its strategic location and cultural heritage.",
+      "overview": "A historic town where Silk Route heritage meets mountain landscapes, offering both remembrance and exploration opportunities."
+    },
+    "languages": [
+      "Ladakhi",
+      "Hindi",
+      "English",
+      "Urdu"
+    ],
+    "images": {
+      "banner": "",
+      "card": "",
+      "others": []
+    },
+    "emergencyContacts": {
+      "Police": "100",
+      "Ambulance": "102",
+      "Fire": "101",
+      "Tourist Helpline": "1363",
+      "J&K Tourism": "01985-222000"
+    },
+    "safetyInformation": [
+      "Be cautious in rugged mountain areas and high altitudes.",
+      "Respect the historic significance of war memorials.",
+      "Follow guidelines when trekking and exploring remote areas."
+    ],
+    "travelTips": [
+      "Visit the war memorial for historical insights.",
+      "Go trekking in the rugged mountains and valleys.",
+      "Explore monasteries and cultural sites."
+    ],
+    "experiences": {
+      "Food": [],
+      "Activities": [],
+      "LocalMarkets": [],
+      "Spiritual": [],
+      "Historical": [],
+      "Nature": [],
+      "Cultural": [],
+      "Adventure": [],
+      "Others": []
+    },
+    "trending": {
+      "places": []
+    },
+    "createdAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    },
+    "updatedAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "68e5e20021c4af9b4a7549d3"
+    },
+    "name": "Anantnag",
+    "location": [
+      {
+        "country": {
+          "id": {
+            "$oid": "68d7f24214fbfc2474738355"
+          }
+        },
+        "state": {
+          "id": {
+            "$oid": "68e286485b54d5e1bf69b1ee"
+          }
+        },
+        "region": {
+          "id": {
+            "$oid": "68d7f77c14fbfc2474738358"
+          }
+        }
+      }
+    ],
+    "greetingText": "Welcome to Anantnag!",
+    "tagLine": "Green Retreat with Freshwater Springs",
+    "description": {
+      "title": "Anantnag – The Green Retreat",
+      "short": "Known for its freshwater springs and gardens, a green retreat in Kashmir surrounded by meadows and streams.",
+      "long": "Anantnag, known for its freshwater springs and gardens, is a green retreat in Kashmir. Surrounded by meadows and streams, it serves as a gateway to Pahalgam and other valleys. With temples, mosques, and natural charm, Anantnag offers travelers a refreshing blend of spirituality and scenic beauty.",
+      "history": "Anantnag has been known for its freshwater springs and is an important town in the Kashmir Valley with religious significance.",
+      "overview": "A green retreat where freshwater springs meet spiritual sites, offering refreshing natural and cultural experiences."
+    },
+    "languages": [
+      "Kashmiri",
+      "Hindi",
+      "English",
+      "Urdu"
+    ],
+    "images": {
+      "banner": "",
+      "card": "",
+      "others": []
+    },
+    "emergencyContacts": {
+      "Police": "100",
+      "Ambulance": "102",
+      "Fire": "101",
+      "Tourist Helpline": "1363",
+      "J&K Tourism": "01932-222000"
+    },
+    "safetyInformation": [
+      "Be cautious near water bodies and springs.",
+      "Respect religious sites and local customs.",
+      "Follow guidelines when visiting gardens and natural areas."
+    ],
+    "travelTips": [
+      "Visit freshwater springs and gardens.",
+      "Explore temples and mosques for spiritual experiences.",
+      "Use as a gateway to explore other valleys."
+    ],
+    "experiences": {
+      "Food": [],
+      "Activities": [],
+      "LocalMarkets": [],
+      "Spiritual": [],
+      "Historical": [],
+      "Nature": [],
+      "Cultural": [],
+      "Adventure": [],
+      "Others": []
+    },
+    "trending": {
+      "places": []
+    },
+    "createdAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    },
+    "updatedAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "68e5e20021c4af9b4a7549d4"
+    },
+    "name": "Sonamarg",
+    "location": [
+      {
+        "country": {
+          "id": {
+            "$oid": "68d7f24214fbfc2474738355"
+          }
+        },
+        "state": {
+          "id": {
+            "$oid": "68e286485b54d5e1bf69b1ee"
+          }
+        },
+        "region": {
+          "id": {
+            "$oid": "68d7f77c14fbfc2474738358"
+          }
+        }
+      }
+    ],
+    "greetingText": "Welcome to Sonamarg!",
+    "tagLine": "Meadow of Gold",
+    "description": {
+      "title": "Sonamarg – The Meadow of Gold",
+      "short": "A valley of glaciers, alpine flowers, and flowing rivers, meaning 'Meadow of Gold.'",
+      "long": "Sonamarg, or 'Meadow of Gold,' is a valley of glaciers, alpine flowers, and flowing rivers. Trekking routes and pony rides to Thajiwas Glacier attract adventurers. With snow peaks and meadows shining under the sun, Sonamarg is a breathtaking spot that highlights Kashmir's untouched mountain beauty.",
+      "history": "Sonamarg has been known for its natural beauty and is a popular destination for trekking and adventure activities.",
+      "overview": "A golden valley where glaciers meet alpine flowers, offering breathtaking mountain beauty and adventure experiences."
+    },
+    "languages": [
+      "Kashmiri",
+      "Hindi",
+      "English"
+    ],
+    "images": {
+      "banner": "",
+      "card": "",
+      "others": []
+    },
+    "emergencyContacts": {
+      "Police": "100",
+      "Ambulance": "102",
+      "Fire": "101",
+      "Tourist Helpline": "1363",
+      "J&K Tourism": "01954-222000"
+    },
+    "safetyInformation": [
+      "Be cautious during trekking and glacier visits.",
+      "Follow safety guidelines for pony rides.",
+      "Respect the fragile alpine environment."
+    ],
+    "travelTips": [
+      "Go trekking to Thajiwas Glacier.",
+      "Take pony rides for scenic mountain views.",
+      "Enjoy alpine flowers and mountain meadows."
+    ],
+    "experiences": {
+      "Food": [],
+      "Activities": [],
+      "LocalMarkets": [],
+      "Spiritual": [],
+      "Historical": [],
+      "Nature": [],
+      "Cultural": [],
+      "Adventure": [],
+      "Others": []
+    },
+    "trending": {
+      "places": []
+    },
+    "createdAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    },
+    "updatedAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "68e5e20021c4af9b4a7549d5"
+    },
+    "name": "Kashmir",
+    "location": [
+      {
+        "country": {
+          "id": {
+            "$oid": "68d7f24214fbfc2474738355"
+          }
+        },
+        "state": {
+          "id": {
+            "$oid": "68e286485b54d5e1bf69b1ee"
+          }
+        },
+        "region": {
+          "id": {
+            "$oid": "68d7f77c14fbfc2474738358"
+          }
+        }
+      }
+    ],
+    "greetingText": "Welcome to Kashmir!",
+    "tagLine": "Paradise on Earth",
+    "description": {
+      "title": "Kashmir – Paradise on Earth",
+      "short": "Often called 'Paradise on Earth,' a land of snow peaks, lakes, and blooming gardens.",
+      "long": "Kashmir, often called 'Paradise on Earth,' is a land of snow peaks, lakes, and blooming gardens. Famous for houseboats, saffron, and warm hospitality, it offers travelers romance, spirituality, and adventure. From Srinagar to Gulmarg and Pahalgam, Kashmir's timeless beauty leaves visitors with memories of peace and wonder.",
+      "history": "Kashmir has been known as 'Paradise on Earth' for centuries, famous for its natural beauty, culture, and hospitality.",
+      "overview": "A paradise where natural beauty meets cultural richness, offering timeless experiences of peace and wonder."
+    },
+    "languages": [
+      "Kashmiri",
+      "Hindi",
+      "English",
+      "Urdu"
+    ],
+    "images": {
+      "banner": "",
+      "card": "",
+      "others": []
+    },
+    "emergencyContacts": {
+      "Police": "100",
+      "Ambulance": "102",
+      "Fire": "101",
+      "Tourist Helpline": "1363",
+      "J&K Tourism": "0194-2220000"
+    },
+    "safetyInformation": [
+      "Respect the natural beauty and cultural heritage.",
+      "Follow guidelines for houseboat stays and lake activities.",
+      "Be mindful of local customs and traditions."
+    ],
+    "travelTips": [
+      "Experience houseboat stays and shikara rides.",
+      "Visit famous gardens and scenic spots.",
+      "Try local saffron and traditional cuisine."
+    ],
+    "experiences": {
+      "Food": [],
+      "Activities": [],
+      "LocalMarkets": [],
+      "Spiritual": [],
+      "Historical": [],
+      "Nature": [],
+      "Cultural": [],
+      "Adventure": [],
+      "Others": []
+    },
+    "trending": {
+      "places": []
+    },
+    "createdAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    },
+    "updatedAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    }
+  }
+]

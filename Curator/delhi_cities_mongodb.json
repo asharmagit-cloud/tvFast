@@ -1,0 +1,166 @@
+[
+  {
+    "_id": {
+      "$oid": "68e5e20021c4af9b4a7549a3"
+    },
+    "name": "New Delhi",
+    "location": [
+      {
+        "country": {
+          "id": {
+            "$oid": "68d7f24214fbfc2474738355"
+          }
+        },
+        "state": {
+          "id": {
+            "$oid": "68e2860c5b54d5e1bf69b1e9"
+          }
+        },
+        "region": {
+          "id": {
+            "$oid": "68d7f77c14fbfc2474738358"
+          }
+        }
+      }
+    ],
+    "greetingText": "Welcome to New Delhi!",
+    "tagLine": "Capital of India",
+    "description": {
+      "title": "New Delhi – The Capital City",
+      "short": "The capital of India, a blend of grand boulevards, monuments, and modern city life.",
+      "long": "New Delhi, the capital of India, is a blend of grand boulevards, monuments, and modern city life. From India Gate and Rashtrapati Bhavan to museums and gardens, it reflects both history and progress. With bustling markets and cultural hubs, New Delhi offers travelers a vibrant and dynamic urban experience.",
+      "history": "New Delhi was designed by British architects Edwin Lutyens and Herbert Baker and was inaugurated in 1931. It became the capital of India after independence.",
+      "overview": "A modern capital where grand architecture meets vibrant city life, offering a dynamic urban experience."
+    },
+    "languages": [
+      "Hindi",
+      "English",
+      "Punjabi",
+      "Urdu"
+    ],
+    "images": {
+      "banner": "",
+      "card": "",
+      "others": []
+    },
+    "emergencyContacts": {
+      "Police": "100",
+      "Ambulance": "102",
+      "Fire": "101",
+      "Tourist Helpline": "1363",
+      "Delhi Tourism": "011-23363607"
+    },
+    "safetyInformation": [
+      "Be cautious in crowded areas and markets.",
+      "Respect security guidelines at government buildings.",
+      "Follow traffic rules as the city can be busy."
+    ],
+    "travelTips": [
+      "Visit India Gate and Rashtrapati Bhavan for iconic landmarks.",
+      "Explore museums and cultural institutions.",
+      "Shop at modern markets and cultural hubs."
+    ],
+    "experiences": {
+      "Food": [],
+      "Activities": [],
+      "LocalMarkets": [],
+      "Spiritual": [],
+      "Historical": [],
+      "Nature": [],
+      "Cultural": [],
+      "Adventure": [],
+      "Others": []
+    },
+    "trending": {
+      "places": []
+    },
+    "createdAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    },
+    "updatedAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "68e5e20021c4af9b4a7549a4"
+    },
+    "name": "Old Delhi",
+    "location": [
+      {
+        "country": {
+          "id": {
+            "$oid": "68d7f24214fbfc2474738355"
+          }
+        },
+        "state": {
+          "id": {
+            "$oid": "68e2860c5b54d5e1bf69b1e9"
+          }
+        },
+        "region": {
+          "id": {
+            "$oid": "68d7f77c14fbfc2474738358"
+          }
+        }
+      }
+    ],
+    "greetingText": "Welcome to Old Delhi!",
+    "tagLine": "Historic Heart of Delhi",
+    "description": {
+      "title": "Old Delhi – The Historic Heart",
+      "short": "A maze of narrow lanes, spice markets, and historic landmarks showcasing Mughal grandeur and timeless traditions.",
+      "long": "Old Delhi is a maze of narrow lanes, spice markets, and historic landmarks. Home to the Red Fort, Jama Masjid, and Chandni Chowk's food stalls, it showcases Mughal grandeur and timeless traditions. Bustling yet full of charm, Old Delhi immerses visitors in the city's rich history and cultural soul.",
+      "history": "Old Delhi was founded by Mughal Emperor Shah Jahan in 1639 and served as the capital of the Mughal Empire. It's home to many historic monuments and traditional markets.",
+      "overview": "A historic district where Mughal heritage meets vibrant street life, offering an authentic cultural experience."
+    },
+    "languages": [
+      "Hindi",
+      "English",
+      "Urdu",
+      "Punjabi"
+    ],
+    "images": {
+      "banner": "",
+      "card": "",
+      "others": []
+    },
+    "emergencyContacts": {
+      "Police": "100",
+      "Ambulance": "102",
+      "Fire": "101",
+      "Tourist Helpline": "1363",
+      "Delhi Tourism": "011-23363607"
+    },
+    "safetyInformation": [
+      "Be cautious in narrow lanes and crowded markets.",
+      "Respect the historic nature of monuments and mosques.",
+      "Follow guidelines when visiting religious sites."
+    ],
+    "travelTips": [
+      "Visit the Red Fort and Jama Masjid for Mughal architecture.",
+      "Explore Chandni Chowk for street food and shopping.",
+      "Take a rickshaw ride through the narrow lanes."
+    ],
+    "experiences": {
+      "Food": [],
+      "Activities": [],
+      "LocalMarkets": [],
+      "Spiritual": [],
+      "Historical": [],
+      "Nature": [],
+      "Cultural": [],
+      "Adventure": [],
+      "Others": []
+    },
+    "trending": {
+      "places": []
+    },
+    "createdAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    },
+    "updatedAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    }
+  }
+]

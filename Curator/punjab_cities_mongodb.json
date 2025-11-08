@@ -1,0 +1,354 @@
+[
+  {
+    "_id": { "$oid": "68e5e20021c4af9b4a7549ee" },
+    "name": "Amritsar",
+    "location": [
+      {
+        "country": { "id": { "$oid": "68d7f24214fbfc2474738355" } },
+        "state": { "id": { "$oid": "68e288ec5b54d5e1bf69b1fc" } },
+        "region": { "id": { "$oid": "68d7f77c14fbfc2474738358" } }
+      }
+    ],
+    "greetingText": "Welcome to Amritsar!",
+    "tagLine": "City of the Golden Temple",
+    "description": {
+      "title": "Amritsar – Spiritual Heart of Punjab",
+      "short": "Home to the iconic Golden Temple, one of India's most revered spiritual sites.",
+      "long": "Amritsar is home to the iconic Golden Temple, one of India's most revered spiritual sites. Known for its vibrant culture, bustling bazaars, and delicious food, it also carries history at the Jallianwala Bagh and Wagah Border. Amritsar blends devotion, heritage, and lively Punjabi spirit.",
+      "history": "Amritsar was founded by Guru Ram Das in 1577 and is home to the Golden Temple (Harmandir Sahib), the holiest shrine in Sikhism. The city witnessed the tragic Jallianwala Bagh massacre in 1919.",
+      "overview": "A sacred city with the Golden Temple, rich history, and vibrant Punjabi culture."
+    },
+    "languages": [ "Punjabi", "Hindi", "English", "Urdu" ],
+    "images": { "banner": "", "card": "", "others": [] },
+    "emergencyContacts": {
+      "Police": "100", "Ambulance": "102", "Fire": "101",
+      "Tourist Helpline": "1363", "State Tourism": "0183-2402450"
+    },
+    "safetyInformation": [
+      "Dress modestly when visiting the Golden Temple.",
+      "Follow security guidelines at Wagah Border.",
+      "Be respectful during religious ceremonies and prayers."
+    ],
+    "travelTips": [
+      "Visit the Golden Temple early morning for the best experience.",
+      "Attend the Wagah Border ceremony in the evening.",
+      "Try authentic Punjabi cuisine and langar at the Golden Temple.",
+      "Explore the historic Jallianwala Bagh memorial."
+    ],
+    "experiences": {
+      "Food": [], "Activities": [], "LocalMarkets": [], "Spiritual": [],
+      "Historical": [], "Nature": [], "Cultural": [], "Adventure": [], "Others": []
+    },
+    "trending": { "places": [] },
+    "createdAt": { "$date": "2025-10-08T04:01:04.008Z" },
+    "updatedAt": { "$date": "2025-10-08T04:01:04.008Z" }
+  },
+  {
+    "_id": { "$oid": "68e5e20021c4af9b4a7549ef" },
+    "name": "Ludhiana",
+    "location": [
+      {
+        "country": { "id": { "$oid": "68d7f24214fbfc2474738355" } },
+        "state": { "id": { "$oid": "68e288ec5b54d5e1bf69b1fc" } },
+        "region": { "id": { "$oid": "68d7f77c14fbfc2474738358" } }
+      }
+    ],
+    "greetingText": "Welcome to Ludhiana!",
+    "tagLine": "Manchester of India",
+    "description": {
+      "title": "Ludhiana – Industrial Powerhouse",
+      "short": "Punjab's industrial hub, known as the 'Manchester of India' for its textile industry.",
+      "long": "Ludhiana, Punjab's industrial hub, is known as the 'Manchester of India' for its textile industry. Beyond its factories, the city offers gardens, gurdwaras, and museums. With a mix of heritage and modern life, Ludhiana showcases Punjab's hardworking energy and warm hospitality.",
+      "history": "Ludhiana has been an important industrial center since the 19th century and is known for its textile and hosiery industry. The city has grown into one of India's major manufacturing hubs.",
+      "overview": "A bustling industrial city with textile factories, gardens, and cultural heritage."
+    },
+    "languages": [ "Punjabi", "Hindi", "English", "Urdu" ],
+    "images": { "banner": "", "card": "", "others": [] },
+    "emergencyContacts": {
+      "Police": "100", "Ambulance": "102", "Fire": "101",
+      "Tourist Helpline": "1363", "State Tourism": "0161-2402450"
+    },
+    "safetyInformation": [
+      "Be cautious in industrial areas and follow safety guidelines.",
+      "Respect local customs and traditions.",
+      "Follow traffic rules in busy commercial areas."
+    ],
+    "travelTips": [
+      "Visit the Punjab Agricultural University Museum.",
+      "Explore local gurdwaras and temples.",
+      "Shop for textiles and hosiery products.",
+      "Enjoy Punjabi cuisine at local restaurants."
+    ],
+    "experiences": {
+      "Food": [], "Activities": [], "LocalMarkets": [], "Spiritual": [],
+      "Historical": [], "Nature": [], "Cultural": [], "Adventure": [], "Others": []
+    },
+    "trending": { "places": [] },
+    "createdAt": { "$date": "2025-10-08T04:01:04.008Z" },
+    "updatedAt": { "$date": "2025-10-08T04:01:04.008Z" }
+  },
+  {
+    "_id": { "$oid": "68e5e20021c4af9b4a7549f0" },
+    "name": "Jalandhar",
+    "location": [
+      {
+        "country": { "id": { "$oid": "68d7f24214fbfc2474738355" } },
+        "state": { "id": { "$oid": "68e288ec5b54d5e1bf69b1fc" } },
+        "region": { "id": { "$oid": "68d7f77c14fbfc2474738358" } }
+      }
+    ],
+    "greetingText": "Welcome to Jalandhar!",
+    "tagLine": "Sports Capital of Punjab",
+    "description": {
+      "title": "Jalandhar – Historic Sports Hub",
+      "short": "Historic city blending tradition with sports culture and sports goods industry.",
+      "long": "Jalandhar is a historic city blending tradition with sports culture. Known for Devi Talab Mandir, lively markets, and its sports goods industry, it reflects both faith and modern enterprise. With heritage spots and vibrant festivals, Jalandhar offers a colorful Punjabi experience.",
+      "history": "Jalandhar is one of the oldest cities in Punjab and is known for its sports goods industry. The city has a rich cultural heritage and is famous for its temples and festivals.",
+      "overview": "A historic city known for sports goods manufacturing, temples, and cultural festivals."
+    },
+    "languages": [ "Punjabi", "Hindi", "English", "Urdu" ],
+    "images": { "banner": "", "card": "", "others": [] },
+    "emergencyContacts": {
+      "Police": "100", "Ambulance": "102", "Fire": "101",
+      "Tourist Helpline": "1363", "State Tourism": "0181-2402450"
+    },
+    "safetyInformation": [
+      "Be cautious in crowded market areas.",
+      "Follow safety guidelines when visiting temples.",
+      "Respect local customs and traditions."
+    ],
+    "travelTips": [
+      "Visit Devi Talab Mandir and other historic temples.",
+      "Explore the sports goods market and factories.",
+      "Experience local festivals and cultural events.",
+      "Try traditional Punjabi sweets and cuisine."
+    ],
+    "experiences": {
+      "Food": [], "Activities": [], "LocalMarkets": [], "Spiritual": [],
+      "Historical": [], "Nature": [], "Cultural": [], "Adventure": [], "Others": []
+    },
+    "trending": { "places": [] },
+    "createdAt": { "$date": "2025-10-08T04:01:04.008Z" },
+    "updatedAt": { "$date": "2025-10-08T04:01:04.008Z" }
+  },
+  {
+    "_id": { "$oid": "68e5e20021c4af9b4a7549f1" },
+    "name": "Patiala",
+    "location": [
+      {
+        "country": { "id": { "$oid": "68d7f24214fbfc2474738355" } },
+        "state": { "id": { "$oid": "68e288ec5b54d5e1bf69b1fc" } },
+        "region": { "id": { "$oid": "68d7f77c14fbfc2474738358" } }
+      }
+    ],
+    "greetingText": "Welcome to Patiala!",
+    "tagLine": "Royal City of Punjab",
+    "description": {
+      "title": "Patiala – Royal Heritage City",
+      "short": "Known for royal heritage, grand palaces, forts, and the famous 'Patiala peg'.",
+      "long": "Patiala, known for its royal heritage, is famous for grand palaces, forts, and gardens. The city also gave the world the 'Patiala peg' and vibrant turban style. With music, dance, and history, Patiala offers travelers a regal taste of Punjabi culture.",
+      "history": "Patiala was the capital of the Patiala State, one of the princely states of Punjab. The city is known for its royal palaces, especially the Qila Mubarak and Sheesh Mahal.",
+      "overview": "A royal city with magnificent palaces, forts, and rich cultural heritage."
+    },
+    "languages": [ "Punjabi", "Hindi", "English", "Urdu" ],
+    "images": { "banner": "", "card": "", "others": [] },
+    "emergencyContacts": {
+      "Police": "100", "Ambulance": "102", "Fire": "101",
+      "Tourist Helpline": "1363", "State Tourism": "0175-2402450"
+    },
+    "safetyInformation": [
+      "Be respectful when visiting royal palaces and heritage sites.",
+      "Follow guidelines for heritage building visits.",
+      "Respect local customs and traditions."
+    ],
+    "travelTips": [
+      "Visit Qila Mubarak and Sheesh Mahal.",
+      "Explore the Patiala Peg and local cuisine.",
+      "Experience traditional music and dance performances.",
+      "Learn about the royal history and culture."
+    ],
+    "experiences": {
+      "Food": [], "Activities": [], "LocalMarkets": [], "Spiritual": [],
+      "Historical": [], "Nature": [], "Cultural": [], "Adventure": [], "Others": []
+    },
+    "trending": { "places": [] },
+    "createdAt": { "$date": "2025-10-08T04:01:04.008Z" },
+    "updatedAt": { "$date": "2025-10-08T04:01:04.008Z" }
+  },
+  {
+    "_id": { "$oid": "68e5e20021c4af9b4a7549f2" },
+    "name": "Chandigarh (shared capital)",
+    "location": [
+      {
+        "country": { "id": { "$oid": "68d7f24214fbfc2474738355" } },
+        "state": { "id": { "$oid": "68e288ec5b54d5e1bf69b1fc" } },
+        "region": { "id": { "$oid": "68d7f77c14fbfc2474738358" } }
+      }
+    ],
+    "greetingText": "Welcome to Chandigarh!",
+    "tagLine": "City Beautiful",
+    "description": {
+      "title": "Chandigarh – Planned City of Le Corbusier",
+      "short": "India's first planned city designed by Le Corbusier, shared by Punjab and Haryana.",
+      "long": "Chandigarh, shared by Punjab and Haryana, is India's first planned city designed by Le Corbusier. Known for its Rock Garden, Sukhna Lake, and green spaces, it blends modern architecture with nature. Clean and organized, Chandigarh offers a refreshing urban stop.",
+      "history": "Chandigarh was designed by Swiss-French architect Le Corbusier in the 1950s as the capital of Punjab after the partition. It's known for its modernist architecture and urban planning.",
+      "overview": "A well-planned modern city with beautiful architecture, gardens, and lakes."
+    },
+    "languages": [ "Punjabi", "Hindi", "English", "Haryanvi" ],
+    "images": { "banner": "", "card": "", "others": [] },
+    "emergencyContacts": {
+      "Police": "100", "Ambulance": "102", "Fire": "101",
+      "Tourist Helpline": "1363", "State Tourism": "0172-2402450"
+    },
+    "safetyInformation": [
+      "Follow traffic rules and city regulations.",
+      "Respect the clean and organized city environment.",
+      "Be mindful of the planned city's structure and design."
+    ],
+    "travelTips": [
+      "Visit the Rock Garden and Sukhna Lake.",
+      "Explore the Capitol Complex designed by Le Corbusier.",
+      "Enjoy the clean and green environment.",
+      "Try local cuisine and visit the Rose Garden."
+    ],
+    "experiences": {
+      "Food": [], "Activities": [], "LocalMarkets": [], "Spiritual": [],
+      "Historical": [], "Nature": [], "Cultural": [], "Adventure": [], "Others": []
+    },
+    "trending": { "places": [] },
+    "createdAt": { "$date": "2025-10-08T04:01:04.008Z" },
+    "updatedAt": { "$date": "2025-10-08T04:01:04.008Z" }
+  },
+  {
+    "_id": { "$oid": "68e5e20021c4af9b4a7549f3" },
+    "name": "Bathinda",
+    "location": [
+      {
+        "country": { "id": { "$oid": "68d7f24214fbfc2474738355" } },
+        "state": { "id": { "$oid": "68e288ec5b54d5e1bf69b1fc" } },
+        "region": { "id": { "$oid": "68d7f77c14fbfc2474738358" } }
+      }
+    ],
+    "greetingText": "Welcome to Bathinda!",
+    "tagLine": "City of Lakes",
+    "description": {
+      "title": "Bathinda – Ancient City of Lakes",
+      "short": "One of Punjab's oldest cities, dotted with historic forts, lakes, and gurudwaras.",
+      "long": "Bathinda, one of Punjab's oldest cities, is dotted with historic forts, lakes, and gurudwaras. Known as the 'City of Lakes,' it blends heritage with natural charm. With ancient sites and modern energy, Bathinda is a fascinating stop for history and culture lovers.",
+      "history": "Bathinda is one of the oldest cities in Punjab, with a history dating back to the 6th century. It's home to the historic Bathinda Fort and several ancient gurudwaras.",
+      "overview": "An ancient city with historic forts, beautiful lakes, and spiritual significance."
+    },
+    "languages": [ "Punjabi", "Hindi", "English", "Urdu" ],
+    "images": { "banner": "", "card": "", "others": [] },
+    "emergencyContacts": {
+      "Police": "100", "Ambulance": "102", "Fire": "101",
+      "Tourist Helpline": "1363", "State Tourism": "0164-2402450"
+    },
+    "safetyInformation": [
+      "Be careful around lakes and water bodies.",
+      "Follow safety guidelines when visiting historic forts.",
+      "Respect local customs and traditions."
+    ],
+    "travelTips": [
+      "Visit the historic Bathinda Fort and ancient gurudwaras.",
+      "Explore the beautiful lakes and natural surroundings.",
+      "Learn about the city's ancient history and culture.",
+      "Try local Punjabi cuisine and traditional dishes."
+    ],
+    "experiences": {
+      "Food": [], "Activities": [], "LocalMarkets": [], "Spiritual": [],
+      "Historical": [], "Nature": [], "Cultural": [], "Adventure": [], "Others": []
+    },
+    "trending": { "places": [] },
+    "createdAt": { "$date": "2025-10-08T04:01:04.008Z" },
+    "updatedAt": { "$date": "2025-10-08T04:01:04.008Z" }
+  },
+  {
+    "_id": { "$oid": "68e5e20021c4af9b4a7549f4" },
+    "name": "Anandpur Sahib",
+    "location": [
+      {
+        "country": { "id": { "$oid": "68d7f24214fbfc2474738355" } },
+        "state": { "id": { "$oid": "68e288ec5b54d5e1bf69b1fc" } },
+        "region": { "id": { "$oid": "68d7f77c14fbfc2474738358" } }
+      }
+    ],
+    "greetingText": "Welcome to Anandpur Sahib!",
+    "tagLine": "Birthplace of the Khalsa",
+    "description": {
+      "title": "Anandpur Sahib – Sacred Sikh City",
+      "short": "One of the holiest Sikh pilgrimage sites, known as the birthplace of the Khalsa.",
+      "long": "Anandpur Sahib is one of the holiest Sikh pilgrimage sites, known as the birthplace of the Khalsa. Surrounded by hills, it's both spiritual and scenic. With vibrant Hola Mohalla celebrations, Anandpur Sahib reflects the spirit of Sikhism and cultural pride.",
+      "history": "Anandpur Sahib was founded by Guru Tegh Bahadur in 1665 and is where Guru Gobind Singh created the Khalsa in 1699. It's one of the most sacred cities in Sikhism.",
+      "overview": "A sacred city where the Khalsa was born, surrounded by hills and spiritual significance."
+    },
+    "languages": [ "Punjabi", "Hindi", "English", "Urdu" ],
+    "images": { "banner": "", "card": "", "others": [] },
+    "emergencyContacts": {
+      "Police": "100", "Ambulance": "102", "Fire": "101",
+      "Tourist Helpline": "1363", "State Tourism": "01887-2402450"
+    },
+    "safetyInformation": [
+      "Dress modestly and respectfully when visiting gurudwaras.",
+      "Follow religious guidelines and customs.",
+      "Be respectful during religious ceremonies and prayers."
+    ],
+    "travelTips": [
+      "Visit the historic gurudwaras and learn about Sikh history.",
+      "Attend the Hola Mohalla festival if visiting in March.",
+      "Explore the scenic hills and natural surroundings.",
+      "Experience the spiritual atmosphere and community service."
+    ],
+    "experiences": {
+      "Food": [], "Activities": [], "LocalMarkets": [], "Spiritual": [],
+      "Historical": [], "Nature": [], "Cultural": [], "Adventure": [], "Others": []
+    },
+    "trending": { "places": [] },
+    "createdAt": { "$date": "2025-10-08T04:01:04.008Z" },
+    "updatedAt": { "$date": "2025-10-08T04:01:04.008Z" }
+  },
+  {
+    "_id": { "$oid": "68e5e20021c4af9b4a7549f5" },
+    "name": "Hoshiarpur",
+    "location": [
+      {
+        "country": { "id": { "$oid": "68d7f24214fbfc2474738355" } },
+        "state": { "id": { "$oid": "68e288ec5b54d5e1bf69b1fc" } },
+        "region": { "id": { "$oid": "68d7f77c14fbfc2474738358" } }
+      }
+    ],
+    "greetingText": "Welcome to Hoshiarpur!",
+    "tagLine": "Land of Saints",
+    "description": {
+      "title": "Hoshiarpur – Spiritual Countryside",
+      "short": "Often called the 'Land of Saints' with temples, gurdwaras, and orchards.",
+      "long": "Hoshiarpur, often called the 'Land of Saints,' is known for its temples, gurdwaras, and orchards. Famous for its lychees, it offers a mix of spiritual calm and natural charm. With heritage sites and fruit gardens, Hoshiarpur provides a peaceful Punjabi countryside experience.",
+      "history": "Hoshiarpur is known for its spiritual significance and is home to many temples and gurdwaras. The city is also famous for its fruit cultivation, especially lychees.",
+      "overview": "A peaceful countryside city known for its spiritual sites and fruit orchards."
+    },
+    "languages": [ "Punjabi", "Hindi", "English", "Urdu" ],
+    "images": { "banner": "", "card": "", "others": [] },
+    "emergencyContacts": {
+      "Police": "100", "Ambulance": "102", "Fire": "101",
+      "Tourist Helpline": "1363", "State Tourism": "01882-2402450"
+    },
+    "safetyInformation": [
+      "Be respectful when visiting temples and gurdwaras.",
+      "Follow guidelines for fruit orchard visits.",
+      "Respect local customs and traditions."
+    ],
+    "travelTips": [
+      "Visit local temples and gurdwaras for spiritual experiences.",
+      "Explore fruit orchards and try fresh lychees.",
+      "Enjoy the peaceful countryside atmosphere.",
+      "Learn about local agricultural practices and traditions."
+    ],
+    "experiences": {
+      "Food": [], "Activities": [], "LocalMarkets": [], "Spiritual": [],
+      "Historical": [], "Nature": [], "Cultural": [], "Adventure": [], "Others": []
+    },
+    "trending": { "places": [] },
+    "createdAt": { "$date": "2025-10-08T04:01:04.008Z" },
+    "updatedAt": { "$date": "2025-10-08T04:01:04.008Z" }
+  }
+]

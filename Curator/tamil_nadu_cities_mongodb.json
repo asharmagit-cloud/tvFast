@@ -1,0 +1,398 @@
+[
+  {
+    "_id": { "$oid": "68e5e20021c4af9b4a7549f6" },
+    "name": "Chennai",
+    "location": [
+      {
+        "country": { "id": { "$oid": "68d7f24214fbfc2474738355" } },
+        "state": { "id": { "$oid": "68e285aa5b54d5e1bf69b1e5" } },
+        "region": { "id": { "$oid": "68d7f77c14fbfc2474738358" } }
+      }
+    ],
+    "greetingText": "Welcome to Chennai!",
+    "tagLine": "Gateway to South India",
+    "description": {
+      "title": "Chennai – Cultural Capital of Tamil Nadu",
+      "short": "Capital of Tamil Nadu, a coastal city known for Marina Beach, temples, and colonial landmarks.",
+      "long": "Chennai, the capital of Tamil Nadu, is a coastal city known for Marina Beach, temples, and colonial landmarks. With lively markets, classical music, and delicious cuisine, it blends tradition with modern life. As a cultural hub and travel gateway, Chennai offers travelers a vibrant mix of heritage and city charm.",
+      "history": "Chennai was founded by the British East India Company in 1639 as Fort St. George. It has been a major cultural and commercial center of South India for centuries.",
+      "overview": "A vibrant coastal capital with rich cultural heritage, beautiful beaches, and modern amenities."
+    },
+    "languages": [ "Tamil", "English", "Hindi", "Telugu" ],
+    "images": { "banner": "", "card": "", "others": [] },
+    "emergencyContacts": {
+      "Police": "100", "Ambulance": "102", "Fire": "101",
+      "Tourist Helpline": "1363", "State Tourism": "044-25383333"
+    },
+    "safetyInformation": [
+      "Be cautious while swimming at Marina Beach.",
+      "Follow traffic rules in busy city areas.",
+      "Respect local customs and traditions."
+    ],
+    "travelTips": [
+      "Visit Marina Beach and Kapaleeshwarar Temple.",
+      "Explore the colonial architecture in Fort St. George.",
+      "Try authentic South Indian cuisine and filter coffee.",
+      "Attend classical music concerts and cultural events."
+    ],
+    "experiences": {
+      "Food": [], "Activities": [], "LocalMarkets": [], "Spiritual": [],
+      "Historical": [], "Nature": [], "Cultural": [], "Adventure": [], "Others": []
+    },
+    "trending": { "places": [] },
+    "createdAt": { "$date": "2025-10-08T04:01:04.008Z" },
+    "updatedAt": { "$date": "2025-10-08T04:01:04.008Z" }
+  },
+  {
+    "_id": { "$oid": "68e5e20021c4af9b4a7549f7" },
+    "name": "Madurai",
+    "location": [
+      {
+        "country": { "id": { "$oid": "68d7f24214fbfc2474738355" } },
+        "state": { "id": { "$oid": "68e285aa5b54d5e1bf69b1e5" } },
+        "region": { "id": { "$oid": "68d7f77c14fbfc2474738358" } }
+      }
+    ],
+    "greetingText": "Welcome to Madurai!",
+    "tagLine": "Temple City of Tamil Nadu",
+    "description": {
+      "title": "Madurai – Ancient Temple City",
+      "short": "One of India's oldest cities, famed for the Meenakshi Amman Temple and vibrant streets.",
+      "long": "Madurai, one of India's oldest cities, is famed for the Meenakshi Amman Temple and its vibrant streets. With rich Dravidian architecture, festivals, and history, it reflects Tamil culture at its best. Madurai offers travelers a colorful blend of spirituality, heritage, and living traditions.",
+      "history": "Madurai has been a major cultural center for over 2,500 years and is home to the magnificent Meenakshi Amman Temple, one of the most important Hindu temples in India.",
+      "overview": "An ancient city with magnificent temples, rich culture, and vibrant traditions."
+    },
+    "languages": [ "Tamil", "English", "Hindi", "Telugu" ],
+    "images": { "banner": "", "card": "", "others": [] },
+    "emergencyContacts": {
+      "Police": "100", "Ambulance": "102", "Fire": "101",
+      "Tourist Helpline": "1363", "State Tourism": "0452-25383333"
+    },
+    "safetyInformation": [
+      "Dress modestly when visiting temples.",
+      "Be respectful during religious ceremonies.",
+      "Follow temple photography guidelines."
+    ],
+    "travelTips": [
+      "Visit the magnificent Meenakshi Amman Temple.",
+      "Explore the vibrant markets and street food.",
+      "Attend traditional festivals and cultural events.",
+      "Learn about Dravidian architecture and history."
+    ],
+    "experiences": {
+      "Food": [], "Activities": [], "LocalMarkets": [], "Spiritual": [],
+      "Historical": [], "Nature": [], "Cultural": [], "Adventure": [], "Others": []
+    },
+    "trending": { "places": [] },
+    "createdAt": { "$date": "2025-10-08T04:01:04.008Z" },
+    "updatedAt": { "$date": "2025-10-08T04:01:04.008Z" }
+  },
+  {
+    "_id": { "$oid": "68e5e20021c4af9b4a7549f8" },
+    "name": "Coimbatore",
+    "location": [
+      {
+        "country": { "id": { "$oid": "68d7f24214fbfc2474738355" } },
+        "state": { "id": { "$oid": "68e285aa5b54d5e1bf69b1e5" } },
+        "region": { "id": { "$oid": "68d7f77c14fbfc2474738358" } }
+      }
+    ],
+    "greetingText": "Welcome to Coimbatore!",
+    "tagLine": "Manchester of South India",
+    "description": {
+      "title": "Coimbatore – Industrial Hub with Spiritual Touch",
+      "short": "The 'Manchester of South India,' an industrial city surrounded by hills and temples.",
+      "long": "Coimbatore, the 'Manchester of South India,' is an industrial city surrounded by hills and temples. Known for its textile industry, Isha Yoga Center, and pleasant climate, it balances modern energy with spiritual calm. Coimbatore serves as both a business hub and a travel gateway to the Nilgiris.",
+      "history": "Coimbatore has been an important industrial center since the 19th century and is known for its textile industry. The city is also home to the famous Isha Yoga Center founded by Sadhguru.",
+      "overview": "A modern industrial city with spiritual centers, pleasant climate, and natural beauty."
+    },
+    "languages": [ "Tamil", "English", "Hindi", "Malayalam" ],
+    "images": { "banner": "", "card": "", "others": [] },
+    "emergencyContacts": {
+      "Police": "100", "Ambulance": "102", "Fire": "101",
+      "Tourist Helpline": "1363", "State Tourism": "0422-25383333"
+    },
+    "safetyInformation": [
+      "Be cautious in industrial areas.",
+      "Follow guidelines when visiting spiritual centers.",
+      "Respect local customs and traditions."
+    ],
+    "travelTips": [
+      "Visit the Isha Yoga Center and Dhyanalinga.",
+      "Explore the textile markets and industrial areas.",
+      "Use Coimbatore as a base to visit the Nilgiris.",
+      "Enjoy the pleasant climate and local cuisine."
+    ],
+    "experiences": {
+      "Food": [], "Activities": [], "LocalMarkets": [], "Spiritual": [],
+      "Historical": [], "Nature": [], "Cultural": [], "Adventure": [], "Others": []
+    },
+    "trending": { "places": [] },
+    "createdAt": { "$date": "2025-10-08T04:01:04.008Z" },
+    "updatedAt": { "$date": "2025-10-08T04:01:04.008Z" }
+  },
+  {
+    "_id": { "$oid": "68e5e20021c4af9b4a7549f9" },
+    "name": "Ooty (Udhagamandalam)",
+    "location": [
+      {
+        "country": { "id": { "$oid": "68d7f24214fbfc2474738355" } },
+        "state": { "id": { "$oid": "68e285aa5b54d5e1bf69b1e5" } },
+        "region": { "id": { "$oid": "68d7f77c14fbfc2474738358" } }
+      }
+    ],
+    "greetingText": "Welcome to Ooty!",
+    "tagLine": "Queen of Hill Stations",
+    "description": {
+      "title": "Ooty – Queen of Hill Stations",
+      "short": "Often called the 'Queen of Hill Stations' with tea gardens, lakes, and colonial charm.",
+      "long": "Ooty, often called the 'Queen of Hill Stations,' is known for its tea gardens, lakes, and colonial charm. The Nilgiri Mountain Railway adds heritage charm to its cool setting. With gardens, viewpoints, and serene landscapes, Ooty offers travelers a refreshing hill escape.",
+      "history": "Ooty was developed as a hill station by the British in the 19th century. The Nilgiri Mountain Railway, a UNESCO World Heritage Site, was built in 1908 and is one of the few mountain railways in India.",
+      "overview": "A charming hill station with tea gardens, colonial architecture, and scenic beauty."
+    },
+    "languages": [ "Tamil", "English", "Hindi", "Malayalam" ],
+    "images": { "banner": "", "card": "", "others": [] },
+    "emergencyContacts": {
+      "Police": "100", "Ambulance": "102", "Fire": "101",
+      "Tourist Helpline": "1363", "State Tourism": "0423-25383333"
+    },
+    "safetyInformation": [
+      "Be careful on steep and winding roads.",
+      "Carry warm clothing as temperatures can drop.",
+      "Follow guidelines during monsoon season."
+    ],
+    "travelTips": [
+      "Take a ride on the Nilgiri Mountain Railway.",
+      "Visit tea plantations and learn about tea processing.",
+      "Explore the Botanical Gardens and Ooty Lake.",
+      "Enjoy the cool climate and scenic viewpoints."
+    ],
+    "experiences": {
+      "Food": [], "Activities": [], "LocalMarkets": [], "Spiritual": [],
+      "Historical": [], "Nature": [], "Cultural": [], "Adventure": [], "Others": []
+    },
+    "trending": { "places": [] },
+    "createdAt": { "$date": "2025-10-08T04:01:04.008Z" },
+    "updatedAt": { "$date": "2025-10-08T04:01:04.008Z" }
+  },
+  {
+    "_id": { "$oid": "68e5e20021c4af9b4a7549fa" },
+    "name": "Kodaikanal",
+    "location": [
+      {
+        "country": { "id": { "$oid": "68d7f24214fbfc2474738355" } },
+        "state": { "id": { "$oid": "68e285aa5b54d5e1bf69b1e5" } },
+        "region": { "id": { "$oid": "68d7f77c14fbfc2474738358" } }
+      }
+    ],
+    "greetingText": "Welcome to Kodaikanal!",
+    "tagLine": "Princess of Hill Stations",
+    "description": {
+      "title": "Kodaikanal – Princess of Hill Stations",
+      "short": "The 'Princess of Hill Stations' with misty valleys, lakes, and forests.",
+      "long": "Kodaikanal, the 'Princess of Hill Stations,' is known for its misty valleys, lakes, and forests. Popular for boating, trekking, and viewpoints, it blends adventure with romance. With its cool climate and scenic beauty, Kodaikanal is a favorite hill retreat in Tamil Nadu.",
+      "history": "Kodaikanal was developed as a hill station by American missionaries in the 19th century. The name means 'Gift of the Forest' in Tamil.",
+      "overview": "A romantic hill station with misty valleys, beautiful lakes, and adventure activities."
+    },
+    "languages": [ "Tamil", "English", "Hindi", "Malayalam" ],
+    "images": { "banner": "", "card": "", "others": [] },
+    "emergencyContacts": {
+      "Police": "100", "Ambulance": "102", "Fire": "101",
+      "Tourist Helpline": "1363", "State Tourism": "04542-25383333"
+    },
+    "safetyInformation": [
+      "Be careful while trekking and boating.",
+      "Follow safety guidelines for adventure activities.",
+      "Carry warm clothing as temperatures can drop."
+    ],
+    "travelTips": [
+      "Go boating on Kodaikanal Lake.",
+      "Visit viewpoints like Coaker's Walk and Pillar Rocks.",
+      "Go for trekking and nature walks.",
+      "Enjoy the cool climate and scenic beauty."
+    ],
+    "experiences": {
+      "Food": [], "Activities": [], "LocalMarkets": [], "Spiritual": [],
+      "Historical": [], "Nature": [], "Cultural": [], "Adventure": [], "Others": []
+    },
+    "trending": { "places": [] },
+    "createdAt": { "$date": "2025-10-08T04:01:04.008Z" },
+    "updatedAt": { "$date": "2025-10-08T04:01:04.008Z" }
+  },
+  {
+    "_id": { "$oid": "68e5e20021c4af9b4a7549fb" },
+    "name": "Thanjavur",
+    "location": [
+      {
+        "country": { "id": { "$oid": "68d7f24214fbfc2474738355" } },
+        "state": { "id": { "$oid": "68e285aa5b54d5e1bf69b1e5" } },
+        "region": { "id": { "$oid": "68d7f77c14fbfc2474738358" } }
+      }
+    ],
+    "greetingText": "Welcome to Thanjavur!",
+    "tagLine": "Cultural Capital of Tamil Nadu",
+    "description": {
+      "title": "Thanjavur – Cultural Heritage City",
+      "short": "The cultural capital of Tamil Nadu, famed for the Brihadeeswarar Temple, a UNESCO site.",
+      "long": "Thanjavur, the cultural capital of Tamil Nadu, is famed for the Brihadeeswarar Temple, a UNESCO site. Known for classical music, art, and Tanjore paintings, it reflects Tamil heritage. With temples, palaces, and artistic traditions, Thanjavur offers travelers a deep dive into history and culture.",
+      "history": "Thanjavur was the capital of the Chola Empire and is home to the magnificent Brihadeeswarar Temple, built by Raja Raja Chola I in the 11th century. It's a UNESCO World Heritage Site.",
+      "overview": "A historic city with magnificent temples, classical arts, and rich cultural heritage."
+    },
+    "languages": [ "Tamil", "English", "Hindi", "Telugu" ],
+    "images": { "banner": "", "card": "", "others": [] },
+    "emergencyContacts": {
+      "Police": "100", "Ambulance": "102", "Fire": "101",
+      "Tourist Helpline": "1363", "State Tourism": "04362-25383333"
+    },
+    "safetyInformation": [
+      "Dress modestly when visiting temples.",
+      "Follow temple photography guidelines.",
+      "Be respectful during religious ceremonies."
+    ],
+    "travelTips": [
+      "Visit the magnificent Brihadeeswarar Temple.",
+      "Explore the Thanjavur Palace and Art Gallery.",
+      "Learn about Tanjore paintings and classical music.",
+      "Attend classical music concerts and cultural events."
+    ],
+    "experiences": {
+      "Food": [], "Activities": [], "LocalMarkets": [], "Spiritual": [],
+      "Historical": [], "Nature": [], "Cultural": [], "Adventure": [], "Others": []
+    },
+    "trending": { "places": [] },
+    "createdAt": { "$date": "2025-10-08T04:01:04.008Z" },
+    "updatedAt": { "$date": "2025-10-08T04:01:04.008Z" }
+  },
+  {
+    "_id": { "$oid": "68e5e20021c4af9b4a7549fc" },
+    "name": "Rameswaram",
+    "location": [
+      {
+        "country": { "id": { "$oid": "68d7f24214fbfc2474738355" } },
+        "state": { "id": { "$oid": "68e285aa5b54d5e1bf69b1e5" } },
+        "region": { "id": { "$oid": "68d7f77c14fbfc2474738358" } }
+      }
+    ],
+    "greetingText": "Welcome to Rameswaram!",
+    "tagLine": "Sacred Island Town",
+    "description": {
+      "title": "Rameswaram – Sacred Pilgrimage Destination",
+      "short": "A sacred island town, part of the Char Dham pilgrimage with Ramanathaswamy Temple.",
+      "long": "Rameswaram, a sacred island town, is part of the Char Dham pilgrimage. Known for Ramanathaswamy Temple, its long corridors, and nearby Pamban Bridge, it's both spiritual and scenic. Surrounded by beaches and legends, Rameswaram offers travelers a unique mix of devotion and coastal beauty.",
+      "history": "Rameswaram is one of the four Char Dham pilgrimage sites in India. According to Hindu mythology, Lord Rama built a bridge from here to Lanka. The Ramanathaswamy Temple is one of the 12 Jyotirlingas of Lord Shiva.",
+      "overview": "A sacred island town with ancient temples, beautiful beaches, and spiritual significance."
+    },
+    "languages": [ "Tamil", "English", "Hindi", "Telugu" ],
+    "images": { "banner": "", "card": "", "others": [] },
+    "emergencyContacts": {
+      "Police": "100", "Ambulance": "102", "Fire": "101",
+      "Tourist Helpline": "1363", "State Tourism": "04573-25383333"
+    },
+    "safetyInformation": [
+      "Be cautious while swimming in the sea.",
+      "Follow temple guidelines and customs.",
+      "Respect the spiritual significance of the area."
+    ],
+    "travelTips": [
+      "Visit the Ramanathaswamy Temple and its long corridors.",
+      "See the Pamban Bridge and railway line.",
+      "Explore the beaches and coastal areas.",
+      "Learn about the Ramayana legends and history."
+    ],
+    "experiences": {
+      "Food": [], "Activities": [], "LocalMarkets": [], "Spiritual": [],
+      "Historical": [], "Nature": [], "Cultural": [], "Adventure": [], "Others": []
+    },
+    "trending": { "places": [] },
+    "createdAt": { "$date": "2025-10-08T04:01:04.008Z" },
+    "updatedAt": { "$date": "2025-10-08T04:01:04.008Z" }
+  },
+  {
+    "_id": { "$oid": "68e5e20021c4af9b4a7549fd" },
+    "name": "Mahabalipuram",
+    "location": [
+      {
+        "country": { "id": { "$oid": "68d7f24214fbfc2474738355" } },
+        "state": { "id": { "$oid": "68e285aa5b54d5e1bf69b1e5" } },
+        "region": { "id": { "$oid": "68d7f77c14fbfc2474738358" } }
+      }
+    ],
+    "greetingText": "Welcome to Mahabalipuram!",
+    "tagLine": "UNESCO World Heritage Site",
+    "description": {
+      "title": "Mahabalipuram – Ancient Rock-Cut Temples",
+      "short": "A UNESCO World Heritage Site known for its rock-cut temples and shore monuments.",
+      "long": "Mahabalipuram, a UNESCO World Heritage Site, is known for its rock-cut temples and shore monuments. Carvings, sculptures, and beaches create a historic yet relaxed vibe. With ancient artistry and sea breezes, Mahabalipuram offers travelers a fascinating glimpse of Tamil Nadu's past.",
+      "history": "Mahabalipuram was a major port city of the Pallava dynasty in the 7th and 8th centuries. The rock-cut temples and sculptures are masterpieces of Dravidian architecture and are UNESCO World Heritage Sites.",
+      "overview": "An ancient port city with magnificent rock-cut temples, sculptures, and coastal beauty."
+    },
+    "languages": [ "Tamil", "English", "Hindi", "Telugu" ],
+    "images": { "banner": "", "card": "", "others": [] },
+    "emergencyContacts": {
+      "Police": "100", "Ambulance": "102", "Fire": "101",
+      "Tourist Helpline": "1363", "State Tourism": "044-25383333"
+    },
+    "safetyInformation": [
+      "Be careful while exploring rock-cut temples.",
+      "Follow guidelines for UNESCO heritage site visits.",
+      "Be cautious near water bodies and beaches."
+    ],
+    "travelTips": [
+      "Explore the rock-cut temples and shore monuments.",
+      "Visit the Five Rathas and Arjuna's Penance.",
+      "Enjoy the beaches and coastal scenery.",
+      "Learn about Pallava architecture and history."
+    ],
+    "experiences": {
+      "Food": [], "Activities": [], "LocalMarkets": [], "Spiritual": [],
+      "Historical": [], "Nature": [], "Cultural": [], "Adventure": [], "Others": []
+    },
+    "trending": { "places": [] },
+    "createdAt": { "$date": "2025-10-08T04:01:04.008Z" },
+    "updatedAt": { "$date": "2025-10-08T04:01:04.008Z" }
+  },
+  {
+    "_id": { "$oid": "68e5e20021c4af9b4a7549fe" },
+    "name": "Tiruchirappalli (Trichy)",
+    "location": [
+      {
+        "country": { "id": { "$oid": "68d7f24214fbfc2474738355" } },
+        "state": { "id": { "$oid": "68e285aa5b54d5e1bf69b1e5" } },
+        "region": { "id": { "$oid": "68d7f77c14fbfc2474738358" } }
+      }
+    ],
+    "greetingText": "Welcome to Trichy!",
+    "tagLine": "Historic Temple City",
+    "description": {
+      "title": "Tiruchirappalli – Historic Temple City",
+      "short": "A historic city famous for the Rockfort Temple, Srirangam Temple, and lively streets.",
+      "long": "Trichy is a historic city famous for the Rockfort Temple, Srirangam Temple, and lively streets. Situated on the banks of the Kaveri River, it blends heritage with modern life. With culture, temples, and bustling energy, Trichy is both spiritual and vibrant.",
+      "history": "Trichy has been an important city for over 2,000 years and is home to the famous Rockfort Temple and Srirangam Temple, one of the largest temple complexes in India.",
+      "overview": "A historic city with magnificent temples, rich culture, and vibrant energy."
+    },
+    "languages": [ "Tamil", "English", "Hindi", "Telugu" ],
+    "images": { "banner": "", "card": "", "others": [] },
+    "emergencyContacts": {
+      "Police": "100", "Ambulance": "102", "Fire": "101",
+      "Tourist Helpline": "1363", "State Tourism": "0431-25383333"
+    },
+    "safetyInformation": [
+      "Be careful while climbing the Rockfort Temple.",
+      "Follow temple guidelines and customs.",
+      "Respect local traditions and culture."
+    ],
+    "travelTips": [
+      "Visit the Rockfort Temple and Srirangam Temple.",
+      "Explore the bustling markets and street food.",
+      "Learn about the city's rich history and culture.",
+      "Enjoy the vibrant atmosphere and local cuisine."
+    ],
+    "experiences": {
+      "Food": [], "Activities": [], "LocalMarkets": [], "Spiritual": [],
+      "Historical": [], "Nature": [], "Cultural": [], "Adventure": [], "Others": []
+    },
+    "trending": { "places": [] },
+    "createdAt": { "$date": "2025-10-08T04:01:04.008Z" },
+    "updatedAt": { "$date": "2025-10-08T04:01:04.008Z" }
+  }
+]

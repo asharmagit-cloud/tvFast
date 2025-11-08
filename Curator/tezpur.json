@@ -1,0 +1,81 @@
+{
+  "_id": {
+    "$oid": "68e5e20021c4af9b4a754987"
+  },
+  "name": "Tezpur",
+  "location": [
+    {
+      "country": {
+        "id": {
+          "$oid": "68d7f24214fbfc2474738355"
+        }
+      },
+      "state": {
+        "id": {
+          "$oid": "68e285445b54d5e1bf69b1e1"
+        }
+      },
+      "region": {
+        "id": {
+          "$oid": "68d7f77c14fbfc2474738358"
+        }
+      }
+    }
+  ],
+  "greetingText": "Welcome to Tezpur!",
+  "tagLine": "City of Eternal Romance",
+  "description": {
+    "title": "Tezpur – The City of Eternal Romance",
+    "short": "Known as the 'City of Eternal Romance,' set by the Brahmaputra with ancient ruins and lush tea gardens.",
+    "long": "Tezpur, set by the Brahmaputra, is known as the 'City of Eternal Romance.' With ancient ruins, lush tea gardens, and scenic views, it blends mythology and beauty. Agnigarh Hill, Cole Park, and nearby wildlife sanctuaries add charm. Tezpur welcomes travelers with both cultural depth and natural serenity.",
+    "history": "Tezpur has mythological significance and is associated with the love story of Usha and Aniruddha. The city has ancient ruins and historical monuments dating back centuries.",
+    "overview": "A romantic city where mythology meets natural beauty, offering serene landscapes and cultural heritage."
+  },
+  "languages": [
+    "Assamese",
+    "Hindi",
+    "English"
+  ],
+  "images": {
+    "banner": "",
+    "card": "",
+    "others": []
+  },
+  "emergencyContacts": {
+    "Police": "100",
+    "Ambulance": "102",
+    "Fire": "101",
+    "Tourist Helpline": "1363",
+    "District Tourism": "03712-222000"
+  },
+  "safetyInformation": [
+    "Be cautious near the Brahmaputra River.",
+    "Follow safety guidelines at ancient ruins.",
+    "Respect local customs and traditions."
+  ],
+  "travelTips": [
+    "Visit Agnigarh Hill for panoramic views.",
+    "Explore Cole Park for peaceful walks.",
+    "Take a boat ride on the Brahmaputra."
+  ],
+  "experiences": {
+    "Food": [],
+    "Activities": [],
+    "LocalMarkets": [],
+    "Spiritual": [],
+    "Historical": [],
+    "Nature": [],
+    "Cultural": [],
+    "Adventure": [],
+    "Others": []
+  },
+  "trending": {
+    "places": []
+  },
+  "createdAt": {
+    "$date": "2025-01-10T04:01:04.008Z"
+  },
+  "updatedAt": {
+    "$date": "2025-01-10T04:01:04.008Z"
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "_id": {
+    "$oid": "68e5e20021c4af9b4a754988"
+  },
+  "name": "Majuli",
+  "location": [
+    {
+      "country": {
+        "id": {
+          "$oid": "68d7f24214fbfc2474738355"
+        }
+      },
+      "state": {
+        "id": {
+          "$oid": "68e285445b54d5e1bf69b1e1"
+        }
+      },
+      "region": {
+        "id": {
+          "$oid": "68d7f77c14fbfc2474738358"
+        }
+      }
+    }
+  ],
+  "greetingText": "Welcome to Majuli!",
+  "tagLine": "World's Largest River Island",
+  "description": {
+    "title": "Majuli – The Cultural Island of Assam",
+    "short": "The world's largest river island, famous for vibrant culture, satras, and serene landscapes.",
+    "long": "Majuli, the world's largest river island, is famous for its vibrant culture, satras (Vaishnavite monasteries), and serene landscapes. Surrounded by the Brahmaputra's waters, it's a hub of art, festivals, and tribal traditions. Majuli's charm lies in its slow pace, scenic beauty, and deep-rooted heritage, making it a soulful destination.",
+    "history": "Majuli has been the cultural capital of Assam for centuries, home to numerous satras that preserve Vaishnavite culture and traditions. It's a UNESCO World Heritage Site candidate.",
+    "overview": "A spiritual and cultural haven where time moves slowly, offering authentic experiences of Assamese traditions and natural beauty."
+  },
+  "languages": [
+    "Assamese",
+    "Mishing",
+    "Hindi",
+    "English"
+  ],
+  "images": {
+    "banner": "",
+    "card": "",
+    "others": []
+  },
+  "emergencyContacts": {
+    "Police": "100",
+    "Ambulance": "102",
+    "Fire": "101",
+    "Tourist Helpline": "1363",
+    "Island Emergency": "03775-222000"
+  },
+  "safetyInformation": [
+    "Be cautious during monsoon when ferry services may be limited.",
+    "Respect satra customs and traditions.",
+    "Follow guidelines when visiting tribal villages."
+  },
+  "travelTips": [
+    "Check ferry timings before planning your visit.",
+    "Stay overnight to experience the island's tranquility.",
+    "Visit satras to learn about Vaishnavite culture."
+  ],
+  "experiences": {
+    "Food": [],
+    "Activities": [],
+    "LocalMarkets": [],
+    "Spiritual": [],
+    "Historical": [],
+    "Nature": [],
+    "Cultural": [],
+    "Adventure": [],
+    "Others": []
+  },
+  "trending": {
+    "places": []
+  },
+  "createdAt": {
+    "$date": "2025-01-10T04:01:04.008Z"
+  },
+  "updatedAt": {
+    "$date": "2025-01-10T04:01:04.008Z"
+  }
+}

@@ -1,0 +1,49 @@
+[
+{
+  "_id": {
+    "$oid": "68d90c36fc0c58520c6cf20d"
+  },
+  "name": "Adventure"
+},
+{
+  "_id": {
+    "$oid": "68e5e54021c4af9b4a754983"
+  },
+  "name": "Historical"
+},
+{
+  "_id": {
+    "$oid": "68e5e54021c4af9b4a754986"
+  },
+  "name": "Cultural"
+},
+{
+  "_id": {
+    "$oid": "68e5e54021c4af9b4a754987"
+  },
+  "name": "Nature"
+},
+{
+  "_id": {
+    "$oid": "68f1c03170888f8a3ddf2ef8"
+  },
+  "name": "Food"
+},
+{
+  "_id": {
+    "$oid": "68f1c03170888f8a3ddf2efc"
+  },
+  "name": "Spiritual"
+},
+{
+  "_id": {
+    "$oid": "68f389c75b1a905ca48c898e"
+  },
+  "name": "Activities"
+},
+{
+  "_id": {
+    "$oid": "68f389ff5b1a905ca48c898f"
+  },
+  "name": "Others"
+}]

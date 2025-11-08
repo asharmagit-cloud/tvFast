@@ -1,0 +1,653 @@
+[
+  {
+    "_id": {
+      "$oid": "68e5e20021c4af9b4a754982"
+    },
+    "name": "Guwahati",
+    "location": [
+      {
+        "country": {
+          "id": {
+            "$oid": "68d7f24214fbfc2474738355"
+          }
+        },
+        "state": {
+          "id": {
+            "$oid": "68e285445b54d5e1bf69b1e1"
+          }
+        },
+        "region": {
+          "id": {
+            "$oid": "68d7f77c14fbfc2474738358"
+          }
+        }
+      }
+    ],
+    "greetingText": "Welcome to Guwahati!",
+    "tagLine": "Gateway to Northeast India",
+    "description": {
+      "title": "Guwahati – The Cultural Capital of Assam",
+      "short": "Assam's largest city, a vibrant mix of tradition and modern life by the Brahmaputra River.",
+      "long": "Guwahati, Assam's largest city, is a vibrant mix of tradition and modern life. Set by the Brahmaputra River, it's known for the Kamakhya Temple, river cruises, and lively markets. With nearby wildlife sanctuaries and cultural spots, Guwahati is both a spiritual hub and a lively gateway to the Northeast.",
+      "history": "Guwahati has been a significant city since ancient times, serving as the capital of various kingdoms. It's home to the sacred Kamakhya Temple, one of the most important Shakti Peethas in India.",
+      "overview": "A bustling city where ancient temples meet modern development, offering spiritual experiences and urban conveniences."
+    },
+    "languages": [
+      "Assamese",
+      "Hindi",
+      "English",
+      "Bengali"
+    ],
+    "images": {
+      "banner": "",
+      "card": "",
+      "others": []
+    },
+    "emergencyContacts": {
+      "Police": "100",
+      "Ambulance": "102",
+      "Fire": "101",
+      "Tourist Helpline": "1363",
+      "State Tourism": "0361-2547102"
+    },
+    "safetyInformation": [
+      "Be cautious near the Brahmaputra River during monsoon.",
+      "Respect temple customs and dress codes.",
+      "Avoid isolated areas after dark."
+    ],
+    "travelTips": [
+      "Visit Kamakhya Temple early morning to avoid crowds.",
+      "Take a Brahmaputra river cruise for scenic views.",
+      "Explore the local markets for traditional handicrafts."
+    ],
+    "experiences": {
+      "Food": [],
+      "Activities": [],
+      "LocalMarkets": [],
+      "Spiritual": [],
+      "Historical": [],
+      "Nature": [],
+      "Cultural": [],
+      "Adventure": [],
+      "Others": []
+    },
+    "trending": {
+      "places": []
+    },
+    "createdAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    },
+    "updatedAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "68e5e20021c4af9b4a754983"
+    },
+    "name": "Kaziranga",
+    "location": [
+      {
+        "country": {
+          "id": {
+            "$oid": "68d7f24214fbfc2474738355"
+          }
+        },
+        "state": {
+          "id": {
+            "$oid": "68e285445b54d5e1bf69b1e1"
+          }
+        },
+        "region": {
+          "id": {
+            "$oid": "68d7f77c14fbfc2474738358"
+          }
+        }
+      }
+    ],
+    "greetingText": "Welcome to Kaziranga!",
+    "tagLine": "Home of the One-Horned Rhinoceros",
+    "description": {
+      "title": "Kaziranga National Park – UNESCO World Heritage Site",
+      "short": "World-famous for its one-horned rhinoceros and diverse wildlife in vast grasslands and wetlands.",
+      "long": "Kaziranga National Park, a UNESCO World Heritage Site, is world-famous for its one-horned rhinoceros. Vast grasslands, wetlands, and forests create a haven for elephants, tigers, and migratory birds. Jeep safaris and elephant rides let travelers witness this wilderness up close, making Kaziranga Assam's pride and a must-visit for nature lovers.",
+      "history": "Established in 1905, Kaziranga was declared a UNESCO World Heritage Site in 1985. It's home to two-thirds of the world's one-horned rhinoceros population.",
+      "overview": "A pristine wilderness sanctuary where grasslands meet wetlands, offering incredible wildlife viewing opportunities."
+    },
+    "languages": [
+      "Assamese",
+      "Hindi",
+      "English"
+    ],
+    "images": {
+      "banner": "",
+      "card": "",
+      "others": []
+    },
+    "emergencyContacts": {
+      "Police": "100",
+      "Ambulance": "102",
+      "Fire": "101",
+      "Tourist Helpline": "1363",
+      "Park Emergency": "03776-268095"
+    },
+    "safetyInformation": [
+      "Follow park rules and stay in designated areas.",
+      "Maintain safe distance from wild animals.",
+      "Do not feed or disturb wildlife."
+    ],
+    "travelTips": [
+      "Book safari permits in advance during peak season.",
+      "Carry binoculars and camera for wildlife photography.",
+      "Best time to visit is November to April."
+    ],
+    "experiences": {
+      "Food": [],
+      "Activities": [],
+      "LocalMarkets": [],
+      "Spiritual": [],
+      "Historical": [],
+      "Nature": [],
+      "Cultural": [],
+      "Adventure": [],
+      "Others": []
+    },
+    "trending": {
+      "places": []
+    },
+    "createdAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    },
+    "updatedAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "68e5e20021c4af9b4a754984"
+    },
+    "name": "Jorhat",
+    "location": [
+      {
+        "country": {
+          "id": {
+            "$oid": "68d7f24214fbfc2474738355"
+          }
+        },
+        "state": {
+          "id": {
+            "$oid": "68e285445b54d5e1bf69b1e1"
+          }
+        },
+        "region": {
+          "id": {
+            "$oid": "68d7f77c14fbfc2474738358"
+          }
+        }
+      }
+    ],
+    "greetingText": "Welcome to Jorhat!",
+    "tagLine": "Cultural Capital of Assam",
+    "description": {
+      "title": "Jorhat – The Cultural Heart of Assam",
+      "short": "Known as the cultural capital of Assam, famous for tea gardens, heritage sites, and vibrant festivals.",
+      "long": "Jorhat, often called the cultural capital of Assam, is known for its tea gardens, heritage sites, and vibrant festivals. Surrounded by lush plantations, it offers visitors a glimpse into Assam's tea culture. With historic satras nearby and Majuli within reach, Jorhat combines tradition, nature, and hospitality in equal measure.",
+      "history": "Jorhat was the last capital of the Ahom Kingdom and is known for its rich cultural heritage. It's a major center for tea production and Assamese culture.",
+      "overview": "A charming city where tea culture meets traditional heritage, offering authentic experiences of Assam's cultural richness."
+    },
+    "languages": [
+      "Assamese",
+      "Hindi",
+      "English"
+    ],
+    "images": {
+      "banner": "",
+      "card": "",
+      "others": []
+    },
+    "emergencyContacts": {
+      "Police": "100",
+      "Ambulance": "102",
+      "Fire": "101",
+      "Tourist Helpline": "1363",
+      "District Tourism": "0376-2320000"
+    },
+    "safetyInformation": [
+      "Be respectful when visiting tea gardens and satras.",
+      "Follow local customs during festivals.",
+      "Stay on designated paths in heritage areas."
+    ],
+    "travelTips": [
+      "Visit during Bihu festival for cultural experiences.",
+      "Take a tea garden tour to learn about tea production.",
+      "Explore nearby satras for spiritual insights."
+    ],
+    "experiences": {
+      "Food": [],
+      "Activities": [],
+      "LocalMarkets": [],
+      "Spiritual": [],
+      "Historical": [],
+      "Nature": [],
+      "Cultural": [],
+      "Adventure": [],
+      "Others": []
+    },
+    "trending": {
+      "places": []
+    },
+    "createdAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    },
+    "updatedAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "68e5e20021c4af9b4a754985"
+    },
+    "name": "Dibrugarh",
+    "location": [
+      {
+        "country": {
+          "id": {
+            "$oid": "68d7f24214fbfc2474738355"
+          }
+        },
+        "state": {
+          "id": {
+            "$oid": "68e285445b54d5e1bf69b1e1"
+          }
+        },
+        "region": {
+          "id": {
+            "$oid": "68d7f77c14fbfc2474738358"
+          }
+        }
+      }
+    ],
+    "greetingText": "Welcome to Dibrugarh!",
+    "tagLine": "Tea City of India",
+    "description": {
+      "title": "Dibrugarh – The Tea City of India",
+      "short": "Known as the 'Tea City of India,' dotted with sprawling tea estates and river views along the Brahmaputra.",
+      "long": "Dibrugarh, the 'Tea City of India,' is dotted with sprawling tea estates and river views along the Brahmaputra. Known for its friendly charm, it's also a base for exploring wildlife sanctuaries and nearby tribal villages. Blending greenery with quiet urban life, Dibrugarh is perfect for travelers seeking calm and culture.",
+      "history": "Dibrugarh is the commercial hub of Upper Assam and is known for its tea industry. It's also a gateway to the eastern parts of Assam and Arunachal Pradesh.",
+      "overview": "A peaceful city where tea plantations stretch to the horizon, offering tranquility and authentic tea experiences."
+    },
+    "languages": [
+      "Assamese",
+      "Hindi",
+      "English"
+    ],
+    "images": {
+      "banner": "",
+      "card": "",
+      "others": []
+    },
+    "emergencyContacts": {
+      "Police": "100",
+      "Ambulance": "102",
+      "Fire": "101",
+      "Tourist Helpline": "1363",
+      "District Tourism": "0373-2300000"
+    },
+    "safetyInformation": [
+      "Be cautious near the Brahmaputra River during monsoon.",
+      "Respect tea garden workers and their privacy.",
+      "Follow guidelines when visiting tribal areas."
+    ],
+    "travelTips": [
+      "Take a tea estate tour to see tea processing.",
+      "Visit during tea harvesting season for best experience.",
+      "Explore nearby wildlife sanctuaries for nature lovers."
+    ],
+    "experiences": {
+      "Food": [],
+      "Activities": [],
+      "LocalMarkets": [],
+      "Spiritual": [],
+      "Historical": [],
+      "Nature": [],
+      "Cultural": [],
+      "Adventure": [],
+      "Others": []
+    },
+    "trending": {
+      "places": []
+    },
+    "createdAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    },
+    "updatedAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "68e5e20021c4af9b4a754986"
+    },
+    "name": "Sivasagar",
+    "location": [
+      {
+        "country": {
+          "id": {
+            "$oid": "68d7f24214fbfc2474738355"
+          }
+        },
+        "state": {
+          "id": {
+            "$oid": "68e285445b54d5e1bf69b1e1"
+          }
+        },
+        "region": {
+          "id": {
+            "$oid": "68d7f77c14fbfc2474738358"
+          }
+        }
+      }
+    ],
+    "greetingText": "Welcome to Sivasagar!",
+    "tagLine": "Ancient Capital of Ahom Dynasty",
+    "description": {
+      "title": "Sivasagar – The Royal Heritage of Assam",
+      "short": "Once the capital of the Ahom dynasty, rich in history and heritage with grand temples and palaces.",
+      "long": "Sivasagar, once the capital of the Ahom dynasty, is rich in history and heritage. Its grand temples, palaces, and tanks reflect Assam's glorious past. Shivadol and Rang Ghar remain top attractions. Blending culture, history, and scenic beauty, Sivasagar offers a fascinating journey into the state's royal and architectural legacy.",
+      "history": "Sivasagar was the capital of the Ahom Kingdom for over 600 years. The city is named after the Sivasagar tank and is home to magnificent Ahom architecture.",
+      "overview": "A historic city where ancient Ahom architecture tells the story of Assam's royal past and cultural heritage."
+    },
+    "languages": [
+      "Assamese",
+      "Hindi",
+      "English"
+    ],
+    "images": {
+      "banner": "",
+      "card": "",
+      "others": []
+    },
+    "emergencyContacts": {
+      "Police": "100",
+      "Ambulance": "102",
+      "Fire": "101",
+      "Tourist Helpline": "1363",
+      "District Tourism": "03772-222000"
+    },
+    "safetyInformation": [
+      "Be respectful at historical monuments and temples.",
+      "Follow photography guidelines at heritage sites.",
+      "Wear appropriate clothing when visiting religious sites."
+    ],
+    "travelTips": [
+      "Visit Shivadol and Rang Ghar for architectural marvels.",
+      "Explore the Sivasagar tank and surrounding temples.",
+      "Learn about Ahom history at local museums."
+    ],
+    "experiences": {
+      "Food": [],
+      "Activities": [],
+      "LocalMarkets": [],
+      "Spiritual": [],
+      "Historical": [],
+      "Nature": [],
+      "Cultural": [],
+      "Adventure": [],
+      "Others": []
+    },
+    "trending": {
+      "places": []
+    },
+    "createdAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    },
+    "updatedAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "68e5e20021c4af9b4a754987"
+    },
+    "name": "Tezpur",
+    "location": [
+      {
+        "country": {
+          "id": {
+            "$oid": "68d7f24214fbfc2474738355"
+          }
+        },
+        "state": {
+          "id": {
+            "$oid": "68e285445b54d5e1bf69b1e1"
+          }
+        },
+        "region": {
+          "id": {
+            "$oid": "68d7f77c14fbfc2474738358"
+          }
+        }
+      }
+    ],
+    "greetingText": "Welcome to Tezpur!",
+    "tagLine": "City of Eternal Romance",
+    "description": {
+      "title": "Tezpur – The City of Eternal Romance",
+      "short": "Known as the 'City of Eternal Romance,' set by the Brahmaputra with ancient ruins and lush tea gardens.",
+      "long": "Tezpur, set by the Brahmaputra, is known as the 'City of Eternal Romance.' With ancient ruins, lush tea gardens, and scenic views, it blends mythology and beauty. Agnigarh Hill, Cole Park, and nearby wildlife sanctuaries add charm. Tezpur welcomes travelers with both cultural depth and natural serenity.",
+      "history": "Tezpur has mythological significance and is associated with the love story of Usha and Aniruddha. The city has ancient ruins and historical monuments dating back centuries.",
+      "overview": "A romantic city where mythology meets natural beauty, offering serene landscapes and cultural heritage."
+    },
+    "languages": [
+      "Assamese",
+      "Hindi",
+      "English"
+    ],
+    "images": {
+      "banner": "",
+      "card": "",
+      "others": []
+    },
+    "emergencyContacts": {
+      "Police": "100",
+      "Ambulance": "102",
+      "Fire": "101",
+      "Tourist Helpline": "1363",
+      "District Tourism": "03712-222000"
+    },
+    "safetyInformation": [
+      "Be cautious near the Brahmaputra River.",
+      "Follow safety guidelines at ancient ruins.",
+      "Respect local customs and traditions."
+    ],
+    "travelTips": [
+      "Visit Agnigarh Hill for panoramic views.",
+      "Explore Cole Park for peaceful walks.",
+      "Take a boat ride on the Brahmaputra."
+    ],
+    "experiences": {
+      "Food": [],
+      "Activities": [],
+      "LocalMarkets": [],
+      "Spiritual": [],
+      "Historical": [],
+      "Nature": [],
+      "Cultural": [],
+      "Adventure": [],
+      "Others": []
+    },
+    "trending": {
+      "places": []
+    },
+    "createdAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    },
+    "updatedAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "68e5e20021c4af9b4a754988"
+    },
+    "name": "Majuli",
+    "location": [
+      {
+        "country": {
+          "id": {
+            "$oid": "68d7f24214fbfc2474738355"
+          }
+        },
+        "state": {
+          "id": {
+            "$oid": "68e285445b54d5e1bf69b1e1"
+          }
+        },
+        "region": {
+          "id": {
+            "$oid": "68d7f77c14fbfc2474738358"
+          }
+        }
+      }
+    ],
+    "greetingText": "Welcome to Majuli!",
+    "tagLine": "World's Largest River Island",
+    "description": {
+      "title": "Majuli – The Cultural Island of Assam",
+      "short": "The world's largest river island, famous for vibrant culture, satras, and serene landscapes.",
+      "long": "Majuli, the world's largest river island, is famous for its vibrant culture, satras (Vaishnavite monasteries), and serene landscapes. Surrounded by the Brahmaputra's waters, it's a hub of art, festivals, and tribal traditions. Majuli's charm lies in its slow pace, scenic beauty, and deep-rooted heritage, making it a soulful destination.",
+      "history": "Majuli has been the cultural capital of Assam for centuries, home to numerous satras that preserve Vaishnavite culture and traditions. It's a UNESCO World Heritage Site candidate.",
+      "overview": "A spiritual and cultural haven where time moves slowly, offering authentic experiences of Assamese traditions and natural beauty."
+    },
+    "languages": [
+      "Assamese",
+      "Mishing",
+      "Hindi",
+      "English"
+    ],
+    "images": {
+      "banner": "",
+      "card": "",
+      "others": []
+    },
+    "emergencyContacts": {
+      "Police": "100",
+      "Ambulance": "102",
+      "Fire": "101",
+      "Tourist Helpline": "1363",
+      "Island Emergency": "03775-222000"
+    },
+    "safetyInformation": [
+      "Be cautious during monsoon when ferry services may be limited.",
+      "Respect satra customs and traditions.",
+      "Follow guidelines when visiting tribal villages."
+    ],
+    "travelTips": [
+      "Check ferry timings before planning your visit.",
+      "Stay overnight to experience the island's tranquility.",
+      "Visit satras to learn about Vaishnavite culture."
+    ],
+    "experiences": {
+      "Food": [],
+      "Activities": [],
+      "LocalMarkets": [],
+      "Spiritual": [],
+      "Historical": [],
+      "Nature": [],
+      "Cultural": [],
+      "Adventure": [],
+      "Others": []
+    },
+    "trending": {
+      "places": []
+    },
+    "createdAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    },
+    "updatedAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "68e5e20021c4af9b4a754989"
+    },
+    "name": "Haflong",
+    "location": [
+      {
+        "country": {
+          "id": {
+            "$oid": "68d7f24214fbfc2474738355"
+          }
+        },
+        "state": {
+          "id": {
+            "$oid": "68e285445b54d5e1bf69b1e1"
+          }
+        },
+        "region": {
+          "id": {
+            "$oid": "68d7f77c14fbfc2474738358"
+          }
+        }
+      }
+    ],
+    "greetingText": "Welcome to Haflong!",
+    "tagLine": "Assam's Only Hill Station",
+    "description": {
+      "title": "Haflong – The Hill Station of Assam",
+      "short": "Assam's only hill station, known for cool climate, blue hills, and peaceful lakes.",
+      "long": "Haflong, Assam's only hill station, is known for its cool climate, blue hills, and peaceful lakes. Surrounded by greenery and tribal culture, it offers trekking, birdwatching, and scenic drives. Its calm setting and unique charm make Haflong a refreshing break from the plains and a haven for nature lovers.",
+      "history": "Haflong is the headquarters of Dima Hasao district and is known for its unique hill station charm in the otherwise plains-dominated Assam.",
+      "overview": "A serene hill station offering cool climate and natural beauty, perfect for relaxation and nature exploration."
+    },
+    "languages": [
+      "Assamese",
+      "Dimasa",
+      "Hindi",
+      "English"
+    ],
+    "images": {
+      "banner": "",
+      "card": "",
+      "others": []
+    },
+    "emergencyContacts": {
+      "Police": "100",
+      "Ambulance": "102",
+      "Fire": "101",
+      "Tourist Helpline": "1363",
+      "District Tourism": "03673-222000"
+    },
+    "safetyInformation": [
+      "Be cautious on winding hill roads.",
+      "Respect tribal customs and traditions.",
+      "Follow guidelines during trekking and outdoor activities."
+    ],
+    "travelTips": [
+      "Carry warm clothing as temperatures can drop.",
+      "Visit during clear weather for best views.",
+      "Explore nearby tribal villages for cultural experiences."
+    ],
+    "experiences": {
+      "Food": [],
+      "Activities": [],
+      "LocalMarkets": [],
+      "Spiritual": [],
+      "Historical": [],
+      "Nature": [],
+      "Cultural": [],
+      "Adventure": [],
+      "Others": []
+    },
+    "trending": {
+      "places": []
+    },
+    "createdAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    },
+    "updatedAt": {
+      "$date": "2025-01-10T04:01:04.008Z"
+    }
+  }
+]
