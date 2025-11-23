@@ -2,7 +2,7 @@ from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from contextlib import asynccontextmanager
 from database import connect_to_mongo, close_mongo_connection
-from routes import state_routes, city_routes, place_routes, test_routes
+from routes import state_routes, city_routes, place_routes, test_routes, label_routes
 from config import settings
 
 
@@ -26,9 +26,11 @@ app = FastAPI(
 )
 
 # Add CORS middleware
+# In production, use specific origins from environment variable
+allowed_origins = settings.allowed_origins.split(",") if settings.allowed_origins != "*" else ["*"]
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],  # Configure this properly for production
+    allow_origins=allowed_origins,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -39,7 +41,33 @@ app.include_router(state_routes.router, prefix="/api/v1")
 app.include_router(city_routes.router, prefix="/api/v1")
 app.include_router(place_routes.router, prefix="/api/v1")
 app.include_router(test_routes.router, prefix="/api/v1")
+app.include_router(label_routes.router, prefix="/api/v1")
 
+
+@app.get("/health")
+async def health_check():
+    """
+    Health check endpoint for monitoring and load balancers.
+    """
+    from database import db
+    try:
+        # Check database connection
+        if db.database is None:
+            return {"status": "unhealthy", "database": "disconnected"}
+        
+        # Try a simple database operation
+        await db.database.command("ping")
+        return {
+            "status": "healthy",
+            "database": "connected",
+            "service": "FastTV API"
+        }
+    except Exception as e:
+        return {
+            "status": "unhealthy",
+            "database": "error",
+            "error": str(e)
+        }
 
 @app.get("/")
 async def root():
@@ -62,13 +90,28 @@ async def root():
 @app.get("/health")
 async def health_check():
     """
-    Health check endpoint.
+    Health check endpoint for monitoring and load balancers.
     """
-    return {
-        "status": "healthy",
-        "database": "connected",
-        "version": "1.0.0"
-    }
+    from database import db
+    try:
+        # Check database connection
+        if db.database is None:
+            return {"status": "unhealthy", "database": "disconnected"}
+        
+        # Try a simple database operation
+        await db.database.command("ping")
+        return {
+            "status": "healthy",
+            "database": "connected",
+            "service": "FastTV API",
+            "version": "1.0.0"
+        }
+    except Exception as e:
+        return {
+            "status": "unhealthy",
+            "database": "error",
+            "error": str(e)
+        }
 
 
 if __name__ == "__main__":

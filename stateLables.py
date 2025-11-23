@@ -16,17 +16,10 @@ args = parser.parse_args()
 
 # --- MongoDB connection using environment variables and command line args ---
 # Priority: command line args > environment variables > config defaults
-mongodb_url = args.mongo_url or os.getenv("MONGO_URL") or settings.mongodb_url
-database_name = args.db_name or os.getenv("DB_NAME") or settings.database_name
+mongodb_url =  "mongodb+srv://manishtravhoo_db_user:S5NnimoeXGz24nxU@travhoo-web.agcc3gy.mongodb.net/?retryWrites=true&w=majority&appName=travhoo-web"
+database_name = "travhoo"
 
-# Collection and file configuration (CLI > env > defaults)
-labels_collection = args.labels_collection or os.getenv("LABELS_COLLECTION") or "labels"
-states_collection = args.states_collection or os.getenv("STATES_COLLECTION") or "states"
-json_file_path = args.json_file or os.getenv("STATES_LABELS_JSON") or "states_with_labels.json"
-
-# Friendly output (avoid printing credentials if present)
-display_host = mongodb_url.split('@')[-1] if "@" in mongodb_url else mongodb_url
-print(f"🔗 Connecting to MongoDB host: {display_host}")
+print(f"🔗 Connecting to MongoDB: {mongodb_url}")
 print(f"📊 Using database: {database_name}")
 if args.dry_run:
     print("🔍 DRY RUN MODE: No changes will be made to the database")
@@ -42,14 +35,19 @@ except Exception as e:
     print("Please check your MONGO_URL environment variable or config settings")
     exit(1)
 
-# create DB and collection handles
 db = client[database_name]
+# exit(0)
+# --- Collection names (configurable via command line args, env vars, or defaults) ---
+labels_collection = "labels"
+states_collection = "states"
+
 labels_col = db[labels_collection]
 states_col = db[states_collection]
 
 print(f"📋 Using collections: {labels_collection}, {states_collection}")
 
 # --- Load data from JSON file ---
+json_file_path ="states_with_labels.json"
 print(f"📁 Loading data from: {json_file_path}")
 
 try:
@@ -111,22 +109,11 @@ print(f"✅ Total labels: {len(existing_labels)} (Inserted {len(missing_labels)}
 # --- STEP 5: Prepare bulk update operations for states ---
 bulk_ops = []
 for state in states_data:
-    # Build label objects matching RefId schema: {id: ObjectId, name: <label-name>}
-    label_objs = []
-    missing_in_map = []
-    for lbl in state.get("labels", []):
-        if lbl not in existing_labels:
-            missing_in_map.append(lbl)
-            continue
-        label_objs.append({"id": existing_labels[lbl], "name": lbl})
-
-    if missing_in_map:
-        print(f"⚠️ Warning: state '{state.get('name')}' references unknown labels: {missing_in_map}")
-
+    label_ids = [existing_labels[lbl] for lbl in state["labels"]]
     bulk_ops.append(
         UpdateOne(
             {"name": state["name"]},
-            {"$set": {"labels": label_objs}},
+            {"$set": {"labels": label_ids}},
             upsert=True
         )
     )

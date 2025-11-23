@@ -68,9 +68,8 @@ class CityController:
         # Insert into database
         result = await collection.insert_one(city_dict)
         
-        # Fetch the created city
-        created_city = await collection.find_one({"_id": result.inserted_id})
-        return CityResponse(**created_city)
+        # Return created city (reuse get_city_by_id logic for proper formatting)
+        return await self.get_city_by_id(str(result.inserted_id))
 
     async def get_city_by_id(self, city_id: str) -> CityResponse:
         """Get city by ID"""
@@ -90,7 +89,104 @@ class CityController:
                 detail="City not found"
             )
         
-        return CityResponse(**city)
+        # Convert ObjectIds to strings
+        city = convert_objectids(city)
+        
+        # Enrich location names if needed
+        states_collection = db["states"]
+        countries_collection = db["countries"] if "countries" in await db.list_collection_names() else None
+        regions_collection = db["regions"] if "regions" in await db.list_collection_names() else None
+        
+        if city.get("location") and isinstance(city["location"], list):
+            for loc in city["location"]:
+                if not isinstance(loc, dict):
+                    continue
+                # Country
+                country = loc.get("country")
+                if isinstance(country, dict) and country.get("id") and (country.get("name") is None) and countries_collection is not None:
+                    country_doc = await countries_collection.find_one({"_id": ObjectId(country["id"])})
+                    if country_doc:
+                        country["name"] = country_doc.get("name")
+                        loc["country"] = country
+                # Region
+                region = loc.get("region")
+                if isinstance(region, dict) and region.get("id") and (region.get("name") is None) and regions_collection is not None:
+                    region_doc = await regions_collection.find_one({"_id": ObjectId(region["id"])})
+                    if region_doc:
+                        region["name"] = region_doc.get("name")
+                        loc["region"] = region
+                # State
+                state_ref = loc.get("state")
+                if isinstance(state_ref, dict) and state_ref.get("id") and (state_ref.get("name") is None):
+                    state_doc = await states_collection.find_one({"_id": ObjectId(state_ref["id"])})
+                    if state_doc:
+                        state_ref["name"] = state_doc.get("name")
+                        loc["state"] = state_ref
+        
+        # Extract and convert state_id
+        city_id_str = str(city.get("_id")) if city.get("_id") else None
+        state_id_val = city.get("state_id")
+        
+        # Safely extract state id from location if state_id missing
+        if not state_id_val and city.get("location") and isinstance(city.get("location"), list) and len(city.get("location")) > 0:
+            first_loc = city.get("location")[0]
+            if isinstance(first_loc, dict):
+                state_obj = first_loc.get("state")
+                if isinstance(state_obj, dict) and state_obj.get("id"):
+                    state_id_val = state_obj.get("id")
+        
+        state_id_str = str(state_id_val) if state_id_val else None
+        
+        # Get state name
+        state_name = None
+        if state_id_str:
+            try:
+                state_doc = await states_collection.find_one({"_id": ObjectId(state_id_str)})
+                if state_doc:
+                    state_name = state_doc.get("name")
+            except Exception:
+                state_name = None
+        
+        # Validate required fields
+        if not city_id_str or not city.get("name"):
+            raise HTTPException(
+                status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+                detail="City document missing required fields (id or name)"
+            )
+        
+        if not state_id_str:
+            raise HTTPException(
+                status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+                detail="City document missing required state_id field"
+            )
+        
+        # Build response dict
+        city_response_dict = {
+            "id": city_id_str,
+            "name": city.get("name"),
+            "state_id": state_id_str,
+            "is_active": city.get("is_active", True),
+            "location": city.get("location"),
+            "greetingText": city.get("greetingText"),
+            "tagLine": city.get("tagLine"),
+            "languages": city.get("languages"),
+            "description": city.get("description"),
+            "images": city.get("images"),
+            "emergencyContacts": city.get("emergencyContacts"),
+            "safetyInformation": city.get("safetyInformation"),
+            "travelTips": city.get("travelTips"),
+            "experiences": city.get("experiences"),
+            "trending": city.get("trending")
+        }
+        
+        if state_name:
+            city_response_dict["state_name"] = state_name
+        
+        # CityResponse expects _id as alias for id
+        response_input = city_response_dict.copy()
+        response_input["_id"] = response_input.pop("id")
+        
+        return CityResponse(**response_input)
 
     async def get_cities(
         self, 
@@ -280,9 +376,8 @@ class CityController:
             {"$set": update_data}
         )
         
-        # Return updated city
-        updated_city = await collection.find_one({"_id": ObjectId(city_id)})
-        return CityResponse(**updated_city)
+        # Return updated city (reuse get_city_by_id logic)
+        return await self.get_city_by_id(city_id)
 
     async def delete_city(self, city_id: str) -> dict:
         """Delete city by ID"""
@@ -411,7 +506,6 @@ class CityController:
                 except Exception:
                     state_ids = [state_id_val]
                 state_object_ids = []
-                state_id_strs = []
                 for sid in state_ids:
                     # support dict entries
                     sid_val = sid.get("id") if isinstance(sid, dict) else sid
@@ -419,21 +513,13 @@ class CityController:
                         continue
                     if ObjectId.is_valid(str(sid_val)):
                         state_object_ids.append(ObjectId(str(sid_val)))
-                        state_id_strs.append(str(sid_val))
+                        # Also add as string for matching both formats
+                        state_object_ids.append(str(sid_val))
                     else:
-                        state_id_strs.append(str(sid_val))
-                if state_object_ids or state_id_strs:
-                    # match either ObjectId form or string form
-                    or_clauses = []
-                    if state_object_ids:
-                        or_clauses.append({"state_id": {"$in": state_object_ids}})
-                    if state_id_strs:
-                        or_clauses.append({"state_id": {"$in": state_id_strs}})
-                    if len(or_clauses) == 1:
-                        # single clause
-                        filter_query.update(or_clauses[0])
-                    else:
-                        filter_query["$or"] = filter_query.get("$or", []) + or_clauses
+                        state_object_ids.append(str(sid_val))
+                if state_object_ids:
+                    # Combine all state_ids (both ObjectId and string) into single $in
+                    filter_query["state_id"] = {"$in": state_object_ids}
 
             # Handle label filtering if present in filter_obj (labels.id stored as objects in documents)
             labels_val = _fget(filter_obj, "labels", None)
@@ -516,6 +602,13 @@ class CityController:
 
             logger.info(f"Fetched {len(cities)} cities from DB (skip={skip}, limit={limit})")
 
+            # Initialize collections before using them
+            states_collection = db["states"]
+            # Ensure optional collections exist
+            collection_names = await db.list_collection_names()
+            countries_collection = db["countries"] if "countries" in collection_names else None
+            regions_collection = db["regions"] if "regions" in collection_names else None
+
             # Convert ObjectIds and enrich
             enriched_cities = []
             for city in cities:
@@ -549,10 +642,6 @@ class CityController:
 
             # Build response objects depending on view
             city_responses = []
-            states_collection = db["states"]
-            # Ensure optional collections exist
-            countries_collection = db["countries"] if "countries" in await db.list_collection_names() else None
-            regions_collection = db["regions"] if "regions" in await db.list_collection_names() else None
 
             for city in enriched_cities:
                 # minimal view should include only a subset

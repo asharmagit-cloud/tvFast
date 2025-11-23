@@ -4,9 +4,9 @@ import os
 
 
 class Settings(BaseSettings):
-    # MongoDB connection URL, can be set via environment variable MONGODB_URL
+    # MongoDB connection URL, can be set via environment variable MONGO_URL
     mongodb_url: str = os.getenv("MONGO_URL", "mongodb+srv://manishtravhoo_db_user:S5NnimoeXGz24nxU@travhoo-web.agcc3gy.mongodb.net/?retryWrites=true&w=majority&appName=travhoo-web")
-    # Database name, can be set via environment variable DATABASE_NAME
+    # Database name, can be set via environment variable DB_NAME
     database_name: str = os.getenv("DB_NAME", "travhoo")
     # Secret key for cryptographic operations (e.g., signing session data).
     # This should be a long, random string and kept secret.
@@ -16,6 +16,10 @@ class Settings(BaseSettings):
     algorithm: str = os.getenv("ALGORITHM", "HS256")
     # Session expiration in minutes, can be set via ACCESS_TOKEN_EXPIRE_MINUTES env var
     access_token_expire_minutes: int = int(os.getenv("ACCESS_TOKEN_EXPIRE_MINUTES", "30"))
+    # CORS allowed origins (comma-separated)
+    allowed_origins: str = os.getenv("ALLOWED_ORIGINS", "*")
+    # Environment (development, staging, production)
+    environment: str = os.getenv("ENVIRONMENT", "development")
 
     class Config:
         env_file = ".env"

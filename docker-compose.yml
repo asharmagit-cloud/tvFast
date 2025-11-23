@@ -1,0 +1,55 @@
+services:
+  # FastAPI Backend
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: fasttv-api
+    ports:
+      - "8000:8000"
+    environment:
+      - MONGO_URL=${MONGO_URL:-mongodb+srv://manishtravhoo_db_user:S5NnimoeXGz24nxU@travhoo-web.agcc3gy.mongodb.net/?retryWrites=true&w=majority&appName=travhoo-web}
+      - DB_NAME=${DB_NAME:-travhoo}
+      - SECRET_KEY=${SECRET_KEY:-your-super-secret-key-change-this-in-production-12345}
+    volumes:
+      # Mount code for development (remove in production)
+      - ./:/app
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/health')"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+    networks:
+      - fasttv-network
+
+  # Next.js Frontend
+  web:
+    build:
+      context: ./travhooportal
+      dockerfile: Dockerfile
+      args:
+        - NEXT_PUBLIC_API_BASE_URL=http://localhost:8000
+    container_name: fasttv-web
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=development
+      - NEXT_PUBLIC_API_BASE_URL=http://localhost:8000
+    depends_on:
+      - api
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "node", "-e", "require('http').get('http://localhost:3000', (r) => {process.exit(r.statusCode === 200 ? 0 : 1)})"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+    networks:
+      - fasttv-network
+
+networks:
+  fasttv-network:
+    driver: bridge
+

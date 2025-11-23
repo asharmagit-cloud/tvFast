@@ -181,6 +181,13 @@ class StateQueryFilter(BaseModel):
     """Filter object for state query"""
     view: str = "minimal"  # "minimal" | "full"
     id: List[str] = ["t_all"]  # Array of state IDs or ["t_all"] for all states
+    search: Optional[str] = None  # Search in name or tagLine
+    state_id: Optional[List[str]] = None  # Filter by state ID(s) - for cities query
+    labels: Optional[List[str]] = None  # Label IDs to filter
+    label_filter_type: Optional[str] = "any"  # "any" (OR) or "all" (AND)
+    
+    class Config:
+        extra = "allow"  # Allow additional fields for flexibility
 
 
 class StateQueryRequest(BaseModel):

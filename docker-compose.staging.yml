@@ -1,0 +1,54 @@
+services:
+  # FastAPI Backend - Staging
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: fasttv-api-staging
+    ports:
+      - "8001:8000"  # Different port for staging
+    environment:
+      - MONGO_URL=${MONGO_URL}
+      - DB_NAME=${DB_NAME:-travhoo_staging}
+      - SECRET_KEY=${SECRET_KEY}
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/health')"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+    networks:
+      - fasttv-network-staging
+    # No volumes - use built image
+
+  # Next.js Frontend - Staging
+  web:
+    build:
+      context: ./travhooportal
+      dockerfile: Dockerfile
+      args:
+        - NEXT_PUBLIC_API_BASE_URL=${NEXT_PUBLIC_API_BASE_URL:-http://localhost:8001}
+    container_name: fasttv-web-staging
+    ports:
+      - "3001:3000"  # Different port for staging
+    environment:
+      - NODE_ENV=production
+      - NEXT_PUBLIC_API_BASE_URL=${NEXT_PUBLIC_API_BASE_URL:-http://localhost:8001}
+    depends_on:
+      - api
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "node", "-e", "require('http').get('http://localhost:3000', (r) => {process.exit(r.statusCode === 200 ? 0 : 1)})"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 10s
+    networks:
+      - fasttv-network-staging
+    # No volumes - use built image
+
+networks:
+  fasttv-network-staging:
+    driver: bridge
+

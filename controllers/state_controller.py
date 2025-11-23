@@ -3,8 +3,10 @@ from bson import ObjectId
 from fastapi import HTTPException, status
 from database import get_database
 from models.state import StateModel
-from datetime import datetime
-from schemas.state import StateCreate, StateUpdate, StateResponse, StateListResponse, StateQueryRequest, StateMinimalResponse, StateQueryResponse
+from schemas.state import StateCreate, StateUpdate, StateResponse, StateListResponse, StateQueryRequest, StateQueryRequestLegacy, StateMinimalResponse, StateQueryResponse
+import logging
+
+logger = logging.getLogger(__name__)
 
 
 class StateController:
@@ -28,87 +30,46 @@ class StateController:
         region_ids = set()
         for s in states:
             for loc in s.get("location", []) or []:
-                country = (loc or {}).get("country")
-                region = (loc or {}).get("region")
-
-                # Country id may be stored as: {"id": ...}, or directly as a string/ObjectId
-                if country:
-                    cid_val = None
-                    if isinstance(country, dict):
-                        cid_val = country.get("id")
-                    else:
-                        cid_val = country
-                    if cid_val:
-                        try:
-                            country_ids.add(ObjectId(str(cid_val)))
-                        except Exception:
-                            # invalid id format, log for debugging
-                            print(f"⚠️ Invalid country id format for state '{s.get('name')}', value: {cid_val}")
-
-                # Region id may be stored similarly
-                if region:
-                    rid_val = None
-                    if isinstance(region, dict):
-                        rid_val = region.get("id")
-                    else:
-                        rid_val = region
-                    if rid_val:
-                        try:
-                            region_ids.add(ObjectId(str(rid_val)))
-                        except Exception:
-                            print(f"⚠️ Invalid region id format for state '{s.get('name')}', value: {rid_val}")
+                country = (loc or {}).get("country") or {}
+                region = (loc or {}).get("region") or {}
+                if isinstance(country, dict) and country.get("id"):
+                    try:
+                        country_ids.add(ObjectId(str(country["id"])))
+                    except Exception:
+                        pass
+                if isinstance(region, dict) and region.get("id"):
+                    try:
+                        region_ids.add(ObjectId(str(region["id"])))
+                    except Exception:
+                        pass
 
         # Fetch lookup maps
         countries_map = {}
         regions_map = {}
         if country_ids:
-            # only request the name field to reduce payload
-            cursor = db["countries"].find({"_id": {"$in": list(country_ids)}}, {"name": 1})
-            docs = await cursor.to_list(length=None)
-            for doc in docs:
+            cursor = db["countries"].find({"_id": {"$in": list(country_ids)}})
+            for doc in await cursor.to_list(length=None):
                 countries_map[str(doc.get("_id"))] = doc.get("name")
-            missing_countries = {str(cid) for cid in country_ids} - set(countries_map.keys())
-            if missing_countries:
-                print(f"⚠️ Missing country documents for IDs: {sorted(missing_countries)}")
         if region_ids:
-            cursor = db["regions"].find({"_id": {"$in": list(region_ids)}}, {"name": 1})
-            docs = await cursor.to_list(length=None)
-            for doc in docs:
+            cursor = db["regions"].find({"_id": {"$in": list(region_ids)}})
+            for doc in await cursor.to_list(length=None):
                 regions_map[str(doc.get("_id"))] = doc.get("name")
-            missing_regions = {str(rid) for rid in region_ids} - set(regions_map.keys())
-            if missing_regions:
-                print(f"⚠️ Missing region documents for IDs: {sorted(missing_regions)}")
 
         # Inject names
         for s in states:
             for loc in s.get("location", []) or []:
                 country = (loc or {}).get("country")
-                if country:
-                    # normalize id value
-                    if isinstance(country, dict):
-                        cid_val = country.get("id")
-                    else:
-                        cid_val = country
-                    if cid_val:
-                        cid = str(cid_val) if not isinstance(cid_val, ObjectId) else str(cid_val)
-                        cname = countries_map.get(cid)
-                        # explicitly set name (could be None)
-                        country_obj = country if isinstance(country, dict) else {"id": cid_val}
-                        country_obj["name"] = cname if cname is not None else None
-                        # ensure loc.country references the object with name
-                        loc["country"] = country_obj
+                if isinstance(country, dict) and country.get("id"):
+                    cid = str(country["id"]) if not isinstance(country["id"], ObjectId) else str(country["id"])
+                    cname = countries_map.get(cid)
+                    if cname:
+                        country["name"] = cname
                 region = (loc or {}).get("region")
-                if region:
-                    if isinstance(region, dict):
-                        rid_val = region.get("id")
-                    else:
-                        rid_val = region
-                    if rid_val:
-                        rid = str(rid_val) if not isinstance(rid_val, ObjectId) else str(rid_val)
-                        rname = regions_map.get(rid)
-                        region_obj = region if isinstance(region, dict) else {"id": rid_val}
-                        region_obj["name"] = rname if rname is not None else None
-                        loc["region"] = region_obj
+                if isinstance(region, dict) and region.get("id"):
+                    rid = str(region["id"]) if not isinstance(region["id"], ObjectId) else str(region["id"])
+                    rname = regions_map.get(rid)
+                    if rname:
+                        region["name"] = rname
         return states
 
     async def _enrich_labels_with_names(self, db, states: List[dict]) -> List[dict]:
@@ -140,11 +101,229 @@ class StateController:
                         label["name"] = lname
         return states
 
+    async def _enrich_experiences_with_activities(self, db, state: dict) -> dict:
+        """Populate experiences ObjectIds with actual activity data."""
+        if not state.get("experiences"):
+            logger.info("No experiences found in state")
+            return state
+        
+        experiences = state.get("experiences", {})
+        logger.info(f"Enriching experiences for categories: {list(experiences.keys())}")
+        # Check if activities collection exists
+        collection_names = await db.list_collection_names()
+        logger.info(f"Available collections: {collection_names}")
+        if "activities" not in collection_names:
+            logger.error("Activities collection not found in database!")
+            return state
+        
+        activities_collection = db["activities"]
+        logger.info("Activities collection found, proceeding with enrichment")
+        
+        # Collect all activity IDs from all experience categories
+        # Also track which ones are already objects vs IDs
+        all_activity_ids = []
+        needs_population = {}  # category -> list of (index, activity_id_str)
+        
+        for category, activity_list in experiences.items():
+            if isinstance(activity_list, list):
+                logger.info(f"Processing category {category} with {len(activity_list)} items")
+                for idx, aid in enumerate(activity_list):
+                    # Check if already an object with name field
+                    if isinstance(aid, dict) and aid.get("name"):
+                        # Already populated, skip
+                        logger.debug(f"Category {category}, index {idx}: Already populated")
+                        continue
+                    
+                    # It's an ID (ObjectId or string), needs population
+                    try:
+                        activity_id = None
+                        activity_id_str = None
+                        
+                        if isinstance(aid, ObjectId):
+                            activity_id = aid
+                            activity_id_str = str(aid)
+                            logger.debug(f"Category {category}, index {idx}: Found ObjectId {activity_id_str}")
+                        elif isinstance(aid, str) and ObjectId.is_valid(aid):
+                            # String format ObjectId - convert to ObjectId for query
+                            activity_id = ObjectId(aid)
+                            activity_id_str = aid
+                            logger.debug(f"Category {category}, index {idx}: Found string ObjectId {activity_id_str}, converted to ObjectId")
+                        elif isinstance(aid, dict) and aid.get("id"):
+                            aid_val = aid.get("id")
+                            if isinstance(aid_val, ObjectId):
+                                activity_id = aid_val
+                                activity_id_str = str(aid_val)
+                            elif isinstance(aid_val, str) and ObjectId.is_valid(aid_val):
+                                activity_id = ObjectId(aid_val)
+                                activity_id_str = aid_val
+                        else:
+                            logger.warning(f"Category {category}, index {idx}: Invalid activity ID format: type={type(aid)}, value={aid}")
+                            continue
+                        
+                        if activity_id and activity_id_str:
+                            all_activity_ids.append(activity_id)
+                            if category not in needs_population:
+                                needs_population[category] = []
+                            needs_population[category].append((idx, activity_id_str))
+                            logger.debug(f"Category {category}, index {idx}: Added activity ID {activity_id_str} to population list")
+                    except Exception as e:
+                        logger.error(f"Error processing activity ID in category {category}, index {idx}: {e}, type: {type(aid)}, value: {aid}")
+                        import traceback
+                        logger.error(traceback.format_exc())
+                        continue
+        
+        if not all_activity_ids:
+            # All experiences are already populated or empty
+            logger.warning("No activity IDs to populate - experiences may already be populated or empty")
+            logger.warning(f"Experiences structure: {list(experiences.keys())}")
+            for cat, exp_list in experiences.items():
+                if isinstance(exp_list, list) and len(exp_list) > 0:
+                    logger.warning(f"  {cat}: {len(exp_list)} items, first item type = {type(exp_list[0])}, value = {exp_list[0]}")
+            return state
+        
+        logger.info(f"Fetching {len(all_activity_ids)} activities for experience population")
+        
+        # Fetch all activities in one query
+        activities_map = {}
+        try:
+            cursor = activities_collection.find({"_id": {"$in": all_activity_ids}})
+            activity_count = 0
+            async for activity in cursor:
+                activity_count += 1
+                activity_id = str(activity.get("_id"))
+                # Get activity name (required field)
+                activity_name = activity.get("name", "")
+                if not activity_name:
+                    # Skip activities without names
+                    logger.warning(f"Activity {activity_id} has no name field, skipping")
+                    continue
+                
+                logger.info(f"Populating activity: {activity_name} (ID: {activity_id})")
+                
+                # Get activity description - handle both string and object formats
+                activity_description = activity.get("description", "")
+                desc_short = ""
+                desc_long = ""
+                if isinstance(activity_description, dict):
+                    desc_short = activity_description.get("short", activity_description.get("overview", ""))
+                    desc_long = activity_description.get("long", desc_short)
+                elif activity_description:
+                    desc_short = str(activity_description)
+                    desc_long = desc_short
+                
+                # Get activity images - handle both object and array formats
+                activity_images = activity.get("images", {})
+                banner_image = ""
+                card_image = ""
+                if isinstance(activity_images, dict):
+                    banner_image = activity_images.get("banner", "") or activity_images.get("card", "")
+                    card_image = activity_images.get("card", banner_image)
+                elif isinstance(activity_images, list) and len(activity_images) > 0:
+                    # Handle array format - could be array of strings or objects
+                    first_image = activity_images[0]
+                    if isinstance(first_image, dict):
+                        banner_image = first_image.get("url", first_image.get("banner", first_image.get("card", "")))
+                    elif isinstance(first_image, str):
+                        banner_image = first_image
+                    card_image = banner_image
+                
+                # Get type from labels if available, otherwise use category name
+                activity_type = category  # Default to category name
+                labels = activity.get("labels", [])
+                if labels and isinstance(labels, list) and len(labels) > 0:
+                    # Try to get label name
+                    label_ref = labels[0]
+                    if isinstance(label_ref, dict) and label_ref.get("id"):
+                        label_id = label_ref.get("id")
+                        try:
+                            label_obj_id = ObjectId(str(label_id)) if not isinstance(label_id, ObjectId) else label_id
+                            label_doc = await db["labels"].find_one({"_id": label_obj_id})
+                            if label_doc and label_doc.get("name"):
+                                activity_type = label_doc.get("name", category)
+                        except Exception:
+                            pass
+                
+                # Get additional activity fields
+                best_time_to_do = activity.get("bestTimeToDo", "") or activity.get("bestTimeToVisit", "")
+                difficulty_level = activity.get("difficultyLevel", "")
+                duration = activity.get("duration", "")
+                
+                # Convert activity to Experience format
+                activity_data = {
+                    "name": activity_name,
+                    "type": activity_type,
+                    "description": {
+                        "short": desc_short,
+                        "long": desc_long
+                    },
+                    "images": {
+                        "banner": banner_image or "/images/default.jpg",
+                        "card": card_image or banner_image or "/images/default.jpg"
+                    },
+                    "locations": [],
+                    "bestTimeToDo": best_time_to_do,
+                    "difficultyLevel": difficulty_level,
+                    "duration": duration
+                }
+                activities_map[activity_id] = activity_data
+                logger.debug(f"Mapped activity {activity_id}: {activity_name}")
+            
+            logger.info(f"Fetched {activity_count} activities, mapped {len(activities_map)} experiences")
+        except Exception as e:
+            logger.exception(f"Error fetching activities: {e}")
+            return state
+        
+        # Replace ObjectIds with populated activity data
+        enriched_experiences = {}
+        for category, activity_list in experiences.items():
+            if isinstance(activity_list, list):
+                enriched_list = []
+                for aid in activity_list:
+                    # If already an object with name, keep it as is
+                    if isinstance(aid, dict) and aid.get("name"):
+                        enriched_list.append(aid)
+                        continue
+                    
+                    # Otherwise, try to populate from activities_map
+                    try:
+                        activity_id_str = None
+                        if isinstance(aid, ObjectId):
+                            activity_id_str = str(aid)
+                        elif isinstance(aid, str) and ObjectId.is_valid(aid):
+                            activity_id_str = aid
+                        elif isinstance(aid, dict) and aid.get("id"):
+                            aid_val = aid.get("id")
+                            if isinstance(aid_val, ObjectId):
+                                activity_id_str = str(aid_val)
+                            elif isinstance(aid_val, str) and ObjectId.is_valid(aid_val):
+                                activity_id_str = aid_val
+                        
+                        if activity_id_str and activity_id_str in activities_map:
+                            # Add category type to the experience
+                            exp_data = activities_map[activity_id_str].copy()
+                            if not exp_data.get("type"):
+                                exp_data["type"] = category
+                            enriched_list.append(exp_data)
+                            logger.debug(f"Added enriched experience: {exp_data.get('name')} to category {category}")
+                        else:
+                            logger.warning(f"Activity ID {activity_id_str} not found in activities_map for category {category}")
+                    except Exception as e:
+                        logger.warning(f"Error enriching activity in category {category}: {e}")
+                        continue
+                if enriched_list:
+                    enriched_experiences[category] = enriched_list
+        
+        if enriched_experiences:
+            state["experiences"] = enriched_experiences
+            logger.info(f"Enriched experiences: {list(enriched_experiences.keys())} with {sum(len(v) for v in enriched_experiences.values())} total experiences")
+        else:
+            logger.warning("No experiences were enriched - check if activities exist in database")
+        
+        return state
+
     async def create_state(self, state_data: StateCreate) -> StateResponse:
         """Create a new state"""
         db = await get_database()
-        if db is None:
-            raise HTTPException(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail="Failed to obtain database connection")
         collection = db[self.collection_name]
         
         # Check if state with same code already exists
@@ -156,9 +335,9 @@ class StateController:
             )
         
         # Create state model
-        state_model = StateModel(**state_data.model_dump())
-        state_dict = state_model.model_dump(by_alias=True, exclude={"id"})
-
+        state_model = StateModel(**state_data.dict())
+        state_dict = state_model.dict(by_alias=True, exclude={"id"})
+        
         # Insert into database
         result = await collection.insert_one(state_dict)
         
@@ -172,8 +351,6 @@ class StateController:
     async def get_state_by_id(self, state_id: str) -> StateResponse:
         """Get state by ID"""
         db = await get_database()
-        if db is None:
-            raise HTTPException(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail="Failed to obtain database connection")
         collection = db[self.collection_name]
         
         if not ObjectId.is_valid(state_id):
@@ -188,15 +365,50 @@ class StateController:
                 status_code=status.HTTP_404_NOT_FOUND,
                 detail="State not found"
             )
-        # Enrich referenced names for location and labels before converting ids
-        try:
-            enriched = await self._enrich_locations_with_names(db, [state])
-            enriched = await self._enrich_labels_with_names(db, enriched)
-            state = enriched[0] if enriched else state
-        except Exception:
-            # If enrichment fails for any reason, continue with original document
-            pass
-
+        
+        # Log experiences before enrichment - check raw MongoDB response
+        if state.get("experiences"):
+            logger.info(f"State experiences BEFORE enrichment: {list(state.get('experiences', {}).keys())}")
+            for cat, exps in state.get("experiences", {}).items():
+                if isinstance(exps, list) and len(exps) > 0:
+                    first_item = exps[0]
+                    logger.info(f"  {cat}: {len(exps)} items, first item type = {type(first_item)}, value = {first_item}")
+                    # Check if it's an ObjectId or string
+                    if isinstance(first_item, ObjectId):
+                        logger.info(f"    First item is ObjectId: {first_item}")
+                    elif isinstance(first_item, str):
+                        logger.info(f"    First item is string: {first_item}")
+                        if ObjectId.is_valid(first_item):
+                            logger.info(f"    String is a valid ObjectId")
+                        else:
+                            logger.warning(f"    String is NOT a valid ObjectId")
+                    else:
+                        logger.warning(f"    First item is unexpected type: {type(first_item)}")
+        
+        # Enrich location names
+        states = await self._enrich_locations_with_names(db, [state])
+        state = states[0] if states else state
+        
+        # Enrich label names
+        states = await self._enrich_labels_with_names(db, [state])
+        state = states[0] if states else state
+        
+        # Enrich experiences with activity data
+        logger.info("Starting experience enrichment...")
+        state = await self._enrich_experiences_with_activities(db, state)
+        logger.info("Experience enrichment completed")
+        
+        # Log experiences after enrichment for debugging
+        if state.get("experiences"):
+            logger.info(f"State experiences after enrichment: {list(state.get('experiences', {}).keys())}")
+            for cat, exps in state.get("experiences", {}).items():
+                if isinstance(exps, list):
+                    logger.info(f"  {cat}: {len(exps)} experiences")
+                    if len(exps) > 0:
+                        first_exp = exps[0]
+                        if isinstance(first_exp, dict):
+                            logger.info(f"    First experience name: {first_exp.get('name', 'NO NAME')}")
+        
         state = self._convert_object_ids(state)
         if state and state.get("_id") and not state.get("id"):
             state["id"] = state["_id"]
@@ -211,8 +423,6 @@ class StateController:
     ) -> StateListResponse:
         """Get list of states with pagination and filtering"""
         db = await get_database()
-        if db is None:
-            raise HTTPException(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail="Failed to obtain database connection")
         collection = db[self.collection_name]
         
         # Build filter query
@@ -231,7 +441,7 @@ class StateController:
         # Get states with pagination
         cursor = collection.find(filter_query).skip(skip).limit(limit)
         states = await cursor.to_list(length=limit)
-        # Enrich names from referenced collections (locations first)
+        # Enrich names from referenced collections
         states = await self._enrich_locations_with_names(db, states)
         states = await self._enrich_labels_with_names(db, states)
         states = [self._convert_object_ids(s) for s in states]
@@ -259,8 +469,6 @@ class StateController:
     async def update_state(self, state_id: str, state_data: StateUpdate) -> StateResponse:
         """Update state by ID"""
         db = await get_database()
-        if db is None:
-            raise HTTPException(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail="Failed to obtain database connection")
         collection = db[self.collection_name]
         
         if not ObjectId.is_valid(state_id):
@@ -290,11 +498,10 @@ class StateController:
                 )
         
         # Prepare update data
-        update_data = {k: v for k, v in state_data.model_dump().items() if v is not None}
+        update_data = {k: v for k, v in state_data.dict().items() if v is not None}
         if update_data:
-            # set updatedAt explicitly instead of instantiating StateModel without required fields
-            update_data["updatedAt"] = datetime.utcnow()
-
+            update_data["updated_at"] = StateModel().updated_at
+        
         # Update state
         await collection.update_one(
             {"_id": ObjectId(state_id)},
@@ -311,8 +518,6 @@ class StateController:
     async def delete_state(self, state_id: str) -> dict:
         """Delete state by ID"""
         db = await get_database()
-        if db is None:
-            raise HTTPException(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail="Failed to obtain database connection")
         collection = db[self.collection_name]
         
         if not ObjectId.is_valid(state_id):
@@ -346,8 +551,6 @@ class StateController:
     async def get_state_by_code(self, code: str) -> StateResponse:
         """Get state by code"""
         db = await get_database()
-        if db is None:
-            raise HTTPException(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail="Failed to obtain database connection")
         collection = db[self.collection_name]
         
         state = await collection.find_one({"code": code.upper()})
@@ -356,14 +559,6 @@ class StateController:
                 status_code=status.HTTP_404_NOT_FOUND,
                 detail="State not found"
             )
-        # Enrich location and labels
-        try:
-            enriched = await self._enrich_locations_with_names(db, [state])
-            enriched = await self._enrich_labels_with_names(db, enriched)
-            state = enriched[0] if enriched else state
-        except Exception:
-            pass
-
         state = self._convert_object_ids(state)
         if state and state.get("_id") and not state.get("id"):
             state["id"] = state["_id"]
@@ -372,8 +567,6 @@ class StateController:
     async def get_all_states(self) -> List[StateResponse]:
         """Get all states from the collection without pagination"""
         db = await get_database()
-        if db is None:
-            raise HTTPException(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail="Failed to obtain database connection")
         collection = db[self.collection_name]
         
         cursor = collection.find({})
@@ -390,8 +583,6 @@ class StateController:
     async def get_states_page(self, skip: int, limit: int) -> List[StateResponse]:
         """Return a page (array) of states without metadata, for POST /all use case"""
         db = await get_database()
-        if db is None:
-            raise HTTPException(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail="Failed to obtain database connection")
         collection = db[self.collection_name]
         cursor = collection.find({}).skip(skip).limit(limit)
         states = await cursor.to_list(length=limit)
@@ -406,8 +597,6 @@ class StateController:
     async def query_states(self, query: StateQueryRequest) -> StateQueryResponse:
         """Flexible state query with templates, filtering, and pagination"""
         db = await get_database()
-        if db is None:
-            raise HTTPException(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail="Failed to obtain database connection")
         collection = db[self.collection_name]
         
         # Build filter query
@@ -431,18 +620,17 @@ class StateController:
         
         # Handle label filtering
         if query.labels:
-            label_object_ids: List[ObjectId] = []
+            label_object_ids = []
             for label_id in query.labels:
                 if ObjectId.is_valid(label_id):
                     label_object_ids.append(ObjectId(label_id))
-
-
+            
             if label_object_ids:
                 if query.label_filter_type == "all":
-                    filter_query["labels.id"] = {"$all": list(label_object_ids)}
+                    filter_query["labels.id"] = {"$all": label_object_ids}
                 else:  # "any" (OR logic)
-                    filter_query["labels.id"] = {"$in": list(label_object_ids)}
-
+                    filter_query["labels.id"] = {"$in": label_object_ids}
+        
         # Get total count
         total = await collection.count_documents(filter_query)
         
@@ -450,8 +638,6 @@ class StateController:
         if query.fetch_all and query.template == "minimal":
             cursor = collection.find(filter_query)
             states = await cursor.to_list(length=None)
-            # Enrich locations and labels
-            states = await self._enrich_locations_with_names(db, states)
             states = await self._enrich_labels_with_names(db, states)
             
             # Convert to minimal response format
@@ -504,8 +690,8 @@ class StateController:
         # Get states with projection
         cursor = collection.find(filter_query, projection).skip(skip).limit(query.limit)
         states = await cursor.to_list(length=query.limit)
-        # Enrich locations and labels
-        states = await self._enrich_locations_with_names(db, states)
+        
+        # Enrich labels with names
         states = await self._enrich_labels_with_names(db, states)
         
         # Convert to response format based on template
@@ -559,8 +745,6 @@ class StateController:
         """New flexible state query with filter object and from/size pagination"""
         try:
             db = await get_database()
-            if db is None:
-                raise HTTPException(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail="Failed to obtain database connection")
             collection = db[self.collection_name]
             
             # Build filter query
@@ -621,8 +805,8 @@ class StateController:
             # Get states with projection
             cursor = collection.find(filter_query, projection).skip(skip).limit(limit)
             states = await cursor.to_list(length=limit)
-            # Enrich locations and labels
-            states = await self._enrich_locations_with_names(db, states)
+            
+            # Enrich labels with names
             states = await self._enrich_labels_with_names(db, states)
             
             # Convert to response format based on view type
