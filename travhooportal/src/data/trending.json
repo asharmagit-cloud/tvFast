@@ -1,0 +1,226 @@
+{
+  "trending": [
+    {
+      "id": "e1b7c9f2d3a4e5f6b8c1d7a3",
+      "name": "Ladakh",
+      "locations": [
+        {
+          "country": {
+            "name": "India",
+            "id": "2dc477ac10d6c07b3fe008f6"
+          },
+          "state": {
+            "name": "Ladakh",
+            "id": "e1b7c9f2d3a4e5f6b8c1d7a3"
+          },
+          "region": {
+            "name": "Union Territories",
+            "id": "3d9b6d251faad57c926b0461"
+          }
+        }
+      ],
+      "tagline": "Discover the essence of Ladakh",
+      "labels": ["Culture", "Heritage", "Nature", "Cuisine", "Festivals"],
+      "description": {
+        "short": "Ladakh is a vibrant part of Union Territories, known for its unique traditions, landscapes, and cultural richness."
+      },
+      "images": {
+        "banner": "/images/default.jpg"
+      },
+      "type": "state",
+      "greetingText": "Welcome to the state of Ladakh"
+    },
+    {
+      "id": "6f4d21c5e8c47393a9205bf1",
+      "name": "Uttarakhand",
+      "locations": [
+        {
+          "country": {
+            "name": "India",
+            "id": "2dc477ac10d6c07b3fe008f6"
+          },
+          "state": {
+            "name": "Uttarakhand",
+            "id": "6f4d21c5e8c47393a9205bf1"
+          },
+          "region": {
+            "name": "North India",
+            "id": "93fe7a334b3f131c575a6364"
+          }
+        }
+      ],
+      "tagline": "Discover the essence of Uttarakhand",
+      "labels": ["Culture", "Heritage", "Nature", "Cuisine", "Festivals"],
+      "description": {
+        "short": "Uttarakhand is a vibrant part of North India, known for its unique traditions, landscapes, and cultural richness."
+      },
+      "images": {
+        "banner": "/images/default.jpg"
+      },
+      "type": "state",
+      "greetingText": "Welcome to the state of Uttarakhand"
+    },
+    {
+      "id": "c1d2e3f4a5b6c7d8e9f01234",
+      "name": "Delhi",
+      "locations": [
+        {
+          "country": {
+            "name": "India",
+            "id": "2dc477ac10d6c07b3fe008f6"
+          },
+          "state": {
+            "name": "Delhi",
+            "id": "d3a14c2d1be4f50e8dc07a91"
+          },
+          "city": {
+            "name": "Delhi",
+            "id": "c1d2e3f4a5b6c7d8e9f01234"
+          },
+          "region": {
+            "name": "North India",
+            "id": "93fe7a334b3f131c575a6364"
+          }
+        }
+      ],
+      "tagline": "Heart of India and bustling capital",
+      "labels": ["Heritage", "Culture", "Food", "Business", "History"],
+      "description": {
+        "short": "Delhi is India's capital and a blend of ancient monuments, vibrant markets, modern infrastructure, and political significance."
+      },
+      "images": {
+        "banner": "/images/default.jpg"
+      },
+      "type": "city",
+      "greetingText": "Welcome to the city of Delhi"
+    },
+    {
+      "id": "f109c7f14d2a82b6b97a4f35",
+      "name": "Kerala",
+      "locations": [
+        {
+          "country": {
+            "name": "India",
+            "id": "2dc477ac10d6c07b3fe008f6"
+          },
+          "state": {
+            "name": "Kerala",
+            "id": "f109c7f14d2a82b6b97a4f35"
+          },
+          "region": {
+            "name": "South India",
+            "id": "8f78d624d8d98e9a0b1f6f72"
+          }
+        }
+      ],
+      "tagline": "Discover the essence of Kerala",
+      "labels": ["Culture", "Heritage", "Nature", "Cuisine", "Festivals"],
+      "description": {
+        "short": "Kerala is a vibrant part of South India, known for its unique traditions, landscapes, and cultural richness."
+      },
+      "images": {
+        "banner": "/images/default.jpg"
+      },
+      "type": "state",
+      "greetingText": "Welcome to the state of Kerala"
+    },
+    {
+      "id": "j1k2l3m4n5o6p7q8r9s01234",
+      "name": "Jaipur",
+      "locations": [
+        {
+          "country": {
+            "name": "India",
+            "id": "2dc477ac10d6c07b3fe008f6"
+          },
+          "state": {
+            "name": "Rajasthan",
+            "id": "bfa6c0e8c4a56d7a91b28ed4"
+          },
+          "city": {
+            "name": "Jaipur",
+            "id": "j1k2l3m4n5o6p7q8r9s01234"
+          },
+          "region": {
+            "name": "North India",
+            "id": "93fe7a334b3f131c575a6364"
+          }
+        }
+      ],
+      "tagline": "The Pink City of India",
+      "labels": ["Heritage", "Fortresses", "Culture", "Tourism", "Food"],
+      "description": {
+        "short": "Jaipur is known for its palaces, forts, colorful markets, and rich Rajasthani culture."
+      },
+      "images": {
+        "banner": "/images/default.jpg"
+      },
+      "type": "city",
+      "greetingText": "Welcome to the city of Jaipur"
+    },
+    {
+      "id": "b3c4d5e6f7a8b9c0d1e23456",
+      "name": "Bengaluru",
+      "locations": [
+        {
+          "country": {
+            "name": "India",
+            "id": "2dc477ac10d6c07b3fe008f6"
+          },
+          "state": {
+            "name": "Karnataka",
+            "id": "b918fe90d7251c87bcb6f1da"
+          },
+          "city": {
+            "name": "Bengaluru",
+            "id": "b3c4d5e6f7a8b9c0d1e23456"
+          },
+          "region": {
+            "name": "South India",
+            "id": "8f78d624d8d98e9a0b1f6f72"
+          }
+        }
+      ],
+      "tagline": "Silicon Valley of India",
+      "labels": ["Technology", "Business", "Culture", "Food", "Nightlife"],
+      "description": {
+        "short": "Bengaluru, the capital of Karnataka, is a global tech hub known for startups, gardens, cosmopolitan culture, and vibrant nightlife."
+      },
+      "images": {
+        "banner": "/images/default.jpg"
+      },
+      "type": "city",
+      "greetingText": "Welcome to the city of Bengaluru"
+    },
+    {
+      "id": "bfa6c0e8c4a56d7a91b28ed4",
+      "name": "Rajasthan",
+      "locations": [
+        {
+          "country": {
+            "name": "India",
+            "id": "2dc477ac10d6c07b3fe008f6"
+          },
+          "state": {
+            "name": "Rajasthan",
+            "id": "bfa6c0e8c4a56d7a91b28ed4"
+          },
+          "region": {
+            "name": "North India",
+            "id": "93fe7a334b3f131c575a6364"
+          }
+        }
+      ],
+      "tagline": "Discover the essence of Rajasthan",
+      "labels": ["Culture", "Heritage", "Nature", "Cuisine", "Festivals"],
+      "description": {
+        "short": "Rajasthan is a vibrant part of North India, known for its unique traditions, landscapes, and cultural richness."
+      },
+      "images": {
+        "banner": "/images/default.jpg"
+      },
+      "type": "state",
+      "greetingText": "Welcome to the state of Rajasthan"
+    }
+  ]
+}

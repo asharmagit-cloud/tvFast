@@ -1,0 +1,1148 @@
+{
+  "cities": [
+    {
+      "id": "c1d2e3f4a5b6c7d8e9f01234",
+      "name": "Delhi",
+      "locations": [
+        {
+          "country": {
+            "name": "India",
+            "id": "2dc477ac10d6c07b3fe008f6"
+          },
+          "state": {
+            "name": "Delhi",
+            "id": "d3a14c2d1be4f50e8dc07a91"
+          },
+          "city": {
+            "name": "Delhi",
+            "id": "c1d2e3f4a5b6c7d8e9f01234"
+          },
+          "region": {
+            "name": "North India",
+            "id": "93fe7a334b3f131c575a6364"
+          }
+        }
+      ],
+      "tagline": "Heart of India and bustling capital",
+      "labels": ["Heritage", "Culture", "Food", "Business", "History"],
+      "description": {
+        "short": "Delhi is India's capital and a blend of ancient monuments, vibrant markets, modern infrastructure, and political significance.",
+        "long": "Delhi, the vibrant capital of India, stands as a testament to the country's rich heritage and dynamic future. This sprawling metropolis seamlessly weaves together centuries of history with cutting-edge modernity. From the majestic Red Fort and India Gate to the bustling markets of Chandni Chowk and the corporate towers of Gurgaon, Delhi offers an unparalleled urban experience. The city serves as the political heart of the world's largest democracy, housing the Parliament, Supreme Court, and numerous government institutions. Its diverse culinary landscape ranges from street food delicacies to fine dining establishments, while its cultural scene encompasses everything from classical performances at ancient monuments to contemporary art galleries in modern districts.",
+        "history": "Delhi's history spans over a millennium, with archaeological evidence suggesting human habitation dating back to the 6th century BCE. The city has served as the capital of numerous empires and dynasties throughout its storied past.\n\nThe medieval period saw Delhi rise to prominence under various Islamic dynasties. The Delhi Sultanate, established in the 13th century, made the city a major center of Islamic culture and architecture. Magnificent structures like the Qutub Minar and Humayun's Tomb were built during this era, showcasing the architectural brilliance of the time.\n\nThe Mughal Empire further enhanced Delhi's grandeur in the 16th and 17th centuries. Emperor Shah Jahan built the magnificent Red Fort and Jama Masjid, while the city became known as Shahjahanabad. The Mughal period represents the golden age of Delhi's architectural and cultural development.\n\nThe British colonial period brought significant changes to Delhi's landscape and administration. In 1911, the British decided to shift their capital from Calcutta to Delhi, leading to the construction of New Delhi by architect Edwin Lutyens. This planned city featured wide boulevards, government buildings, and the iconic India Gate.\n\nPost-independence in 1947, Delhi became the capital of free India. The city has since transformed into a modern metropolis while carefully preserving its historical heritage. Today, Delhi stands as a symbol of India's journey from ancient civilization to contemporary global power."
+      },
+      "images": {
+        "banner": "/images/default.jpg"
+      },
+      "greetingText": "Namaskar",
+      "emergencyContacts": {
+        "Police": "100",
+        "Ambulance": "102",
+        "Fire": "101",
+        "Tourist Helpline": "1800-111-363",
+        "State Tourism": "011-23315322"
+      },
+      "experiences": {
+        "Food": [
+          {
+            "name": "Street Food Tour of Chandni Chowk",
+            "type": "Food",
+            "images": {
+              "banner": "/images/default.jpg"
+            },
+            "description": {
+              "short": "Explore the bustling lanes of Chandni Chowk and savor authentic Delhi street food including paranthas, chaat, and jalebis.",
+              "long": "Embark on a culinary journey through the historic lanes of Chandni Chowk, one of Delhi's oldest and busiest markets. This guided food tour takes you through narrow alleys filled with the aroma of sizzling paranthas, spicy chaat, and sweet jalebis. Experience the authentic flavors of Old Delhi while learning about the rich culinary heritage that has been passed down through generations."
+            }
+          },
+          {
+            "name": "Mughlai Cuisine Experience",
+            "type": "Food",
+            "images": {
+              "banner": "/images/default.jpg"
+            },
+            "description": {
+              "short": "Indulge in royal Mughlai cuisine with authentic biryanis, kebabs, and traditional sweets at heritage restaurants.",
+              "long": "Experience the royal flavors of Mughlai cuisine that once graced the tables of emperors. This culinary experience includes visits to heritage restaurants serving authentic biryanis, succulent kebabs, rich curries, and traditional sweets like kulfi and shahi tukda. Learn about the cooking techniques and spices that make Mughlai cuisine a cornerstone of Delhi's food culture."
+            }
+          }
+        ],
+        "Activities": [
+          {
+            "name": "Delhi Metro Heritage Line Tour",
+            "type": "Activities",
+            "images": {
+              "banner": "/images/default.jpg"
+            },
+            "description": {
+              "short": "Take a guided tour of Delhi's heritage sites using the efficient metro system, covering major monuments and cultural landmarks.",
+              "long": "Discover Delhi's rich heritage through an innovative metro-based tour that combines modern transportation with ancient history. This guided experience takes you to iconic landmarks like Red Fort, India Gate, Lotus Temple, and Qutub Minar using Delhi's extensive metro network. Learn about the city's evolution from medieval times to the modern era while enjoying comfortable and eco-friendly travel."
+            }
+          },
+          {
+            "name": "Rickshaw Ride Through Old Delhi",
+            "type": "Activities",
+            "images": {
+              "banner": "/images/default.jpg"
+            },
+            "description": {
+              "short": "Navigate the narrow lanes of Old Delhi on a traditional cycle rickshaw, experiencing the authentic hustle and bustle of the historic city.",
+              "long": "Experience the authentic charm of Old Delhi through a traditional cycle rickshaw ride that takes you through narrow lanes impossible to explore by car. Wind through bustling bazaars, past ancient havelis, and alongside the walls of the Red Fort while your experienced rickshaw puller shares stories of the area's rich history and vibrant present-day life."
+            }
+          }
+        ],
+        "LocalMarkets": [
+          {
+            "name": "Connaught Place Shopping Experience",
+            "type": "LocalMarkets",
+            "images": {
+              "banner": "/images/default.jpg"
+            },
+            "description": {
+              "short": "Shop at Delhi's premier commercial hub featuring everything from branded stores to local handicrafts and street shopping.",
+              "long": "Explore Connaught Place, Delhi's iconic circular market that serves as the commercial heart of the city. This shopping experience includes visits to both high-end branded stores and local shops selling traditional handicrafts, textiles, and souvenirs. The Georgian-style architecture adds charm to your shopping adventure while numerous cafes and restaurants provide perfect breaks between purchases."
+            }
+          },
+          {
+            "name": "Karol Bagh Market Tour",
+            "type": "LocalMarkets",
+            "images": {
+              "banner": "/images/default.jpg"
+            },
+            "description": {
+              "short": "Discover one of Delhi's largest wholesale markets known for textiles, electronics, and traditional Indian wear at bargain prices.",
+              "long": "Navigate through the bustling lanes of Karol Bagh, one of Delhi's most popular shopping destinations. This market tour introduces you to wholesale prices on textiles, electronics, jewelry, and traditional Indian clothing. Learn bargaining techniques from local guides while exploring the maze-like streets filled with shops offering everything from wedding attire to everyday essentials."
+            }
+          }
+        ],
+        "Spiritual": [
+          {
+            "name": "Lotus Temple Meditation Experience",
+            "type": "Spiritual",
+            "images": {
+              "banner": "/images/default.jpg"
+            },
+            "description": {
+              "short": "Find inner peace at the stunning Lotus Temple with guided meditation sessions in this architectural marvel dedicated to unity.",
+              "long": "Experience tranquility at the Lotus Temple, a Bahá'í House of Worship known for its distinctive lotus-shaped architecture. This spiritual experience includes guided meditation sessions in the serene prayer hall, where people of all faiths come together in silent contemplation. Learn about the Bahá'í principles of unity and peace while enjoying the temple's beautiful gardens and peaceful atmosphere."
+            }
+          },
+          {
+            "name": "Akshardham Temple Complex Tour",
+            "type": "Spiritual",
+            "images": {
+              "banner": "/images/default.jpg"
+            },
+            "description": {
+              "short": "Explore the magnificent Akshardham temple complex showcasing Indian culture, spirituality, and architectural grandeur.",
+              "long": "Immerse yourself in the spiritual and cultural grandeur of Akshardham, one of the world's largest Hindu temple complexes. This comprehensive tour includes the intricately carved main temple, cultural exhibitions, the spectacular water show, and peaceful gardens. Experience 10,000 years of Indian culture through interactive displays, traditional architecture, and spiritual teachings that celebrate India's rich heritage."
+            }
+          }
+        ],
+        "Historical": [
+          {
+            "name": "Red Fort and Mughal Heritage Walk",
+            "type": "Historical",
+            "images": {
+              "banner": "/images/default.jpg"
+            },
+            "description": {
+              "short": "Explore the majestic Red Fort and learn about Mughal history through guided tours of palaces, gardens, and museums.",
+              "long": "Step into the grandeur of the Mughal era with a comprehensive tour of the Red Fort, a UNESCO World Heritage Site. This historical experience includes visits to the Diwan-i-Aam, Diwan-i-Khas, and the beautiful Mughal gardens while learning about the empire that shaped Delhi's destiny. The tour also covers the evening sound and light show that brings the fort's history to life through spectacular narration and illumination."
+            }
+          },
+          {
+            "name": "Humayun's Tomb and Mughal Architecture Tour",
+            "type": "Historical",
+            "images": {
+              "banner": "/images/default.jpg"
+            },
+            "description": {
+              "short": "Discover the architectural precursor to the Taj Mahal at Humayun's Tomb and explore surrounding Mughal monuments.",
+              "long": "Explore the magnificent Humayun's Tomb, often called the precursor to the Taj Mahal, in this comprehensive architectural tour. Learn about Mughal garden design, Persian architectural influences, and the tomb's significance in Indian history. The tour also includes visits to nearby monuments like Isa Khan's Tomb and the Arab Sarai, providing a complete understanding of Mughal architectural evolution in Delhi."
+            }
+          }
+        ],
+        "Nature": [
+          {
+            "name": "Lodhi Gardens Nature Walk",
+            "type": "Nature",
+            "images": {
+              "banner": "/images/default.jpg"
+            },
+            "description": {
+              "short": "Enjoy peaceful nature walks through Lodhi Gardens, featuring beautiful landscapes, historical tombs, and diverse flora.",
+              "long": "Escape the urban hustle with a serene nature walk through Lodhi Gardens, Delhi's green lung that combines natural beauty with historical significance. This guided experience includes bird watching, identification of native plants and trees, and visits to 15th-century tombs scattered throughout the gardens. The peaceful environment provides perfect opportunities for photography, meditation, and connecting with nature in the heart of the city."
+            }
+          },
+          {
+            "name": "Yamuna Biodiversity Park Eco Tour",
+            "type": "Nature",
+            "images": {
+              "banner": "/images/default.jpg"
+            },
+            "description": {
+              "short": "Explore Delhi's largest biodiversity park featuring wetlands, grasslands, and over 200 bird species along the Yamuna River.",
+              "long": "Discover Delhi's remarkable biodiversity at the Yamuna Biodiversity Park, a restored ecosystem along the Yamuna River. This eco-tour includes guided walks through different habitats including wetlands, grasslands, and woodlands while spotting over 200 bird species and various mammals. Learn about conservation efforts, sustainable practices, and the importance of urban biodiversity in maintaining ecological balance."
+            }
+          }
+        ],
+        "Cultural": [
+          {
+            "name": "India Gate Cultural Evening",
+            "type": "Cultural",
+            "images": {
+              "banner": "/images/default.jpg"
+            },
+            "description": {
+              "short": "Experience Delhi's cultural vibrancy at India Gate with evening gatherings, street performances, and local food vendors.",
+              "long": "Join the vibrant evening culture at India Gate, where locals and tourists gather to enjoy Delhi's social atmosphere. This cultural experience includes watching street performances, interacting with local families enjoying picnics, sampling snacks from vendors, and learning about the monument's significance as a war memorial. The experience captures the essence of Delhi's community spirit and cultural diversity."
+            }
+          },
+          {
+            "name": "Dilli Haat Cultural Market Experience",
+            "type": "Cultural",
+            "images": {
+              "banner": "/images/default.jpg"
+            },
+            "description": {
+              "short": "Immerse yourself in India's cultural diversity at Dilli Haat, featuring handicrafts, regional cuisines, and folk performances.",
+              "long": "Experience the cultural richness of all Indian states at Dilli Haat, an open-air market that showcases the country's diverse handicrafts, textiles, and cuisines. This cultural immersion includes shopping for authentic regional products, tasting traditional foods from different states, and enjoying folk performances and cultural shows. The market provides a comprehensive introduction to India's artistic heritage and culinary traditions."
+            }
+          }
+        ],
+        "Adventure": [
+          {
+            "name": "Adventure Park Activities at Asola Bhatti",
+            "type": "Adventure",
+            "images": {
+              "banner": "/images/default.jpg"
+            },
+            "description": {
+              "short": "Challenge yourself with rope courses, zip-lining, and archery at the adventure park near Asola Bhatti Sanctuary.",
+              "long": "Challenge yourself with rope courses, zip-lining, and archery at the adventure park near Asola Bhatti Sanctuary. Set amid rocky Aravalli terrain, it's a fun outdoor getaway combining thrill, fitness, and natural beauty perfect for adventure enthusiasts looking for excitement within the city limits."
+            }
+          },
+          {
+            "name": "Rock Climbing at Damdama Lake",
+            "type": "Adventure",
+            "images": {
+              "banner": "/images/default.jpg"
+            },
+            "description": {
+              "short": "Experience rock climbing and rappelling adventures at Damdama Lake, just outside Delhi, with professional guidance and safety equipment.",
+              "long": "Embark on an exciting rock climbing adventure at Damdama Lake, located just outside Delhi in the Aravalli hills. This adventure experience includes professional instruction, safety equipment, and guided climbing sessions suitable for beginners and experienced climbers. The scenic lake setting provides a perfect backdrop for outdoor adventure while offering additional activities like boating and nature walks."
+            }
+          }
+        ],
+        "Others": [
+          {
+            "name": "Delhi Photography Walk",
+            "type": "Others",
+            "images": {
+              "banner": "/images/default.jpg"
+            },
+            "description": {
+              "short": "Capture Delhi's essence through guided photography walks covering architectural marvels, street life, and hidden gems.",
+              "long": "Discover Delhi through the lens with professional photography walks that cover the city's most photogenic locations. This experience includes visits to architectural marvels, bustling street scenes, colorful markets, and hidden gems while learning photography techniques from expert guides. Perfect for both amateur and professional photographers looking to capture the authentic spirit of India's capital city."
+            }
+          },
+          {
+            "name": "Delhi by Night Tour",
+            "type": "Others",
+            "images": {
+              "banner": "/images/default.jpg"
+            },
+            "description": {
+              "short": "Experience Delhi's nightlife and illuminated monuments through guided evening tours showcasing the city's after-dark charm.",
+              "long": "Discover a different side of Delhi through guided night tours that showcase the city's illuminated monuments, vibrant nightlife, and evening culture. This unique experience includes visits to beautifully lit historical sites, bustling night markets, popular entertainment districts, and local hangout spots where Delhi comes alive after sunset. Experience the capital's dynamic energy and social scene under the stars."
+            }
+          }
+        ]
+      },
+      "safetyInformation": [
+        "Avoid walking alone in isolated areas late at night. Stick to well-lit, populated streets and use reliable transportation options.",
+        "Be cautious of pickpockets in crowded markets and tourist spots like Chandni Chowk, Red Fort, and metro stations. Keep valuables secure and bags zipped.",
+        "Only use registered taxis or app-based ride services. Avoid unmarked vehicles and always share your trip details with someone.",
+        "Stay hydrated and avoid street food from unhygienic vendors. Choose busy, popular food stalls where you can see food being freshly prepared.",
+        "Respect local customs and dress modestly when visiting religious sites. Remove shoes before entering temples and mosques.",
+        "Keep copies of important documents like passport, visa, and ID cards in a separate location from the originals.",
+        "Air quality can be poor, especially in winter months. Consider wearing a mask if you have respiratory issues and limit outdoor activities during high pollution days.",
+        "Be wary of scams involving fake tour guides, gemstone shops, or free city tours. Book through authorized agencies only.",
+        "Women should exercise extra caution when traveling alone. Use women-only metro coaches during peak hours and avoid isolated areas after dark."
+      ],
+      "travelTips": [
+        "Use the Delhi Metro for convenient and affordable transport across the city. It's clean, efficient, and connects most major tourist attractions.",
+        "Try authentic street food at Chandni Chowk and Paranthe Wali Gali. Don't miss the famous chole bhature, jalebis, and parathas.",
+        "Dress modestly when visiting religious sites like temples and mosques. Cover your shoulders and knees to show respect for local culture and traditions.",
+        "Book tickets online for popular monuments like Red Fort, Qutub Minar, and Humayun's Tomb to avoid long queues during peak tourist season.",
+        "Stay hydrated and carry bottled water, especially during summer months when temperatures can soar above 40°C.",
+        "Use app-based taxi services like Uber or Ola for safe and reliable transport. Always share your ride details with someone for safety.",
+        "Visit India Gate and surrounding areas in the evening when the weather is pleasant and the monuments are beautifully lit.",
+        "Bargain politely at local markets like Sarojini Nagar and Lajpat Nagar. Starting at 40-50% of the quoted price is common practice.",
+        "Keep small cash denominations handy for auto-rickshaws, street vendors, and smaller shops as they may not accept digital payments.",
+        "Avoid drinking tap water. Always opt for sealed bottled water and ensure food is freshly prepared at hygienic establishments.",
+        "Plan your visit to museums and historical sites on weekdays to avoid weekend crowds. Tuesdays to Sundays are ideal as most monuments are closed on Mondays.",
+        "Learn a few basic Hindi phrases like 'Namaste' (Hello), 'Dhanyavaad' (Thank you), and 'Kitna hai?' (How much?) to connect better with locals.",
+        "Book accommodations in central areas like Connaught Place, Karol Bagh, or near metro stations for easy access to major attractions and public transport.",
+        "Carry sunscreen, sunglasses, and a hat during daytime sightseeing to protect yourself from the strong sun, particularly between March and September.",
+        "Be cautious of touts and unofficial guides near tourist spots. Always hire government-approved guides or book tours through authorized agencies."
+      ]
+    },
+    {
+      "id": "a2b3c4d5e6f7a8b9c0d12345",
+      "name": "Mumbai",
+      "locations": [
+        {
+          "country": {
+            "name": "India",
+            "id": "2dc477ac10d6c07b3fe008f6"
+          },
+          "state": {
+            "name": "Maharashtra",
+            "id": "d3c9f84b6a52c98b7e4d1c2f"
+          },
+          "city": {
+            "name": "Mumbai",
+            "id": "a2b3c4d5e6f7a8b9c0d12345"
+          },
+          "region": {
+            "name": "West India",
+            "id": "c1b7f2e8d9a03b5c7e4f2a61"
+          }
+        }
+      ],
+      "tagline": "City of dreams and Bollywood",
+      "labels": ["Business", "Entertainment", "Culture", "Food", "Nightlife"],
+      "description": {
+        "short": "Mumbai, the financial capital of India, is a bustling metropolis known for Bollywood, diverse cuisine, historic landmarks, and fast-paced life."
+      },
+      "images": {
+        "banner": "/images/default.jpg"
+      },
+      "greetingText": "Welcome to the city of dreams",
+      "emergencyContacts": {
+        "Police": "100",
+        "Ambulance": "102",
+        "Fire": "101",
+        "Tourist Helpline": "1363",
+        "State Tourism": "03192-232694"
+      },
+      "safetyInformation": [
+        "Avoid isolated beaches after dark.",
+        "Respect marine life and coral reefs.",
+        "Follow local guidelines during monsoon season."
+      ],
+      "travelTips": [
+        "Carry sunscreen and insect repellent.",
+        "Book ferry tickets in advance.",
+        "Try local seafood at Aberdeen Bazaar."
+      ]
+    },
+    {
+      "id": "b3c4d5e6f7a8b9c0d1e23456",
+      "name": "Bengaluru",
+      "locations": [
+        {
+          "country": {
+            "name": "India",
+            "id": "2dc477ac10d6c07b3fe008f6"
+          },
+          "state": {
+            "name": "Karnataka",
+            "id": "b918fe90d7251c87bcb6f1da"
+          },
+          "city": {
+            "name": "Bengaluru",
+            "id": "b3c4d5e6f7a8b9c0d1e23456"
+          },
+          "region": {
+            "name": "South India",
+            "id": "8f78d624d8d98e9a0b1f6f72"
+          }
+        }
+      ],
+      "tagline": "Silicon Valley of India",
+      "labels": ["Technology", "Business", "Culture", "Food", "Nightlife"],
+      "description": {
+        "short": "Bengaluru, the capital of Karnataka, is a global tech hub known for startups, gardens, cosmopolitan culture, and vibrant nightlife."
+      },
+      "images": {
+        "banner": "/images/default.jpg"
+      },
+      "greetingText": "Welcome to the silicon valley of India",
+      "emergencyContacts": {
+        "Police": "100",
+        "Ambulance": "102",
+        "Fire": "101",
+        "Tourist Helpline": "1363",
+        "State Tourism": "03192-232694"
+      },
+      "safetyInformation": [
+        "Avoid isolated beaches after dark.",
+        "Respect marine life and coral reefs.",
+        "Follow local guidelines during monsoon season."
+      ],
+      "travelTips": [
+        "Carry sunscreen and insect repellent.",
+        "Book ferry tickets in advance.",
+        "Try local seafood at Aberdeen Bazaar."
+      ]
+    },
+    {
+      "id": "c4d5e6f7a8b9c0d1e2f34567",
+      "name": "Chennai",
+      "locations": [
+        {
+          "country": {
+            "name": "India",
+            "id": "2dc477ac10d6c07b3fe008f6"
+          },
+          "state": {
+            "name": "Tamil Nadu",
+            "id": "4ecf12d7296c0f4aa34d5bf8"
+          },
+          "city": {
+            "name": "Chennai",
+            "id": "c4d5e6f7a8b9c0d1e2f34567"
+          },
+          "region": {
+            "name": "South India",
+            "id": "8f78d624d8d98e9a0b1f6f72"
+          }
+        }
+      ],
+      "tagline": "Gateway to South India",
+      "labels": ["Culture", "Heritage", "Beaches", "Cuisine", "Business"],
+      "description": {
+        "short": "Chennai is a cultural and economic hub in South India, famous for Marina Beach, classical music, traditional cuisine, and automobile industry."
+      },
+      "images": {
+        "banner": "/images/default.jpg"
+      },
+      "greetingText": "Welcome to the gateway to south India",
+      "emergencyContacts": {
+        "Police": "100",
+        "Ambulance": "102",
+        "Fire": "101",
+        "Tourist Helpline": "1363",
+        "State Tourism": "03192-232694"
+      },
+      "safetyInformation": [
+        "Avoid isolated beaches after dark.",
+        "Respect marine life and coral reefs.",
+        "Follow local guidelines during monsoon season."
+      ],
+      "travelTips": [
+        "Carry sunscreen and insect repellent.",
+        "Book ferry tickets in advance.",
+        "Try local seafood at Aberdeen Bazaar."
+      ]
+    },
+    {
+      "id": "d5e6f7a8b9c0d1e2f3g45678",
+      "name": "Kolkata",
+      "locations": [
+        {
+          "country": {
+            "name": "India",
+            "id": "2dc477ac10d6c07b3fe008f6"
+          },
+          "state": {
+            "name": "West Bengal",
+            "id": "c2f3e98a7d64f0b1a6c92b53"
+          },
+          "city": {
+            "name": "Kolkata",
+            "id": "d5e6f7a8b9c0d1e2f3g45678"
+          },
+          "region": {
+            "name": "East India",
+            "id": "a4b6c1938f54d3a7b1f3c652"
+          }
+        }
+      ],
+      "tagline": "City of Joy and culture",
+      "labels": ["Culture", "Heritage", "Cuisine", "Education", "Festivals"],
+      "description": {
+        "short": "Kolkata is the cultural capital of India, famous for its colonial architecture, literary heritage, artistic scene, and vibrant festivals."
+      },
+      "images": {
+        "banner": "/images/default.jpg"
+      },
+      "greetingText": "Welcome to the city of joy and culture",
+      "emergencyContacts": {
+        "Police": "100",
+        "Ambulance": "102",
+        "Fire": "101",
+        "Tourist Helpline": "1363",
+        "State Tourism": "03192-232694"
+      },
+      "safetyInformation": [
+        "Avoid isolated beaches after dark.",
+        "Respect marine life and coral reefs.",
+        "Follow local guidelines during monsoon season."
+      ],
+      "travelTips": [
+        "Carry sunscreen and insect repellent.",
+        "Book ferry tickets in advance.",
+        "Try local seafood at Aberdeen Bazaar."
+      ]
+    },
+    {
+      "id": "e6f7a8b9c0d1e2f3g4h56789",
+      "name": "Pune",
+      "locations": [
+        {
+          "country": {
+            "name": "India",
+            "id": "2dc477ac10d6c07b3fe008f6"
+          },
+          "state": {
+            "name": "Maharashtra",
+            "id": "d3c9f84b6a52c98b7e4d1c2f"
+          },
+          "city": {
+            "name": "Pune",
+            "id": "e6f7a8b9c0d1e2f3g4h56789"
+          },
+          "region": {
+            "name": "West India",
+            "id": "c1b7f2e8d9a03b5c7e4f2a61"
+          }
+        }
+      ],
+      "tagline": "Education hub and cultural capital",
+      "labels": ["Education", "Culture", "Technology", "Cuisine", "Nature"],
+      "description": {
+        "short": "Pune is a major educational and IT hub, known for its pleasant climate, historical landmarks, cultural activities, and vibrant student population."
+      },
+      "images": {
+        "banner": "/images/default.jpg"
+      },
+      "greetingText": "Welcome to the education hub and cultural capital",
+      "emergencyContacts": {
+        "Police": "100",
+        "Ambulance": "102",
+        "Fire": "101",
+        "Tourist Helpline": "1363",
+        "State Tourism": "03192-232694"
+      },
+      "safetyInformation": [
+        "Avoid isolated beaches after dark.",
+        "Respect marine life and coral reefs.",
+        "Follow local guidelines during monsoon season."
+      ],
+      "travelTips": [
+        "Carry sunscreen and insect repellent.",
+        "Book ferry tickets in advance.",
+        "Try local seafood at Aberdeen Bazaar."
+      ]
+    },
+    {
+      "id": "f7a8b9c0d1e2f3g4h5i67890",
+      "name": "Ahmedabad",
+      "locations": [
+        {
+          "country": {
+            "name": "India",
+            "id": "2dc477ac10d6c07b3fe008f6"
+          },
+          "state": {
+            "name": "Gujarat",
+            "id": "a1e9f7b3c9d2456f8b2c7e4a"
+          },
+          "city": {
+            "name": "Ahmedabad",
+            "id": "f7a8b9c0d1e2f3g4h5i67890"
+          },
+          "region": {
+            "name": "West India",
+            "id": "c1b7f2e8d9a03b5c7e4f2a61"
+          }
+        }
+      ],
+      "tagline": "Heritage, business, and textile hub",
+      "labels": ["Culture", "Heritage", "Business", "Food", "Architecture"],
+      "description": {
+        "short": "Ahmedabad, in Gujarat, is known for its textile industry, rich heritage, traditional cuisine, and UNESCO World Heritage sites."
+      },
+      "images": {
+        "banner": "/images/default.jpg"
+      },
+      "greetingText": "Welcome to the heritage, business, and textile hub",
+      "emergencyContacts": {
+        "Police": "100",
+        "Ambulance": "102",
+        "Fire": "101",
+        "Tourist Helpline": "1363",
+        "State Tourism": "03192-232694"
+      },
+      "safetyInformation": [
+        "Avoid isolated beaches after dark.",
+        "Respect marine life and coral reefs.",
+        "Follow local guidelines during monsoon season."
+      ],
+      "travelTips": [
+        "Carry sunscreen and insect repellent.",
+        "Book ferry tickets in advance.",
+        "Try local seafood at Aberdeen Bazaar."
+      ]
+    },
+    {
+      "id": "g8h9i0j1k2l3m4n5o6p78901",
+      "name": "Hyderabad",
+      "locations": [
+        {
+          "country": {
+            "name": "India",
+            "id": "2dc477ac10d6c07b3fe008f6"
+          },
+          "state": {
+            "name": "Telangana",
+            "id": "8bbf87a2d0d17b16b5d9c1f4"
+          },
+          "city": {
+            "name": "Hyderabad",
+            "id": "g8h9i0j1k2l3m4n5o6p78901"
+          },
+          "region": {
+            "name": "South India",
+            "id": "8f78d624d8d98e9a0b1f6f72"
+          }
+        }
+      ],
+      "tagline": "City of Pearls and IT Hub",
+      "labels": ["Heritage", "Technology", "Cuisine", "Culture", "Business"],
+      "description": {
+        "short": "Hyderabad is famous for its historic sites, rich culture, biryani cuisine, and as a major IT and business center."
+      },
+      "images": {
+        "banner": "/images/default.jpg"
+      },
+      "greetingText": "Welcome to the city of pearls and IT hub",
+      "emergencyContacts": {
+        "Police": "100",
+        "Ambulance": "102",
+        "Fire": "101",
+        "Tourist Helpline": "1363",
+        "State Tourism": "03192-232694"
+      },
+      "safetyInformation": [
+        "Avoid isolated beaches after dark.",
+        "Respect marine life and coral reefs.",
+        "Follow local guidelines during monsoon season."
+      ],
+      "travelTips": [
+        "Carry sunscreen and insect repellent.",
+        "Book ferry tickets in advance.",
+        "Try local seafood at Aberdeen Bazaar."
+      ]
+    },
+    {
+      "id": "h9i0j1k2l3m4n5o6p7q89012",
+      "name": "Kolkata",
+      "locations": [
+        {
+          "country": {
+            "name": "India",
+            "id": "2dc477ac10d6c07b3fe008f6"
+          },
+          "state": {
+            "name": "West Bengal",
+            "id": "c2f3e98a7d64f0b1a6c92b53"
+          },
+          "city": {
+            "name": "Kolkata",
+            "id": "h9i0j1k2l3m4n5o6p7q89012"
+          },
+          "region": {
+            "name": "East India",
+            "id": "a4b6c1938f54d3a7b1f3c652"
+          }
+        }
+      ],
+      "tagline": "City of Joy and culture",
+      "labels": ["Culture", "Heritage", "Cuisine", "Education", "Festivals"],
+      "description": {
+        "short": "Kolkata is the cultural capital of India, famous for its colonial architecture, literary heritage, artistic scene, and vibrant festivals."
+      },
+      "images": {
+        "banner": "/images/default.jpg"
+      },
+      "greetingText": "Welcome to the city of joy and culture",
+      "emergencyContacts": {
+        "Police": "100",
+        "Ambulance": "102",
+        "Fire": "101",
+        "Tourist Helpline": "1363",
+        "State Tourism": "03192-232694"
+      },
+      "safetyInformation": [
+        "Avoid isolated beaches after dark.",
+        "Respect marine life and coral reefs.",
+        "Follow local guidelines during monsoon season."
+      ],
+      "travelTips": [
+        "Carry sunscreen and insect repellent.",
+        "Book ferry tickets in advance.",
+        "Try local seafood at Aberdeen Bazaar."
+      ]
+    },
+    {
+      "id": "i0j1k2l3m4n5o6p7q8r90123",
+      "name": "Surat",
+      "locations": [
+        {
+          "country": {
+            "name": "India",
+            "id": "2dc477ac10d6c07b3fe008f6"
+          },
+          "state": {
+            "name": "Gujarat",
+            "id": "a1e9f7b3c9d2456f8b2c7e4a"
+          },
+          "city": {
+            "name": "Surat",
+            "id": "i0j1k2l3m4n5o6p7q8r90123"
+          },
+          "region": {
+            "name": "West India",
+            "id": "c1b7f2e8d9a03b5c7e4f2a61"
+          }
+        }
+      ],
+      "tagline": "Diamond city and textile hub",
+      "labels": ["Business", "Culture", "Cuisine", "Heritage", "Industry"],
+      "description": {
+        "short": "Surat is famous for its diamond cutting and polishing industry, textile markets, rich cuisine, and modern urban infrastructure."
+      },
+      "images": {
+        "banner": "/images/default.jpg"
+      },
+      "greetingText": "Welcome to the diamond city and textile hub",
+      "emergencyContacts": {
+        "Police": "100",
+        "Ambulance": "102",
+        "Fire": "101",
+        "Tourist Helpline": "1363",
+        "State Tourism": "03192-232694"
+      },
+      "safetyInformation": [
+        "Avoid isolated beaches after dark.",
+        "Respect marine life and coral reefs.",
+        "Follow local guidelines during monsoon season."
+      ],
+      "travelTips": [
+        "Carry sunscreen and insect repellent.",
+        "Book ferry tickets in advance.",
+        "Try local seafood at Aberdeen Bazaar."
+      ]
+    },
+    {
+      "id": "j1k2l3m4n5o6p7q8r9s01234",
+      "name": "Jaipur",
+      "locations": [
+        {
+          "country": {
+            "name": "India",
+            "id": "2dc477ac10d6c07b3fe008f6"
+          },
+          "state": {
+            "name": "Rajasthan",
+            "id": "bfa6c0e8c4a56d7a91b28ed4"
+          },
+          "city": {
+            "name": "Jaipur",
+            "id": "j1k2l3m4n5o6p7q8r9s01234"
+          },
+          "region": {
+            "name": "North India",
+            "id": "93fe7a334b3f131c575a6364"
+          }
+        }
+      ],
+      "tagline": "The Pink City of India",
+      "labels": ["Heritage", "Fortresses", "Culture", "Tourism", "Food"],
+      "description": {
+        "short": "Jaipur is known for its palaces, forts, colorful markets, and rich Rajasthani culture."
+      },
+      "images": {
+        "banner": "/images/default.jpg"
+      },
+      "greetingText": "Welcome to the pink city of India",
+      "emergencyContacts": {
+        "Police": "100",
+        "Ambulance": "102",
+        "Fire": "101",
+        "Tourist Helpline": "1363",
+        "State Tourism": "03192-232694"
+      },
+      "safetyInformation": [
+        "Avoid isolated beaches after dark.",
+        "Respect marine life and coral reefs.",
+        "Follow local guidelines during monsoon season."
+      ],
+      "travelTips": [
+        "Carry sunscreen and insect repellent.",
+        "Book ferry tickets in advance.",
+        "Try local seafood at Aberdeen Bazaar."
+      ]
+    },
+    {
+      "id": "k2l3m4n5o6p7q8r9s0t12345",
+      "name": "Lucknow",
+      "locations": [
+        {
+          "country": {
+            "name": "India",
+            "id": "2dc477ac10d6c07b3fe008f6"
+          },
+          "state": {
+            "name": "Uttar Pradesh",
+            "id": "5d1e91f3a8b4f08cbb21f567"
+          },
+          "city": {
+            "name": "Lucknow",
+            "id": "k2l3m4n5o6p7q8r9s0t12345"
+          },
+          "region": {
+            "name": "North India",
+            "id": "93fe7a334b3f131c575a6364"
+          }
+        }
+      ],
+      "tagline": "City of Nawabs",
+      "labels": ["Culture", "Heritage", "Cuisine", "Monuments", "Festivals"],
+      "description": {
+        "short": "Lucknow is famous for its refined culture, historical architecture, delectable Awadhi cuisine, and artistic heritage."
+      },
+      "images": {
+        "banner": "/images/default.jpg"
+      },
+      "greetingText": "Welcome to the city of nawabs",
+      "emergencyContacts": {
+        "Police": "100",
+        "Ambulance": "102",
+        "Fire": "101",
+        "Tourist Helpline": "1363",
+        "State Tourism": "03192-232694"
+      },
+      "safetyInformation": [
+        "Avoid isolated beaches after dark.",
+        "Respect marine life and coral reefs.",
+        "Follow local guidelines during monsoon season."
+      ],
+      "travelTips": [
+        "Carry sunscreen and insect repellent.",
+        "Book ferry tickets in advance.",
+        "Try local seafood at Aberdeen Bazaar."
+      ]
+    },
+    {
+      "id": "l3m4n5o6p7q8r9s0t1u23456",
+      "name": "Indore",
+      "locations": [
+        {
+          "country": {
+            "name": "India",
+            "id": "2dc477ac10d6c07b3fe008f6"
+          },
+          "state": {
+            "name": "Madhya Pradesh",
+            "id": "e2c9f0d1b6a3d8f5c4b7e123"
+          },
+          "city": {
+            "name": "Indore",
+            "id": "l3m4n5o6p7q8r9s0t1u23456"
+          },
+          "region": {
+            "name": "West India",
+            "id": "c1b7f2e8d9a03b5c7e4f2a61"
+          }
+        }
+      ],
+      "tagline": "Commercial capital of Madhya Pradesh",
+      "labels": ["Business", "Food", "Culture", "Education", "Heritage"],
+      "description": {
+        "short": "Indore is known for its thriving commerce, street food culture, educational institutions, and vibrant urban life."
+      },
+      "images": {
+        "banner": "/images/default.jpg"
+      },
+      "greetingText": "Welcome to the commercial capital of Madhya Pradesh",
+      "emergencyContacts": {
+        "Police": "100",
+        "Ambulance": "102",
+        "Fire": "101",
+        "Tourist Helpline": "1363",
+        "State Tourism": "03192-232694"
+      },
+      "safetyInformation": [
+        "Avoid isolated beaches after dark.",
+        "Respect marine life and coral reefs.",
+        "Follow local guidelines during monsoon season."
+      ],
+      "travelTips": [
+        "Carry sunscreen and insect repellent.",
+        "Book ferry tickets in advance.",
+        "Try local seafood at Aberdeen Bazaar."
+      ]
+    },
+    {
+      "id": "m4n5o6p7q8r9s0t1u2v34567",
+      "name": "Coimbatore",
+      "locations": [
+        {
+          "country": {
+            "name": "India",
+            "id": "2dc477ac10d6c07b3fe008f6"
+          },
+          "state": {
+            "name": "Tamil Nadu",
+            "id": "4ecf12d7296c0f4aa34d5bf8"
+          },
+          "city": {
+            "name": "Coimbatore",
+            "id": "m4n5o6p7q8r9s0t1u2v34567"
+          },
+          "region": {
+            "name": "South India",
+            "id": "8f78d624d8d98e9a0b1f6f72"
+          }
+        }
+      ],
+      "tagline": "Manchester of South India",
+      "labels": ["Industry", "Culture", "Education", "Food", "Business"],
+      "description": {
+        "short": "Coimbatore is a major industrial hub, known for textile manufacturing, educational institutions, pleasant climate, and urban growth."
+      },
+      "images": {
+        "banner": "/images/default.jpg"
+      },
+      "greetingText": "Welcome to the Manchester of South India",
+      "emergencyContacts": {
+        "Police": "100",
+        "Ambulance": "102",
+        "Fire": "101",
+        "Tourist Helpline": "1363",
+        "State Tourism": "03192-232694"
+      },
+      "safetyInformation": [
+        "Avoid isolated beaches after dark.",
+        "Respect marine life and coral reefs.",
+        "Follow local guidelines during monsoon season."
+      ],
+      "travelTips": [
+        "Carry sunscreen and insect repellent.",
+        "Book ferry tickets in advance.",
+        "Try local seafood at Aberdeen Bazaar."
+      ]
+    },
+    {
+      "id": "n5o6p7q8r9s0t1u2v3w45678",
+      "name": "Patna",
+      "locations": [
+        {
+          "country": {
+            "name": "India",
+            "id": "2dc477ac10d6c07b3fe008f6"
+          },
+          "state": {
+            "name": "Bihar",
+            "id": "5e92b6d81a47f09c8d1a3c4f"
+          },
+          "city": {
+            "name": "Patna",
+            "id": "n5o6p7q8r9s0t1u2v3w45678"
+          },
+          "region": {
+            "name": "East India",
+            "id": "a4b6c1938f54d3a7b1f3c652"
+          }
+        }
+      ],
+      "tagline": "Historical city by the Ganges",
+      "labels": ["Heritage", "Culture", "Education", "Religion", "History"],
+      "description": {
+        "short": "Patna is one of the oldest inhabited cities in India, rich in history, culture, and riverfront traditions along the Ganges."
+      },
+      "images": {
+        "banner": "/images/default.jpg"
+      },
+      "greetingText": "Welcome to the historical city by the Ganges",
+      "emergencyContacts": {
+        "Police": "100",
+        "Ambulance": "102",
+        "Fire": "101",
+        "Tourist Helpline": "1363",
+        "State Tourism": "03192-232694"
+      },
+      "safetyInformation": [
+        "Avoid isolated beaches after dark.",
+        "Respect marine life and coral reefs.",
+        "Follow local guidelines during monsoon season."
+      ],
+      "travelTips": [
+        "Carry sunscreen and insect repellent.",
+        "Book ferry tickets in advance.",
+        "Try local seafood at Aberdeen Bazaar."
+      ]
+    },
+    {
+      "id": "o6p7q8r9s0t1u2v3w4x56789",
+      "name": "Visakhapatnam",
+      "locations": [
+        {
+          "country": {
+            "name": "India",
+            "id": "2dc477ac10d6c07b3fe008f6"
+          },
+          "state": {
+            "name": "Andhra Pradesh",
+            "id": "c7f2e19d8b0241a3a45e7f01"
+          },
+          "city": {
+            "name": "Visakhapatnam",
+            "id": "o6p7q8r9s0t1u2v3w4x56789"
+          },
+          "region": {
+            "name": "South India",
+            "id": "8f78d624d8d98e9a0b1f6f72"
+          }
+        }
+      ],
+      "tagline": "The Jewel of Andhra Pradesh",
+      "labels": ["Beaches", "Business", "Culture", "Nature", "Industry"],
+      "description": {
+        "short": "Visakhapatnam, or Vizag, is a coastal city known for its beautiful beaches, ports, steel and heavy industries, and scenic hills."
+      },
+      "images": {
+        "banner": "/images/default.jpg"
+      },
+      "greetingText": "Welcome to the Jewel of Andhra Pradesh",
+      "emergencyContacts": {
+        "Police": "100",
+        "Ambulance": "102",
+        "Fire": "101",
+        "Tourist Helpline": "1363",
+        "State Tourism": "03192-232694"
+      },
+      "safetyInformation": [
+        "Avoid isolated beaches after dark.",
+        "Respect marine life and coral reefs.",
+        "Follow local guidelines during monsoon season."
+      ],
+      "travelTips": [
+        "Carry sunscreen and insect repellent.",
+        "Book ferry tickets in advance.",
+        "Try local seafood at Aberdeen Bazaar."
+      ]
+    },
+    {
+      "id": "p7q8r9s0t1u2v3w4x5y67890",
+      "name": "Bhubaneswar",
+      "locations": [
+        {
+          "country": {
+            "name": "India",
+            "id": "2dc477ac10d6c07b3fe008f6"
+          },
+          "state": {
+            "name": "Odisha",
+            "id": "a7e8f4c1d0926b51fcb6a8e4"
+          },
+          "city": {
+            "name": "Bhubaneswar",
+            "id": "p7q8r9s0t1u2v3w4x5y67890"
+          },
+          "region": {
+            "name": "East India",
+            "id": "a4b6c1938f54d3a7b1f3c652"
+          }
+        }
+      ],
+      "tagline": "Temple City of India",
+      "labels": [
+        "Heritage",
+        "Culture",
+        "Religion",
+        "Education",
+        "Architecture"
+      ],
+      "description": {
+        "short": "Bhubaneswar is renowned for its historic temples, classical architecture, cultural festivals, and role as the capital of Odisha."
+      },
+      "images": {
+        "banner": "/images/default.jpg"
+      },
+      "greetingText": "Welcome to the temple city of India",
+      "emergencyContacts": {
+        "Police": "100",
+        "Ambulance": "102",
+        "Fire": "101",
+        "Tourist Helpline": "1363",
+        "State Tourism": "03192-232694"
+      },
+      "safetyInformation": [
+        "Avoid isolated beaches after dark.",
+        "Respect marine life and coral reefs.",
+        "Follow local guidelines during monsoon season."
+      ],
+      "travelTips": [
+        "Carry sunscreen and insect repellent.",
+        "Book ferry tickets in advance.",
+        "Try local seafood at Aberdeen Bazaar."
+      ]
+    },
+    {
+      "id": "q8r9s0t1u2v3w4x5y6z78901",
+      "name": "Nagpur",
+      "locations": [
+        {
+          "country": {
+            "name": "India",
+            "id": "2dc477ac10d6c07b3fe008f6"
+          },
+          "state": {
+            "name": "Maharashtra",
+            "id": "d3c9f84b6a52c98b7e4d1c2f"
+          },
+          "city": {
+            "name": "Nagpur",
+            "id": "q8r9s0t1u2v3w4x5y6z78901"
+          },
+          "region": {
+            "name": "West India",
+            "id": "c1b7f2e8d9a03b5c7e4f2a61"
+          }
+        }
+      ],
+      "tagline": "Orange city and logistics hub",
+      "labels": ["Business", "Culture", "Education", "Nature", "Industry"],
+      "description": {
+        "short": "Nagpur is famous for oranges, industrial development, logistics connectivity, and cultural landmarks in Maharashtra."
+      },
+      "images": {
+        "banner": "/images/default.jpg"
+      },
+      "greetingText": "Welcome to the orange city and logistics hub",
+      "emergencyContacts": {
+        "Police": "100",
+        "Ambulance": "102",
+        "Fire": "101",
+        "Tourist Helpline": "1363",
+        "State Tourism": "03192-232694"
+      },
+      "safetyInformation": [
+        "Avoid isolated beaches after dark.",
+        "Respect marine life and coral reefs.",
+        "Follow local guidelines during monsoon season."
+      ],
+      "travelTips": [
+        "Carry sunscreen and insect repellent.",
+        "Book ferry tickets in advance.",
+        "Try local seafood at Aberdeen Bazaar."
+      ]
+    }
+  ]
+}

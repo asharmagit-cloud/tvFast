@@ -1,0 +1,1060 @@
+{
+  "Northern India": [
+    {
+      "id": "03b2d40720473d4b516a7a12",
+      "name": "Jammu and Kashmir",
+      "locations": [
+        {
+          "country": {
+            "name": "India",
+            "id": "2dc477ac10d6c07b3fe008f6"
+          },
+          "state": {
+            "name": "Jammu and Kashmir",
+            "id": "03b2d40720473d4b516a7a12"
+          },
+          "region": {
+            "name": "North India",
+            "id": "93fe7a334b3f131c575a6364"
+          }
+        }
+      ],
+      "tagline": "Discover the essence of Jammu and Kashmir",
+      "labels": ["Culture", "Heritage", "Nature", "Cuisine", "Festivals"],
+      "description": {
+        "short": "Jammu and Kashmir is a vibrant part of North India, known for its unique traditions, landscapes, and cultural richness."
+      },
+      "images": {
+        "banner": "/images/default.jpg"
+      },
+      "type": "state"
+    },
+    {
+      "id": "1504cb7c7d929783b34342ca",
+      "name": "Himachal Pradesh",
+      "locations": [
+        {
+          "country": {
+            "name": "India",
+            "id": "2dc477ac10d6c07b3fe008f6"
+          },
+          "state": {
+            "name": "Himachal Pradesh",
+            "id": "1504cb7c7d929783b34342ca"
+          },
+          "region": {
+            "name": "North India",
+            "id": "93fe7a334b3f131c575a6364"
+          }
+        }
+      ],
+      "tagline": "Discover the essence of Himachal Pradesh",
+      "labels": ["Culture", "Heritage", "Nature", "Cuisine", "Festivals"],
+      "description": {
+        "short": "Himachal Pradesh is a vibrant part of North India, known for its unique traditions, landscapes, and cultural richness."
+      },
+      "images": {
+        "banner": "/images/default.jpg"
+      },
+      "type": "state"
+    },
+    {
+      "id": "f3b5cf74109f2f8b92d64dc2",
+      "name": "Punjab",
+      "locations": [
+        {
+          "country": {
+            "name": "India",
+            "id": "2dc477ac10d6c07b3fe008f6"
+          },
+          "state": {
+            "name": "Punjab",
+            "id": "f3b5cf74109f2f8b92d64dc2"
+          },
+          "region": {
+            "name": "North India",
+            "id": "93fe7a334b3f131c575a6364"
+          }
+        }
+      ],
+      "tagline": "Discover the essence of Punjab",
+      "labels": ["Culture", "Heritage", "Nature", "Cuisine", "Festivals"],
+      "description": {
+        "short": "Punjab is a vibrant part of North India, known for its unique traditions, landscapes, and cultural richness."
+      },
+      "images": {
+        "banner": "/images/default.jpg"
+      },
+      "type": "state"
+    },
+    {
+      "id": "4a80e37b19a2d29f3ac84f97",
+      "name": "Haryana",
+      "locations": [
+        {
+          "country": {
+            "name": "India",
+            "id": "2dc477ac10d6c07b3fe008f6"
+          },
+          "state": {
+            "name": "Haryana",
+            "id": "4a80e37b19a2d29f3ac84f97"
+          },
+          "region": {
+            "name": "North India",
+            "id": "93fe7a334b3f131c575a6364"
+          }
+        }
+      ],
+      "tagline": "Discover the essence of Haryana",
+      "labels": ["Culture", "Heritage", "Nature", "Cuisine", "Festivals"],
+      "description": {
+        "short": "Haryana is a vibrant part of North India, known for its unique traditions, landscapes, and cultural richness."
+      },
+      "images": {
+        "banner": "/images/default.jpg"
+      },
+      "type": "state"
+    },
+    {
+      "id": "6f4d21c5e8c47393a9205bf1",
+      "name": "Uttarakhand",
+      "locations": [
+        {
+          "country": {
+            "name": "India",
+            "id": "2dc477ac10d6c07b3fe008f6"
+          },
+          "state": {
+            "name": "Uttarakhand",
+            "id": "6f4d21c5e8c47393a9205bf1"
+          },
+          "region": {
+            "name": "North India",
+            "id": "93fe7a334b3f131c575a6364"
+          }
+        }
+      ],
+      "tagline": "Discover the essence of Uttarakhand",
+      "labels": ["Culture", "Heritage", "Nature", "Cuisine", "Festivals"],
+      "description": {
+        "short": "Uttarakhand is a vibrant part of North India, known for its unique traditions, landscapes, and cultural richness."
+      },
+      "images": {
+        "banner": "/images/default.jpg"
+      },
+      "type": "state"
+    },
+    {
+      "id": "5d1e91f3a8b4f08cbb21f567",
+      "name": "Uttar Pradesh",
+      "locations": [
+        {
+          "country": {
+            "name": "India",
+            "id": "2dc477ac10d6c07b3fe008f6"
+          },
+          "state": {
+            "name": "Uttar Pradesh",
+            "id": "5d1e91f3a8b4f08cbb21f567"
+          },
+          "region": {
+            "name": "North India",
+            "id": "93fe7a334b3f131c575a6364"
+          }
+        }
+      ],
+      "tagline": "Discover the essence of Uttar Pradesh",
+      "labels": ["Culture", "Heritage", "Nature", "Cuisine", "Festivals"],
+      "description": {
+        "short": "Uttar Pradesh is a vibrant part of North India, known for its unique traditions, landscapes, and cultural richness."
+      },
+      "images": {
+        "banner": "/images/default.jpg"
+      },
+      "type": "state"
+    },
+    {
+      "id": "bfa6c0e8c4a56d7a91b28ed4",
+      "name": "Rajasthan",
+      "locations": [
+        {
+          "country": {
+            "name": "India",
+            "id": "2dc477ac10d6c07b3fe008f6"
+          },
+          "state": {
+            "name": "Rajasthan",
+            "id": "bfa6c0e8c4a56d7a91b28ed4"
+          },
+          "region": {
+            "name": "North India",
+            "id": "93fe7a334b3f131c575a6364"
+          }
+        }
+      ],
+      "tagline": "Discover the essence of Rajasthan",
+      "labels": ["Culture", "Heritage", "Nature", "Cuisine", "Festivals"],
+      "description": {
+        "short": "Rajasthan is a vibrant part of North India, known for its unique traditions, landscapes, and cultural richness."
+      },
+      "images": {
+        "banner": "/images/default.jpg"
+      },
+      "type": "state"
+    },
+    {
+      "id": "d3a14c2d1be4f50e8dc07a91",
+      "name": "Delhi",
+      "locations": [
+        {
+          "country": {
+            "name": "India",
+            "id": "2dc477ac10d6c07b3fe008f6"
+          },
+          "state": {
+            "name": "Delhi",
+            "id": "d3a14c2d1be4f50e8dc07a91"
+          },
+          "region": {
+            "name": "Union Territories",
+            "id": "3d9b6d251faad57c926b0461"
+          }
+        }
+      ],
+      "tagline": "Discover the essence of Delhi",
+      "labels": ["Culture", "Heritage", "Nature", "Cuisine", "Festivals"],
+      "description": {
+        "short": "Delhi is a vibrant part of Union Territories, known for its unique traditions, landscapes, and cultural richness."
+      },
+      "images": {
+        "banner": "/images/default.jpg"
+      },
+      "type": "state"
+    }
+  ],
+  "Western India": [
+    {
+      "id": "b1f7c3a6d9482c7f9a2e5d1b",
+      "name": "Goa",
+      "locations": [
+        {
+          "country": {
+            "name": "India",
+            "id": "2dc477ac10d6c07b3fe008f6"
+          },
+          "state": {
+            "name": "Goa",
+            "id": "b1f7c3a6d9482c7f9a2e5d1b"
+          },
+          "region": {
+            "name": "West India",
+            "id": "c1b7f2e8d9a03b5c7e4f2a61"
+          }
+        }
+      ],
+      "tagline": "Discover the essence of Goa",
+      "labels": ["Culture", "Heritage", "Nature", "Cuisine", "Festivals"],
+      "description": {
+        "short": "Goa is a vibrant part of West India, known for its unique traditions, landscapes, and cultural richness."
+      },
+      "images": {
+        "banner": "/images/default.jpg"
+      },
+      "type": "state"
+    },
+    {
+      "id": "d3c9f84b6a52c98b7e4d1c2f",
+      "name": "Maharashtra",
+      "locations": [
+        {
+          "country": {
+            "name": "India",
+            "id": "2dc477ac10d6c07b3fe008f6"
+          },
+          "state": {
+            "name": "Maharashtra",
+            "id": "d3c9f84b6a52c98b7e4d1c2f"
+          },
+          "region": {
+            "name": "West India",
+            "id": "c1b7f2e8d9a03b5c7e4f2a61"
+          }
+        }
+      ],
+      "tagline": "Discover the essence of Maharashtra",
+      "labels": ["Culture", "Heritage", "Nature", "Cuisine", "Festivals"],
+      "description": {
+        "short": "Maharashtra is a vibrant part of West India, known for its unique traditions, landscapes, and cultural richness."
+      },
+      "images": {
+        "banner": "/images/default.jpg"
+      },
+      "type": "state"
+    },
+    {
+      "id": "a1e9f7b3c9d2456f8b2c7e4a",
+      "name": "Gujarat",
+      "locations": [
+        {
+          "country": {
+            "name": "India",
+            "id": "2dc477ac10d6c07b3fe008f6"
+          },
+          "state": {
+            "name": "Gujarat",
+            "id": "a1e9f7b3c9d2456f8b2c7e4a"
+          },
+          "region": {
+            "name": "West India",
+            "id": "c1b7f2e8d9a03b5c7e4f2a61"
+          }
+        }
+      ],
+      "tagline": "Discover the essence of Gujarat",
+      "labels": ["Culture", "Heritage", "Nature", "Cuisine", "Festivals"],
+      "description": {
+        "short": "Gujarat is a vibrant part of West India, known for its unique traditions, landscapes, and cultural richness."
+      },
+      "images": {
+        "banner": "/images/default.jpg"
+      },
+      "type": "state"
+    }
+  ],
+  "Central India": [
+    {
+      "id": "c4f7d9a3e6825b1f9d2a6c4e",
+      "name": "Madhya Pradesh",
+      "locations": [
+        {
+          "country": {
+            "name": "India",
+            "id": "2dc477ac10d6c07b3fe008f6"
+          },
+          "state": {
+            "name": "Madhya Pradesh",
+            "id": "c4f7d9a3e6825b1f9d2a6c4e"
+          },
+          "region": {
+            "name": "Central India",
+            "id": "b6f3c9e4d1a72c8f5b4e3a61"
+          }
+        }
+      ],
+      "tagline": "Discover the essence of Madhya Pradesh",
+      "labels": ["Culture", "Heritage", "Nature", "Cuisine", "Festivals"],
+      "description": {
+        "short": "Madhya Pradesh is a vibrant part of Central India, known for its unique traditions, landscapes, and cultural richness."
+      },
+      "images": {
+        "banner": "/images/default.jpg"
+      },
+      "type": "state"
+    },
+    {
+      "id": "e3b1c5f79d48a6c1f7b9e2d3",
+      "name": "Chhattisgarh",
+      "locations": [
+        {
+          "country": {
+            "name": "India",
+            "id": "2dc477ac10d6c07b3fe008f6"
+          },
+          "state": {
+            "name": "Chhattisgarh",
+            "id": "e3b1c5f79d48a6c1f7b9e2d3"
+          },
+          "region": {
+            "name": "Central India",
+            "id": "b6f3c9e4d1a72c8f5b4e3a61"
+          }
+        }
+      ],
+      "tagline": "Discover the essence of Chhattisgarh",
+      "labels": ["Culture", "Heritage", "Nature", "Cuisine", "Festivals"],
+      "description": {
+        "short": "Chhattisgarh is a vibrant part of Central India, known for its unique traditions, landscapes, and cultural richness."
+      },
+      "images": {
+        "banner": "/images/default.jpg"
+      },
+      "type": "state"
+    }
+  ],
+  "Southern India": [
+    {
+      "id": "c7f2e19d8b0241a3a45e7f01",
+      "name": "Andhra Pradesh",
+      "locations": [
+        {
+          "country": {
+            "name": "India",
+            "id": "2dc477ac10d6c07b3fe008f6"
+          },
+          "state": {
+            "name": "Andhra Pradesh",
+            "id": "c7f2e19d8b0241a3a45e7f01"
+          },
+          "region": {
+            "name": "South India",
+            "id": "8f78d624d8d98e9a0b1f6f72"
+          }
+        }
+      ],
+      "tagline": "Discover the essence of Andhra Pradesh",
+      "labels": ["Culture", "Heritage", "Nature", "Cuisine", "Festivals"],
+      "description": {
+        "short": "Andhra Pradesh is a vibrant part of South India, known for its unique traditions, landscapes, and cultural richness."
+      },
+      "images": {
+        "banner": "/images/default.jpg"
+      },
+      "type": "state"
+    },
+    {
+      "id": "8bbf87a2d0d17b16b5d9c1f4",
+      "name": "Telangana",
+      "locations": [
+        {
+          "country": {
+            "name": "India",
+            "id": "2dc477ac10d6c07b3fe008f6"
+          },
+          "state": {
+            "name": "Telangana",
+            "id": "8bbf87a2d0d17b16b5d9c1f4"
+          },
+          "region": {
+            "name": "South India",
+            "id": "8f78d624d8d98e9a0b1f6f72"
+          }
+        }
+      ],
+      "tagline": "Discover the essence of Telangana",
+      "labels": ["Culture", "Heritage", "Nature", "Cuisine", "Festivals"],
+      "description": {
+        "short": "Telangana is a vibrant part of South India, known for its unique traditions, landscapes, and cultural richness."
+      },
+      "images": {
+        "banner": "/images/default.jpg"
+      },
+      "type": "state"
+    },
+    {
+      "id": "b918fe90d7251c87bcb6f1da",
+      "name": "Karnataka",
+      "locations": [
+        {
+          "country": {
+            "name": "India",
+            "id": "2dc477ac10d6c07b3fe008f6"
+          },
+          "state": {
+            "name": "Karnataka",
+            "id": "b918fe90d7251c87bcb6f1da"
+          },
+          "region": {
+            "name": "South India",
+            "id": "8f78d624d8d98e9a0b1f6f72"
+          }
+        }
+      ],
+      "tagline": "Discover the essence of Karnataka",
+      "labels": ["Culture", "Heritage", "Nature", "Cuisine", "Festivals"],
+      "description": {
+        "short": "Karnataka is a vibrant part of South India, known for its unique traditions, landscapes, and cultural richness."
+      },
+      "images": {
+        "banner": "/images/default.jpg"
+      },
+      "type": "state"
+    },
+    {
+      "id": "f109c7f14d2a82b6b97a4f35",
+      "name": "Kerala",
+      "locations": [
+        {
+          "country": {
+            "name": "India",
+            "id": "2dc477ac10d6c07b3fe008f6"
+          },
+          "state": {
+            "name": "Kerala",
+            "id": "f109c7f14d2a82b6b97a4f35"
+          },
+          "region": {
+            "name": "South India",
+            "id": "8f78d624d8d98e9a0b1f6f72"
+          }
+        }
+      ],
+      "tagline": "Discover the essence of Kerala",
+      "labels": ["Culture", "Heritage", "Nature", "Cuisine", "Festivals"],
+      "description": {
+        "short": "Kerala is a vibrant part of South India, known for its unique traditions, landscapes, and cultural richness."
+      },
+      "images": {
+        "banner": "/images/default.jpg"
+      },
+      "type": "state"
+    },
+    {
+      "id": "4ecf12d7296c0f4aa34d5bf8",
+      "name": "Tamil Nadu",
+      "locations": [
+        {
+          "country": {
+            "name": "India",
+            "id": "2dc477ac10d6c07b3fe008f6"
+          },
+          "state": {
+            "name": "Tamil Nadu",
+            "id": "4ecf12d7296c0f4aa34d5bf8"
+          },
+          "region": {
+            "name": "South India",
+            "id": "8f78d624d8d98e9a0b1f6f72"
+          }
+        }
+      ],
+      "tagline": "Discover the essence of Tamil Nadu",
+      "labels": ["Culture", "Heritage", "Nature", "Cuisine", "Festivals"],
+      "description": {
+        "short": "Tamil Nadu is a vibrant part of South India, known for its unique traditions, landscapes, and cultural richness."
+      },
+      "images": {
+        "banner": "/images/default.jpg"
+      },
+      "type": "state"
+    },
+    {
+      "id": "1d67b248e093b02a99c438de",
+      "name": "Puducherry",
+      "locations": [
+        {
+          "country": {
+            "name": "India",
+            "id": "2dc477ac10d6c07b3fe008f6"
+          },
+          "state": {
+            "name": "Puducherry",
+            "id": "1d67b248e093b02a99c438de"
+          },
+          "region": {
+            "name": "Union Territories",
+            "id": "3d9b6d251faad57c926b0461"
+          }
+        }
+      ],
+      "tagline": "Discover the essence of Puducherry",
+      "labels": ["Culture", "Heritage", "Nature", "Cuisine", "Festivals"],
+      "description": {
+        "short": "Puducherry is a vibrant part of Union Territories, known for its unique traditions, landscapes, and cultural richness."
+      },
+      "images": {
+        "banner": "/images/default.jpg"
+      },
+      "type": "state"
+    }
+  ],
+  "Eastern India": [
+    {
+      "id": "5e92b6d81a47f09c8d1a3c4f",
+      "name": "Bihar",
+      "locations": [
+        {
+          "country": {
+            "name": "India",
+            "id": "2dc477ac10d6c07b3fe008f6"
+          },
+          "state": {
+            "name": "Bihar",
+            "id": "5e92b6d81a47f09c8d1a3c4f"
+          },
+          "region": {
+            "name": "East India",
+            "id": "a4b6c1938f54d3a7b1f3c652"
+          }
+        }
+      ],
+      "tagline": "Discover the essence of Bihar",
+      "labels": ["Culture", "Heritage", "Nature", "Cuisine", "Festivals"],
+      "description": {
+        "short": "Bihar is a vibrant part of East India, known for its unique traditions, landscapes, and cultural richness."
+      },
+      "images": {
+        "banner": "/images/default.jpg"
+      },
+      "type": "state"
+    },
+    {
+      "id": "f7a2c3d918e5b6072d91a84e",
+      "name": "Jharkhand",
+      "locations": [
+        {
+          "country": {
+            "name": "India",
+            "id": "2dc477ac10d6c07b3fe008f6"
+          },
+          "state": {
+            "name": "Jharkhand",
+            "id": "f7a2c3d918e5b6072d91a84e"
+          },
+          "region": {
+            "name": "East India",
+            "id": "a4b6c1938f54d3a7b1f3c652"
+          }
+        }
+      ],
+      "tagline": "Discover the essence of Jharkhand",
+      "labels": ["Culture", "Heritage", "Nature", "Cuisine", "Festivals"],
+      "description": {
+        "short": "Jharkhand is a vibrant part of East India, known for its unique traditions, landscapes, and cultural richness."
+      },
+      "images": {
+        "banner": "/images/default.jpg"
+      },
+      "type": "state"
+    },
+    {
+      "id": "a7e8f4c1d0926b51fcb6a8e4",
+      "name": "Odisha",
+      "locations": [
+        {
+          "country": {
+            "name": "India",
+            "id": "2dc477ac10d6c07b3fe008f6"
+          },
+          "state": {
+            "name": "Odisha",
+            "id": "a7e8f4c1d0926b51fcb6a8e4"
+          },
+          "region": {
+            "name": "East India",
+            "id": "a4b6c1938f54d3a7b1f3c652"
+          }
+        }
+      ],
+      "tagline": "Discover the essence of Odisha",
+      "labels": ["Culture", "Heritage", "Nature", "Cuisine", "Festivals"],
+      "description": {
+        "short": "Odisha is a vibrant part of East India, known for its unique traditions, landscapes, and cultural richness."
+      },
+      "images": {
+        "banner": "/images/default.jpg"
+      },
+      "type": "state"
+    },
+    {
+      "id": "c2f3e98a7d64f0b1a6c92b53",
+      "name": "West Bengal",
+      "locations": [
+        {
+          "country": {
+            "name": "India",
+            "id": "2dc477ac10d6c07b3fe008f6"
+          },
+          "state": {
+            "name": "West Bengal",
+            "id": "c2f3e98a7d64f0b1a6c92b53"
+          },
+          "region": {
+            "name": "East India",
+            "id": "a4b6c1938f54d3a7b1f3c652"
+          }
+        }
+      ],
+      "tagline": "Discover the essence of West Bengal",
+      "labels": ["Culture", "Heritage", "Nature", "Cuisine", "Festivals"],
+      "description": {
+        "short": "West Bengal is a vibrant part of East India, known for its unique traditions, landscapes, and cultural richness."
+      },
+      "images": {
+        "banner": "/images/default.jpg"
+      },
+      "type": "state"
+    }
+  ],
+  "Northeastern India": [
+    {
+      "id": "a9f4d2c38b617e5a9d4f6b21",
+      "name": "Assam",
+      "locations": [
+        {
+          "country": {
+            "name": "India",
+            "id": "2dc477ac10d6c07b3fe008f6"
+          },
+          "state": {
+            "name": "Assam",
+            "id": "a9f4d2c38b617e5a9d4f6b21"
+          },
+          "region": {
+            "name": "Northeast India",
+            "id": "d4c7b8f1a92e3c6f7b4d5a23"
+          }
+        }
+      ],
+      "tagline": "Discover the essence of Assam",
+      "labels": ["Culture", "Heritage", "Nature", "Cuisine", "Festivals"],
+      "description": {
+        "short": "Assam is a vibrant part of Northeast India, known for its unique traditions, landscapes, and cultural richness."
+      },
+      "images": {
+        "banner": "/images/default.jpg"
+      },
+      "type": "state"
+    },
+    {
+      "id": "b8d3e7f5c291a6b7d4f8c2a1",
+      "name": "Arunachal Pradesh",
+      "locations": [
+        {
+          "country": {
+            "name": "India",
+            "id": "2dc477ac10d6c07b3fe008f6"
+          },
+          "state": {
+            "name": "Arunachal Pradesh",
+            "id": "b8d3e7f5c291a6b7d4f8c2a1"
+          },
+          "region": {
+            "name": "Northeast India",
+            "id": "d4c7b8f1a92e3c6f7b4d5a23"
+          }
+        }
+      ],
+      "tagline": "Discover the essence of Arunachal Pradesh",
+      "labels": ["Culture", "Heritage", "Nature", "Cuisine", "Festivals"],
+      "description": {
+        "short": "Arunachal Pradesh is a vibrant part of Northeast India, known for its unique traditions, landscapes, and cultural richness."
+      },
+      "images": {
+        "banner": "/images/default.jpg"
+      },
+      "type": "state"
+    },
+    {
+      "id": "c7b2d1e84f6a9c3b8d2f1e97",
+      "name": "Meghalaya",
+      "locations": [
+        {
+          "country": {
+            "name": "India",
+            "id": "2dc477ac10d6c07b3fe008f6"
+          },
+          "state": {
+            "name": "Meghalaya",
+            "id": "c7b2d1e84f6a9c3b8d2f1e97"
+          },
+          "region": {
+            "name": "Northeast India",
+            "id": "d4c7b8f1a92e3c6f7b4d5a23"
+          }
+        }
+      ],
+      "tagline": "Discover the essence of Meghalaya",
+      "labels": ["Culture", "Heritage", "Nature", "Cuisine", "Festivals"],
+      "description": {
+        "short": "Meghalaya is a vibrant part of Northeast India, known for its unique traditions, landscapes, and cultural richness."
+      },
+      "images": {
+        "banner": "/images/default.jpg"
+      },
+      "type": "state"
+    },
+    {
+      "id": "d6e3c2f8b1a4d7e9f2c8b5a4",
+      "name": "Manipur",
+      "locations": [
+        {
+          "country": {
+            "name": "India",
+            "id": "2dc477ac10d6c07b3fe008f6"
+          },
+          "state": {
+            "name": "Manipur",
+            "id": "d6e3c2f8b1a4d7e9f2c8b5a4"
+          },
+          "region": {
+            "name": "Northeast India",
+            "id": "d4c7b8f1a92e3c6f7b4d5a23"
+          }
+        }
+      ],
+      "tagline": "Discover the essence of Manipur",
+      "labels": ["Culture", "Heritage", "Nature", "Cuisine", "Festivals"],
+      "description": {
+        "short": "Manipur is a vibrant part of Northeast India, known for its unique traditions, landscapes, and cultural richness."
+      },
+      "images": {
+        "banner": "/images/default.jpg"
+      },
+      "type": "state"
+    },
+    {
+      "id": "e5f1c8d2b7a4e9f3c6d1b2a8",
+      "name": "Mizoram",
+      "locations": [
+        {
+          "country": {
+            "name": "India",
+            "id": "2dc477ac10d6c07b3fe008f6"
+          },
+          "state": {
+            "name": "Mizoram",
+            "id": "e5f1c8d2b7a4e9f3c6d1b2a8"
+          },
+          "region": {
+            "name": "Northeast India",
+            "id": "d4c7b8f1a92e3c6f7b4d5a23"
+          }
+        }
+      ],
+      "tagline": "Discover the essence of Mizoram",
+      "labels": ["Culture", "Heritage", "Nature", "Cuisine", "Festivals"],
+      "description": {
+        "short": "Mizoram is a vibrant part of Northeast India, known for its unique traditions, landscapes, and cultural richness."
+      },
+      "images": {
+        "banner": "/images/default.jpg"
+      },
+      "type": "state"
+    },
+    {
+      "id": "f4a8b1c3d2e7f6a9c5b1d4e3",
+      "name": "Nagaland",
+      "locations": [
+        {
+          "country": {
+            "name": "India",
+            "id": "2dc477ac10d6c07b3fe008f6"
+          },
+          "state": {
+            "name": "Nagaland",
+            "id": "f4a8b1c3d2e7f6a9c5b1d4e3"
+          },
+          "region": {
+            "name": "Northeast India",
+            "id": "d4c7b8f1a92e3c6f7b4d5a23"
+          }
+        }
+      ],
+      "tagline": "Discover the essence of Nagaland",
+      "labels": ["Culture", "Heritage", "Nature", "Cuisine", "Festivals"],
+      "description": {
+        "short": "Nagaland is a vibrant part of Northeast India, known for its unique traditions, landscapes, and cultural richness."
+      },
+      "images": {
+        "banner": "/images/default.jpg"
+      },
+      "type": "state"
+    },
+    {
+      "id": "a3c7d4f1e8b6a9c5d2f4b1e7",
+      "name": "Tripura",
+      "locations": [
+        {
+          "country": {
+            "name": "India",
+            "id": "2dc477ac10d6c07b3fe008f6"
+          },
+          "state": {
+            "name": "Tripura",
+            "id": "a3c7d4f1e8b6a9c5d2f4b1e7"
+          },
+          "region": {
+            "name": "Northeast India",
+            "id": "d4c7b8f1a92e3c6f7b4d5a23"
+          }
+        }
+      ],
+      "tagline": "Discover the essence of Tripura",
+      "labels": ["Culture", "Heritage", "Nature", "Cuisine", "Festivals"],
+      "description": {
+        "short": "Tripura is a vibrant part of Northeast India, known for its unique traditions, landscapes, and cultural richness."
+      },
+      "images": {
+        "banner": "/images/default.jpg"
+      },
+      "type": "state"
+    },
+    {
+      "id": "b2d5e7f8c1a4b9d6e3f7c1a2",
+      "name": "Sikkim",
+      "locations": [
+        {
+          "country": {
+            "name": "India",
+            "id": "2dc477ac10d6c07b3fe008f6"
+          },
+          "state": {
+            "name": "Sikkim",
+            "id": "b2d5e7f8c1a4b9d6e3f7c1a2"
+          },
+          "region": {
+            "name": "Northeast India",
+            "id": "d4c7b8f1a92e3c6f7b4d5a23"
+          }
+        }
+      ],
+      "tagline": "Discover the essence of Sikkim",
+      "labels": ["Culture", "Heritage", "Nature", "Cuisine", "Festivals"],
+      "description": {
+        "short": "Sikkim is a vibrant part of Northeast India, known for its unique traditions, landscapes, and cultural richness."
+      },
+      "images": {
+        "banner": "/images/default.jpg"
+      },
+      "type": "state"
+    }
+  ],
+  "Union Territories": [
+    {
+      "id": "d8f3a7b6c1e4d9f2a5b7c3e1",
+      "name": "Chandigarh",
+      "locations": [
+        {
+          "country": {
+            "name": "India",
+            "id": "2dc477ac10d6c07b3fe008f6"
+          },
+          "state": {
+            "name": "Chandigarh",
+            "id": "d8f3a7b6c1e4d9f2a5b7c3e1"
+          },
+          "region": {
+            "name": "Union Territories",
+            "id": "3d9b6d251faad57c926b0461"
+          }
+        }
+      ],
+      "tagline": "Discover the essence of Chandigarh",
+      "labels": ["Culture", "Heritage", "Nature", "Cuisine", "Festivals"],
+      "description": {
+        "short": "Chandigarh is a vibrant part of Union Territories, known for its unique traditions, landscapes, and cultural richness."
+      },
+      "images": {
+        "banner": "/images/default.jpg"
+      },
+      "type": "state"
+    },
+    {
+      "id": "e1b7c9f2d3a4e5f6b8c1d7a3",
+      "name": "Ladakh",
+      "locations": [
+        {
+          "country": {
+            "name": "India",
+            "id": "2dc477ac10d6c07b3fe008f6"
+          },
+          "state": {
+            "name": "Ladakh",
+            "id": "e1b7c9f2d3a4e5f6b8c1d7a3"
+          },
+          "region": {
+            "name": "Union Territories",
+            "id": "3d9b6d251faad57c926b0461"
+          }
+        }
+      ],
+      "tagline": "Discover the essence of Ladakh",
+      "labels": ["Culture", "Heritage", "Nature", "Cuisine", "Festivals"],
+      "description": {
+        "short": "Ladakh is a vibrant part of Union Territories, known for its unique traditions, landscapes, and cultural richness."
+      },
+      "images": {
+        "banner": "/images/default.jpg"
+      },
+      "type": "state"
+    },
+    {
+      "id": "a6d4c2e9f1b7c3d8e4f5a9b2",
+      "name": "Andaman and Nicobar Islands",
+      "locations": [
+        {
+          "country": {
+            "name": "India",
+            "id": "2dc477ac10d6c07b3fe008f6"
+          },
+          "state": {
+            "name": "Andaman and Nicobar Islands",
+            "id": "a6d4c2e9f1b7c3d8e4f5a9b2"
+          },
+          "region": {
+            "name": "Union Territories",
+            "id": "3d9b6d251faad57c926b0461"
+          }
+        }
+      ],
+      "tagline": "Discover the essence of Andaman and Nicobar Islands",
+      "labels": ["Culture", "Heritage", "Nature", "Cuisine", "Festivals"],
+      "description": {
+        "short": "Andaman and Nicobar Islands are a vibrant part of Union Territories, known for their unique traditions, landscapes, and cultural richness."
+      },
+      "images": {
+        "banner": "/images/default.jpg"
+      },
+      "type": "state"
+    },
+    {
+      "id": "c5e2f7a8b3d1c9e6f4a7b2d5",
+      "name": "Lakshadweep",
+      "locations": [
+        {
+          "country": {
+            "name": "India",
+            "id": "2dc477ac10d6c07b3fe008f6"
+          },
+          "state": {
+            "name": "Lakshadweep",
+            "id": "c5e2f7a8b3d1c9e6f4a7b2d5"
+          },
+          "region": {
+            "name": "Union Territories",
+            "id": "3d9b6d251faad57c926b0461"
+          }
+        }
+      ],
+      "tagline": "Discover the essence of Lakshadweep",
+      "labels": ["Culture", "Heritage", "Nature", "Cuisine", "Festivals"],
+      "description": {
+        "short": "Lakshadweep is a vibrant part of Union Territories, known for its unique traditions, landscapes, and cultural richness."
+      },
+      "images": {
+        "banner": "/images/default.jpg"
+      },
+      "type": "state"
+    },
+    {
+      "id": "f9d3a1c8b6e4f7d2c3a5b1e9",
+      "name": "Dadra and Nagar Haveli and Daman and Diu",
+      "locations": [
+        {
+          "country": {
+            "name": "India",
+            "id": "2dc477ac10d6c07b3fe008f6"
+          },
+          "state": {
+            "name": "Dadra and Nagar Haveli and Daman and Diu",
+            "id": "f9d3a1c8b6e4f7d2c3a5b1e9"
+          },
+          "region": {
+            "name": "Union Territories",
+            "id": "3d9b6d251faad57c926b0461"
+          }
+        }
+      ],
+      "tagline": "Discover the essence of Dadra and Nagar Haveli and Daman and Diu",
+      "labels": ["Culture", "Heritage", "Nature", "Cuisine", "Festivals"],
+      "description": {
+        "short": "Dadra and Nagar Haveli and Daman and Diu are vibrant parts of Union Territories, known for their unique traditions, landscapes, and cultural richness."
+      },
+      "images": {
+        "banner": "/images/default.jpg"
+      },
+      "type": "state"
+    }
+  ]
+}
