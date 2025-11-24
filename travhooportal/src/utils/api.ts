@@ -1,3 +1,5 @@
+import { Experience } from '@/types/location';
+
 const API_BASE_URL =
   process.env.NEXT_PUBLIC_API_BASE_URL?.replace(/\/$/, '') ||
   'http://localhost:8000';
@@ -180,15 +182,15 @@ export function transformApiStateToState(apiState: ApiState) {
     experiences: apiState.experiences ? (() => {
       // Transform experiences to ensure they're properly formatted
       const transformed: {
-        Food?: any[];
-        Activities?: any[];
-        LocalMarkets?: any[];
-        Spiritual?: any[];
-        Historical?: any[];
-        Nature?: any[];
-        Cultural?: any[];
-        Adventure?: any[];
-        Others?: any[];
+        Food?: Experience[];
+        Activities?: Experience[];
+        LocalMarkets?: Experience[];
+        Spiritual?: Experience[];
+        Historical?: Experience[];
+        Nature?: Experience[];
+        Cultural?: Experience[];
+        Adventure?: Experience[];
+        Others?: Experience[];
       } = {};
       
       // Process each category
@@ -196,11 +198,11 @@ export function transformApiStateToState(apiState: ApiState) {
         const categoryExperiences = apiState.experiences[category as keyof typeof apiState.experiences];
         if (Array.isArray(categoryExperiences)) {
           // Filter out ObjectIds (strings that look like ObjectIds) and keep only objects with name
-          const validExperiences = categoryExperiences.filter(exp => 
+          const validExperiences = categoryExperiences.filter((exp): exp is Experience => 
             typeof exp === 'object' && 
             exp !== null && 
             'name' in exp &&
-            typeof (exp as any).name === 'string'
+            typeof (exp as { name?: unknown }).name === 'string'
           );
           if (validExperiences.length > 0) {
             transformed[category as keyof typeof transformed] = validExperiences;
@@ -323,7 +325,16 @@ export async function queryCities(options: {
     view = 'full',
   } = options;
 
-  const filter: any = {
+  interface CityQueryFilter {
+    view: 'minimal' | 'full';
+    id: string[];
+    search?: string;
+    state_id?: string[];
+    labels?: string[];
+    label_filter_type?: 'any' | 'all';
+  }
+
+  const filter: CityQueryFilter = {
     view,
     id: ['t_all'],
   };

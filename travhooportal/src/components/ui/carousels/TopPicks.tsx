@@ -20,20 +20,6 @@ const LIST_TYPE_TO_PAGE_MAP = {
   city: 'cities',
 };
 
-const fetchCities = async () => {
-  const response = await fetch('/api/v1/cities/');
-  const data = await response.json();
-  return data.cities;
-};
-
-const fetchStates = async () => {
-  const response = await fetch('/api/v1/states/');
-  const data = await response.json();
-  return data.states;
-};
-
-// map the fetchCities and fetchStates to the data
-
 interface TopPicksCarouselProps {
   id: string;
   title: string;

@@ -4,7 +4,6 @@ import { FC, useEffect, useState } from 'react';
 import GreetingScreen from '@/components/ui/GreetingScreen';
 import { useParams } from 'next/navigation';
 import LoadingScreen from '@/components/ui/LoadingScreen';
-import NoDataScreen from '@/components/ui/NoDataScreen';
 import { City } from '@/types/location';
 import Image from 'next/image';
 import DpTabs from '@/components/ui/DpTabs';

@@ -9,13 +9,11 @@ import { fetchStates, transformApiStateToState } from '@/utils/api';
 export const TopPicks: FC = () => {
   const [states, setStates] = useState<State[]>([]);
   const [cities, setCities] = useState<City[]>([]);
-  const [isLoadingStates, setIsLoadingStates] = useState(true);
 
   useEffect(() => {
     // Fetch states from API
     const loadStates = async () => {
       try {
-        setIsLoadingStates(true);
         const response = await fetchStates({
           view: 'minimal',
           ids: ['t_all'],
@@ -29,8 +27,8 @@ export const TopPicks: FC = () => {
         console.error('Error fetching states:', err);
         // Fallback to empty array on error
         setStates([]);
-      } finally {
-        setIsLoadingStates(false);
+      } catch {
+        // Error already logged
       }
     };
 
