@@ -2,7 +2,7 @@ import { Experience } from '@/types/location';
 
 const API_BASE_URL =
   process.env.NEXT_PUBLIC_API_BASE_URL?.replace(/\/$/, '') ||
-  'http://localhost:8000';
+  'https://stag.travhoo.com/api/';
 
 export interface ApiState {
   _id?: string;
