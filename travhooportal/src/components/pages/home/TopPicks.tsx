@@ -27,8 +27,6 @@ export const TopPicks: FC = () => {
         console.error('Error fetching states:', err);
         // Fallback to empty array on error
         setStates([]);
-      } catch {
-        // Error already logged
       }
     };
 
