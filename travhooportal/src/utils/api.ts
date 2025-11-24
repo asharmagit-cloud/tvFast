@@ -194,8 +194,8 @@ export function transformApiStateToState(apiState: ApiState) {
       } = {};
       
       // Process each category
-      Object.keys(apiState.experiences).forEach(category => {
-        const categoryExperiences = apiState.experiences[category as keyof typeof apiState.experiences];
+      Object.keys(apiState.experiences || {}).forEach(category => {
+        const categoryExperiences = apiState.experiences?.[category as keyof typeof apiState.experiences];
         if (Array.isArray(categoryExperiences)) {
           // Filter out ObjectIds (strings that look like ObjectIds) and keep only objects with name
           const validExperiences = categoryExperiences.filter((exp): exp is Experience => 
@@ -503,7 +503,39 @@ export function transformApiCityToCity(apiCity: ApiCity) {
     description: apiCity.description,
     greetingText: apiCity.greetingText,
     labels: [], // Cities might not have labels in the API
-    experiences: apiCity.experiences,
+    experiences: apiCity.experiences ? (() => {
+      // Transform experiences to ensure they're properly formatted
+      const transformed: {
+        Food?: Experience[];
+        Activities?: Experience[];
+        LocalMarkets?: Experience[];
+        Spiritual?: Experience[];
+        Historical?: Experience[];
+        Nature?: Experience[];
+        Cultural?: Experience[];
+        Adventure?: Experience[];
+        Others?: Experience[];
+      } = {};
+      
+      // Process each category
+      Object.keys(apiCity.experiences || {}).forEach(category => {
+        const categoryExperiences = apiCity.experiences?.[category as keyof typeof apiCity.experiences];
+        if (Array.isArray(categoryExperiences)) {
+          // Filter out ObjectIds (strings that look like ObjectIds) and keep only objects with name
+          const validExperiences = categoryExperiences.filter((exp): exp is Experience => 
+            typeof exp === 'object' && 
+            exp !== null && 
+            'name' in exp &&
+            typeof (exp as { name?: unknown }).name === 'string'
+          );
+          if (validExperiences.length > 0) {
+            transformed[category as keyof typeof transformed] = validExperiences;
+          }
+        }
+      });
+      
+      return Object.keys(transformed).length > 0 ? transformed : undefined;
+    })() : undefined,
     travelTips: apiCity.travelTips,
     safetyInformation: apiCity.safetyInformation,
     emergencyContacts: apiCity.emergencyContacts,
