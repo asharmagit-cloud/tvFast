@@ -55,17 +55,27 @@ const ListCard: FC<{
           {/* Labels */}
           {labels && labels.length > 0 && (
             <div className='flex flex-wrap gap-2 mb-4'>
-              {labels.slice(0, 3).map((label, labelIndex) => (
-                <span
-                  key={labelIndex}
-                  className='px-3 py-1 bg-white/95 backdrop-blur-sm text-gray-800 text-xs font-semibold rounded-full shadow-md transform group-hover:scale-103 transition-transform duration-300'
-                  style={{
-                    transitionDelay: `${labelIndex * 50}ms`,
-                  }}
-                >
-                  {label}
-                </span>
-              ))}
+              {labels.slice(0, 3).map((label, labelIndex) => {
+                // Handle both string[] (legacy) and Array<{name, id}> (new format)
+                const labelText = typeof label === 'string' 
+                  ? label 
+                  : (label.name || label.id || '');
+                const labelKey = typeof label === 'string' 
+                  ? label 
+                  : (label.id || `label-${labelIndex}`);
+                
+                return (
+                  <span
+                    key={labelKey}
+                    className='px-3 py-1 bg-white/95 backdrop-blur-sm text-gray-800 text-xs font-semibold rounded-full shadow-md transform group-hover:scale-103 transition-transform duration-300'
+                    style={{
+                      transitionDelay: `${labelIndex * 50}ms`,
+                    }}
+                  >
+                    {labelText}
+                  </span>
+                );
+              })}
             </div>
           )}
 

@@ -3,7 +3,7 @@ from bson import ObjectId
 from fastapi import HTTPException, status
 from database import get_database
 from models.city import CityModel
-from schemas.city import CityCreate, CityUpdate, CityResponse, CityListResponse
+from schemas.city import CityCreate, CityUpdate, CityResponse, CityListResponse, CityStandardRequest, CityStandardResponse
 from datetime import datetime, timezone
 from types import SimpleNamespace
 import logging
@@ -23,9 +23,144 @@ def convert_objectids(obj):
         return obj
 
 
+def normalize_response_data(data: dict) -> dict:
+    """Normalize response data to match frontend interface:
+    - location -> locations (plural)
+    - tagLine -> tagline (lowercase)
+    - Ensure labels are in format [{name, id}, ...]
+    """
+    normalized = data.copy()
+    
+    # Convert location to locations
+    if "location" in normalized and "locations" not in normalized:
+        normalized["locations"] = normalized.pop("location")
+    elif "location" in normalized and "locations" in normalized:
+        # If both exist, prefer locations
+        normalized.pop("location")
+    
+    # Convert tagLine to tagline
+    if "tagLine" in normalized and "tagline" not in normalized:
+        normalized["tagline"] = normalized.pop("tagLine")
+    elif "tagLine" in normalized and "tagline" in normalized:
+        # If both exist, prefer tagline
+        normalized.pop("tagLine")
+    
+    # Normalize labels to ensure they're in format [{name, id}, ...]
+    if "labels" in normalized and normalized["labels"]:
+        labels = normalized["labels"]
+        if isinstance(labels, list):
+            normalized_labels = []
+            for label in labels:
+                if isinstance(label, dict):
+                    # Ensure it has both name and id
+                    if "id" in label:
+                        normalized_labels.append({
+                            "id": str(label.get("id", "")),
+                            "name": label.get("name", "")
+                        })
+                elif isinstance(label, str):
+                    # If it's just a string, convert to {id: string, name: ""}
+                    normalized_labels.append({
+                        "id": label,
+                        "name": ""
+                    })
+            normalized["labels"] = normalized_labels if normalized_labels else None
+    
+    return normalized
+
+
 class CityController:
     def __init__(self):
         self.collection_name = "cities"
+
+    async def _enrich_locations_with_names(self, db, cities: List[dict]) -> List[dict]:
+        """Batch enrich location names for cities (countries, regions, states)."""
+        # Collect unique IDs
+        country_ids = set()
+        region_ids = set()
+        state_ids = set()
+        
+        for city in cities:
+            if city.get("location") and isinstance(city["location"], list):
+                for loc in city["location"]:
+                    if not isinstance(loc, dict):
+                        continue
+                    # Country
+                    country = loc.get("country")
+                    if isinstance(country, dict) and country.get("id") and (country.get("name") is None):
+                        try:
+                            country_ids.add(ObjectId(str(country["id"])))
+                        except Exception:
+                            pass
+                    # Region
+                    region = loc.get("region")
+                    if isinstance(region, dict) and region.get("id") and (region.get("name") is None):
+                        try:
+                            region_ids.add(ObjectId(str(region["id"])))
+                        except Exception:
+                            pass
+                    # State
+                    state_ref = loc.get("state")
+                    if isinstance(state_ref, dict) and state_ref.get("id") and (state_ref.get("name") is None):
+                        try:
+                            state_ids.add(ObjectId(str(state_ref["id"])))
+                        except Exception:
+                            pass
+        
+        # Batch fetch lookup maps
+        countries_map = {}
+        regions_map = {}
+        states_map = {}
+        
+        collection_names = await db.list_collection_names()
+        
+        if country_ids and "countries" in collection_names:
+            cursor = db["countries"].find({"_id": {"$in": list(country_ids)}})
+            async for doc in cursor:
+                countries_map[str(doc.get("_id"))] = doc.get("name")
+        
+        if region_ids and "regions" in collection_names:
+            cursor = db["regions"].find({"_id": {"$in": list(region_ids)}})
+            async for doc in cursor:
+                regions_map[str(doc.get("_id"))] = doc.get("name")
+        
+        if state_ids:
+            cursor = db["states"].find({"_id": {"$in": list(state_ids)}})
+            async for doc in cursor:
+                states_map[str(doc.get("_id"))] = doc.get("name")
+        
+        # Inject names into cities
+        for city in cities:
+            if city.get("location") and isinstance(city["location"], list):
+                for loc in city["location"]:
+                    if not isinstance(loc, dict):
+                        continue
+                    # Country
+                    country = loc.get("country")
+                    if isinstance(country, dict) and country.get("id"):
+                        cid = str(country["id"]) if not isinstance(country["id"], ObjectId) else str(country["id"])
+                        cname = countries_map.get(cid)
+                        if cname:
+                            country["name"] = cname
+                            loc["country"] = country
+                    # Region
+                    region = loc.get("region")
+                    if isinstance(region, dict) and region.get("id"):
+                        rid = str(region["id"]) if not isinstance(region["id"], ObjectId) else str(region["id"])
+                        rname = regions_map.get(rid)
+                        if rname:
+                            region["name"] = rname
+                            loc["region"] = region
+                    # State
+                    state_ref = loc.get("state")
+                    if isinstance(state_ref, dict) and state_ref.get("id"):
+                        sid = str(state_ref["id"]) if not isinstance(state_ref["id"], ObjectId) else str(state_ref["id"])
+                        sname = states_map.get(sid)
+                        if sname:
+                            state_ref["name"] = sname
+                            loc["state"] = state_ref
+        
+        return cities
 
     async def create_city(self, city_data: CityCreate) -> CityResponse:
         """Create a new city"""
@@ -166,9 +301,9 @@ class CityController:
             "name": city.get("name"),
             "state_id": state_id_str,
             "is_active": city.get("is_active", True),
-            "location": city.get("location"),
+            "locations": city.get("location") or city.get("locations"),  # Use locations (plural)
             "greetingText": city.get("greetingText"),
-            "tagLine": city.get("tagLine"),
+            "tagline": city.get("tagLine") or city.get("tagline"),  # Use tagline (lowercase)
             "languages": city.get("languages"),
             "description": city.get("description"),
             "images": city.get("images"),
@@ -221,40 +356,39 @@ class CityController:
         cursor = collection.find(filter_query).skip(skip).limit(limit)
         cities = await cursor.to_list(length=limit)
         
-        city_responses = []
-        states_collection = db["states"]
-        countries_collection = db["countries"] if "countries" in await db.list_collection_names() else None
-        regions_collection = db["regions"] if "regions" in await db.list_collection_names() else None
+        # Convert ObjectIds to strings
+        cities = [convert_objectids(city) for city in cities]
+        
+        # Batch enrich location names (countries, regions, states)
+        cities = await self._enrich_locations_with_names(db, cities)
+        
+        # Collect all state IDs for batch fetching state names
+        state_ids_for_names = set()
         for city in cities:
-            city = convert_objectids(city)
-            # Enrich location names
-            if city.get("location") and isinstance(city["location"], list):
-                for loc in city["location"]:
-                    # skip non-dict location entries to be safe
-                    if not isinstance(loc, dict):
-                        continue
-                    # Country
-                    country = loc.get("country") if isinstance(loc, dict) else None
-                    if isinstance(country, dict) and country.get("id") and (country.get("name") is None) and countries_collection is not None:
-                        country_doc = await countries_collection.find_one({"_id": ObjectId(country["id"])})
-                        if country_doc:
-                            country["name"] = country_doc.get("name")
-                            loc["country"] = country
-                    # Region
-                    region = loc.get("region") if isinstance(loc, dict) else None
-                    if isinstance(region, dict) and region.get("id") and (region.get("name") is None) and regions_collection is not None:
-                        region_doc = await regions_collection.find_one({"_id": ObjectId(region["id"])})
-                        if region_doc:
-                            region["name"] = region_doc.get("name")
-                            loc["region"] = region
-                    # State
-                    state_ref = loc.get("state") if isinstance(loc, dict) else None
-                    if isinstance(state_ref, dict) and state_ref.get("id") and (state_ref.get("name") is None):
-                        state_doc = await states_collection.find_one({"_id": ObjectId(state_ref["id"])})
-                        if state_doc:
-                            state_ref["name"] = state_doc.get("name")
-                            loc["state"] = state_ref
-            # ...existing code for state_id, state_name, city_response_dict, etc...
+            state_id_val = city.get("state_id")
+            if not state_id_val and city.get("location") and isinstance(city.get("location"), list) and len(city.get("location")) > 0:
+                first_loc = city.get("location")[0]
+                if isinstance(first_loc, dict):
+                    state_obj = first_loc.get("state")
+                    if isinstance(state_obj, dict) and state_obj.get("id"):
+                        state_id_val = state_obj.get("id")
+            if state_id_val:
+                try:
+                    state_ids_for_names.add(ObjectId(str(state_id_val)))
+                except Exception:
+                    pass
+        
+        # Batch fetch state names
+        states_map = {}
+        if state_ids_for_names:
+            states_collection = db["states"]
+            cursor = states_collection.find({"_id": {"$in": list(state_ids_for_names)}})
+            async for doc in cursor:
+                states_map[str(doc.get("_id"))] = doc.get("name")
+        
+        # Build response objects
+        city_responses = []
+        for city in cities:
             city_id = str(city.get("_id")) if city.get("_id") else None
             state_id_val = city.get("state_id")
             # Safely extract state id from location if state_id missing
@@ -270,19 +404,15 @@ class CityController:
                     state_id_val = None
             state_id_str = str(state_id_val) if state_id_val else None
             name = city.get("name")
-            state_name = None
-            if state_id_str:
-                state_doc = await states_collection.find_one({"_id": ObjectId(state_id_str)})
-                if state_doc:
-                    state_name = state_doc.get("name")
+            state_name = states_map.get(state_id_str) if state_id_str else None
             city_response_dict = {
                 "id": city_id,
                 "name": name,
                 "state_id": state_id_str,
                 "is_active": city.get("is_active", True),
-                "location": city.get("location"),
+                "locations": city.get("location") or city.get("locations"),  # Use locations (plural)
                 "greetingText": city.get("greetingText"),
-                "tagLine": city.get("tagLine"),
+                "tagline": city.get("tagLine") or city.get("tagline"),  # Use tagline (lowercase)
                 "languages": city.get("languages"),
                 "description": city.get("description"),
                 "images": city.get("images"),
@@ -602,48 +732,40 @@ class CityController:
 
             logger.info(f"Fetched {len(cities)} cities from DB (skip={skip}, limit={limit})")
 
-            # Initialize collections before using them
-            states_collection = db["states"]
-            # Ensure optional collections exist
-            collection_names = await db.list_collection_names()
-            countries_collection = db["countries"] if "countries" in collection_names else None
-            regions_collection = db["regions"] if "regions" in collection_names else None
-
-            # Convert ObjectIds and enrich
-            enriched_cities = []
+            # Convert ObjectIds to strings
+            cities = [convert_objectids(city) for city in cities]
+            
+            # Batch enrich location names (countries, regions, states)
+            cities = await self._enrich_locations_with_names(db, cities)
+            
+            # Collect all state IDs for batch fetching state names
+            state_ids_for_names = set()
             for city in cities:
-                city = convert_objectids(city)
-                # Enrich location country/region/state names
-                if city.get("location") and isinstance(city["location"], list):
-                    for loc in city["location"]:
-                        # skip non-dict location entries to be safe
-                        if not isinstance(loc, dict):
-                            continue
-                        country = loc.get("country") if isinstance(loc, dict) else None
-                        if isinstance(country, dict) and country.get("id") and (country.get("name") is None) and countries_collection is not None:
-                            country_doc = await countries_collection.find_one({"_id": ObjectId(country["id"])})
-                            if country_doc:
-                                country["name"] = country_doc.get("name")
-                                loc["country"] = country
-                        region = loc.get("region") if isinstance(loc, dict) else None
-                        if isinstance(region, dict) and region.get("id") and (region.get("name") is None) and regions_collection is not None:
-                            region_doc = await regions_collection.find_one({"_id": ObjectId(region["id"])})
-                            if region_doc:
-                                region["name"] = region_doc.get("name")
-                                loc["region"] = region
-                        state_ref = loc.get("state") if isinstance(loc, dict) else None
-                        if isinstance(state_ref, dict) and state_ref.get("id") and (state_ref.get("name") is None):
-                            state_doc = await states_collection.find_one({"_id": ObjectId(state_ref["id"])})
-                            if state_doc:
-                                state_ref["name"] = state_doc.get("name")
-                                loc["state"] = state_ref
-
-                enriched_cities.append(city)
+                state_id_val = city.get("state_id")
+                if not state_id_val and city.get("location") and isinstance(city.get("location"), list) and len(city.get("location")) > 0:
+                    first_loc = city.get("location")[0]
+                    if isinstance(first_loc, dict):
+                        state_obj = first_loc.get("state")
+                        if isinstance(state_obj, dict) and state_obj.get("id"):
+                            state_id_val = state_obj.get("id")
+                if state_id_val:
+                    try:
+                        state_ids_for_names.add(ObjectId(str(state_id_val)))
+                    except Exception:
+                        pass
+            
+            # Batch fetch state names
+            states_map = {}
+            if state_ids_for_names:
+                states_collection = db["states"]
+                cursor = states_collection.find({"_id": {"$in": list(state_ids_for_names)}})
+                async for doc in cursor:
+                    states_map[str(doc.get("_id"))] = doc.get("name")
 
             # Build response objects depending on view
             city_responses = []
 
-            for city in enriched_cities:
+            for city in cities:
                 # minimal view should include only a subset
                 city_id = str(city.get("_id")) if city.get("_id") else None
                 state_id_val = city.get("state_id")
@@ -661,15 +783,7 @@ class CityController:
                 state_id_str = str(state_id_val) if state_id_val else None
 
                 name = city.get("name")
-                state_name = None
-                if state_id_str:
-                    try:
-                        state_doc = await states_collection.find_one({"_id": ObjectId(state_id_str)})
-                        if state_doc:
-                            state_name = state_doc.get("name")
-                    except Exception:
-                        # state_id_str may not be a valid ObjectId - ignore
-                        state_name = None
+                state_name = states_map.get(state_id_str) if state_id_str else None
 
                 if view == "minimal":
                     # construct minimal response
@@ -678,9 +792,9 @@ class CityController:
                         "name": name,
                         "state_id": state_id_str,
                         "images": city.get("images"),
-                        "tagLine": city.get("tagLine"),
+                        "tagline": city.get("tagLine") or city.get("tagline"),  # Use tagline (lowercase)
                         "is_active": city.get("is_active", True),
-                        "location": city.get("location")
+                        "locations": city.get("location") or city.get("locations")  # Use locations (plural)
                     }
                 else:
                     # full view - include available fields
@@ -689,9 +803,9 @@ class CityController:
                         "name": name,
                         "state_id": state_id_str,
                         "is_active": city.get("is_active", True),
-                        "location": city.get("location"),
+                        "locations": city.get("location") or city.get("locations"),  # Use locations (plural)
                         "greetingText": city.get("greetingText"),
-                        "tagLine": city.get("tagLine"),
+                        "tagline": city.get("tagLine") or city.get("tagline"),  # Use tagline (lowercase)
                         "languages": city.get("languages"),
                         "description": city.get("description"),
                         "images": city.get("images"),
@@ -743,3 +857,33 @@ class CityController:
         except Exception as e:
             logger.exception(f"Error in query_cities_new: {e}")
             raise HTTPException(status_code=status.HTTP_500_INTERNAL_SERVER_ERROR, detail=str(e))
+
+    async def query_cities_standard(self, request: CityStandardRequest, view: str = "minimal") -> CityStandardResponse:
+        """Standard city query endpoint with filters format"""
+        try:
+            from schemas.state import StateQueryRequest, StateQueryFilter
+            # Convert standard request to StateQueryRequest format (cities use same format as states)
+            query = StateQueryRequest(
+                filter=StateQueryFilter(
+                    view=view,
+                    id=request.filters.id
+                ),
+                offset=request.filters.from_,
+                size=request.filters.size,
+                fetch_all=False
+            )
+            
+            # Use existing query_cities_new method
+            result = await self.query_cities_new(query)
+            
+            # Convert to standard response format
+            return CityStandardResponse(
+                result=result.cities,
+                total_count=result.total
+            )
+        except Exception as e:
+            logger.exception(f"Error in query_cities_standard: {e}")
+            raise HTTPException(
+                status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+                detail=f"Failed to query cities: {str(e)}"
+            )

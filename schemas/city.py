@@ -69,9 +69,9 @@ class CityResponse(BaseModel):
     name: str
     state_id: str
     is_active: bool = True
-    location: Optional[List[LocationItem]] = None
+    locations: Optional[List[LocationItem]] = Field(default=None, alias="location")  # Support both location and locations
     greetingText: Optional[str] = None
-    tagLine: Optional[str] = None
+    tagline: Optional[str] = Field(default=None, alias="tagLine")  # Support both tagLine and tagline
     languages: Optional[List[str]] = None
     description: Optional[Description] = None
     images: Optional[dict] = None
@@ -84,6 +84,7 @@ class CityResponse(BaseModel):
     class Config:
         populate_by_name = True
         json_encoders = {ObjectId: str}
+        allow_population_by_field_name = True
         json_schema_extra = {
             "example": {
                 "_id": "507f1f77bcf86cd799439012",
@@ -113,3 +114,24 @@ class CityListResponse(BaseModel):
                 "has_prev": False
             }
         }
+
+
+class CityFiltersRequest(BaseModel):
+    """Filters for city query endpoint"""
+    id: List[str] = ["t_all"]  # Array of city IDs or ["t_all"] for all cities
+    from_: int = Field(default=0, alias="from")  # Starting index for pagination
+    size: int = Field(default=10)  # Number of items to return
+    
+    class Config:
+        populate_by_name = True
+
+
+class CityStandardRequest(BaseModel):
+    """Standard city query request format"""
+    filters: CityFiltersRequest
+
+
+class CityStandardResponse(BaseModel):
+    """Standard city query response format"""
+    result: List[Any]  # Array of city objects (CityResponse)
+    total_count: int

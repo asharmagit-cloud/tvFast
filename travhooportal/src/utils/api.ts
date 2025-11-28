@@ -6,19 +6,27 @@ const API_BASE_URL =
 
 export interface ApiState {
   _id?: string;
-  id: string;
+  id?: string;
   name: string;
-  tagLine?: string;
-  labels?: Array<{ id: string; name: string }>;
+  tagline?: string;
+  tagLine?: string;  // Support both for backward compatibility
+  labels?: Array<{ id: string; name?: string }> | string[];
   images?: {
     banner?: string;
     card?: string;
     others?: string[];
   };
-  location?: Array<{
+  locations?: Array<{
     country: { id: string; name?: string };
     region?: { id: string; name?: string };
     state?: { id: string; name?: string };
+    city?: { id: string; name?: string };
+  }>;
+  location?: Array<{  // Support both for backward compatibility
+    country: { id: string; name?: string };
+    region?: { id: string; name?: string };
+    state?: { id: string; name?: string };
+    city?: { id: string; name?: string };
   }>;
   description?: {
     title?: string;
@@ -147,36 +155,54 @@ export async function fetchStateById(stateId: string): Promise<ApiState> {
  * Transform API state to frontend State type
  */
 export function transformApiStateToState(apiState: ApiState) {
+  // Normalize labels to Array<{name: string; id: string}>
+  const normalizedLabels = apiState.labels?.map((label) => {
+    if (typeof label === 'string') {
+      return { id: label, name: '' };
+    }
+    if (typeof label === 'object' && label !== null) {
+      return {
+        id: String(label.id || ''),
+        name: String(label.name || ''),
+      };
+    }
+    return { id: '', name: '' };
+  }) || [];
+
   return {
     id: apiState._id || apiState.id || '',
     name: apiState.name,
-    tagline: apiState.tagLine,
-    labels: apiState.labels?.map((label) => label.name || label.id) || [],
+    tagline: apiState.tagline || apiState.tagLine || '',
+    labels: normalizedLabels,
     images: {
       banner: apiState.images?.banner ?? '/images/default.jpg',
       ...(apiState.images?.card && { card: apiState.images.card }),
       ...(apiState.images?.others && { others: apiState.images.others }),
     },
-    locations: apiState.location
-      ? apiState.location.map((loc) => ({
-          country: {
-            id: loc.country.id,
-            name: loc.country.name || '',
-          },
-          region: loc.region
-            ? {
-                id: loc.region.id,
-                name: loc.region.name || '',
-              }
-            : undefined,
-          state: loc.state
-            ? {
-                id: loc.state.id,
-                name: loc.state.name || '',
-              }
-            : undefined,
-        }))
-      : [],
+    locations: (apiState.locations || apiState.location || []).map((loc) => ({
+      country: {
+        id: String(loc.country?.id || ''),
+        name: loc.country?.name || '',
+      },
+      region: loc.region
+        ? {
+            id: String(loc.region.id || ''),
+            name: loc.region.name || '',
+          }
+        : undefined,
+      state: loc.state
+        ? {
+            id: String(loc.state.id || ''),
+            name: loc.state.name || '',
+          }
+        : undefined,
+      city: loc.city
+        ? {
+            id: String(loc.city.id || ''),
+            name: loc.city.name || '',
+          }
+        : undefined,
+    })),
     description: apiState.description,
     greetingText: apiState.greetingText,
     experiences: apiState.experiences ? (() => {
@@ -224,11 +250,19 @@ export interface ApiCity {
   name: string;
   state_id: string;
   is_active: boolean;
-  tagLine?: string;
-  location?: Array<{
+  tagline?: string;
+  tagLine?: string;  // Support both for backward compatibility
+  locations?: Array<{
     country: { id: string; name?: string };
     region?: { id: string; name?: string };
     state?: { id: string; name?: string };
+    city?: { id: string; name?: string };
+  }>;
+  location?: Array<{  // Support both for backward compatibility
+    country: { id: string; name?: string };
+    region?: { id: string; name?: string };
+    state?: { id: string; name?: string };
+    city?: { id: string; name?: string };
   }>;
   description?: {
     title?: string;
@@ -238,6 +272,7 @@ export interface ApiCity {
     history?: string;
   };
   greetingText?: string;
+  labels?: Array<{ id: string; name?: string }> | string[];
   images?: {
     banner?: string;
     card?: string;
@@ -471,38 +506,56 @@ export async function fetchCityById(cityId: string): Promise<ApiCity> {
  * Transform API city to frontend City type
  */
 export function transformApiCityToCity(apiCity: ApiCity) {
+  // Normalize labels to Array<{name: string; id: string}>
+  const normalizedLabels = apiCity.labels?.map((label) => {
+    if (typeof label === 'string') {
+      return { id: label, name: '' };
+    }
+    if (typeof label === 'object' && label !== null) {
+      return {
+        id: String(label.id || ''),
+        name: String(label.name || ''),
+      };
+    }
+    return { id: '', name: '' };
+  }) || [];
+
   return {
     id: apiCity._id || apiCity.id || '',
     name: apiCity.name,
-    tagline: apiCity.tagLine,
+    tagline: apiCity.tagline || apiCity.tagLine || '',
     images: {
       banner: apiCity.images?.banner ?? '/images/default.jpg',
       ...(apiCity.images?.card && { card: apiCity.images.card }),
       ...(apiCity.images?.others && { others: apiCity.images.others }),
     },
-    locations: apiCity.location
-      ? apiCity.location.map((loc) => ({
-          country: {
-            id: loc.country.id,
-            name: loc.country.name || '',
-          },
-          region: loc.region
-            ? {
-                id: loc.region.id,
-                name: loc.region.name || '',
-              }
-            : undefined,
-          state: loc.state
-            ? {
-                id: loc.state.id,
-                name: loc.state.name || '',
-              }
-            : undefined,
-        }))
-      : [],
+    locations: (apiCity.locations || apiCity.location || []).map((loc) => ({
+      country: {
+        id: String(loc.country?.id || ''),
+        name: loc.country?.name || '',
+      },
+      region: loc.region
+        ? {
+            id: String(loc.region.id || ''),
+            name: loc.region.name || '',
+          }
+        : undefined,
+      state: loc.state
+        ? {
+            id: String(loc.state.id || ''),
+            name: loc.state.name || '',
+          }
+        : undefined,
+      city: loc.city
+        ? {
+            id: String(loc.city.id || ''),
+            name: loc.city.name || '',
+          }
+        : undefined,
+    })),
     description: apiCity.description,
     greetingText: apiCity.greetingText,
-    labels: [], // Cities might not have labels in the API
+    labels: normalizedLabels,
     experiences: apiCity.experiences ? (() => {
       // Transform experiences to ensure they're properly formatted
       const transformed: {

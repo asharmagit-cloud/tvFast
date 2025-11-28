@@ -3,7 +3,7 @@ from bson import ObjectId
 from fastapi import HTTPException, status
 from database import get_database
 from models.state import StateModel
-from schemas.state import StateCreate, StateUpdate, StateResponse, StateListResponse, StateQueryRequest, StateQueryRequestLegacy, StateMinimalResponse, StateQueryResponse
+from schemas.state import StateCreate, StateUpdate, StateResponse, StateListResponse, StateQueryRequest, StateQueryRequestLegacy, StateMinimalResponse, StateQueryResponse, StateStandardRequest, StateStandardResponse
 import logging
 
 logger = logging.getLogger(__name__)
@@ -826,7 +826,7 @@ class StateController:
                     minimal_state = {
                         "id": state_id,
                         "name": state.get("name", ""),
-                        "tagLine": state.get("tagLine"),
+                        "tagline": state.get("tagLine") or state.get("tagline"),  # Use tagline (lowercase)
                         "labels": labels,
                         "images": state.get("images")
                     }
@@ -871,4 +871,34 @@ class StateController:
             raise HTTPException(
                 status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
                 detail=error_detail
+            )
+
+    async def query_states_standard(self, request: StateStandardRequest, view: str = "minimal") -> StateStandardResponse:
+        """Standard state query endpoint with filters format"""
+        try:
+            from schemas.state import StateQueryFilter
+            # Convert standard request to StateQueryRequest format
+            query = StateQueryRequest(
+                filter=StateQueryFilter(
+                    view=view,
+                    id=request.filters.id
+                ),
+                offset=request.filters.from_,
+                size=request.filters.size,
+                fetch_all=False
+            )
+            
+            # Use existing query_states_new method
+            result = await self.query_states_new(query)
+            
+            # Convert to standard response format
+            return StateStandardResponse(
+                result=result.states,
+                total_count=result.total
+            )
+        except Exception as e:
+            logger.exception(f"Error in query_states_standard: {e}")
+            raise HTTPException(
+                status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
+                detail=f"Failed to query states: {str(e)}"
             )

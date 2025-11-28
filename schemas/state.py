@@ -33,9 +33,9 @@ class StateBase(BaseModel):
     #country: Optional[str] = None
     #is_active: Optional[bool] = None
     # new schema fields
-    location: Optional[List[LocationItem]] = None
+    locations: Optional[List[LocationItem]] = Field(default=None, alias="location")  # Support both location and locations
     greetingText: Optional[str] = None
-    tagLine: Optional[str] = None
+    tagline: Optional[str] = Field(default=None, alias="tagLine")  # Support both tagLine and tagline
     languages: Optional[List[str]] = None
     description: Optional[Description] = None
     images: Optional[dict] = None
@@ -68,6 +68,7 @@ class StateResponse(StateBase):
     class Config:
         populate_by_name = True
         json_encoders = {ObjectId: str}
+        allow_population_by_field_name = True
         json_schema_extra = {
             "example": {
                 "_id": "68dc1021e2dc335296605a38",
@@ -214,7 +215,7 @@ class StateMinimalResponse(BaseModel):
     """Minimal template response"""
     id: str
     name: str
-    tagLine: Optional[str] = None
+    tagline: Optional[str] = Field(default=None, alias="tagLine")  # Support both tagLine and tagline
     labels: Optional[List[dict]] = None  # [{id, name}]
     images: Optional[dict] = None
 
@@ -232,3 +233,24 @@ class StateQueryResponse(BaseModel):
     has_next: bool
     has_prev: bool
     next_count: Optional[int] = None  # Items in next page
+
+
+class StateFiltersRequest(BaseModel):
+    """Filters for state query endpoint"""
+    id: List[str] = ["t_all"]  # Array of state IDs or ["t_all"] for all states
+    from_: int = Field(default=0, alias="from")  # Starting index for pagination
+    size: int = Field(default=10)  # Number of items to return
+    
+    class Config:
+        populate_by_name = True
+
+
+class StateStandardRequest(BaseModel):
+    """Standard state query request format"""
+    filters: StateFiltersRequest
+
+
+class StateStandardResponse(BaseModel):
+    """Standard state query response format"""
+    result: List[Any]  # Array of state objects (StateMinimalResponse or StateResponse)
+    total_count: int

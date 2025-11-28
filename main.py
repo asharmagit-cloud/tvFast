@@ -2,7 +2,7 @@ from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from contextlib import asynccontextmanager
 from database import connect_to_mongo, close_mongo_connection
-from routes import state_routes, city_routes, place_routes, test_routes, label_routes
+from routes import state_routes, city_routes, place_routes, test_routes, label_routes, state_standard_routes, city_standard_routes
 from config import settings
 
 
@@ -42,6 +42,9 @@ app.include_router(city_routes.router, prefix="/api/v1")
 app.include_router(place_routes.router, prefix="/api/v1")
 app.include_router(test_routes.router, prefix="/api/v1")
 app.include_router(label_routes.router, prefix="/api/v1")
+# Standard format endpoints (singular)
+app.include_router(state_standard_routes.router, prefix="/api/v1")
+app.include_router(city_standard_routes.router, prefix="/api/v1")
 
 
 @app.get("/health")

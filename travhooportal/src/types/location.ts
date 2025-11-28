@@ -14,7 +14,10 @@ interface Location {
     card?: string;
     others?: string[];
   };
-  labels?: string[];
+  labels?: Array<{
+    name: string;
+    id: string;
+  }>;
   locations?: Array<{
     country: { name: string; id: string };
     state?: { name: string; id: string };
@@ -59,7 +62,10 @@ interface City {
     card?: string;
     others?: string[];
   };
-  labels?: string[];
+  labels?: Array<{
+    name: string;
+    id: string;
+  }>;
   locations?: Array<{
     country: { name: string; id: string };
     state?: { name: string; id: string };
@@ -104,7 +110,10 @@ interface State {
     card?: string;
     others?: string[];
   };
-  labels?: string[];
+  labels?: Array<{
+    name: string;
+    id: string;
+  }>;
   locations?: Array<{
     country: { name: string; id: string };
     state?: { name: string; id: string };

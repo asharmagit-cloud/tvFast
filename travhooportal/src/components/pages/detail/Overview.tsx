@@ -10,7 +10,7 @@ const Overview = ({
     short?: string;
     long?: string;
   };
-  labels: string[];
+  labels?: Array<{ name: string; id: string }> | string[];
 }) => {
   const [showFullDescription, setShowFullDescription] = useState(
     !description?.short || false,
@@ -34,17 +34,27 @@ const Overview = ({
 
       {labels && labels.length > 0 && (
         <div className='flex flex-wrap gap-3 justify-center'>
-          {labels.map((label, index) => (
-            <span
-              key={label}
-              className='group px-5 py-2.5 bg-gradient-to-r from-orange-500 to-red-500 text-white rounded-full text-sm font-semibold shadow-md hover:shadow-lg transition-all duration-300 transform cursor-default'
-              style={{
-                animationDelay: `${index * 100}ms`,
-              }}
-            >
-              {label}
-            </span>
-          ))}
+          {labels.map((label, index) => {
+            // Handle both string[] (legacy) and Array<{name, id}> (new format)
+            const labelText = typeof label === 'string' 
+              ? label 
+              : (label.name || label.id || '');
+            const labelKey = typeof label === 'string' 
+              ? label 
+              : (label.id || `label-${index}`);
+            
+            return (
+              <span
+                key={labelKey}
+                className='group px-5 py-2.5 bg-gradient-to-r from-orange-500 to-red-500 text-white rounded-full text-sm font-semibold shadow-md hover:shadow-lg transition-all duration-300 transform cursor-default'
+                style={{
+                  animationDelay: `${index * 100}ms`,
+                }}
+              >
+                {labelText}
+              </span>
+            );
+          })}
         </div>
       )}
 
