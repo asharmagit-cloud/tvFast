@@ -88,6 +88,7 @@ export async function fetchStates(
     fetch_all = false,
   } = options;
 
+
   const response = await fetch(`${API_BASE_URL}/api/v1/states/query`, {
     method: 'POST',
     headers: {
@@ -245,8 +246,8 @@ export function transformApiStateToState(apiState: ApiState) {
 }
 
 export interface ApiCity {
-  _id: string;
-  id?: string;
+  id: string;  // Primary field (now returned first by backend)
+  _id?: string;  // Legacy field (for backward compatibility)
   name: string;
   state_id: string;
   is_active: boolean;
@@ -520,8 +521,24 @@ export function transformApiCityToCity(apiCity: ApiCity) {
     return { id: '', name: '' };
   }) || [];
 
+  // Extract ID - check multiple possible fields and formats
+  let cityId = '';
+  if (apiCity.id) {
+    cityId = String(apiCity.id);
+  } else if (apiCity._id) {
+    cityId = String(apiCity._id);
+  } else if ((apiCity as any).id) {
+    // Fallback for any other id field
+    cityId = String((apiCity as any).id);
+  }
+
+  // Log warning if ID is still missing
+  if (!cityId && apiCity.name) {
+    console.warn(`transformApiCityToCity: Missing ID for city "${apiCity.name}"`, apiCity);
+  }
+
   return {
-    id: apiCity._id || apiCity.id || '',
+    id: cityId,
     name: apiCity.name,
     tagline: apiCity.tagline || apiCity.tagLine || '',
     images: {

@@ -23,6 +23,49 @@ const TopPicksCard = ({
     images?.banner,
   );
 
+  // Don't render link if ID is missing
+  if (!id || id.trim() === '') {
+    return (
+      <div className='relative h-full rounded-2xl overflow-hidden group cursor-not-allowed opacity-75'>
+        <Image
+          src={imageSrc}
+          alt={name}
+          fill
+          className='object-cover rounded-2xl'
+          sizes='(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw'
+          priority={index < 1}
+          loading={index < 1 ? 'eager' : 'lazy'}
+          quality={75}
+          onError={handleImageError}
+        />
+        <div className='absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent rounded-2xl' />
+        <div className='relative z-10 h-full flex flex-col justify-end p-6'>
+          <div className='flex flex-wrap gap-2 mb-4'>
+            {labels?.slice(0, 2).map((label, labelIndex) => {
+              const labelText = typeof label === 'string' 
+                ? label 
+                : (label.name || label.id || '');
+              const labelKey = typeof label === 'string' 
+                ? label 
+                : (label.id || `label-${labelIndex}`);
+              
+              return (
+                <span
+                  key={labelKey}
+                  className='px-3 py-1 bg-white/20 backdrop-blur-sm text-white text-sm rounded-full'
+                >
+                  {labelText}
+                </span>
+              );
+            })}
+          </div>
+          <h3 className='text-2xl font-bold text-white mb-2'>{name}</h3>
+          <p className='text-white/90 text-sm'>{tagline}</p>
+        </div>
+      </div>
+    );
+  }
+
   return (
     <Link
       href={getDetailPageUrl(id, type || '')}
@@ -35,8 +78,9 @@ const TopPicksCard = ({
           fill
           className='object-cover rounded-2xl'
           sizes='(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw'
-          priority={index < 3}
-          quality={80}
+          priority={index < 1}
+          loading={index < 1 ? 'eager' : 'lazy'}
+          quality={75}
           onError={handleImageError}
         />
 
@@ -44,14 +88,24 @@ const TopPicksCard = ({
 
         <div className='relative z-10 h-full flex flex-col justify-end p-6'>
           <div className='flex flex-wrap gap-2 mb-4'>
-            {labels?.slice(0, 2).map((label, labelIndex) => (
-              <span
-                key={labelIndex}
-                className='px-3 py-1 bg-white/20 backdrop-blur-sm text-white text-sm rounded-full'
-              >
-                {label}
-              </span>
-            ))}
+            {labels?.slice(0, 2).map((label, labelIndex) => {
+              // Handle both string[] (legacy) and Array<{name, id}> (new format)
+              const labelText = typeof label === 'string' 
+                ? label 
+                : (label.name || label.id || '');
+              const labelKey = typeof label === 'string' 
+                ? label 
+                : (label.id || `label-${labelIndex}`);
+              
+              return (
+                <span
+                  key={labelKey}
+                  className='px-3 py-1 bg-white/20 backdrop-blur-sm text-white text-sm rounded-full'
+                >
+                  {labelText}
+                </span>
+              );
+            })}
           </div>
 
           <h3 className='text-2xl font-bold text-white mb-2'>{name}</h3>

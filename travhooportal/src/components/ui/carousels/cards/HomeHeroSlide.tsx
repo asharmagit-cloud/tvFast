@@ -28,8 +28,9 @@ const HomeHeroSlide = ({ item, index }: HomeHeroSlideProps) => {
         fill
         className='w-full h-full object-cover'
         sizes='100vw'
-        priority={index < 2}
-        quality={90}
+        priority={index < 1}
+        quality={75}
+        loading={index < 1 ? 'eager' : 'lazy'}
         onError={handleImageError}
       />
 

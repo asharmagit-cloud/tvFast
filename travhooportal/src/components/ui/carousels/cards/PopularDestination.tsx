@@ -31,8 +31,9 @@ const PopularDestination = ({
           fill
           className='w-full h-full object-cover transition-transform duration-300 group-hover:scale-105'
           sizes='(max-width: 640px) 100vw, (max-width: 1024px) 80vw, 600px'
-          priority={index < 3}
-          quality={85}
+          priority={index < 1}
+          loading={index < 1 ? 'eager' : 'lazy'}
+          quality={75}
           onError={handleImageError}
         />
         <div className='absolute inset-0 bg-black/40 group-hover:bg-black/50 transition-colors duration-300' />

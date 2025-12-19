@@ -85,6 +85,46 @@ class CityResponse(BaseModel):
         populate_by_name = True
         json_encoders = {ObjectId: str}
         allow_population_by_field_name = True
+        
+    def dict(self, **kwargs):
+        """Override dict to exclude _id, createdAt, updatedAt from serialization and ensure id is first"""
+        exclude_set = kwargs.get('exclude', set())
+        if not isinstance(exclude_set, set):
+            exclude_set = set(exclude_set) if exclude_set else set()
+        exclude_set.update(['_id', 'createdAt', 'updatedAt', 'created_at', 'updated_at'])
+        kwargs['exclude'] = exclude_set
+        result = super().dict(**kwargs)
+        for field in ['_id', 'createdAt', 'updatedAt', 'created_at', 'updated_at']:
+            if field in result:
+                del result[field]
+        # Reorder to put 'id' first
+        if 'id' in result:
+            ordered_result = {'id': result.pop('id')}
+            ordered_result.update(result)
+            return ordered_result
+        return result
+    
+    def model_dump(self, **kwargs):
+        """Override model_dump to exclude _id, createdAt, updatedAt from serialization (Pydantic v2) and ensure id is first"""
+        exclude_set = kwargs.get('exclude', set())
+        if not isinstance(exclude_set, set):
+            exclude_set = set(exclude_set) if exclude_set else set()
+        exclude_set.update(['_id', 'createdAt', 'updatedAt', 'created_at', 'updated_at'])
+        kwargs['exclude'] = exclude_set
+        if hasattr(super(), 'model_dump'):
+            result = super().model_dump(**kwargs)
+        else:
+            result = self.dict(**kwargs)
+        if isinstance(result, dict):
+            for field in ['_id', 'createdAt', 'updatedAt', 'created_at', 'updated_at']:
+                if field in result:
+                    del result[field]
+            # Reorder to put 'id' first
+            if 'id' in result:
+                ordered_result = {'id': result.pop('id')}
+                ordered_result.update(result)
+                return ordered_result
+        return result
         json_schema_extra = {
             "example": {
                 "_id": "507f1f77bcf86cd799439012",

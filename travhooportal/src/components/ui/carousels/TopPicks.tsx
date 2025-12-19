@@ -57,6 +57,13 @@ const TopPicksCarousel = ({
     swiperRef.current?.slideNext();
   };
 
+  // Determine if loop should be enabled
+  // Loop needs at least (slidesPerView * 2) slides to work properly
+  // For mobile (1 slide), need at least 2 slides
+  // For tablet (2 slides), need at least 4 slides
+  // For desktop (3 slides), need at least 6 slides
+  const shouldEnableLoop = data.length > 5; // Conservative: enable only if we have more than 5 slides
+
   return (
     <section
       id={id}
@@ -92,7 +99,7 @@ const TopPicksCarousel = ({
             effect='coverflow'
             grabCursor={true}
             centeredSlides={true}
-            loop={true}
+            loop={shouldEnableLoop}
             slidesPerView={3}
             spaceBetween={0}
             speed={400}

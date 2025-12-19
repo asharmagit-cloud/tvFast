@@ -22,6 +22,13 @@ class StateController:
         if isinstance(obj, dict):
             return {key: self._convert_object_ids(value) for key, value in obj.items()}
         return obj
+    
+    def _remove_id_from_dict(self, obj: dict) -> dict:
+        """Remove _id from dictionary before creating response model"""
+        if isinstance(obj, dict):
+            result = {k: v for k, v in obj.items() if k != '_id'}
+            return result
+        return obj
 
     async def _enrich_locations_with_names(self, db, states: List[dict]) -> List[dict]:
         """Attach country/region names to location items using referenced collections."""
@@ -346,6 +353,10 @@ class StateController:
         created_state = self._convert_object_ids(created_state)
         if created_state and created_state.get("_id") and not created_state.get("id"):
             created_state["id"] = created_state["_id"]
+        # Remove _id, createdAt, updatedAt before creating response model
+        for field in ["_id", "createdAt", "updatedAt", "created_at", "updated_at"]:
+            if field in created_state:
+                del created_state[field]
         return StateResponse(**created_state)
 
     async def get_state_by_id(self, state_id: str) -> StateResponse:
@@ -412,6 +423,10 @@ class StateController:
         state = self._convert_object_ids(state)
         if state and state.get("_id") and not state.get("id"):
             state["id"] = state["_id"]
+        # Remove _id, createdAt, updatedAt before creating response model
+        for field in ["_id", "createdAt", "updatedAt", "created_at", "updated_at"]:
+            if field in state:
+                del state[field]
         return StateResponse(**state)
 
     async def get_states(
@@ -448,6 +463,10 @@ class StateController:
         for s in states:
             if s.get("_id") and not s.get("id"):
                 s["id"] = s["_id"]
+            # Remove _id, createdAt, updatedAt before creating response model
+            for field in ["_id", "createdAt", "updatedAt", "created_at", "updated_at"]:
+                if field in s:
+                    del s[field]
         
         # Convert to response models
         state_responses = [StateResponse(**state) for state in states]
@@ -513,6 +532,10 @@ class StateController:
         updated_state = self._convert_object_ids(updated_state)
         if updated_state and updated_state.get("_id") and not updated_state.get("id"):
             updated_state["id"] = updated_state["_id"]
+        # Remove _id, createdAt, updatedAt before creating response model
+        for field in ["_id", "createdAt", "updatedAt", "created_at", "updated_at"]:
+            if field in updated_state:
+                del updated_state[field]
         return StateResponse(**updated_state)
 
     async def delete_state(self, state_id: str) -> dict:
@@ -562,6 +585,10 @@ class StateController:
         state = self._convert_object_ids(state)
         if state and state.get("_id") and not state.get("id"):
             state["id"] = state["_id"]
+        # Remove _id, createdAt, updatedAt before creating response model
+        for field in ["_id", "createdAt", "updatedAt", "created_at", "updated_at"]:
+            if field in state:
+                del state[field]
         return StateResponse(**state)
 
     async def get_all_states(self) -> List[StateResponse]:
@@ -577,7 +604,11 @@ class StateController:
         for s in states:
             if s.get("_id") and not s.get("id"):
                 s["id"] = s["_id"]
-        
+            # Remove _id, createdAt, updatedAt before creating response model
+            for field in ["_id", "createdAt", "updatedAt", "created_at", "updated_at"]:
+                if field in s:
+                    del s[field]
+
         return [StateResponse(**state) for state in states]
 
     async def get_states_page(self, skip: int, limit: int) -> List[StateResponse]:
@@ -722,6 +753,9 @@ class StateController:
             for s in states:
                 if s.get("_id") and not s.get("id"):
                     s["id"] = s["_id"]
+                # Remove _id before creating response model
+                if "_id" in s:
+                    del s["_id"]
             response_data = [StateResponse(**state) for state in states]
         
         # Calculate pagination metadata
@@ -837,6 +871,9 @@ class StateController:
                 for s in states:
                     if s.get("_id") and not s.get("id"):
                         s["id"] = s["_id"]
+                    # Remove _id before creating response model
+                    if "_id" in s:
+                        del s["_id"]
                 response_data = [StateResponse(**state) for state in states]
             
             # Calculate pagination metadata

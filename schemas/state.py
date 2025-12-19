@@ -60,11 +60,78 @@ class StateUpdate(BaseModel):
 
 
 class StateResponse(StateBase):
-    id_plain: Any = Field(default=None, alias="id")
+    # Put id first so it appears first in JSON responses
     id: Any = Field(..., alias="_id")
+    id_plain: Any = Field(default=None, alias="id")
     created_at: Optional[datetime] = Field(default=None, alias="createdAt")
     updated_at: Optional[datetime] = Field(default=None, alias="updatedAt")
 
+    def dict(self, **kwargs):
+        """Override dict to exclude _id, createdAt, updatedAt from serialization and ensure id is first"""
+        # Always exclude _id, createdAt, updatedAt, whether using by_alias or not
+        exclude_set = kwargs.get('exclude', set())
+        if not isinstance(exclude_set, set):
+            exclude_set = set(exclude_set) if exclude_set else set()
+        exclude_set.update(['_id', 'createdAt', 'updatedAt', 'created_at', 'updated_at'])
+        kwargs['exclude'] = exclude_set
+        result = super().dict(**kwargs)
+        # Also remove these fields from the result dict if they somehow got through
+        for field in ['_id', 'createdAt', 'updatedAt', 'created_at', 'updated_at']:
+            if field in result:
+                del result[field]
+        
+        # Reorder to put 'id' first
+        if 'id' in result:
+            ordered_result = {'id': result.pop('id')}
+            ordered_result.update(result)
+            return ordered_result
+        
+        return result
+    
+    def model_dump(self, **kwargs):
+        """Override model_dump to exclude _id, createdAt, updatedAt from serialization (Pydantic v2) and ensure id is first"""
+        exclude_set = kwargs.get('exclude', set())
+        if not isinstance(exclude_set, set):
+            exclude_set = set(exclude_set) if exclude_set else set()
+        exclude_set.update(['_id', 'createdAt', 'updatedAt', 'created_at', 'updated_at'])
+        kwargs['exclude'] = exclude_set
+        if hasattr(super(), 'model_dump'):
+            result = super().model_dump(**kwargs)
+        else:
+            result = self.dict(**kwargs)
+        # Also remove these fields from the result if they somehow got through
+        if isinstance(result, dict):
+            for field in ['_id', 'createdAt', 'updatedAt', 'created_at', 'updated_at']:
+                if field in result:
+                    del result[field]
+            # Reorder to put 'id' first
+            if 'id' in result:
+                ordered_result = {'id': result.pop('id')}
+                ordered_result.update(result)
+                return ordered_result
+        return result
+    
+    def json(self, **kwargs):
+        """Override json to exclude _id, createdAt, updatedAt from JSON serialization and ensure id is first"""
+        exclude_set = kwargs.get('exclude', set())
+        if not isinstance(exclude_set, set):
+            exclude_set = set(exclude_set) if exclude_set else set()
+        exclude_set.update(['_id', 'createdAt', 'updatedAt', 'created_at', 'updated_at'])
+        kwargs['exclude'] = exclude_set
+        result = super().json(**kwargs)
+        # Parse and clean the JSON string
+        import json
+        data = json.loads(result)
+        for field in ['_id', 'createdAt', 'updatedAt', 'created_at', 'updated_at']:
+            if field in data:
+                del data[field]
+        # Reorder to put 'id' first
+        if 'id' in data:
+            ordered_data = {'id': data.pop('id')}
+            ordered_data.update(data)
+            data = ordered_data
+        return json.dumps(data, **{k: v for k, v in kwargs.items() if k != 'exclude'})
+    
     class Config:
         populate_by_name = True
         json_encoders = {ObjectId: str}

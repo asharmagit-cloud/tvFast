@@ -127,7 +127,9 @@ function MasonryRow({
                   src={img.src}
                   alt={img.alt || 'masonry image'}
                   fill
-                  priority={i < 6}
+                  priority={i < 3}
+                  loading={i < 3 ? 'eager' : 'lazy'}
+                  quality={75}
                   className='object-cover'
                   sizes={`${W}px`}
                 />

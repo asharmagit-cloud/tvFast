@@ -67,6 +67,9 @@ const PopularDestinationsFullScreen = ({
     swiperRef.current?.slidePrev();
   };
 
+  // Enable loop only if we have at least 2 slides (minimum for loop to work)
+  const shouldEnableLoop = destinations.length >= 2;
+
   return (
     <section
       className='relative w-full min-h-[80vh] sm:min-h-screen overflow-hidden flex items-center'
@@ -108,7 +111,7 @@ const PopularDestinationsFullScreen = ({
             <Swiper
               modules={[EffectFade, Navigation]}
               effect='fade'
-              loop={true}
+              loop={shouldEnableLoop}
               autoplay={false}
               speed={500}
               onSwiper={swiper => {

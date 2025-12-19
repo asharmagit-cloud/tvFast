@@ -1,24 +1,55 @@
 'use client';
 
-import { FC, useEffect, useRef } from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay, EffectFade, Navigation } from 'swiper/modules';
+import { FC, useEffect, useRef, useState } from 'react';
 import type { Swiper as SwiperType } from 'swiper';
 import { LANDING_PAGE_CAROUSEL_ITEMS } from '@/constants';
 import CarouselNavigation from '@/components/ui/carousels/CarouselNavigation';
 import HomeHeroSlide from '@/components/ui/carousels/cards/HomeHeroSlide';
 import ButtonWithIcon from '@/components/ui/buttons/ButtonWithIcon';
-
-// Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/effect-fade';
-import 'swiper/css/navigation';
 import Image from 'next/image';
 
 const HeroSlides: FC = () => {
   const swiperRef = useRef<SwiperType | null>(null);
+  const [isMounted, setIsMounted] = useState(false);
+  const [SwiperComponents, setSwiperComponents] = useState<{
+    Swiper: typeof import('swiper/react').Swiper;
+    SwiperSlide: typeof import('swiper/react').SwiperSlide;
+    modules: {
+      Autoplay: typeof import('swiper/modules').Autoplay;
+      EffectFade: typeof import('swiper/modules').EffectFade;
+      Navigation: typeof import('swiper/modules').Navigation;
+    };
+  } | null>(null);
 
   useEffect(() => {
+    // Only import Swiper after component mounts (client-side only)
+    if (typeof window !== 'undefined') {
+      Promise.all([
+        import('swiper/react'),
+        import('swiper/modules'),
+      ]).then(([swiperReact, swiperModules]) => {
+        // Import Swiper styles
+        import('swiper/css');
+        import('swiper/css/effect-fade');
+        import('swiper/css/navigation');
+        
+        setSwiperComponents({
+          Swiper: swiperReact.Swiper,
+          SwiperSlide: swiperReact.SwiperSlide,
+          modules: {
+            Autoplay: swiperModules.Autoplay,
+            EffectFade: swiperModules.EffectFade,
+            Navigation: swiperModules.Navigation,
+          },
+        });
+        setIsMounted(true);
+      });
+    }
+  }, []);
+
+  useEffect(() => {
+    if (!isMounted) return;
+    
     const preloadImages = () => {
       LANDING_PAGE_CAROUSEL_ITEMS.slice(0, 3).forEach(item => {
         const img = new window.Image();
@@ -27,7 +58,7 @@ const HeroSlides: FC = () => {
     };
 
     preloadImages();
-  }, []);
+  }, [isMounted]);
 
   const nextSlide = () => {
     swiperRef.current?.slideNext();
@@ -36,6 +67,19 @@ const HeroSlides: FC = () => {
   const prevSlide = () => {
     swiperRef.current?.slidePrev();
   };
+
+  if (!isMounted || !SwiperComponents) {
+    return (
+      <section id='intro' className='w-full h-screen relative overflow-hidden bg-gray-900'>
+        <div className='absolute inset-0 flex items-center justify-center'>
+          <div className='text-white'>Loading...</div>
+        </div>
+      </section>
+    );
+  }
+
+  const { Swiper, SwiperSlide, modules } = SwiperComponents;
+  const { Autoplay, EffectFade, Navigation } = modules;
 
   return (
     <section id='intro' className='w-full h-screen relative overflow-hidden'>

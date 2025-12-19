@@ -69,6 +69,10 @@ class PlaceController:
         
         # Fetch the created place
         created_place = await collection.find_one({"_id": result.inserted_id})
+        # Remove createdAt, updatedAt, created_at, updated_at before creating response model
+        for field in ["createdAt", "updatedAt", "created_at", "updated_at"]:
+            if field in created_place:
+                del created_place[field]
         return PlaceResponse(**created_place)
 
     async def get_place_by_id(self, place_id: str) -> PlaceResponse:
@@ -88,6 +92,11 @@ class PlaceController:
                 status_code=status.HTTP_404_NOT_FOUND,
                 detail="Place not found"
             )
+        
+        # Remove createdAt, updatedAt, created_at, updated_at before creating response model
+        for field in ["createdAt", "updatedAt", "created_at", "updated_at"]:
+            if field in place:
+                del place[field]
         
         return PlaceResponse(**place)
 
@@ -139,6 +148,12 @@ class PlaceController:
         # Get places with pagination
         cursor = collection.find(filter_query).skip(skip).limit(limit)
         places = await cursor.to_list(length=limit)
+        
+        # Remove createdAt, updatedAt, created_at, updated_at before creating response models
+        for place in places:
+            for field in ["createdAt", "updatedAt", "created_at", "updated_at"]:
+                if field in place:
+                    del place[field]
         
         # Convert to response models
         place_responses = [PlaceResponse(**place) for place in places]
@@ -240,6 +255,10 @@ class PlaceController:
         
         # Return updated place
         updated_place = await collection.find_one({"_id": ObjectId(place_id)})
+        # Remove createdAt, updatedAt, created_at, updated_at before creating response model
+        for field in ["createdAt", "updatedAt", "created_at", "updated_at"]:
+            if field in updated_place:
+                del updated_place[field]
         return PlaceResponse(**updated_place)
 
     async def delete_place(self, place_id: str) -> dict:
@@ -280,6 +299,12 @@ class PlaceController:
         cursor = collection.find({"city_id": ObjectId(city_id), "is_active": True})
         places = await cursor.to_list(length=None)
         
+        # Remove createdAt, updatedAt, created_at, updated_at before creating response models
+        for place in places:
+            for field in ["createdAt", "updatedAt", "created_at", "updated_at"]:
+                if field in place:
+                    del place[field]
+        
         return [PlaceResponse(**place) for place in places]
 
     async def get_places_by_state(self, state_id: str) -> List[PlaceResponse]:
@@ -295,6 +320,12 @@ class PlaceController:
         
         cursor = collection.find({"state_id": ObjectId(state_id), "is_active": True})
         places = await cursor.to_list(length=None)
+        
+        # Remove createdAt, updatedAt, created_at, updated_at before creating response models
+        for place in places:
+            for field in ["createdAt", "updatedAt", "created_at", "updated_at"]:
+                if field in place:
+                    del place[field]
         
         return [PlaceResponse(**place) for place in places]
 
@@ -347,5 +378,11 @@ class PlaceController:
         
         cursor = collection.find(query).limit(limit)
         places = await cursor.to_list(length=limit)
+        
+        # Remove createdAt, updatedAt, created_at, updated_at before creating response models
+        for place in places:
+            for field in ["createdAt", "updatedAt", "created_at", "updated_at"]:
+                if field in place:
+                    del place[field]
         
         return [PlaceResponse(**place) for place in places]

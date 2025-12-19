@@ -320,6 +320,10 @@ class CityController:
         # CityResponse expects _id as alias for id
         response_input = city_response_dict.copy()
         response_input["_id"] = response_input.pop("id")
+        # Remove createdAt, updatedAt, created_at, updated_at before creating response model
+        for field in ["createdAt", "updatedAt", "created_at", "updated_at"]:
+            if field in response_input:
+                del response_input[field]
         
         return CityResponse(**response_input)
 
@@ -427,6 +431,10 @@ class CityController:
             # Skip documents missing essential fields (id and name). Allow missing state_id.
             if not city_id or not name:
                 continue
+            # Remove createdAt, updatedAt, created_at, updated_at before creating response model
+            for field in ["createdAt", "updatedAt", "created_at", "updated_at"]:
+                if field in city_response_dict:
+                    del city_response_dict[field]
             city_responses.append(CityResponse(**city_response_dict))
 
         # Calculate pagination info
@@ -555,6 +563,12 @@ class CityController:
         
         cursor = collection.find({"state_id": ObjectId(state_id), "is_active": True})
         cities = await cursor.to_list(length=None)
+        
+        # Remove createdAt, updatedAt, created_at, updated_at before creating response models
+        for city in cities:
+            for field in ["createdAt", "updatedAt", "created_at", "updated_at"]:
+                if field in city:
+                    del city[field]
         
         return [CityResponse(**city) for city in cities]
 
@@ -719,7 +733,8 @@ class CityController:
             projection = {}
             view = _fget(filter_obj, "view", "full")
             if view == "minimal":
-                projection = {"_id": 1, "name": 1, "state_id": 1, "tagLine": 1, "images": 1}
+                # Include location to allow state_id extraction if missing from root
+                projection = {"_id": 1, "name": 1, "state_id": 1, "tagLine": 1, "tagline": 1, "images": 1, "location": 1, "locations": 1}
 
             logger.info(f"Using projection={projection}, skip={skip}, limit={limit}, view={view}")
 
@@ -828,6 +843,10 @@ class CityController:
                 # Use a copy where key "_id" maps to id value to satisfy the schema
                 response_input = city_response_dict.copy()
                 response_input["_id"] = response_input.pop("id")
+                # Remove createdAt, updatedAt, created_at, updated_at before creating response model
+                for field in ["createdAt", "updatedAt", "created_at", "updated_at"]:
+                    if field in response_input:
+                        del response_input[field]
 
                 try:
                     city_responses.append(CityResponse(**response_input))
